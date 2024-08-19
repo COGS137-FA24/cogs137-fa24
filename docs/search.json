@@ -1,0 +1,946 @@
+[
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "COGS 137 Course Schedule",
+    "section": "",
+    "text": "Here you’ll find topics, links to materials, and deadlines for the entire term. Should any dates changes, this page will be updated throughout the quarter.\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nPREPARE\nMATERIALS\nDUE\n\n\n\n\n0\nThu, Sep 26\nWelcome & Tooling\n\n\n📝 notes  🖥️ slides \n\n\n\n\n1\nTue, Oct 1\nIntro to R\n\n\n\n\n\n\n\n\n\nThu, Oct 3\nCS01: Introduction\n\n\n\n\n\n\n\n\n\nFri, Oct 4\nLab01: Intro to R\n\n\n\n\n🔘 Survey #finaid\n\n\n2\nTue, Oct 8\nData Wrangling: dplyr + tidyr\n\n\n\n\n\n\n\n\n\nThu, Oct 10\n✈️ No Class - Prof Travel\n\n\n\n\n⌨️ lab 01\n\n\n\nFri, Oct 11\nLab02: CS01 + Data Wrangling\n\n\n\n\n\n\n\n\n3\nMon, Oct 14\n\n\n\n\n\n\n📚 hw 01\n\n\n\nTue, Oct 15\nData Visualization: ggplot2 (day 1)\n\n\n\n\n\n\n\n\n\nThu, Oct 17\nData Visualization: ggplot2 (day 2)\n\n\n\n\n⌨️ lab 02\n\n\n\nFri, Oct 18\nLab 03: CS01 + Data Visualization\n\n\n\n\n\n\n\n\n4\nTue, Oct 22\nExploratory Data Analysis (EDA)\n\n\n\n\n\n\n\n\n\nThu, Oct 24\nEffective Communication\n\n\n\n\n⌨️ lab 03\n\n\n\nFri, Oct 25\nLab 04: CS01 + EDA\n\n\n\n\n\n\n\n\n5\nMon, Oct 28\n\n\n\n\n\n\n📚 hw 02\n\n\n\nTue, Oct 29\nCS01: In-class Group Work\n\n\n\n\n\n\n\n\n\nThu, Oct 31\nCS02 + Final Project: Introduction\n\n\n\n\n⌨️ lab 04\n\n\n\nFri, Nov 1\nLab 05: Communication + Finalizing CS01\n\n\n\n\n\n\n\n\n6\nMon, Nov 4\n\n\n\n\n\n\n💻 cs 01\n\n\n\nTue, Nov 5\nCS02: Data\n\n\n\n\n\n\n\n\n\nThu, Nov 7\nCS02: EDA\n\n\n\n\n⌨️ lab 05\n\n\n\nFri, Nov 8\nLab 06: CS02 EDA + Final Project Brainstorming\n\n\n\n\n\n\n\n\n7\nMon, Nov 11\n\n\n\n\n\n\n📄 Final Project Proposal\n\n\n\nTue, Nov 12\nRegression\n\n\n\n\n\n\n\n\n\nThu, Nov 14\nCS02: Analysis (regression)\n\n\n\n\n⌨️ lab 06\n\n\n\nFri, Nov 15\nLab 07: CS02 + Regression\n\n\n\n\n\n\n\n\n8\nMon, Nov 18\n\n\n\n\n\n\n📚 hw 03\n\n\n\nTue, Nov 19\nCS02: Analysis (ML)\n\n\n\n\n\n\n\n\n\nThu, Nov 21\nCS02: In-class Group Work\n\n\n\n\n⌨️ lab 07\n\n\n\nFri, Nov 22\nLab: Final Project Progress\n\n\n\n\n\n\n\n\n9\nMon, Nov 25\n\n\n\n\n\n\n💻 cs 02 + 📄 Final Project - rough draft\n\n\n\nTue, Nov 26\nFinal Project: In-class Group Work\n\n\n\n\n\n\n\n\n\nThu, Nov 28\n🦃 Thanksgiving Break - No Lecture\n\n\n\n\n\n\n\n\n\nFri, Nov 29\n🦃 Thanksgiving Break - No Lab\n\n\n\n\n\n\n\n\n10\nMon, Dec 2\n\n\n\n\n\n\n📚 hw 04 + 👯‍♀️ Peer Evaluation\n\n\n\nTue, Dec 3\nFinal Project Presentations\n\n\n\n\n\n\n\n\n\nThu, Dec 5\nFinal Project Presentations\n\n\n\n\n\n\n\n\nFinals\nFri, Dec 6\nLab: Final Project Progress\n\n\n\n\n\n\n\n\n\nTue, Dec 10\n\n\n\n\n\n\n📄 Final Project",
+    "crumbs": [
+      "Course information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "computing/computing-cheatsheets.html",
+    "href": "computing/computing-cheatsheets.html",
+    "title": "R cheatsheets",
+    "section": "",
+    "text": "The following cheatsheets come from https://posit.co/resources/cheatsheets. We haven’t covered every function and functionality listed on them, but you might still find them useful as references.",
+    "crumbs": [
+      "Computing",
+      "Cheatsheets"
+    ]
+  },
+  {
+    "objectID": "policies.html",
+    "href": "policies.html",
+    "title": "COGS 137",
+    "section": "",
+    "text": "Class\nClass will include short lectures as well as interactive activities. The goal of lecture is to introduce the topics and information needed for the course. The goal of your time outside of lecture is to practice with topics that are introduced and deepen your understanding of material presented in class. Since so much of programming and statistical analysis is learned best by doing, we’ll prioritize that throughout the course, both in and outside of the classroom.\n\n\nDiversity & Inclusion\nMy goal is that every student, regardless of their background or perspective, will be well-served by this course. My philosophy is that the diversity of students in this class is a huge asset to our learning community; our differences provide opportunities for learning and understanding. I intend to present course materials that are conscious of and respectful to diversity (gender identity, sexuality, disability, age, socioeconomic status, ethnicity, race, nationality, religion, politics, and culture); however, if I ever fall short or if you ever have suggestions for improvement, please do share with me! This feedback is always welcomed, and I am always in the process of learning and improving to this end. If you would like to provide that feedback anonymously, please use the anonymous Google Form.*\n\nWhat should you call me?\nMost students call me Professor/Prof Ellis, and that’s great! This is how I typically sign emails to students. I’m also totally OK with you addressing me as Shannon or Dr. Ellis.\n\n\nWhat I should call you?\nI should call you by your preferred name, with the correct pronunciation. Please correct me (in the moment or via email/Ed after the fact…however you’re most comfortable) if I ever make a mistake.\n\n\n\nDisability Access\nStudents requesting accommodations due to a disability should provide a current Authorization for Accommodation (AFA) letter. These letters are issued by the Office for Students with Disabilities (OSD), which is located in University Center 202 behind Center Hall. If you are struggling to get necessary accommodations or want to further discuss your accommodations, please feel free to reach out to Professor Ellis directly.\nContacting the OSD can help you further:\n858.534.4382 (phone)\nosd@ucsd.edu (email)\nhttp://disabilities.ucsd.edu\n\n\nHow to get help\nIt’s great that we have so many ways to communicate, but it can get tricky to figure out who to contact or where your question belongs or when to expect a response. When in doubt, Ed is great!\nMore specifically, if you have:\n\nquestions about course content - these are awesome! We want everyone to see them and have their questions answered too, so either ask them in class (which is recorded), the daily lecture surveys, during office hours, or post these to Ed!\na technical assignment question - come to office hours (or post to Ed). Answering technical questions is often best accomplished ‘in person’ where we can discuss the question and talk through ideas. However, if that is not possible, post your question to Ed. Be as specific as you can in the question you ask. And, for those answering, help your classmates as much as you can without just giving the answer. Help guide them, point them in a direction, provide pseudo code, but do not provide code that answers assignment questions.\nquestions about course logistics - first, check the course website. If you can’t find the answer there, then ask a classmate. If still unsure, post on Ed.\nquestions about a grade - Post on Ed with “regrades” tag in a private post to “Instructors & TAs”.\nsomething super cool to share related to class or want to talk about a topic in further depth - feel free to email Professor Ellis (sellis@ucsd.edu) or come to office hours. Please include COGS137 in the email subject line.\nsome feedback about the course you want to share anonymously - If you’ve been offended by an example in class, really liked or disliked a lesson, or wish there were something covered in class that wasn’t but would rather not share this publicly, etc., please fill out the anonymous Google Form*\n\n*This form can be taken down at any time if it’s not being used for its intended purpose; however, you all will be notified should that happen.\n\n\nAcademic integrity\nDon’t cheat.\nYou are generally encouraged to work together and help one another in this course. However, you are personally responsible for the work you submit. A helpful heuristic can be to ask yourself “Can I explain each piece of code and each analysis carried out in what I’m submitting? Could I reproduce this code/analysis on my own?”; you should be able to answer “Yes” to both questions for everything you submit in this course. For labs and assignments, you are allowed and encouraged to work together, but it is your responsibility to ensure you understand everything you’ve submitted. (For the midterm, all work has to be completed individually and communication with other humans about the exam is not allowed; this will be discussed more explicitly beforehand.)\nA note on sharing / reusing code: The Internet is an excellent resource; there will be many times you find helpful information online. You should use available resources (e.g. ChatGPT, Copilot, StackOverflow, etc.), but you must explicitly cite any code you use directly or any code you use as inspiration. This can be done by including the URL/reference to the source directly in your code (as a code comment) or in accompanying text for a given assignment/exam/lab. You should never share code directly (e.g. copy + paste; share an send an answer to a classmate), but you can discuss code and work together on everything other than take-home exams.\nPlease review UCSD’s academic integrity policies here.\nCheating and plagiarism have been and will be strongly penalized. If, for whatever reason, Canvas or DataHub is down or something else prohibits you from being able to turn in an assignment on time, immediately contact Professor Ellis by emailing (sellis@ucsd.edu) your assignment as soon as possible to avoid it being graded as late.\n\n\nCourse components\n\nLecture\nLectures will be your introduction to course topics and material. Lectures will be interactive, and you will be given time to practice with the lecture concepts during class. Attendance is not required, but is encouraged if you’re feeling well. To help incentivize coming to class, there will be a daily participation survey that will open at the end of lecture and close shortly after each Tues/Thurs lecture. Each time you fill out the lecture survey, you get a small % of credit toward your final project Completion of all surveys will provide 0.8% extra credit on your final grade.\n\nReadings\nReadings will be assigned for some class days and are best completed prior to the day’s lecture. These are meant to provide background and additional context for the upcoming day’s lecture topics. These can also be a good source after class when studying or reviewing topics discussed in class.\n\n\nPodcast\nIn case you miss class or would like to review the material covered in class, you can view the podcasts here.\n\n\n\nLabs\nLabs are meant to give you deeper understanding and hands-on experience with the technical and statistical topics introduced during lecture in a low-stakes environment. Lab sections will typically comprise of a short review and explanation of the lab and then time for you to complete the assigned weekly lab. Labs are submitted individually, but you are encouraged to work together during lab. You are free to ask and answer each others’ questions and discuss your work. Instructional staff will be present during lab to help further your understanding.\nLabs are graded for concerted effort. This is because when we learn something new, mistakes are going to happen! In fact, we learn a lot from the mistakes we make during the learning process. If your submission reflects ~50 min of work/effort, you will receive full credit for the week’s lab.\nLab attendance is not required, but is definitely encouraged if you are feeling well as you’ll learn a lot by engaging with others’ ideas and getting questions answered in real-time.\n\n\nHomework\nAfter practice in lecture and labs, homework assignments are meant to demonstrate your solidified understanding of the course material. These are typically 2-4x longer and more involved than labs. Homework assignments are completed and submitted individually and are marked for correctness. You are allowed to work together on homework assignments, but academic integrity must be upheld.\n\n\nProjects\nThere will be two case study mini-projects and a final project. Teams will be randomly assigned for the first mini-project, but you all will select your team for the second case study and final project (which will both be completed in the same team). By working with teammates throughout the course, you will also be able to use one another as a resource during labs and assignments.\n\nCase Studies\nWe will use case studies throughout the course to guide our learning of both programming in R and using that to analyze data. Specific case studies and statistics topics will be discussed in class. In your teams and for each of the case studies, you will: 1) carry out the analysis presented in class as a group, 2) extend the analysis from class and 3) communicate your findings for both a technical and general audience.\n\n\nFinal Project\nThe final project will be completed in groups, where each group will carry out a data analysis on a topic and dataset of their choosing. Final Project groups will have to submit a proposal during week 7, a rough draft during week 9, will submit/receive peer feedback during week 10, and their final submissions Tues of finals week by 11:59 PM.\nFinal project submissions will include a 1) detailed data science report, 2) short (3-5 min) presentation of the project and 3) a general audience communication.\nProject groups will have the opportunity to present their projects to the class for extra credit during week 10. Groups that do not present to the class will submit their presentation as a recording.\n\n\n\n\nGrading\nYour final grade will be comprised of the following:\n\n\n\nAssignment (#)\n% of grade\n\n\n\n\nLabs (7)\n21% (3pt each)\n\n\nHomework (3)\n24% (8pt each)\n\n\nCase Study Projects* (2)\n30% (15pt each)\n\n\nFinal Project Proposal* (1)\n3%\n\n\nPeer Review* (1)\n3%\n\n\nFinal Report* (1)\n12%\n\n\nFinal Presentation * (1)\n3%\n\n\nTeam Evaluation Surveys (2)\n4% (2pt each)\n\n\n\n* indicates group submission\n\nFinal Grades\nTo calculate final grades, I use the standard grading scale and do not round grades up (given the numerous extra credit opportunities offered):\n\n\n\n97-100%\nA+\n\n\n93-96%\nA\n\n\n90-92%\nA-\n\n\n87-89%\nB+\n\n\n83-86%\nB\n\n\n80-82%\nB-\n\n\n77-79%\nC+\n\n\n73-76%\nC\n\n\n70-72%\nC-\n\n\n67-69%\nD+\n\n\n63-66%\nD\n\n\n60-62%\nD-\n\n\n&lt;60%\nF\n\n\n\n\n\n\nLate / missed work\nLate homework assignments and case study projects will be accepted up to 3 days (72 hours) after the assigned deadline. Late submissions will receive a 25% deduction.\nThere are no late deadlines for labs, the exam, or the final project.\nNote: Prof Ellis is a reasonable person; reach out to her if you have an extenuating circumstance at any point in the quarter.\n\n\nRegrade requests\nWe will work hard to grade everyone fairly and return assignments quickly. And, we know you also work hard and want you to receive the grade you’ve earned. Occasionally, grading mistakes do happen, and it’s important to us to correct them. If you think there is a mistake in your grade on an assignment, post privately on Ed to “Instructors” using the “regrades” tag within 72 hours. This post should include evidence of why you think your answer was correct and should point to the specific part of the assignment in question.\n\n\nProfessionalism\nPlease refrain from texting or using your computer for anything other than coursework during class. Not only is this distracting to you, but it can also be distracting to those around you. (Note that there is no consequence associated with this. I know it can be difficult, but I ask that you try your best!)",
+    "crumbs": [
+      "Course information",
+      "Policies"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html",
+    "href": "content/lectures/00-welcome.html",
+    "title": "Welcome to COGS 137",
+    "section": "",
+    "text": "Practical Data Science in R\nPlease take one green sticky and one pink sticky as they come around. If you’re able, try and save these. We’ll use them most classes. (But, I’ll always have extra!)\n\n\n\n\n\n\n\n\nDescribe what this class is\nDescribe how the class will run\nGo over the tooling for this course: R, RStudio, GitHub\n\n\n\n\n : R is a statistical programming language.\nWhile R has most/all of the functionality of YFPL (your favorite programming language), it was designed for the specific use of analyzing data.\n\n\n\n: Data science is the scientific process of using data to answer interesting questions and/or solve important problems.\n\n\n\n\n\nProgram at the introductory level in the R statistical programming language\nEmploy the tidyverse suite of packages to interact with, wrangle, visualize, and model data\nExplain & apply statistical concepts (estimation, linear regression, logistic regression, etc.) for data analysis\nCommunicate data science projects through effective visualization, oral presentation, and written reports\n\n\n\n\n\nShannon Ellis: Associate Teaching Professor, Mom & wife, volleyball-obsessed, and baking & cooking lover\n   sellis@ucsd.edu     shannon-ellis.com    MOS 0204     Tu/Th 2-3:20PM (Lab: Fri 3-3:50PM)\n\n\n\n\n\n\nInstructor\nShannon Ellis\nsellis@ucsd.edu\nWed 11A-12P\nVirtual (see canvas)\n\n\n\n\n\nTh 12:50-1:50\nCSB 243\n\n\nTA\nTBD\n\nTime TBD\nLocation TBD\n\n\nIA\nTBD\n\nTime TBD\nLocation TBD\n\n\n\n\n\n\n\n\n\nTBD (TA)\nTBD (IA)\n\n\n\n\n\n\n\n\n\n\n\n\nEverything you want to know about the course, and everything you will need for the course will be posted at: https://cogs137.github.io/website/\n\n\nIs this an intro CS course? No.\nWill we be doing computing? Yes.\nWhat computing language will we learn? R.\nIs this an intro stats course? No.\nWill we be doing stats? Yes.\nAre there any prerequisites? Yes, an intro statistics course!\n\n\n\n\n\n\n\n\n\nNope! The first few weeks of the course will be all about getting comfortable using the R programming language!\n After that, we’ll focus on delving into interesting statistical analyses through case studies.\n\n\n\nArtwork by @allison_horst",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#agenda",
+    "href": "content/lectures/00-welcome.html#agenda",
+    "title": "Welcome to COGS 137",
+    "section": "",
+    "text": "Describe what this class is\nDescribe how the class will run\nGo over the tooling for this course: R, RStudio, GitHub",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#what-is-r",
+    "href": "content/lectures/00-welcome.html#what-is-r",
+    "title": "Welcome to COGS 137",
+    "section": "",
+    "text": ": R is a statistical programming language.\nWhile R has most/all of the functionality of YFPL (your favorite programming language), it was designed for the specific use of analyzing data.",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#what-is-data-science",
+    "href": "content/lectures/00-welcome.html#what-is-data-science",
+    "title": "Welcome to COGS 137",
+    "section": "",
+    "text": ": Data science is the scientific process of using data to answer interesting questions and/or solve important problems.",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#practical-data-science-in-r",
+    "href": "content/lectures/00-welcome.html#practical-data-science-in-r",
+    "title": "Welcome to COGS 137",
+    "section": "",
+    "text": "Program at the introductory level in the R statistical programming language\nEmploy the tidyverse suite of packages to interact with, wrangle, visualize, and model data\nExplain & apply statistical concepts (estimation, linear regression, logistic regression, etc.) for data analysis\nCommunicate data science projects through effective visualization, oral presentation, and written reports",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#who-am-i",
+    "href": "content/lectures/00-welcome.html#who-am-i",
+    "title": "Welcome to COGS 137",
+    "section": "",
+    "text": "Shannon Ellis: Associate Teaching Professor, Mom & wife, volleyball-obsessed, and baking & cooking lover\n   sellis@ucsd.edu     shannon-ellis.com    MOS 0204     Tu/Th 2-3:20PM (Lab: Fri 3-3:50PM)",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#who-all-is-involved",
+    "href": "content/lectures/00-welcome.html#who-all-is-involved",
+    "title": "Welcome to COGS 137",
+    "section": "",
+    "text": "Instructor\nShannon Ellis\nsellis@ucsd.edu\nWed 11A-12P\nVirtual (see canvas)\n\n\n\n\n\nTh 12:50-1:50\nCSB 243\n\n\nTA\nTBD\n\nTime TBD\nLocation TBD\n\n\nIA\nTBD\n\nTime TBD\nLocation TBD",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#course-staff",
+    "href": "content/lectures/00-welcome.html#course-staff",
+    "title": "Welcome to COGS 137",
+    "section": "",
+    "text": "TBD (TA)\nTBD (IA)",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#what-is-this-course",
+    "href": "content/lectures/00-welcome.html#what-is-this-course",
+    "title": "Welcome to COGS 137",
+    "section": "",
+    "text": "Everything you want to know about the course, and everything you will need for the course will be posted at: https://cogs137.github.io/website/\n\n\nIs this an intro CS course? No.\nWill we be doing computing? Yes.\nWhat computing language will we learn? R.\nIs this an intro stats course? No.\nWill we be doing stats? Yes.\nAre there any prerequisites? Yes, an intro statistics course!",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#soi-dont-have-to-know-how-to-program-already",
+    "href": "content/lectures/00-welcome.html#soi-dont-have-to-know-how-to-program-already",
+    "title": "Welcome to COGS 137",
+    "section": "",
+    "text": "Nope! The first few weeks of the course will be all about getting comfortable using the R programming language!\n After that, we’ll focus on delving into interesting statistical analyses through case studies.\n\n\n\nArtwork by @allison_horst",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#the-general-plan",
+    "href": "content/lectures/00-welcome.html#the-general-plan",
+    "title": "Welcome to COGS 137",
+    "section": "The General Plan",
+    "text": "The General Plan\n\nWeeks 1-4: Learn to program in the tidyverse in R\nWeeks 5-10: Case Studies\n\n…with effective communication & group work throughout\n. . .\nNote: This course has historically been back-loaded, as that’s when group work has happened historically. I’ve tried to fix that this quarter by teaching from case studies from the beginning.",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#the-nitty-gritty",
+    "href": "content/lectures/00-welcome.html#the-nitty-gritty",
+    "title": "Welcome to COGS 137",
+    "section": "The Nitty Gritty",
+    "text": "The Nitty Gritty\n\nLectureIn-personWaitlistLab & OHMaterials\n\n\nClass Meetings\n\nInteractive\nLectures & lots of learn-by-doing\nBring your laptop to class every day\n\n\n\nIn-person, synchronous learning\n\nI will be teaching in person.\nLectures and lab will be podcast.\nAttendance will be incentivized using a daily participation survey.\nIf you’re not feeling well, please stay home. I will do the same.\n\n\n\nThe (Dreaded) Waitlist\n\nCourse enrollment is supposed to be 70 for this course\nThere are 100 people currently enrolled\nI don’t control the waitlist (cogsadvising@ucsd.edu does)\nI don’t anticipate students being enrolled off of the waitlist (will be dependent on students dropping)\n\n\n\nLab & Office Hours\n\nOffice hours begin week 1\n\nProf: Tu: 11A-12P (drop-in); W 11-12 (10 min slots; appt.)\n\nLab begins week 1 (next Friday)\n\nit’s not in a computer lab, so you’ll need to bring your own\ndetails about labs covered on Tues and in lab\ntypically labs will be released Monday and due Friday\n\nI will hang out after class today for questions/concerns from students\n\n\n\nCourse Materials\n\nTextbooks are free and available online\nCourse platforms:\n\nWebsite : schedule, policies, due dates, etc.\nGitHub : retrieving assignments, labs, homework, etc.\ndatahub : completing assignments, labs, homework, etc.\nCanvas : grades, course-specific links\nEd : Q&A",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#diversity-inclusion",
+    "href": "content/lectures/00-welcome.html#diversity-inclusion",
+    "title": "Welcome to COGS 137",
+    "section": "Diversity & Inclusion:",
+    "text": "Diversity & Inclusion:\nGoal: every student be well-served by this course\n. . .\nPhilosophy: The diversity of students in this class is a huge asset to our learning community; our differences provide opportunities for learning and understanding.\n. . .\nPlan: Present course materials that are conscious of and respectful to diversity (gender identity, sexuality, disability, age, socioeconomic status, ethnicity, race, nationality, religion, politics, and culture)\n. . .\nBut… if I ever fall short or if you ever have suggestions for improvement, please do share with me! There is also an anonymous Google Form if you’re more comfortable there.",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#a-new-ish-course",
+    "href": "content/lectures/00-welcome.html#a-new-ish-course",
+    "title": "Welcome to COGS 137",
+    "section": "A new-ish course!",
+    "text": "A new-ish course!\n\nOffered 3x previously…but changes significantly each time\nIf something doesn’t make sense, tell me!\nIf you’ve got feedback/suggestions, I’m all ears!\n\n. . .\nChanges since last iteration (based on feedback):\n\nspread out case studies\nmore focus on case studies/expectations\nmore examples of effective communication\nno midterm\nmore time for completing labs\npeer grading\ncheckpoints on final project",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#how-to-get-help",
+    "href": "content/lectures/00-welcome.html#how-to-get-help",
+    "title": "Welcome to COGS 137",
+    "section": "How to get help",
+    "text": "How to get help\n\nLab\nOffice Hours\nEd\n\n. . .\nA few (Ed) guidelines:\n1. No duplicates.\n2. Public posts are best.\n3. Posts should include your question, what you've tried so far, & resources used.\n4. Helping others is encouraged.\n5. No assignment code in public posts.\n6. We're not robots.",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#the-r-community",
+    "href": "content/lectures/00-welcome.html#the-r-community",
+    "title": "Welcome to COGS 137",
+    "section": " The R Community",
+    "text": "The R Community\n\n\n\nR Rollercoaster\n\n\n\nArtwork by @allison_horst",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#academic-integrity",
+    "href": "content/lectures/00-welcome.html#academic-integrity",
+    "title": "Welcome to COGS 137",
+    "section": "Academic integrity",
+    "text": "Academic integrity\nDon’t cheat.\n. . .\nTeamwork is allowed, but you should be able to answer “Yes” to each of the following:\n\nCan I explain each piece of code and each analysis carried out in what I’m submitting?\nCould I reproduce this code/analysis on my own?\n\n. . .\nThe Internet (including LLMS/ChatGPT) is a great resource. Cite your sources.",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#when-to-can-i-use-chatgptllms",
+    "href": "content/lectures/00-welcome.html#when-to-can-i-use-chatgptllms",
+    "title": "Welcome to COGS 137",
+    "section": "When To (Can I) Use ChatGPT/LLMs?",
+    "text": "When To (Can I) Use ChatGPT/LLMs?\nFor anything in this course.",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#how-to-use-chatgptllms",
+    "href": "content/lectures/00-welcome.html#how-to-use-chatgptllms",
+    "title": "Welcome to COGS 137",
+    "section": "How To Use ChatGPT/LLMs",
+    "text": "How To Use ChatGPT/LLMs\nProbably never first or right away.\n. . .\nTo learn: Think first. Try first. Then use external resources.\n. . .\nAlways read/think about/understand the output.",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#chatgpt-what-to-avoid",
+    "href": "content/lectures/00-welcome.html#chatgpt-what-to-avoid",
+    "title": "Welcome to COGS 137",
+    "section": "ChatGPT: What to Avoid",
+    "text": "ChatGPT: What to Avoid\n\n\nOver-reliance (thwarts learning)\nHaving to look everything up (wastes time)\nLeaving tasks to the last minute (can lead to bad decisions/academic integrity issues)\nTaking the output without thinking (thwarts learning; limits critical thinking practice)\nUsing it right away for brainstorming ideas (limits ideas generated)",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#course-components",
+    "href": "content/lectures/00-welcome.html#course-components",
+    "title": "Welcome to COGS 137",
+    "section": "Course components:",
+    "text": "Course components:\n\n\nLabs (8): Individual submission; graded on effort\nHomework (3): Individual submission; graded on correctness\nCase Studies (2): Team submission, technical analysis report\nFinal Project (1) : Team submission, due Tues of finals week",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#grading",
+    "href": "content/lectures/00-welcome.html#grading",
+    "title": "Welcome to COGS 137",
+    "section": "Grading",
+    "text": "Grading\nYour final grade will be comprised of the following:\n\n\n\nAssignment (#)\n% of grade\n\n\n\n\nLabs (7)\n21% (3pt each)\n\n\nHomework (4)\n24% (6pt each)\n\n\nCase Study Projects* (2)\n30% (15pt each)\n\n\nFinal Project Proposal* (1)\n3%\n\n\nPeer Review* (1)\n3%\n\n\nFinal Report* (1)\n12%\n\n\nFinal Presentation * (1)\n3%\n\n\nTeam Evaluation Surveys (2)\n4% (2pt each)\n\n\n\n* indicates group submission",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#latemissed-work-policy",
+    "href": "content/lectures/00-welcome.html#latemissed-work-policy",
+    "title": "Welcome to COGS 137",
+    "section": "Late/missed work policy",
+    "text": "Late/missed work policy\n\nHomework and case study projects: accepted up to 3 days (72 hours) after the assigned deadline for a 25% deduction\nNo late deadlines for labs or the final project\n\n. . .\nNote: Prof Ellis is a reasonable person; reach out to her if you have an extenuating circumstance at any point in the quarter.",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#datahub",
+    "href": "content/lectures/00-welcome.html#datahub",
+    "title": "Welcome to COGS 137",
+    "section": "Datahub",
+    "text": "Datahub\nDatahub is a platform hosted by UCSD that gives students access to computational resources.\nThis means that while you’ll be typing on your keyboard, you’ll be using UCSD’s computers in this class.\nWebsite: https://datahub.ucsd.edu/\n. . .\nLaunch Environment\nWhen working on “stuff” for this course, select the COGS 137 environment.\n ## Datahub Usage\nQ: Do I have to use datahub?\nA: Nope. You could download and install all the packages we use and complete the course locally! However, many packages have already been installed for you on datahub, so it will be a tiny bit more work up front…but you won’t be dependent on the internet/datahub!",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#toolkit",
+    "href": "content/lectures/00-welcome.html#toolkit",
+    "title": "Welcome to COGS 137",
+    "section": "Toolkit",
+    "text": "Toolkit\n\n\nScriptability \\(\\rightarrow\\) R\nLiterate programming (code, narrative, output in one place) \\(\\rightarrow\\) R Markdown\nVersion control \\(\\rightarrow\\) Git / GitHub\nThe Internet (Google/ChatGPT/etc.)",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#r-and-rstudio",
+    "href": "content/lectures/00-welcome.html#r-and-rstudio",
+    "title": "Welcome to COGS 137",
+    "section": "R and RStudio",
+    "text": "R and RStudio\n\nR/RStudioTourTryR packages\n\n\nR & RStudio\n\nR is a statistical programming language\nRStudio is a convenient interface for R (an integreated development environment, IDE)\n\n\n\n\n\n[DEMO]\n\n\nConcepts introduced:\n\nConsole\nUsing R as a calculator\nEnvironment\nLoading and viewing a data frame\nAccessing a variable in a data frame\nR functions\n\n\n\nYour Turn\n\n\nLogin to datahub\nCarry out a mathematical operation in the console\nView the airquality dataframe\nAccess a column from the airquality dataframe\nCalculate the median for one of the numeric columns\n\n\nPut a green sticky on the front of your computer when you’re done. Put a pink if you want help/have a question.\n\n\n\nPackages are the fundamental units of reproducible R code. They include reusable R functions, the documentation that describes how to use them, and sample data 1\nAs of Sept 2024, there are ~21,000 R packages available on CRAN (the Comprehensive R Archive Network)2\nWe’re going to work with a small (but important) subset of these!",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#what-is-the-tidyverse",
+    "href": "content/lectures/00-welcome.html#what-is-the-tidyverse",
+    "title": "Welcome to COGS 137",
+    "section": "What is the Tidyverse?",
+    "text": "What is the Tidyverse?\n\n\n\n\n\ntidyverse.org\n\n\nThe tidyverse is an opinionated collection of R packages designed for data science.\nAll packages share an underlying philosophy and a common syntax.",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#rstudio-projects3",
+    "href": "content/lectures/00-welcome.html#rstudio-projects3",
+    "title": "Welcome to COGS 137",
+    "section": "RStudio Projects3",
+    "text": "RStudio Projects3\n\nBuilt-in functionality to keep all files for a single project organized",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#r-markdown",
+    "href": "content/lectures/00-welcome.html#r-markdown",
+    "title": "Welcome to COGS 137",
+    "section": "R Markdown",
+    "text": "R Markdown\n\nFully reproducible reports – each time you knit, the document is executed from top to bottom\nSimple markdown syntax for text\nCode goes in chunks, defined by three backticks, narrative goes outside of chunks",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#r-markdown-tips",
+    "href": "content/lectures/00-welcome.html#r-markdown-tips",
+    "title": "Welcome to COGS 137",
+    "section": "R Markdown tips",
+    "text": "R Markdown tips\n\nKeep the R Markdown cheat sheet and Markdown Quick Reference (Help -&gt; Markdown Quick Reference) handy, we’ll refer to it often as the course progresses\nThe workspace of your R Markdown document is separate from the Console\n\n\n\n\n[DEMO]",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#how-will-we-use-r-markdown",
+    "href": "content/lectures/00-welcome.html#how-will-we-use-r-markdown",
+    "title": "Welcome to COGS 137",
+    "section": "How will we use R Markdown?",
+    "text": "How will we use R Markdown?\n\nEvery lab / midterm / project / homework / notes / etc. is an R Markdown document\nYou’ll always have a template R Markdown document to start with\nThe amount of scaffolding in the template will decrease over the quarter",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#collaboration-git-github",
+    "href": "content/lectures/00-welcome.html#collaboration-git-github",
+    "title": "Welcome to COGS 137",
+    "section": "Collaboration: Git & GitHub",
+    "text": "Collaboration: Git & GitHub\n\nThe statistical programming language we’ll use is R\nThe software we use to interface with R is RStudio\nBut how do I get you the course materials that you can build on for your assignments?\n\nI’m not going to email you documents, that would be a mess!",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#version-control",
+    "href": "content/lectures/00-welcome.html#version-control",
+    "title": "Welcome to COGS 137",
+    "section": "Version control",
+    "text": "Version control\n\nWe introduced GitHub as a platform for collaboration\nBut it’s much more than that…\nIt’s actually designed for version control",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#versioning",
+    "href": "content/lectures/00-welcome.html#versioning",
+    "title": "Welcome to COGS 137",
+    "section": "Versioning",
+    "text": "Versioning\n\n\n\nLego versions",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#versioning-1",
+    "href": "content/lectures/00-welcome.html#versioning-1",
+    "title": "Welcome to COGS 137",
+    "section": "Versioning",
+    "text": "Versioning\nwith human readable messages\n\n\n\nLego versions with commit messages",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#why-do-we-need-version-control",
+    "href": "content/lectures/00-welcome.html#why-do-we-need-version-control",
+    "title": "Welcome to COGS 137",
+    "section": "Why do we need version control?",
+    "text": "Why do we need version control?\n\n\n\nPhD Comics",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#git-and-github-tips",
+    "href": "content/lectures/00-welcome.html#git-and-github-tips",
+    "title": "Welcome to COGS 137",
+    "section": "Git and GitHub tips",
+    "text": "Git and GitHub tips\n\nGit is a version control system – like “Track Changes” feature Google Docs…but optimized for code. GitHub is the home for your Git-based projects on the internet – like Drive with additional features for code.\n\n. . .\n\nThere are millions of git commands – ok, that’s an exaggeration, but there are a lot of them – and very few people know them all. 99% of the time you will use git to add, commit, push, and pull.\n\n. . .\n\nWe will be doing Git things and interfacing with GitHub through RStudio, but if you google for help you might come across methods for doing these things in the command line – skip that and move on to the next resource unless you feel comfortable trying it out.\n\n\n\nResource: happygitwithr.com: book for working with git in R; Some content is beyond the scope of this course, but it’s a good resource",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#lets-take-a-tour-git-github",
+    "href": "content/lectures/00-welcome.html#lets-take-a-tour-git-github",
+    "title": "Welcome to COGS 137",
+    "section": "Let’s take a tour – Git / GitHub",
+    "text": "Let’s take a tour – Git / GitHub\nWe’ll cover this time permitting, you’ll see it again in lab this week\nConcepts introduced:\n\nConnect an R project to Github repository\nWorking with a local and remote repository\nCommitting, Pushing and Pulling\n\nThere is a bit more of GitHub that we’ll use in this class, but for today this is enough.",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#documentation",
+    "href": "content/lectures/00-welcome.html#documentation",
+    "title": "Welcome to COGS 137",
+    "section": "Documentation",
+    "text": "Documentation\nConsider ggplot2 (a package we’ll learn a lot)\n\n\nOfficial documentation (CRAN): https://cran.r-project.org/web/packages/ggplot2/index.html\nCode (Github): https://github.com/tidyverse/ggplot2\nDocumentation: https://ggplot2.tidyverse.org/reference/index.html\nSpecific Function: https://ggplot2.tidyverse.org/reference/geom_point.html",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#chatgpt-what-it-could-look-like",
+    "href": "content/lectures/00-welcome.html#chatgpt-what-it-could-look-like",
+    "title": "Welcome to COGS 137",
+    "section": "ChatGPT: What it could look like",
+    "text": "ChatGPT: What it could look like\nImagine: You’ve been asked to carry out a number of wrangling operations on a dataset and make a plot…\n\n\n[DEMO]",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#additional-help",
+    "href": "content/lectures/00-welcome.html#additional-help",
+    "title": "Welcome to COGS 137",
+    "section": "Additional help",
+    "text": "Additional help\n\nclassmates\ncourse staff (OH, Piazza, class, lab)",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#recap",
+    "href": "content/lectures/00-welcome.html#recap",
+    "title": "Welcome to COGS 137",
+    "section": "Recap",
+    "text": "Recap\nCan you answer these questions?\n\nWhat is R vs RStudio?\nWhat are RStudio Projects?\nWhat is version control, and why do we care?\nWhat is git vs GitHub (and do I need to care)?",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#additional-git-resources",
+    "href": "content/lectures/00-welcome.html#additional-git-resources",
+    "title": "Welcome to COGS 137",
+    "section": "Additional git Resources",
+    "text": "Additional git Resources\n\nVersion Control (git and GitHub):\n\nGetting Started with git\nGitHub Guide\nGitHub Desktop App Tutorial\nGit Command Line Resource\nUsing git from the command line\n\nInstalling and using git (Part 1), by COGS 108 TA Ganesh (youtube, 22min tutorial)\nmerge conflicts and branching (Part 2), by IA Shubham Kulkarni (youtube, 8min tutorial)\n\nUsing git with GitHub Desktop, by COGS 108 TA Sidharth Suresh (youtube, 13min tutorial)\nGIT & GITHUB TUTORIAL, from edureka!\n\nwith notes from COGS 18/108 TA Holly(Yueying) Dong",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#slides-to-pdf",
+    "href": "content/lectures/00-welcome.html#slides-to-pdf",
+    "title": "Welcome to COGS 137",
+    "section": "Slides to PDF",
+    "text": "Slides to PDF\n\nToggle into Print View using the Esc key (or using the Navigation Menu)\nOpen the in-browser print dialog (CTRL/CMD+P).\nChange the Destination setting to Save as PDF.\nChange the Layout to Landscape.\nChange the Margins to None.\nEnable the Background graphics option.\nClick Save 🎉\n\n\n\nInstructions from quarto documentation",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#whos-in-this-class",
+    "href": "content/lectures/00-welcome.html#whos-in-this-class",
+    "title": "Welcome to COGS 137",
+    "section": "Who’s in this class?",
+    "text": "Who’s in this class?\n\nroster &lt;- read_sheet('1ALPAaDU6-GEoxwq3Q5WMGsqvbFoCw4jGDuz0C_VtqqM')\n\nggplot(roster, aes(x = College)) +\n  geom_bar() +\n  labs(title = \"COGS 137\") +\n  theme_bw(base_size = 14) + \n  theme(plot.title.position = \"plot\")\n\n\n\n\n\n\n\n\n\n\nNote: This code will not run for you because you don’t have access to the roster for this course.",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#whos-in-this-class-1",
+    "href": "content/lectures/00-welcome.html#whos-in-this-class-1",
+    "title": "Welcome to COGS 137",
+    "section": "Who’s in this class?",
+    "text": "Who’s in this class?\n\nroster |&gt;\n  mutate(major = substr(Major, 1, 2)) |&gt;\n  ggplot(aes(fct_infreq(major))) + \n  geom_bar() +\n  labs(title = \"COGS 137\",\n       x = \"Major\") +\n  theme_bw(base_size = 12) + \n  theme(plot.title.position = \"plot\")",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#whos-in-this-class-2",
+    "href": "content/lectures/00-welcome.html#whos-in-this-class-2",
+    "title": "Welcome to COGS 137",
+    "section": "Who’s in this class?",
+    "text": "Who’s in this class?\n\nroster |&gt;\n  ggplot(aes(fct_relevel(Level, \"JR\", \"SR\", \"VI\"))) +\n  geom_bar() +\n  labs(title = \"COGS 137\",\n       x = \"Level\") +\n  theme_bw(base_size = 14) + \n  theme(plot.title.position = \"plot\")",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#id-like-to-know-more",
+    "href": "content/lectures/00-welcome.html#id-like-to-know-more",
+    "title": "Welcome to COGS 137",
+    "section": "I’d like to know more!",
+    "text": "I’d like to know more!\n(required)Student Survey - complete by Tuesday at 11:59 PM.\nThis is required and completion will be used for CAA/#finaid. DO complete this even if you’re on the waitlist, please.\n. . .\n(optional) Daily Post-Lecture Feedback\n\nopportunity to reflect on learning\nopportunity to ask questions (I will read and answer these.)\nopportunity for extra credit on final project\n\n\n\n\n\nNote: Links to both surveys are also on Canvas. I will try to remind you at the end of lecture, but I’ll probably forget. Feel free to remind me/one another!",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#footnotes",
+    "href": "content/lectures/00-welcome.html#footnotes",
+    "title": "Welcome to COGS 137",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nWickham and Bryan, R Packages↩︎\nCRAN contributed packages↩︎\nRStudio Projects Documentation↩︎",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#agenda",
+    "href": "content/lectures/00-welcome-slides.html#agenda",
+    "title": "Welcome to COGS 137",
+    "section": "Agenda",
+    "text": "Agenda\n\nDescribe what this class is\nDescribe how the class will run\nGo over the tooling for this course: R, RStudio, GitHub"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#what-is-r",
+    "href": "content/lectures/00-welcome-slides.html#what-is-r",
+    "title": "Welcome to COGS 137",
+    "section": "What is R?",
+    "text": "What is R?\n : R is a statistical programming language.\nWhile R has most/all of the functionality of YFPL (your favorite programming language), it was designed for the specific use of analyzing data."
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#what-is-data-science",
+    "href": "content/lectures/00-welcome-slides.html#what-is-data-science",
+    "title": "Welcome to COGS 137",
+    "section": "What is data science?",
+    "text": "What is data science?\n: Data science is the scientific process of using data to answer interesting questions and/or solve important problems."
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#practical-data-science-in-r",
+    "href": "content/lectures/00-welcome-slides.html#practical-data-science-in-r",
+    "title": "Welcome to COGS 137",
+    "section": "Practical Data Science in R",
+    "text": "Practical Data Science in R\n\n\nProgram at the introductory level in the R statistical programming language\nEmploy the tidyverse suite of packages to interact with, wrangle, visualize, and model data\nExplain & apply statistical concepts (estimation, linear regression, logistic regression, etc.) for data analysis\nCommunicate data science projects through effective visualization, oral presentation, and written reports"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#who-am-i",
+    "href": "content/lectures/00-welcome-slides.html#who-am-i",
+    "title": "Welcome to COGS 137",
+    "section": "Who am I?",
+    "text": "Who am I?\nShannon Ellis: Associate Teaching Professor, Mom & wife, volleyball-obsessed, and baking & cooking lover\n   sellis@ucsd.edu     shannon-ellis.com    MOS 0204     Tu/Th 2-3:20PM (Lab: Fri 3-3:50PM)"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#who-all-is-involved",
+    "href": "content/lectures/00-welcome-slides.html#who-all-is-involved",
+    "title": "Welcome to COGS 137",
+    "section": "Who all is involved?",
+    "text": "Who all is involved?\n\n\n\nInstructor\nShannon Ellis\nsellis@ucsd.edu\nWed 11A-12P\nVirtual (see canvas)\n\n\n\n\n\nTh 12:50-1:50\nCSB 243\n\n\nTA\nTBD\n\nTime TBD\nLocation TBD\n\n\nIA\nTBD\n\nTime TBD\nLocation TBD"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#course-staff",
+    "href": "content/lectures/00-welcome-slides.html#course-staff",
+    "title": "Welcome to COGS 137",
+    "section": "Course Staff",
+    "text": "Course Staff\n\n\n\nTBD (TA)\nTBD (IA)"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#what-is-this-course",
+    "href": "content/lectures/00-welcome-slides.html#what-is-this-course",
+    "title": "Welcome to COGS 137",
+    "section": "What is this course?",
+    "text": "What is this course?\nEverything you want to know about the course, and everything you will need for the course will be posted at: https://cogs137.github.io/website/\n\n\nIs this an intro CS course? No.\nWill we be doing computing? Yes.\nWhat computing language will we learn? R.\nIs this an intro stats course? No.\nWill we be doing stats? Yes.\nAre there any prerequisites? Yes, an intro statistics course!"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#soi-dont-have-to-know-how-to-program-already",
+    "href": "content/lectures/00-welcome-slides.html#soi-dont-have-to-know-how-to-program-already",
+    "title": "Welcome to COGS 137",
+    "section": "So…I don’t have to know how to program already?",
+    "text": "So…I don’t have to know how to program already?\n\n\n\n\nNope! The first few weeks of the course will be all about getting comfortable using the R programming language!\n After that, we’ll focus on delving into interesting statistical analyses through case studies.\n\n\n\nArtwork by @allison_horst"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#the-general-plan",
+    "href": "content/lectures/00-welcome-slides.html#the-general-plan",
+    "title": "Welcome to COGS 137",
+    "section": "The General Plan",
+    "text": "The General Plan\n\nWeeks 1-4: Learn to program in the tidyverse in R\nWeeks 5-10: Case Studies\n\n…with effective communication & group work throughout\n\nNote: This course has historically been back-loaded, as that’s when group work has happened historically. I’ve tried to fix that this quarter by teaching from case studies from the beginning."
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#the-nitty-gritty",
+    "href": "content/lectures/00-welcome-slides.html#the-nitty-gritty",
+    "title": "Welcome to COGS 137",
+    "section": "The Nitty Gritty",
+    "text": "The Nitty Gritty\n\nLectureIn-personWaitlistLab & OHMaterials\n\n\nClass Meetings\n\nInteractive\nLectures & lots of learn-by-doing\nBring your laptop to class every day\n\n\n\nIn-person, synchronous learning\n\nI will be teaching in person.\nLectures and lab will be podcast.\nAttendance will be incentivized using a daily participation survey.\nIf you’re not feeling well, please stay home. I will do the same.\n\n\n\nThe (Dreaded) Waitlist\n\nCourse enrollment is supposed to be 70 for this course\nThere are 100 people currently enrolled\nI don’t control the waitlist (cogsadvising@ucsd.edu does)\nI don’t anticipate students being enrolled off of the waitlist (will be dependent on students dropping)\n\n\n\nLab & Office Hours\n\nOffice hours begin week 1\n\nProf: Tu: 11A-12P (drop-in); W 11-12 (10 min slots; appt.)\n\nLab begins week 1 (next Friday)\n\nit’s not in a computer lab, so you’ll need to bring your own\ndetails about labs covered on Tues and in lab\ntypically labs will be released Monday and due Friday\n\nI will hang out after class today for questions/concerns from students\n\n\n\nCourse Materials\n\nTextbooks are free and available online\nCourse platforms:\n\nWebsite : schedule, policies, due dates, etc.\nGitHub : retrieving assignments, labs, homework, etc.\ndatahub : completing assignments, labs, homework, etc.\nCanvas : grades, course-specific links\nEd : Q&A"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#diversity-inclusion",
+    "href": "content/lectures/00-welcome-slides.html#diversity-inclusion",
+    "title": "Welcome to COGS 137",
+    "section": "Diversity & Inclusion:",
+    "text": "Diversity & Inclusion:\nGoal: every student be well-served by this course\n\nPhilosophy: The diversity of students in this class is a huge asset to our learning community; our differences provide opportunities for learning and understanding.\n\n\nPlan: Present course materials that are conscious of and respectful to diversity (gender identity, sexuality, disability, age, socioeconomic status, ethnicity, race, nationality, religion, politics, and culture)\n\n\nBut… if I ever fall short or if you ever have suggestions for improvement, please do share with me! There is also an anonymous Google Form if you’re more comfortable there."
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#a-new-ish-course",
+    "href": "content/lectures/00-welcome-slides.html#a-new-ish-course",
+    "title": "Welcome to COGS 137",
+    "section": "A new-ish course!",
+    "text": "A new-ish course!\n\nOffered 3x previously…but changes significantly each time\nIf something doesn’t make sense, tell me!\nIf you’ve got feedback/suggestions, I’m all ears!\n\n\nChanges since last iteration (based on feedback):\n\nspread out case studies\nmore focus on case studies/expectations\nmore examples of effective communication\nno midterm\nmore time for completing labs\npeer grading\ncheckpoints on final project"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#how-to-get-help",
+    "href": "content/lectures/00-welcome-slides.html#how-to-get-help",
+    "title": "Welcome to COGS 137",
+    "section": "How to get help",
+    "text": "How to get help\n\nLab\nOffice Hours\nEd\n\n\nA few (Ed) guidelines:\n1. No duplicates.\n2. Public posts are best.\n3. Posts should include your question, what you've tried so far, & resources used.\n4. Helping others is encouraged.\n5. No assignment code in public posts.\n6. We're not robots."
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#the-r-community",
+    "href": "content/lectures/00-welcome-slides.html#the-r-community",
+    "title": "Welcome to COGS 137",
+    "section": " The R Community",
+    "text": "The R Community\n\n\n\nR Rollercoaster\n\n\n\nArtwork by @allison_horst"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#academic-integrity",
+    "href": "content/lectures/00-welcome-slides.html#academic-integrity",
+    "title": "Welcome to COGS 137",
+    "section": "Academic integrity",
+    "text": "Academic integrity\nDon’t cheat.\n\nTeamwork is allowed, but you should be able to answer “Yes” to each of the following:\n\nCan I explain each piece of code and each analysis carried out in what I’m submitting?\nCould I reproduce this code/analysis on my own?\n\n\n\nThe Internet (including LLMS/ChatGPT) is a great resource. Cite your sources."
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#when-to-can-i-use-chatgptllms",
+    "href": "content/lectures/00-welcome-slides.html#when-to-can-i-use-chatgptllms",
+    "title": "Welcome to COGS 137",
+    "section": "When To (Can I) Use ChatGPT/LLMs?",
+    "text": "When To (Can I) Use ChatGPT/LLMs?\nFor anything in this course."
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#how-to-use-chatgptllms",
+    "href": "content/lectures/00-welcome-slides.html#how-to-use-chatgptllms",
+    "title": "Welcome to COGS 137",
+    "section": "How To Use ChatGPT/LLMs",
+    "text": "How To Use ChatGPT/LLMs\nProbably never first or right away.\n\nTo learn: Think first. Try first. Then use external resources.\n\n\nAlways read/think about/understand the output."
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#chatgpt-what-to-avoid",
+    "href": "content/lectures/00-welcome-slides.html#chatgpt-what-to-avoid",
+    "title": "Welcome to COGS 137",
+    "section": "ChatGPT: What to Avoid",
+    "text": "ChatGPT: What to Avoid\n\n\nOver-reliance (thwarts learning)\nHaving to look everything up (wastes time)\nLeaving tasks to the last minute (can lead to bad decisions/academic integrity issues)\nTaking the output without thinking (thwarts learning; limits critical thinking practice)\nUsing it right away for brainstorming ideas (limits ideas generated)"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#course-components",
+    "href": "content/lectures/00-welcome-slides.html#course-components",
+    "title": "Welcome to COGS 137",
+    "section": "Course components:",
+    "text": "Course components:\n\n\nLabs (8): Individual submission; graded on effort\nHomework (3): Individual submission; graded on correctness\nCase Studies (2): Team submission, technical analysis report\nFinal Project (1) : Team submission, due Tues of finals week"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#grading",
+    "href": "content/lectures/00-welcome-slides.html#grading",
+    "title": "Welcome to COGS 137",
+    "section": "Grading",
+    "text": "Grading\nYour final grade will be comprised of the following:\n\n\n\nAssignment (#)\n% of grade\n\n\n\n\nLabs (7)\n21% (3pt each)\n\n\nHomework (4)\n24% (6pt each)\n\n\nCase Study Projects* (2)\n30% (15pt each)\n\n\nFinal Project Proposal* (1)\n3%\n\n\nPeer Review* (1)\n3%\n\n\nFinal Report* (1)\n12%\n\n\nFinal Presentation * (1)\n3%\n\n\nTeam Evaluation Surveys (2)\n4% (2pt each)\n\n\n\n* indicates group submission"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#latemissed-work-policy",
+    "href": "content/lectures/00-welcome-slides.html#latemissed-work-policy",
+    "title": "Welcome to COGS 137",
+    "section": "Late/missed work policy",
+    "text": "Late/missed work policy\n\nHomework and case study projects: accepted up to 3 days (72 hours) after the assigned deadline for a 25% deduction\nNo late deadlines for labs or the final project\n\n\nNote: Prof Ellis is a reasonable person; reach out to her if you have an extenuating circumstance at any point in the quarter."
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#datahub",
+    "href": "content/lectures/00-welcome-slides.html#datahub",
+    "title": "Welcome to COGS 137",
+    "section": "Datahub",
+    "text": "Datahub\nDatahub is a platform hosted by UCSD that gives students access to computational resources.\nThis means that while you’ll be typing on your keyboard, you’ll be using UCSD’s computers in this class.\nWebsite: https://datahub.ucsd.edu/\n\nLaunch Environment\nWhen working on “stuff” for this course, select the COGS 137 environment.\n ## Datahub Usage\nQ: Do I have to use datahub?\nA: Nope. You could download and install all the packages we use and complete the course locally! However, many packages have already been installed for you on datahub, so it will be a tiny bit more work up front…but you won’t be dependent on the internet/datahub!"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#toolkit",
+    "href": "content/lectures/00-welcome-slides.html#toolkit",
+    "title": "Welcome to COGS 137",
+    "section": "Toolkit",
+    "text": "Toolkit\n\n\nScriptability \\(\\rightarrow\\) R\nLiterate programming (code, narrative, output in one place) \\(\\rightarrow\\) R Markdown\nVersion control \\(\\rightarrow\\) Git / GitHub\nThe Internet (Google/ChatGPT/etc.)"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#r-and-rstudio",
+    "href": "content/lectures/00-welcome-slides.html#r-and-rstudio",
+    "title": "Welcome to COGS 137",
+    "section": "R and RStudio",
+    "text": "R and RStudio\n\nR/RStudioTourTryR packages\n\n\nR & RStudio\n\nR is a statistical programming language\nRStudio is a convenient interface for R (an integreated development environment, IDE)\n\n\n\n\n\n[DEMO]\n\n\nConcepts introduced:\n\nConsole\nUsing R as a calculator\nEnvironment\nLoading and viewing a data frame\nAccessing a variable in a data frame\nR functions\n\n\n\nYour Turn\n\n\nLogin to datahub\nCarry out a mathematical operation in the console\nView the airquality dataframe\nAccess a column from the airquality dataframe\nCalculate the median for one of the numeric columns\n\n\nPut a green sticky on the front of your computer when you’re done. Put a pink if you want help/have a question.\n\n\n\nPackages are the fundamental units of reproducible R code. They include reusable R functions, the documentation that describes how to use them, and sample data 1\nAs of Sept 2024, there are ~21,000 R packages available on CRAN (the Comprehensive R Archive Network)2\nWe’re going to work with a small (but important) subset of these!\n\n\n\n\nWickham and Bryan, R PackagesCRAN contributed packages"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#what-is-the-tidyverse",
+    "href": "content/lectures/00-welcome-slides.html#what-is-the-tidyverse",
+    "title": "Welcome to COGS 137",
+    "section": "What is the Tidyverse?",
+    "text": "What is the Tidyverse?\n\n\n\n\n\ntidyverse.org\n\n\nThe tidyverse is an opinionated collection of R packages designed for data science.\nAll packages share an underlying philosophy and a common syntax."
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#rstudio-projects3",
+    "href": "content/lectures/00-welcome-slides.html#rstudio-projects3",
+    "title": "Welcome to COGS 137",
+    "section": "RStudio Projects1",
+    "text": "RStudio Projects1\n\nBuilt-in functionality to keep all files for a single project organized\n\nRStudio Projects Documentation"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#r-markdown",
+    "href": "content/lectures/00-welcome-slides.html#r-markdown",
+    "title": "Welcome to COGS 137",
+    "section": "R Markdown",
+    "text": "R Markdown\n\nFully reproducible reports – each time you knit, the document is executed from top to bottom\nSimple markdown syntax for text\nCode goes in chunks, defined by three backticks, narrative goes outside of chunks"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#r-markdown-tips",
+    "href": "content/lectures/00-welcome-slides.html#r-markdown-tips",
+    "title": "Welcome to COGS 137",
+    "section": "R Markdown tips",
+    "text": "R Markdown tips\n\nKeep the R Markdown cheat sheet and Markdown Quick Reference (Help -&gt; Markdown Quick Reference) handy, we’ll refer to it often as the course progresses\nThe workspace of your R Markdown document is separate from the Console\n\n\n\n\n[DEMO]"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#how-will-we-use-r-markdown",
+    "href": "content/lectures/00-welcome-slides.html#how-will-we-use-r-markdown",
+    "title": "Welcome to COGS 137",
+    "section": "How will we use R Markdown?",
+    "text": "How will we use R Markdown?\n\nEvery lab / midterm / project / homework / notes / etc. is an R Markdown document\nYou’ll always have a template R Markdown document to start with\nThe amount of scaffolding in the template will decrease over the quarter"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#collaboration-git-github",
+    "href": "content/lectures/00-welcome-slides.html#collaboration-git-github",
+    "title": "Welcome to COGS 137",
+    "section": "Collaboration: Git & GitHub",
+    "text": "Collaboration: Git & GitHub\n\nThe statistical programming language we’ll use is R\nThe software we use to interface with R is RStudio\nBut how do I get you the course materials that you can build on for your assignments?\n\nI’m not going to email you documents, that would be a mess!"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#version-control",
+    "href": "content/lectures/00-welcome-slides.html#version-control",
+    "title": "Welcome to COGS 137",
+    "section": "Version control",
+    "text": "Version control\n\nWe introduced GitHub as a platform for collaboration\nBut it’s much more than that…\nIt’s actually designed for version control"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#versioning",
+    "href": "content/lectures/00-welcome-slides.html#versioning",
+    "title": "Welcome to COGS 137",
+    "section": "Versioning",
+    "text": "Versioning\n\nLego versions"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#versioning-1",
+    "href": "content/lectures/00-welcome-slides.html#versioning-1",
+    "title": "Welcome to COGS 137",
+    "section": "Versioning",
+    "text": "Versioning\nwith human readable messages\n\nLego versions with commit messages"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#why-do-we-need-version-control",
+    "href": "content/lectures/00-welcome-slides.html#why-do-we-need-version-control",
+    "title": "Welcome to COGS 137",
+    "section": "Why do we need version control?",
+    "text": "Why do we need version control?\n\nPhD Comics"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#git-and-github-tips",
+    "href": "content/lectures/00-welcome-slides.html#git-and-github-tips",
+    "title": "Welcome to COGS 137",
+    "section": "Git and GitHub tips",
+    "text": "Git and GitHub tips\n\nGit is a version control system – like “Track Changes” feature Google Docs…but optimized for code. GitHub is the home for your Git-based projects on the internet – like Drive with additional features for code.\n\n\n\nThere are millions of git commands – ok, that’s an exaggeration, but there are a lot of them – and very few people know them all. 99% of the time you will use git to add, commit, push, and pull.\n\n\n\n\nWe will be doing Git things and interfacing with GitHub through RStudio, but if you google for help you might come across methods for doing these things in the command line – skip that and move on to the next resource unless you feel comfortable trying it out.\n\n\n\n\nResource: happygitwithr.com: book for working with git in R; Some content is beyond the scope of this course, but it’s a good resource"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#lets-take-a-tour-git-github",
+    "href": "content/lectures/00-welcome-slides.html#lets-take-a-tour-git-github",
+    "title": "Welcome to COGS 137",
+    "section": "Let’s take a tour – Git / GitHub",
+    "text": "Let’s take a tour – Git / GitHub\nWe’ll cover this time permitting, you’ll see it again in lab this week\nConcepts introduced:\n\nConnect an R project to Github repository\nWorking with a local and remote repository\nCommitting, Pushing and Pulling\n\nThere is a bit more of GitHub that we’ll use in this class, but for today this is enough."
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#documentation",
+    "href": "content/lectures/00-welcome-slides.html#documentation",
+    "title": "Welcome to COGS 137",
+    "section": "Documentation",
+    "text": "Documentation\nConsider ggplot2 (a package we’ll learn a lot)\n\n\nOfficial documentation (CRAN): https://cran.r-project.org/web/packages/ggplot2/index.html\nCode (Github): https://github.com/tidyverse/ggplot2\nDocumentation: https://ggplot2.tidyverse.org/reference/index.html\nSpecific Function: https://ggplot2.tidyverse.org/reference/geom_point.html"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#chatgpt-what-it-could-look-like",
+    "href": "content/lectures/00-welcome-slides.html#chatgpt-what-it-could-look-like",
+    "title": "Welcome to COGS 137",
+    "section": "ChatGPT: What it could look like",
+    "text": "ChatGPT: What it could look like\nImagine: You’ve been asked to carry out a number of wrangling operations on a dataset and make a plot…\n\n\n[DEMO]"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#additional-help",
+    "href": "content/lectures/00-welcome-slides.html#additional-help",
+    "title": "Welcome to COGS 137",
+    "section": "Additional help",
+    "text": "Additional help\n\nclassmates\ncourse staff (OH, Piazza, class, lab)"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#recap",
+    "href": "content/lectures/00-welcome-slides.html#recap",
+    "title": "Welcome to COGS 137",
+    "section": "Recap",
+    "text": "Recap\nCan you answer these questions?\n\nWhat is R vs RStudio?\nWhat are RStudio Projects?\nWhat is version control, and why do we care?\nWhat is git vs GitHub (and do I need to care)?"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#additional-git-resources",
+    "href": "content/lectures/00-welcome-slides.html#additional-git-resources",
+    "title": "Welcome to COGS 137",
+    "section": "Additional git Resources",
+    "text": "Additional git Resources\nVersion Control (git and GitHub):\n\nGetting Started with git\nGitHub Guide\nGitHub Desktop App Tutorial\nGit Command Line Resource\nUsing git from the command line\n\nInstalling and using git (Part 1), by COGS 108 TA Ganesh (youtube, 22min tutorial)\nmerge conflicts and branching (Part 2), by IA Shubham Kulkarni (youtube, 8min tutorial)\n\nUsing git with GitHub Desktop, by COGS 108 TA Sidharth Suresh (youtube, 13min tutorial)\nGIT & GITHUB TUTORIAL, from edureka!\n\nwith notes from COGS 18/108 TA Holly(Yueying) Dong"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#slides-to-pdf",
+    "href": "content/lectures/00-welcome-slides.html#slides-to-pdf",
+    "title": "Welcome to COGS 137",
+    "section": "Slides to PDF",
+    "text": "Slides to PDF\n\nToggle into Print View using the Esc key (or using the Navigation Menu)\nOpen the in-browser print dialog (CTRL/CMD+P).\nChange the Destination setting to Save as PDF.\nChange the Layout to Landscape.\nChange the Margins to None.\nEnable the Background graphics option.\nClick Save 🎉\n\n\n\nInstructions from quarto documentation"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#whos-in-this-class",
+    "href": "content/lectures/00-welcome-slides.html#whos-in-this-class",
+    "title": "Welcome to COGS 137",
+    "section": "Who’s in this class?",
+    "text": "Who’s in this class?\n\nroster &lt;- read_sheet('1ALPAaDU6-GEoxwq3Q5WMGsqvbFoCw4jGDuz0C_VtqqM')\n\nggplot(roster, aes(x = College)) +\n  geom_bar() +\n  labs(title = \"COGS 137\") +\n  theme_bw(base_size = 14) + \n  theme(plot.title.position = \"plot\")\n\n\n\n\n\n\n\n\n\n\nNote: This code will not run for you because you don’t have access to the roster for this course."
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#whos-in-this-class-1",
+    "href": "content/lectures/00-welcome-slides.html#whos-in-this-class-1",
+    "title": "Welcome to COGS 137",
+    "section": "Who’s in this class?",
+    "text": "Who’s in this class?\n\nroster |&gt;\n  mutate(major = substr(Major, 1, 2)) |&gt;\n  ggplot(aes(fct_infreq(major))) + \n  geom_bar() +\n  labs(title = \"COGS 137\",\n       x = \"Major\") +\n  theme_bw(base_size = 12) + \n  theme(plot.title.position = \"plot\")"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#whos-in-this-class-2",
+    "href": "content/lectures/00-welcome-slides.html#whos-in-this-class-2",
+    "title": "Welcome to COGS 137",
+    "section": "Who’s in this class?",
+    "text": "Who’s in this class?\n\nroster |&gt;\n  ggplot(aes(fct_relevel(Level, \"JR\", \"SR\", \"VI\"))) +\n  geom_bar() +\n  labs(title = \"COGS 137\",\n       x = \"Level\") +\n  theme_bw(base_size = 14) + \n  theme(plot.title.position = \"plot\")"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#id-like-to-know-more",
+    "href": "content/lectures/00-welcome-slides.html#id-like-to-know-more",
+    "title": "Welcome to COGS 137",
+    "section": "I’d like to know more!",
+    "text": "I’d like to know more!\n(required)Student Survey - complete by Tuesday at 11:59 PM.\nThis is required and completion will be used for CAA/#finaid. DO complete this even if you’re on the waitlist, please.\n\n(optional) Daily Post-Lecture Feedback\n\nopportunity to reflect on learning\nopportunity to ask questions (I will read and answer these.)\nopportunity for extra credit on final project\n\n\n\n\n\n\n🔗 https://cogs137.github.io/website/\n\n\n\n\nNote: Links to both surveys are also on Canvas. I will try to remind you at the end of lecture, but I’ll probably forget. Feel free to remind me/one another!"
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "Attribution-ShareAlike 4.0 International",
+    "section": "",
+    "text": "Creative Commons Corporation (“Creative Commons”) is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an “as-is” basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible."
+  },
+  {
+    "objectID": "LICENSE.html#creative-commons-attribution-sharealike-4.0-international-public-license",
+    "href": "LICENSE.html#creative-commons-attribution-sharealike-4.0-international-public-license",
+    "title": "Attribution-ShareAlike 4.0 International",
+    "section": "Creative Commons Attribution-ShareAlike 4.0 International Public License",
+    "text": "Creative Commons Attribution-ShareAlike 4.0 International Public License\nBy exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-ShareAlike 4.0 International Public License (“Public License”). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.\n\nSection 1 – Definitions.\n\nAdapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.\nAdapter’s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.\nBY-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.\nCopyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.\nEffective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.\nExceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.\nLicense Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution and ShareAlike.\nLicensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.\nLicensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.\nLicensor means the individual(s) or entity(ies) granting rights under this Public License.\nShare means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.\nSui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.\nYou means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.\n\n\n\nSection 2 – Scope.\n\nLicense grant.\n\nSubject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:\n\nreproduce and Share the Licensed Material, in whole or in part; and\nproduce, reproduce, and Share Adapted Material.\n\nExceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.\nTerm. The term of this Public License is specified in Section 6(a).\nMedia and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.\nDownstream recipients.\nA. Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.\n\n__Additional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter’s License You apply.\n\nC. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.\nNo endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).\n\nOther rights.\n\nMoral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.\nPatent and trademark rights are not licensed under this Public License.\nTo the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.\n\n\n\n\nSection 3 – License Conditions.\nYour exercise of the Licensed Rights is expressly made subject to the following conditions.\n\nAttribution.\n\nIf You Share the Licensed Material (including in modified form), You must:\n\nretain the following if it is supplied by the Licensor with the Licensed Material:\n\n\n\nidentification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);\na copyright notice;\na notice that refers to this Public License;\na notice that refers to the disclaimer of warranties;\na URI or hyperlink to the Licensed Material to the extent reasonably practicable;\n\n\n\nindicate if You modified the Licensed Material and retain an indication of any previous modifications; and\nindicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.\n\nYou may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.\nIf requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.\n\nShareAlike.\n\nIn addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.\n\nThe Adapter’s License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-SA Compatible License.\nYou must include the text of, or the URI or hyperlink to, the Adapter’s License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.\nYou may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter’s License You apply.\n\n\n\nSection 4 – Sui Generis Database Rights.\nWhere the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:\n\nfor the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;\nif You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and\nYou must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.\n\nFor the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.\n\n\nSection 5 – Disclaimer of Warranties and Limitation of Liability.\n\nUnless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.\nTo the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.\nThe disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.\n\n\n\nSection 6 – Term and Termination.\n\nThis Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.\nWhere Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:\n\nautomatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or\nupon express reinstatement by the Licensor.\n\nFor the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.\nFor the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.\nSections 1, 5, 6, 7, and 8 survive termination of this Public License.\n\n\n\nSection 7 – Other Terms and Conditions.\n\nThe Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.\nAny arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.t stated herein are separate from and independent of the terms and conditions of this Public License.\n\n\n\nSection 8 – Interpretation.\n\nFor the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.\nTo the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.\nNo term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.\nNothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.\n\n\nCreative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.\nCreative Commons may be contacted at creativecommons.org"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "COGS 137: Practical Data Science in R",
+    "section": "",
+    "text": "Course Info\nPractical Data Science in R focuses on teaching students how to think rigorously throughout the data science process. To this end, through interaction with unique data sets and interesting questions, this course helps students 1) gain fluency in the R programming language, 2) effectively explore & visualize data, 3) use statistical thinking to analyze data and rigorously evaluate their conclusions, and 4) effectively communicate their results. Course objectives are accomplished through hands-on practice, using real-world data to learn via case studies, and project-based learning.\n\nDays & Times\n\n\n\n\n\n Lecture: Tu/Th 2-3:20 (CSB 002)\n Lab: Mon 5-5:50 (DIB 121) or Fri 2-2:50 (RWAC 0103)\n\nInstructional Staff & Office Hours\n\n\n\nInstructor\nShannon Ellis\nsellis@ucsd.edu\nWed 11-12\nZoom by appt. (see Canvas)\n\n\n\n\n\nTu 11A-12P\nCSB 243\n\n\nTA\nTBD\n\nTBD\n\n\n\nIA\nTBD\n\nTBD\nTBD\n\n\n\n\n\n\n\nCourse Objectives\n\nProgram at the introductory level in the R statistical programming language\nEmploy the tidyverse suite of packages to interact with, wrangle, visualize, and model data\nExplain & apply statistical concepts (estimation, linear regression, logistic regression, etc.) for data analysis\nCommunicate data science projects through effective visualization, oral presentation, and written reports\n\n\n\nTexts\nTexts are freely available online:\n\n\n\nIntroduction to Modern Statistics\nÇetinkaya-Rundel and Hardin\nOpenIntro, 2e, 2024\n\n\nR for Data Science\nWickham, Çetinkaya-Rundel, and Grolemund\nO’Reilly, 2e, 2023\n\n\n\n\n\nMaterials\nYou should have access to a laptop and bring it to every class, fully charged (as possible).\nNote: If you do not have consistent access to the technology needed, please use this form to request a loaner laptop. (For any issues that you may have, please email vcsa@ucsd.edu, and they will work to assist you.)\n\n\nAcknowledgements\nI want to first recognize Dr. Mine Çetinkaya-Rundeland for her unparalleled efforts in support of education and educators in data science, statistics, and R programming. This course website was adapted from her course websites. Some of our course materials are also from her datascienceinabox project. I am so *very* indebted to Mine! I also want to thank the Open Case Studies team for their tireless work in putting together interesting and topical case studies, a handful of which we use throughout the course. And, finally, thanks to Allison Horst, whose artwork is inspiring, educational, and fun…and is used throughout this course. Further, thanks to the R (education) community generally; planning this course was really fun because I had so many awesome resources to choose from. Having these materials made course prep and planning is just another example of what sets the R community apart!"
+  },
+  {
+    "objectID": "computing/computing-access.html",
+    "href": "computing/computing-access.html",
+    "title": "Computing access",
+    "section": "",
+    "text": "To access RStudio for this class, go to the datahub space for this course.\nStudents enrolled in this course will automatically have access to RStudio through UCSD’s datahub. Use your UCSD login to access this course and select the COGS 137 environment.\nIf you do not have access and have just enrolled in the course, please give it 24 hours after enrollment to have access. Once a student has Canvas access to the course, they will also have datahub access.",
+    "crumbs": [
+      "Computing",
+      "Access"
+    ]
+  },
+  {
+    "objectID": "computing/computing-troubleshooting.html",
+    "href": "computing/computing-troubleshooting.html",
+    "title": "Computing troubleshooting",
+    "section": "",
+    "text": "If you’re having difficulty working in datahub, go to status.ucsd.edu. Known issues will be reported at the top of the page.\n\nIf no issue relating to “datahub” or “DSMLP” is noted, this suggests the system is expected to be working. Check your internet connection. Then, if issue is not resolved, click “Control Panel” at top right and then “Stop my Server”. After a minute, click “Start My Server” to start a fresh new connection. If your issue persists, post on the course Ed with details on what you’ve tried and the errors you see (including verbatim errors and/or screenshots whenever possible).\nIf it shows an issue relating to “datahub” or “DSMLP”, this means there is a known incident with the datahub. This typically resolves quickly. If there’s a deadline coming up soon, post on the course Ed to let us know that there’s an issue. We can look into how quickly it might get resolved and decide on what to do about the deadline accordingly. Note: We don’t anticipate this to happen regularly, the systems are Operational a huge majority of the time!",
+    "crumbs": [
+      "Computing",
+      "Troubleshooting"
+    ]
+  }
+]

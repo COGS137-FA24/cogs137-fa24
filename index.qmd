@@ -17,12 +17,15 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 
 ##### Instructional Staff & Office Hours
 
-|            |                                                |                  |            |                            |
-|---------------|---------------|---------------|---------------|---------------|
-| Instructor | [**Shannon Ellis**](http://www.shanellis.com/) | sellis\@ucsd.edu | Wed 11-12  | Zoom by appt. (see Canvas) |
-|            |                                                |                  | Tu 11A-12P | CSB 243                    |
-| TA         | TBD                                            |                  | TBD        |                            |
-| IA         | TBD                                            |                  | TBD        | TBD                        |
++-------------+------------------------------------------------+------------------+-------------+--------------------------------------------------+
+| Instructor  | [**Shannon Ellis**](http://www.shanellis.com/) | sellis\@ucsd.edu | Tu 11A-12P  | CSB 243                                          |
++-------------+------------------------------------------------+------------------+-------------+--------------------------------------------------+
+|             |                                                |                  | Wed 10-11   | Zoom by [appt](https://github.com/cogs137-fa24)  |
++-------------+------------------------------------------------+------------------+-------------+--------------------------------------------------+
+| TA          | Quirine (Q) Van-Engen                          |                  | TBD         |                                                  |
++-------------+------------------------------------------------+------------------+-------------+--------------------------------------------------+
+| IA          | Eric Song                                      |                  | TBD         | TBD                                              |
++-------------+------------------------------------------------+------------------+-------------+--------------------------------------------------+
 
 ### Course Objectives
 
@@ -30,7 +33,7 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 
 -   Employ the tidyverse suite of packages to interact with, wrangle, visualize, and model data
 
--   Explain & apply statistical concepts (estimation, linear regression, logistic regression, etc.) for data analysis
+-   Explain & apply statistical and machine learning concepts for data analysis
 
 -   Communicate data science projects through effective visualization, oral presentation, and written reports
 
@@ -38,10 +41,13 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 
 Texts are freely available online:
 
-|                                                                         |                                          |                     |
-|----------------------------------|-------------------|-------------------|
++-------------------------------------------------------------------------+------------------------------------------+---------------------+
 | [Introduction to Modern Statistics](https://openintro-ims.netlify.app/) | Çetinkaya-Rundel and Hardin              | OpenIntro, 2e, 2024 |
++-------------------------------------------------------------------------+------------------------------------------+---------------------+
 | [R for Data Science](https://r4ds.hadley.nz/)                           | Wickham, Çetinkaya-Rundel, and Grolemund | O'Reilly, 2e, 2023  |
++-------------------------------------------------------------------------+------------------------------------------+---------------------+
+| [Tidy Modeling With R](https://www.tmwr.org/)                           | Max Kuhn and Julia Silge                 | O'Reilly, 1e, 2022  |
++-------------------------------------------------------------------------+------------------------------------------+---------------------+
 
 ### Materials
 
@@ -51,4 +57,4 @@ Note: If you do not have consistent access to the technology needed, please use 
 
 ### Acknowledgements
 
-I want to first recognize [Dr. Mine Çetinkaya-Rundeland](https://mine-cr.com/) for her unparalleled efforts in support of education and educators in data science, statistics, and R programming. This course website was adapted from her [course websites](https://mine-cr.com/teaching/). Some of our course materials are also from her [datascienceinabox](https://datasciencebox.org/) project. I am so \*very\* indebted to Mine! I also want to thank the [Open Case Studies](https://www.opencasestudies.org/) team for their tireless work in putting together interesting and topical case studies, a handful of which we use throughout the course. And, finally, thanks to [Allison Horst](https://www.allisonhorst.com/), whose [artwork](https://github.com/allisonhorst/stats-illustrations/) is inspiring, educational, and fun...and is used throughout this course. Further, thanks to the R (education) community generally; planning this course was really fun because I had so many awesome resources to choose from. Having these materials made course prep and planning is just another example of what sets the R community apart!
+I want to first recognize [Dr. Mine Çetinkaya-Rundeland](https://mine-cr.com/) for her unparalleled efforts in support of education and educators in data science, statistics, and R programming. This course website was adapted from her [course websites](https://mine-cr.com/teaching/). Some of our course materials are also from her [datascienceinabox](https://datasciencebox.org/) project. I am so *very* indebted to Mine! I also want to thank the [Open Case Studies](https://www.opencasestudies.org/) team for their tireless work in putting together interesting and topical case studies, a handful of which have been used throughout the course over the years. And, finally, thanks to [Allison Horst](https://www.allisonhorst.com/), whose [artwork](https://github.com/allisonhorst/stats-illustrations/) is inspiring, educational, and fun...and is used throughout this course. Further, thanks to the greater R (education) community who make planning and teaching R courses simply the best.

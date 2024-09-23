@@ -10,9 +10,8 @@ website:
   image: images/background.png
   favicon: images/favicon.ico
   
-  site-url: "https://cogs137.github.io/website/"
-  site-path: "/website/"
-  
+  site-url: "https://cogs137-fa24.github.io/cogs137-fa24/"
+
   open-graph: true
   
   page-footer:
@@ -34,21 +33,21 @@ website:
       - icon: person-fill
         text: "Canvas"
         menu:
-          - text: Announcements
-            url: https://canvas.ucsd.edu/courses/courses/4625/announcements
+          - text: Homepage
+            url: https://canvas.ucsd.edu/courses/58555
           - text: Grades
-            url: https://canvas.ucsd.edu/courses/courses/4625/gradebook
+            url: https://canvas.ucsd.edu/courses/58555/gradebook
       - icon: cloud
         href: https://datahub.ucsd.edu/hub/spawn
         text: "Datahub"
       - icon: question
-        href: https://sta101-f23.slack.com
-        text: "Ed"
+        href: TBD
+        text: "TBD"
       - icon: robot
         href: https://chatgpt.com/
         text: "ChatGPT"
       - icon: github
-        href: https://cogs137.github.io/website/
+        href: https://github.com/COGS137-FA24
         text: "GitHub"
     contents:
       - section: "Course information"
@@ -69,9 +68,9 @@ website:
         contents:
           - text: "00-welcome"
             href: content/lectures/00-welcome.qmd
-      - section: "Case Studies"
       - section: "Homework"
       - section: "Labs"
+      - section: "Case Studies"
 
     #   - section: "Lecture Slides"
     #     contents:

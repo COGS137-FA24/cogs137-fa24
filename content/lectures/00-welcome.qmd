@@ -61,17 +61,17 @@ Shannon Ellis: Associate Teaching Professor, Mom & wife, volleyball-obsessed, an
 ## Who all is involved?
 
 |            |                                                |                  |               |                      |
-|--------------|-------------------|--------------|--------------|--------------|
+|---------------|---------------|---------------|---------------|---------------|
 | Instructor | [**Shannon Ellis**](http://www.shanellis.com/) | sellis\@ucsd.edu | Wed 11A-12P   | Virtual (see canvas) |
 |            |                                                |                  | Th 12:50-1:50 | CSB 243              |
-| TA         | TBD                                  |                  | Time TBD      | Location TBD         |
-| IA         | TBD                                  |                  | Time TBD      | Location TBD         |
+| TA         | TBD                                            |                  | Time TBD      | Location TBD         |
+| IA         | TBD                                            |                  | Time TBD      | Location TBD         |
 
 ## Course Staff
 
-| TBD (TA)       | TBD (IA)         |
-|--------------------------|----------------------------|
-| ![]() | ![]() |
+| TBD (TA) | TBD (IA) |
+|----------|----------|
+| ![]()    | ![]()    |
 
 ## What is this course? {.scrollable}
 
@@ -109,7 +109,7 @@ Artwork by [\@allison_horst](https://github.com/allisonhorst/stats-illustrations
 ## The General Plan
 
 -   Weeks 1-4: Learn to program in the tidyverse in R
--   Weeks 5-10: Case Studies 
+-   Weeks 5-10: Case Studies & Project
 
 ...with effective communication & group work throughout
 
@@ -151,11 +151,11 @@ Note: This course has historically been back-loaded, as that's when group work h
 **Lab & Office Hours**
 
 -   **Office hours** begin week 1
-    -   Prof: Tu: 11A-12P (drop-in); W 11-12 (10 min slots; appt.)
+    -   Prof: Tu: 11A-12P (drop-in); W 10-11A (10 min slots; appt.)
 -   **Lab** begins week 1 (next Friday)
     -   it's *not* in a computer lab, so you'll need to bring your own
     -   details about labs covered on Tues and in lab
-    -   typically labs will be released Monday and due Friday
+    -   typically labs will be released Monday and due the following Thursday
 -   I will hang out after class today for questions/concerns from students
 
 ### Materials
@@ -168,8 +168,15 @@ Note: This course has historically been back-loaded, as that's when group work h
     -   GitHub : retrieving assignments, labs, homework, etc.
     -   datahub : completing assignments, labs, homework, etc.
     -   Canvas : grades, course-specific links
-    -   Ed : Q&A
+    -   TBD : Q&A
 :::
+
+### Which Q&A Platform?
+
+Q: Which Q&A Platform should we use this quarter? Discuss with your neighbor!
+A: Piazza, ClassQuestion, Discord, Slack, something else? 
+
+Put a <font color="#32cb31">green</font> sticky on the front of your computer when you're done discussing. Put a <font color="#ff65a3">pink</font> if you have a question.
 
 ## Diversity & Inclusion:
 
@@ -202,6 +209,8 @@ Changes since last iteration (based on feedback):
 -   more examples of effective communication
 -   no midterm
 -   more time for completing labs
+-   removed super-structured labs
+-   more in-class stuff
 -   peer grading
 -   checkpoints on final project
 
@@ -209,11 +218,11 @@ Changes since last iteration (based on feedback):
 
 -   Lab
 -   Office Hours
--   Ed
+-   Q&A
 
 . . .
 
-A few (Ed) guidelines:
+A few (Q&A) guidelines:
 
 ```         
 1. No duplicates.
@@ -247,7 +256,6 @@ Teamwork is allowed, but you should be able to answer "Yes" to each of the follo
 
 The Internet (including LLMS/ChatGPT) is a great resource. Cite your sources.
 
-
 ## When To (Can I) Use ChatGPT/LLMs?
 
 For anything in this course.
@@ -279,26 +287,26 @@ Always read/think about/understand the output.
 ::: incremental
 -   <font color="#ABC57D">Labs (8)</font>: Individual submission; graded on effort
 -   <font color="#ABC57D">Homework (3)</font>: Individual submission; graded on correctness
--   <font color="#ABC57D">Case Studies (2)</font>: Team submission, technical analysis report
--   <font color="#ABC57D">Final Project (1) </font>: Team submission, due Tues of finals week
+-   <font color="#ABC57D">Case Studies (2)</font>: Team submission, technical analysis report + general communication
+-   <font color="#ABC57D">Final Project (1) </font>: Team submission, due Tues of finals week w/ checkpoints prior
 :::
 
 ## Grading
 
 Your final grade will be comprised of the following:
 
-| Assignment (#)              | \% of grade        |
-|-----------------------------|--------------------|
-| Labs (7)                    | 21%  (3pt each)    |
-| Homework (4)                | 24% (6pt each)     |
-| Case Study Projects\* (2)   | 30%  (15pt each)   |
-| Final Project Proposal\* (1)| 3%                 |
-| Peer Review\* (1)           | 3%                 |
-| Final Report\* (1)          | 12%                |
-| Final Presentation \* (1)   | 3%                 |
-| Team Evaluation Surveys (2) | 4%  (2pt each)     |
+| Assignment (#)               | \% of grade     |
+|------------------------------|-----------------|
+| Labs (7)                     | 21% (3pt each)  |
+| Homework (3)                 | 24% (8pt each)  |
+| Case Study Projects\* (2)    | 30% (15pt each) |
+| Final Project Proposal\* (1) | 3%              |
+| Peer Review\* (1)            | 3%              |
+| Final Report\* (1)           | 11%             |
+| Final Presentation\* (1)     | 4%              |
+| Team Evaluation Surveys (3)  | 3% (1pt each)   |
 
-\* indicates group submission
+: \* indicates group submission
 
 ## Late/missed work policy
 
@@ -357,7 +365,6 @@ A: Nope. You could download and install all the packages we use and complete the
 ### Tour
 
 ::: {.hand-green style="text-align: center;"}
-
 <center>\[DEMO\]</center>
 :::
 
@@ -374,7 +381,7 @@ Concepts introduced:
 
 **Your Turn**
 
-:::task
+::: task
 1.  Login to datahub
 2.  Carry out a mathematical operation in the console
 3.  View the `airquality` dataframe
@@ -517,15 +524,13 @@ Consider `ggplot2` (a package we'll learn a lot)
 Imagine: You've been asked to carry out a number of wrangling operations on a dataset and make a plot...
 
 ::: {.hand-green style="text-align: center;"}
-
 <center>\[DEMO\]</center>
-
 :::
 
 ## Additional help
 
 -   classmates
--   course staff (OH, Piazza, class, lab)
+-   course staff (OH, Q&A, class, lab)
 
 ## Recap
 
@@ -610,13 +615,13 @@ roster |>
 
 ## I'd like to know more!
 
-(*required*)[Student Survey](https://docs.google.com/forms/d/e/1FAIpQLSdSQwgythA0-ZJsjJ10POA1CljhiZ8GDp_z-Eei9zrDqESKtA/viewform?usp=sf_link) - complete by Tuesday at 11:59 PM.
+(*required*)[Student Survey](https://docs.google.com/forms/d/e/1FAIpQLSfSLaJBNu-dm--yPhuzerS_DEHvsfhvkfqulrultVjRSlYcZA/viewform?usp=sf_link) - complete by Fri 10/4 at 11:59 PM.
 
 **This is required and completion will be used for CAA/#finaid.** **DO** complete this even if you're on the waitlist, please.
 
 . . .
 
-(*optional*) [Daily Post-Lecture Feedback](https://docs.google.com/forms/d/e/1FAIpQLSfGjjBgBoOdfaGupBh60OgDHrkkFXlKpcuByTiF6vmehT5y7A/viewform?usp=sf_link)
+(*optional*) [Daily Post-Lecture Feedback](https://docs.google.com/forms/d/e/1FAIpQLSebrcx8p0zG5YylzGoCFKRLPVW4wdHoTHIRNc8-YYi_wjleLg/viewform?usp=sf_link)
 
 -   opportunity to reflect on learning
 -   opportunity to ask questions (I will read and answer these.)

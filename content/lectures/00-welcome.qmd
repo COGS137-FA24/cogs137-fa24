@@ -64,12 +64,12 @@ Shannon Ellis: Associate Teaching Professor, Mom & wife, volleyball-obsessed, an
 |---------------|---------------|---------------|---------------|---------------|
 | Instructor | [**Shannon Ellis**](http://www.shanellis.com/) | sellis\@ucsd.edu | Tu 11A-12P  | CSB 243 |
 |            |                                                |                  | Wed 10-11A  | Zoom by appt.              |
-| TA         | Quirine (Q) Van-Engen                          |                  | Time TBD      | Location TBD         |
+| TA         | Quirine (Q) van-Engen                          |                  | Time TBD      | Location TBD         |
 | IA         | Eric Song                                      |                  | --    | --         |
 
 ## Course Staff
 
-| Quirine (Q) Van-Engen (TA) | Eric Song     (IA) |
+| Quirine (Q) van-Engen (TA) | Eric Song     (IA) |
 |-----------------------------|----------|
 | ![](images/00/q.jpg)        | ![](images/00/eric.jpg)    |
 
@@ -204,11 +204,12 @@ Put a <font color="#32cb31">green</font> sticky on the front of your computer wh
 ## Changes since last iteration
 
 (based on feedback):
+
 - no midterm
 - case studies from beginning
   - more focus on case studies/expectations
   - more examples of effective communication
-- lab focus changed
+- lab focused changed
   - more time for completing labs
   - removed super-structured labs
 - improved final project

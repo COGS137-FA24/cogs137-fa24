@@ -56,26 +56,26 @@ While R has most/all of the functionality of **YFPL** (your favorite programming
 
 Shannon Ellis: Associate Teaching Professor, Mom & wife, volleyball-obsessed, and baking & cooking lover
 
-<i class="fa fa-envelope"></i>   [sellis\@ucsd.edu](mailto:sellis@ucsd.edu) <br> <i class="fa fa-home"></i>   [shannon-ellis.com](https://shannon-ellis.com/) <br> <i class="fa fa-university"></i>  MOS 0204 <br> <i class="fa fa-calendar"></i>   Tu/Th 2-3:20PM (Lab: Fri 3-3:50PM)
+<i class="fa fa-envelope"></i>   [sellis\@ucsd.edu](mailto:sellis@ucsd.edu) <br> <i class="fa fa-home"></i>   [shannon-ellis.com](https://shannon-ellis.com/) <br> <i class="fa fa-university"></i>  CSB 002 <br> <i class="fa fa-calendar"></i>   Tu/Th 2-3:20PM (Lab: Fri 2-2:50 (RWAC 0103) or Mon 5-5:50 (DIB 121))
 
 ## Who all is involved?
 
 |            |                                                |                  |               |                      |
 |---------------|---------------|---------------|---------------|---------------|
-| Instructor | [**Shannon Ellis**](http://www.shanellis.com/) | sellis\@ucsd.edu | Wed 11A-12P   | Virtual (see canvas) |
-|            |                                                |                  | Th 12:50-1:50 | CSB 243              |
-| TA         | TBD                                            |                  | Time TBD      | Location TBD         |
-| IA         | TBD                                            |                  | Time TBD      | Location TBD         |
+| Instructor | [**Shannon Ellis**](http://www.shanellis.com/) | sellis\@ucsd.edu | Tu 11A-12P  | CSB 243 |
+|            |                                                |                  | Wed 10-11A  | Zoom by appt.              |
+| TA         | Quirine (Q) Van-Engen                          |                  | Time TBD      | Location TBD         |
+| IA         | Eric Song                                      |                  | --    | --         |
 
 ## Course Staff
 
-| TBD (TA) | TBD (IA) |
-|----------|----------|
-| ![]()    | ![]()    |
+| Quirine (Q) Van-Engen (TA) | Eric Song     (IA) |
+|-----------------------------|----------|
+| ![](images/00/q.jpg)        | ![](images/00/eric.jpg)    |
 
 ## What is this course? {.scrollable}
 
-Everything you want to know about the course, and everything you will need for the course will be posted at: <https://cogs137.github.io/website/>
+Everything you want to know about the course, and everything you will need for the course will be posted at: <https://cogs137-fa24.github.io/cogs137-fa24/>
 
 ::: incremental
 -   Is this an intro CS course? No.
@@ -108,10 +108,10 @@ Artwork by [\@allison_horst](https://github.com/allisonhorst/stats-illustrations
 
 ## The General Plan
 
--   Weeks 1-4: Learn to program in the tidyverse in R
--   Weeks 5-10: Case Studies & Project
-
-...with effective communication & group work throughout
+-   Learn R & the tidyverse
+-   Use interesting case studies to do so
+-   Do a project for your portfolio
+-   w/ a focus on communication and group work
 
 . . .
 
@@ -155,7 +155,7 @@ Note: This course has historically been back-loaded, as that's when group work h
 -   **Lab** begins week 1 (next Friday)
     -   it's *not* in a computer lab, so you'll need to bring your own
     -   details about labs covered on Tues and in lab
-    -   typically labs will be released Monday and due the following Thursday
+    -   labs will always be released by Th night and due the following Th
 -   I will hang out after class today for questions/concerns from students
 
 ### Materials
@@ -171,10 +171,10 @@ Note: This course has historically been back-loaded, as that's when group work h
     -   TBD : Q&A
 :::
 
-### Which Q&A Platform?
+## Which Q&A Platform?
 
-Q: Which Q&A Platform should we use this quarter? Discuss with your neighbor!
-A: Piazza, ClassQuestion, Discord, Slack, something else? 
+**Q**: Which Q&A Platform should we use this quarter? Discuss with your neighbor!  
+**A**: Piazza, ClassQuestion, Discord, Slack, something else?  
 
 Put a <font color="#32cb31">green</font> sticky on the front of your computer when you're done discussing. Put a <font color="#ff65a3">pink</font> if you have a question.
 
@@ -200,19 +200,21 @@ Put a <font color="#32cb31">green</font> sticky on the front of your computer wh
 -   If something doesn't make sense, tell me!
 -   If you've got feedback/suggestions, I'm all ears!
 
-. . .
 
-Changes since last iteration (based on feedback):
+## Changes since last iteration
 
--   spread out case studies
--   more focus on case studies/expectations
--   more examples of effective communication
--   no midterm
--   more time for completing labs
--   removed super-structured labs
--   more in-class stuff
--   peer grading
--   checkpoints on final project
+(based on feedback):
+- no midterm
+- case studies from beginning
+  - more focus on case studies/expectations
+  - more examples of effective communication
+- lab focus changed
+  - more time for completing labs
+  - removed super-structured labs
+- improved final project
+  - peer feedback
+  - checkpoints on final project
+- more in-class stuff/time
 
 ## How to get help {.scrollable}
 
@@ -220,7 +222,8 @@ Changes since last iteration (based on feedback):
 -   Office Hours
 -   Q&A
 
-. . .
+
+## Q&A 
 
 A few (Q&A) guidelines:
 
@@ -285,7 +288,7 @@ Always read/think about/understand the output.
 ## Course components:
 
 ::: incremental
--   <font color="#ABC57D">Labs (8)</font>: Individual submission; graded on effort
+-   <font color="#ABC57D">Labs (7)</font>: Individual submission; graded on effort
 -   <font color="#ABC57D">Homework (3)</font>: Individual submission; graded on correctness
 -   <font color="#ABC57D">Case Studies (2)</font>: Team submission, technical analysis report + general communication
 -   <font color="#ABC57D">Final Project (1) </font>: Team submission, due Tues of finals week w/ checkpoints prior
@@ -334,7 +337,9 @@ Website: <https://datahub.ucsd.edu/>
 
 When working on "stuff" for this course, select the COGS 137 environment.
 
-![datahub](images/00/datahub.png) \## Datahub Usage
+![datahub](images/00/datahub.png) \
+
+## Datahub Usage
 
 Q: Do I *have* to use datahub?
 
@@ -584,9 +589,7 @@ ggplot(roster, aes(x = College)) +
   theme(plot.title.position = "plot")
 ```
 
-::: aside
 Note: This code will not run for you because you don't have access to the roster for this course.
-:::
 
 ## Who's in this class?
 
@@ -624,8 +627,8 @@ roster |>
 (*optional*) [Daily Post-Lecture Feedback](https://docs.google.com/forms/d/e/1FAIpQLSebrcx8p0zG5YylzGoCFKRLPVW4wdHoTHIRNc8-YYi_wjleLg/viewform?usp=sf_link)
 
 -   opportunity to reflect on learning
--   opportunity to ask questions (I will read and answer these.)
--   opportunity for extra credit on final project
+-   opportunity to ask questions (I will read & answer.)
+-   opportunity for EC on final project
 
 ::: aside
 Note: Links to both surveys are also on Canvas. I will *try* to remind you at the end of lecture, but I'll probably forget. Feel free to remind me/one another!

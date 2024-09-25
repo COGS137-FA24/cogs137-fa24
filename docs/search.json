@@ -37,7 +37,7 @@
     "href": "content/lectures/00-welcome.html",
     "title": "Welcome to COGS 137",
     "section": "",
-    "text": "Practical Data Science in R\nPlease take one green sticky and one pink sticky as they come around. If you’re able, try and save these. We’ll use them most classes. (But, I’ll always have extra!)\n\n\n\n\n\n\n\n\nDescribe what this class is\nDescribe how the class will run\nGo over the tooling for this course: R, RStudio, GitHub\n\n\n\n\n : R is a statistical programming language.\nWhile R has most/all of the functionality of YFPL (your favorite programming language), it was designed for the specific use of analyzing data.\n\n\n\n: Data science is the scientific process of using data to answer interesting questions and/or solve important problems.\n\n\n\n\n\nProgram at the introductory level in the R statistical programming language\nEmploy the tidyverse suite of packages to interact with, wrangle, visualize, and model data\nExplain & apply statistical concepts (estimation, linear regression, logistic regression, etc.) for data analysis\nCommunicate data science projects through effective visualization, oral presentation, and written reports\n\n\n\n\n\nShannon Ellis: Associate Teaching Professor, Mom & wife, volleyball-obsessed, and baking & cooking lover\n   sellis@ucsd.edu     shannon-ellis.com    MOS 0204     Tu/Th 2-3:20PM (Lab: Fri 3-3:50PM)\n\n\n\n\n\n\nInstructor\nShannon Ellis\nsellis@ucsd.edu\nWed 11A-12P\nVirtual (see canvas)\n\n\n\n\n\nTh 12:50-1:50\nCSB 243\n\n\nTA\nTBD\n\nTime TBD\nLocation TBD\n\n\nIA\nTBD\n\nTime TBD\nLocation TBD\n\n\n\n\n\n\n\n\n\nTBD (TA)\nTBD (IA)\n\n\n\n\n\n\n\n\n\n\n\n\nEverything you want to know about the course, and everything you will need for the course will be posted at: https://cogs137.github.io/website/\n\n\nIs this an intro CS course? No.\nWill we be doing computing? Yes.\nWhat computing language will we learn? R.\nIs this an intro stats course? No.\nWill we be doing stats? Yes.\nAre there any prerequisites? Yes, an intro statistics course!\n\n\n\n\n\n\n\n\n\nNope! The first few weeks of the course will be all about getting comfortable using the R programming language!\n After that, we’ll focus on delving into interesting statistical analyses through case studies.\n\n\n\nArtwork by @allison_horst",
+    "text": "Practical Data Science in R\nPlease take one green sticky and one pink sticky as they come around. If you’re able, try and save these. We’ll use them most classes. (But, I’ll always have extra!)\n\n\n\n\n\n\n\n\nDescribe what this class is\nDescribe how the class will run\nGo over the tooling for this course: R, RStudio, GitHub\n\n\n\n\n : R is a statistical programming language.\nWhile R has most/all of the functionality of YFPL (your favorite programming language), it was designed for the specific use of analyzing data.\n\n\n\n: Data science is the scientific process of using data to answer interesting questions and/or solve important problems.\n\n\n\n\n\nProgram at the introductory level in the R statistical programming language\nEmploy the tidyverse suite of packages to interact with, wrangle, visualize, and model data\nExplain & apply statistical concepts (estimation, linear regression, logistic regression, etc.) for data analysis\nCommunicate data science projects through effective visualization, oral presentation, and written reports\n\n\n\n\n\nShannon Ellis: Associate Teaching Professor, Mom & wife, volleyball-obsessed, and baking & cooking lover\n   sellis@ucsd.edu     shannon-ellis.com    CSB 002     Tu/Th 2-3:20PM (Lab: Fri 2-2:50 (RWAC 0103) or Mon 5-5:50 (DIB 121))\n\n\n\n\n\n\nInstructor\nShannon Ellis\nsellis@ucsd.edu\nTu 11A-12P\nCSB 243\n\n\n\n\n\nWed 10-11A\nZoom by appt.\n\n\nTA\nQuirine (Q) Van-Engen\n\nTime TBD\nLocation TBD\n\n\nIA\nEric Song\n\n–\n–\n\n\n\n\n\n\n\n\n\nQuirine (Q) Van-Engen (TA)\nEric Song (IA)\n\n\n\n\n\n\n\n\n\n\n\n\nEverything you want to know about the course, and everything you will need for the course will be posted at: https://cogs137-fa24.github.io/cogs137-fa24/\n\n\nIs this an intro CS course? No.\nWill we be doing computing? Yes.\nWhat computing language will we learn? R.\nIs this an intro stats course? No.\nWill we be doing stats? Yes.\nAre there any prerequisites? Yes, an intro statistics course!\n\n\n\n\n\n\n\n\n\nNope! The first few weeks of the course will be all about getting comfortable using the R programming language!\n After that, we’ll focus on delving into interesting statistical analyses through case studies.\n\n\n\nArtwork by @allison_horst",
     "crumbs": [
       "Notes",
       "00-welcome"
@@ -92,7 +92,7 @@
     "href": "content/lectures/00-welcome.html#who-am-i",
     "title": "Welcome to COGS 137",
     "section": "",
-    "text": "Shannon Ellis: Associate Teaching Professor, Mom & wife, volleyball-obsessed, and baking & cooking lover\n   sellis@ucsd.edu     shannon-ellis.com    MOS 0204     Tu/Th 2-3:20PM (Lab: Fri 3-3:50PM)",
+    "text": "Shannon Ellis: Associate Teaching Professor, Mom & wife, volleyball-obsessed, and baking & cooking lover\n   sellis@ucsd.edu     shannon-ellis.com    CSB 002     Tu/Th 2-3:20PM (Lab: Fri 2-2:50 (RWAC 0103) or Mon 5-5:50 (DIB 121))",
     "crumbs": [
       "Notes",
       "00-welcome"
@@ -103,7 +103,7 @@
     "href": "content/lectures/00-welcome.html#who-all-is-involved",
     "title": "Welcome to COGS 137",
     "section": "",
-    "text": "Instructor\nShannon Ellis\nsellis@ucsd.edu\nWed 11A-12P\nVirtual (see canvas)\n\n\n\n\n\nTh 12:50-1:50\nCSB 243\n\n\nTA\nTBD\n\nTime TBD\nLocation TBD\n\n\nIA\nTBD\n\nTime TBD\nLocation TBD",
+    "text": "Instructor\nShannon Ellis\nsellis@ucsd.edu\nTu 11A-12P\nCSB 243\n\n\n\n\n\nWed 10-11A\nZoom by appt.\n\n\nTA\nQuirine (Q) Van-Engen\n\nTime TBD\nLocation TBD\n\n\nIA\nEric Song\n\n–\n–",
     "crumbs": [
       "Notes",
       "00-welcome"
@@ -114,7 +114,7 @@
     "href": "content/lectures/00-welcome.html#course-staff",
     "title": "Welcome to COGS 137",
     "section": "",
-    "text": "TBD (TA)\nTBD (IA)",
+    "text": "Quirine (Q) Van-Engen (TA)\nEric Song (IA)",
     "crumbs": [
       "Notes",
       "00-welcome"
@@ -125,7 +125,7 @@
     "href": "content/lectures/00-welcome.html#what-is-this-course",
     "title": "Welcome to COGS 137",
     "section": "",
-    "text": "Everything you want to know about the course, and everything you will need for the course will be posted at: https://cogs137.github.io/website/\n\n\nIs this an intro CS course? No.\nWill we be doing computing? Yes.\nWhat computing language will we learn? R.\nIs this an intro stats course? No.\nWill we be doing stats? Yes.\nAre there any prerequisites? Yes, an intro statistics course!",
+    "text": "Everything you want to know about the course, and everything you will need for the course will be posted at: https://cogs137-fa24.github.io/cogs137-fa24/\n\n\nIs this an intro CS course? No.\nWill we be doing computing? Yes.\nWhat computing language will we learn? R.\nIs this an intro stats course? No.\nWill we be doing stats? Yes.\nAre there any prerequisites? Yes, an intro statistics course!",
     "crumbs": [
       "Notes",
       "00-welcome"
@@ -147,7 +147,7 @@
     "href": "content/lectures/00-welcome.html#the-general-plan",
     "title": "Welcome to COGS 137",
     "section": "The General Plan",
-    "text": "The General Plan\n\nWeeks 1-4: Learn to program in the tidyverse in R\nWeeks 5-10: Case Studies & Project\n\n…with effective communication & group work throughout\n. . .\nNote: This course has historically been back-loaded, as that’s when group work has happened historically. I’ve tried to fix that this quarter by teaching from case studies from the beginning.",
+    "text": "The General Plan\n\nLearn R & the tidyverse\nUse interesting case studies to do so\nDo a project for your portfolio\nw/ a focus on communication and group work\n\n. . .\nNote: This course has historically been back-loaded, as that’s when group work has happened historically. I’ve tried to fix that this quarter by teaching from case studies from the beginning.",
     "crumbs": [
       "Notes",
       "00-welcome"
@@ -158,7 +158,18 @@
     "href": "content/lectures/00-welcome.html#the-nitty-gritty",
     "title": "Welcome to COGS 137",
     "section": "The Nitty Gritty",
-    "text": "The Nitty Gritty\n\nLectureIn-personWaitlistLab & OHMaterials\n\n\nClass Meetings\n\nInteractive\nLectures & lots of learn-by-doing\nBring your laptop to class every day\n\n\n\nIn-person, synchronous learning\n\nI will be teaching in person.\nLectures and lab will be podcast.\nAttendance will be incentivized using a daily participation survey.\nIf you’re not feeling well, please stay home. I will do the same.\n\n\n\nThe (Dreaded) Waitlist\n\nCourse enrollment is supposed to be 70 for this course\nThere are 100 people currently enrolled\nI don’t control the waitlist (cogsadvising@ucsd.edu does)\nI don’t anticipate students being enrolled off of the waitlist (will be dependent on students dropping)\n\n\n\nLab & Office Hours\n\nOffice hours begin week 1\n\nProf: Tu: 11A-12P (drop-in); W 10-11A (10 min slots; appt.)\n\nLab begins week 1 (next Friday)\n\nit’s not in a computer lab, so you’ll need to bring your own\ndetails about labs covered on Tues and in lab\ntypically labs will be released Monday and due the following Thursday\n\nI will hang out after class today for questions/concerns from students\n\n\n\nCourse Materials\n\nTextbooks are free and available online\nCourse platforms:\n\nWebsite : schedule, policies, due dates, etc.\nGitHub : retrieving assignments, labs, homework, etc.\ndatahub : completing assignments, labs, homework, etc.\nCanvas : grades, course-specific links\nTBD : Q&A\n\n\n\n\n\n\nWhich Q&A Platform?\nQ: Which Q&A Platform should we use this quarter? Discuss with your neighbor! A: Piazza, ClassQuestion, Discord, Slack, something else?\nPut a green sticky on the front of your computer when you’re done discussing. Put a pink if you have a question.",
+    "text": "The Nitty Gritty\n\nLectureIn-personWaitlistLab & OHMaterials\n\n\nClass Meetings\n\nInteractive\nLectures & lots of learn-by-doing\nBring your laptop to class every day\n\n\n\nIn-person, synchronous learning\n\nI will be teaching in person.\nLectures and lab will be podcast.\nAttendance will be incentivized using a daily participation survey.\nIf you’re not feeling well, please stay home. I will do the same.\n\n\n\nThe (Dreaded) Waitlist\n\nCourse enrollment is supposed to be 70 for this course\nThere are 100 people currently enrolled\nI don’t control the waitlist (cogsadvising@ucsd.edu does)\nI don’t anticipate students being enrolled off of the waitlist (will be dependent on students dropping)\n\n\n\nLab & Office Hours\n\nOffice hours begin week 1\n\nProf: Tu: 11A-12P (drop-in); W 10-11A (10 min slots; appt.)\n\nLab begins week 1 (next Friday)\n\nit’s not in a computer lab, so you’ll need to bring your own\ndetails about labs covered on Tues and in lab\nlabs will always be released by Th night and due the following Th\n\nI will hang out after class today for questions/concerns from students\n\n\n\nCourse Materials\n\nTextbooks are free and available online\nCourse platforms:\n\nWebsite : schedule, policies, due dates, etc.\nGitHub : retrieving assignments, labs, homework, etc.\ndatahub : completing assignments, labs, homework, etc.\nCanvas : grades, course-specific links\nTBD : Q&A",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#which-qa-platform",
+    "href": "content/lectures/00-welcome.html#which-qa-platform",
+    "title": "Welcome to COGS 137",
+    "section": "Which Q&A Platform?",
+    "text": "Which Q&A Platform?\nQ: Which Q&A Platform should we use this quarter? Discuss with your neighbor!\nA: Piazza, ClassQuestion, Discord, Slack, something else?\nPut a green sticky on the front of your computer when you’re done discussing. Put a pink if you have a question.",
     "crumbs": [
       "Notes",
       "00-welcome"
@@ -180,7 +191,18 @@
     "href": "content/lectures/00-welcome.html#a-new-ish-course",
     "title": "Welcome to COGS 137",
     "section": "A new-ish course!",
-    "text": "A new-ish course!\n\nOffered 3x previously…but changes significantly each time\nIf something doesn’t make sense, tell me!\nIf you’ve got feedback/suggestions, I’m all ears!\n\n. . .\nChanges since last iteration (based on feedback):\n\nspread out case studies\nmore focus on case studies/expectations\nmore examples of effective communication\nno midterm\nmore time for completing labs\nremoved super-structured labs\nmore in-class stuff\npeer grading\ncheckpoints on final project",
+    "text": "A new-ish course!\n\nOffered 3x previously…but changes significantly each time\nIf something doesn’t make sense, tell me!\nIf you’ve got feedback/suggestions, I’m all ears!",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#changes-since-last-iteration",
+    "href": "content/lectures/00-welcome.html#changes-since-last-iteration",
+    "title": "Welcome to COGS 137",
+    "section": "Changes since last iteration",
+    "text": "Changes since last iteration\n(based on feedback): - no midterm - case studies from beginning - more focus on case studies/expectations - more examples of effective communication - lab focus changed - more time for completing labs - removed super-structured labs - improved final project - peer feedback - checkpoints on final project - more in-class stuff/time",
     "crumbs": [
       "Notes",
       "00-welcome"
@@ -191,7 +213,18 @@
     "href": "content/lectures/00-welcome.html#how-to-get-help",
     "title": "Welcome to COGS 137",
     "section": "How to get help",
-    "text": "How to get help\n\nLab\nOffice Hours\nQ&A\n\n. . .\nA few (Q&A) guidelines:\n1. No duplicates.\n2. Public posts are best.\n3. Posts should include your question, what you've tried so far, & resources used.\n4. Helping others is encouraged.\n5. No assignment code in public posts.\n6. We're not robots.",
+    "text": "How to get help\n\nLab\nOffice Hours\nQ&A",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#qa",
+    "href": "content/lectures/00-welcome.html#qa",
+    "title": "Welcome to COGS 137",
+    "section": "Q&A",
+    "text": "Q&A\nA few (Q&A) guidelines:\n1. No duplicates.\n2. Public posts are best.\n3. Posts should include your question, what you've tried so far, & resources used.\n4. Helping others is encouraged.\n5. No assignment code in public posts.\n6. We're not robots.",
     "crumbs": [
       "Notes",
       "00-welcome"
@@ -257,7 +290,7 @@
     "href": "content/lectures/00-welcome.html#course-components",
     "title": "Welcome to COGS 137",
     "section": "Course components:",
-    "text": "Course components:\n\n\nLabs (8): Individual submission; graded on effort\nHomework (3): Individual submission; graded on correctness\nCase Studies (2): Team submission, technical analysis report + general communication\nFinal Project (1) : Team submission, due Tues of finals week w/ checkpoints prior",
+    "text": "Course components:\n\n\nLabs (7): Individual submission; graded on effort\nHomework (3): Individual submission; graded on correctness\nCase Studies (2): Team submission, technical analysis report + general communication\nFinal Project (1) : Team submission, due Tues of finals week w/ checkpoints prior",
     "crumbs": [
       "Notes",
       "00-welcome"
@@ -290,7 +323,18 @@
     "href": "content/lectures/00-welcome.html#datahub",
     "title": "Welcome to COGS 137",
     "section": "Datahub",
-    "text": "Datahub\nDatahub is a platform hosted by UCSD that gives students access to computational resources.\nThis means that while you’ll be typing on your keyboard, you’ll be using UCSD’s computers in this class.\nWebsite: https://datahub.ucsd.edu/\n. . .\nLaunch Environment\nWhen working on “stuff” for this course, select the COGS 137 environment.\n ## Datahub Usage\nQ: Do I have to use datahub?\nA: Nope. You could download and install all the packages we use and complete the course locally! However, many packages have already been installed for you on datahub, so it will be a tiny bit more work up front…but you won’t be dependent on the internet/datahub!",
+    "text": "Datahub\nDatahub is a platform hosted by UCSD that gives students access to computational resources.\nThis means that while you’ll be typing on your keyboard, you’ll be using UCSD’s computers in this class.\nWebsite: https://datahub.ucsd.edu/\n. . .\nLaunch Environment\nWhen working on “stuff” for this course, select the COGS 137 environment.",
+    "crumbs": [
+      "Notes",
+      "00-welcome"
+    ]
+  },
+  {
+    "objectID": "content/lectures/00-welcome.html#datahub-usage",
+    "href": "content/lectures/00-welcome.html#datahub-usage",
+    "title": "Welcome to COGS 137",
+    "section": "Datahub Usage",
+    "text": "Datahub Usage\nQ: Do I have to use datahub?\nA: Nope. You could download and install all the packages we use and complete the course locally! However, many packages have already been installed for you on datahub, so it will be a tiny bit more work up front…but you won’t be dependent on the internet/datahub!",
     "crumbs": [
       "Notes",
       "00-welcome"
@@ -521,7 +565,7 @@
     "href": "content/lectures/00-welcome.html#whos-in-this-class",
     "title": "Welcome to COGS 137",
     "section": "Who’s in this class?",
-    "text": "Who’s in this class?\n\nroster &lt;- read_sheet('1ALPAaDU6-GEoxwq3Q5WMGsqvbFoCw4jGDuz0C_VtqqM')\n\nggplot(roster, aes(x = College)) +\n  geom_bar() +\n  labs(title = \"COGS 137\") +\n  theme_bw(base_size = 14) + \n  theme(plot.title.position = \"plot\")\n\n\n\n\n\n\n\n\n\n\nNote: This code will not run for you because you don’t have access to the roster for this course.",
+    "text": "Who’s in this class?\n\nroster &lt;- read_sheet('1ALPAaDU6-GEoxwq3Q5WMGsqvbFoCw4jGDuz0C_VtqqM')\n\nggplot(roster, aes(x = College)) +\n  geom_bar() +\n  labs(title = \"COGS 137\") +\n  theme_bw(base_size = 14) + \n  theme(plot.title.position = \"plot\")\n\n\n\n\n\n\n\n\nNote: This code will not run for you because you don’t have access to the roster for this course.",
     "crumbs": [
       "Notes",
       "00-welcome"
@@ -554,7 +598,7 @@
     "href": "content/lectures/00-welcome.html#id-like-to-know-more",
     "title": "Welcome to COGS 137",
     "section": "I’d like to know more!",
-    "text": "I’d like to know more!\n(required)Student Survey - complete by Fri 10/4 at 11:59 PM.\nThis is required and completion will be used for CAA/#finaid. DO complete this even if you’re on the waitlist, please.\n. . .\n(optional) Daily Post-Lecture Feedback\n\nopportunity to reflect on learning\nopportunity to ask questions (I will read and answer these.)\nopportunity for extra credit on final project\n\n\n\n\n\nNote: Links to both surveys are also on Canvas. I will try to remind you at the end of lecture, but I’ll probably forget. Feel free to remind me/one another!",
+    "text": "I’d like to know more!\n(required)Student Survey - complete by Fri 10/4 at 11:59 PM.\nThis is required and completion will be used for CAA/#finaid. DO complete this even if you’re on the waitlist, please.\n. . .\n(optional) Daily Post-Lecture Feedback\n\nopportunity to reflect on learning\nopportunity to ask questions (I will read & answer.)\nopportunity for EC on final project\n\n\n\n\n\nNote: Links to both surveys are also on Canvas. I will try to remind you at the end of lecture, but I’ll probably forget. Feel free to remind me/one another!",
     "crumbs": [
       "Notes",
       "00-welcome"
@@ -604,28 +648,28 @@
     "href": "content/lectures/00-welcome-slides.html#who-am-i",
     "title": "Welcome to COGS 137",
     "section": "Who am I?",
-    "text": "Who am I?\nShannon Ellis: Associate Teaching Professor, Mom & wife, volleyball-obsessed, and baking & cooking lover\n   sellis@ucsd.edu     shannon-ellis.com    MOS 0204     Tu/Th 2-3:20PM (Lab: Fri 3-3:50PM)"
+    "text": "Who am I?\nShannon Ellis: Associate Teaching Professor, Mom & wife, volleyball-obsessed, and baking & cooking lover\n   sellis@ucsd.edu     shannon-ellis.com    CSB 002     Tu/Th 2-3:20PM (Lab: Fri 2-2:50 (RWAC 0103) or Mon 5-5:50 (DIB 121))"
   },
   {
     "objectID": "content/lectures/00-welcome-slides.html#who-all-is-involved",
     "href": "content/lectures/00-welcome-slides.html#who-all-is-involved",
     "title": "Welcome to COGS 137",
     "section": "Who all is involved?",
-    "text": "Who all is involved?\n\n\n\nInstructor\nShannon Ellis\nsellis@ucsd.edu\nWed 11A-12P\nVirtual (see canvas)\n\n\n\n\n\nTh 12:50-1:50\nCSB 243\n\n\nTA\nTBD\n\nTime TBD\nLocation TBD\n\n\nIA\nTBD\n\nTime TBD\nLocation TBD"
+    "text": "Who all is involved?\n\n\n\nInstructor\nShannon Ellis\nsellis@ucsd.edu\nTu 11A-12P\nCSB 243\n\n\n\n\n\nWed 10-11A\nZoom by appt.\n\n\nTA\nQuirine (Q) Van-Engen\n\nTime TBD\nLocation TBD\n\n\nIA\nEric Song\n\n–\n–"
   },
   {
     "objectID": "content/lectures/00-welcome-slides.html#course-staff",
     "href": "content/lectures/00-welcome-slides.html#course-staff",
     "title": "Welcome to COGS 137",
     "section": "Course Staff",
-    "text": "Course Staff\n\n\n\nTBD (TA)\nTBD (IA)"
+    "text": "Course Staff\n\n\n\nQuirine (Q) Van-Engen (TA)\nEric Song (IA)"
   },
   {
     "objectID": "content/lectures/00-welcome-slides.html#what-is-this-course",
     "href": "content/lectures/00-welcome-slides.html#what-is-this-course",
     "title": "Welcome to COGS 137",
     "section": "What is this course?",
-    "text": "What is this course?\nEverything you want to know about the course, and everything you will need for the course will be posted at: https://cogs137.github.io/website/\n\n\nIs this an intro CS course? No.\nWill we be doing computing? Yes.\nWhat computing language will we learn? R.\nIs this an intro stats course? No.\nWill we be doing stats? Yes.\nAre there any prerequisites? Yes, an intro statistics course!"
+    "text": "What is this course?\nEverything you want to know about the course, and everything you will need for the course will be posted at: https://cogs137-fa24.github.io/cogs137-fa24/\n\n\nIs this an intro CS course? No.\nWill we be doing computing? Yes.\nWhat computing language will we learn? R.\nIs this an intro stats course? No.\nWill we be doing stats? Yes.\nAre there any prerequisites? Yes, an intro statistics course!"
   },
   {
     "objectID": "content/lectures/00-welcome-slides.html#soi-dont-have-to-know-how-to-program-already",
@@ -639,14 +683,21 @@
     "href": "content/lectures/00-welcome-slides.html#the-general-plan",
     "title": "Welcome to COGS 137",
     "section": "The General Plan",
-    "text": "The General Plan\n\nWeeks 1-4: Learn to program in the tidyverse in R\nWeeks 5-10: Case Studies & Project\n\n…with effective communication & group work throughout\n\nNote: This course has historically been back-loaded, as that’s when group work has happened historically. I’ve tried to fix that this quarter by teaching from case studies from the beginning."
+    "text": "The General Plan\n\nLearn R & the tidyverse\nUse interesting case studies to do so\nDo a project for your portfolio\nw/ a focus on communication and group work\n\n\nNote: This course has historically been back-loaded, as that’s when group work has happened historically. I’ve tried to fix that this quarter by teaching from case studies from the beginning."
   },
   {
     "objectID": "content/lectures/00-welcome-slides.html#the-nitty-gritty",
     "href": "content/lectures/00-welcome-slides.html#the-nitty-gritty",
     "title": "Welcome to COGS 137",
     "section": "The Nitty Gritty",
-    "text": "The Nitty Gritty\n\nLectureIn-personWaitlistLab & OHMaterials\n\n\nClass Meetings\n\nInteractive\nLectures & lots of learn-by-doing\nBring your laptop to class every day\n\n\n\nIn-person, synchronous learning\n\nI will be teaching in person.\nLectures and lab will be podcast.\nAttendance will be incentivized using a daily participation survey.\nIf you’re not feeling well, please stay home. I will do the same.\n\n\n\nThe (Dreaded) Waitlist\n\nCourse enrollment is supposed to be 70 for this course\nThere are 100 people currently enrolled\nI don’t control the waitlist (cogsadvising@ucsd.edu does)\nI don’t anticipate students being enrolled off of the waitlist (will be dependent on students dropping)\n\n\n\nLab & Office Hours\n\nOffice hours begin week 1\n\nProf: Tu: 11A-12P (drop-in); W 10-11A (10 min slots; appt.)\n\nLab begins week 1 (next Friday)\n\nit’s not in a computer lab, so you’ll need to bring your own\ndetails about labs covered on Tues and in lab\ntypically labs will be released Monday and due the following Thursday\n\nI will hang out after class today for questions/concerns from students\n\n\n\nCourse Materials\n\nTextbooks are free and available online\nCourse platforms:\n\nWebsite : schedule, policies, due dates, etc.\nGitHub : retrieving assignments, labs, homework, etc.\ndatahub : completing assignments, labs, homework, etc.\nCanvas : grades, course-specific links\nTBD : Q&A\n\n\n\n\n\nWhich Q&A Platform?\nQ: Which Q&A Platform should we use this quarter? Discuss with your neighbor! A: Piazza, ClassQuestion, Discord, Slack, something else?\nPut a green sticky on the front of your computer when you’re done discussing. Put a pink if you have a question."
+    "text": "The Nitty Gritty\n\nLectureIn-personWaitlistLab & OHMaterials\n\n\nClass Meetings\n\nInteractive\nLectures & lots of learn-by-doing\nBring your laptop to class every day\n\n\n\nIn-person, synchronous learning\n\nI will be teaching in person.\nLectures and lab will be podcast.\nAttendance will be incentivized using a daily participation survey.\nIf you’re not feeling well, please stay home. I will do the same.\n\n\n\nThe (Dreaded) Waitlist\n\nCourse enrollment is supposed to be 70 for this course\nThere are 100 people currently enrolled\nI don’t control the waitlist (cogsadvising@ucsd.edu does)\nI don’t anticipate students being enrolled off of the waitlist (will be dependent on students dropping)\n\n\n\nLab & Office Hours\n\nOffice hours begin week 1\n\nProf: Tu: 11A-12P (drop-in); W 10-11A (10 min slots; appt.)\n\nLab begins week 1 (next Friday)\n\nit’s not in a computer lab, so you’ll need to bring your own\ndetails about labs covered on Tues and in lab\nlabs will always be released by Th night and due the following Th\n\nI will hang out after class today for questions/concerns from students\n\n\n\nCourse Materials\n\nTextbooks are free and available online\nCourse platforms:\n\nWebsite : schedule, policies, due dates, etc.\nGitHub : retrieving assignments, labs, homework, etc.\ndatahub : completing assignments, labs, homework, etc.\nCanvas : grades, course-specific links\nTBD : Q&A"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#which-qa-platform",
+    "href": "content/lectures/00-welcome-slides.html#which-qa-platform",
+    "title": "Welcome to COGS 137",
+    "section": "Which Q&A Platform?",
+    "text": "Which Q&A Platform?\nQ: Which Q&A Platform should we use this quarter? Discuss with your neighbor!\nA: Piazza, ClassQuestion, Discord, Slack, something else?\nPut a green sticky on the front of your computer when you’re done discussing. Put a pink if you have a question."
   },
   {
     "objectID": "content/lectures/00-welcome-slides.html#diversity-inclusion",
@@ -660,14 +711,28 @@
     "href": "content/lectures/00-welcome-slides.html#a-new-ish-course",
     "title": "Welcome to COGS 137",
     "section": "A new-ish course!",
-    "text": "A new-ish course!\n\nOffered 3x previously…but changes significantly each time\nIf something doesn’t make sense, tell me!\nIf you’ve got feedback/suggestions, I’m all ears!\n\n\nChanges since last iteration (based on feedback):\n\nspread out case studies\nmore focus on case studies/expectations\nmore examples of effective communication\nno midterm\nmore time for completing labs\nremoved super-structured labs\nmore in-class stuff\npeer grading\ncheckpoints on final project"
+    "text": "A new-ish course!\n\nOffered 3x previously…but changes significantly each time\nIf something doesn’t make sense, tell me!\nIf you’ve got feedback/suggestions, I’m all ears!"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#changes-since-last-iteration",
+    "href": "content/lectures/00-welcome-slides.html#changes-since-last-iteration",
+    "title": "Welcome to COGS 137",
+    "section": "Changes since last iteration",
+    "text": "Changes since last iteration\n(based on feedback): - no midterm - case studies from beginning - more focus on case studies/expectations - more examples of effective communication - lab focus changed - more time for completing labs - removed super-structured labs - improved final project - peer feedback - checkpoints on final project - more in-class stuff/time"
   },
   {
     "objectID": "content/lectures/00-welcome-slides.html#how-to-get-help",
     "href": "content/lectures/00-welcome-slides.html#how-to-get-help",
     "title": "Welcome to COGS 137",
     "section": "How to get help",
-    "text": "How to get help\n\nLab\nOffice Hours\nQ&A\n\n\nA few (Q&A) guidelines:\n1. No duplicates.\n2. Public posts are best.\n3. Posts should include your question, what you've tried so far, & resources used.\n4. Helping others is encouraged.\n5. No assignment code in public posts.\n6. We're not robots."
+    "text": "How to get help\n\nLab\nOffice Hours\nQ&A"
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#qa",
+    "href": "content/lectures/00-welcome-slides.html#qa",
+    "title": "Welcome to COGS 137",
+    "section": "Q&A",
+    "text": "Q&A\nA few (Q&A) guidelines:\n1. No duplicates.\n2. Public posts are best.\n3. Posts should include your question, what you've tried so far, & resources used.\n4. Helping others is encouraged.\n5. No assignment code in public posts.\n6. We're not robots."
   },
   {
     "objectID": "content/lectures/00-welcome-slides.html#the-r-community",
@@ -709,7 +774,7 @@
     "href": "content/lectures/00-welcome-slides.html#course-components",
     "title": "Welcome to COGS 137",
     "section": "Course components:",
-    "text": "Course components:\n\n\nLabs (8): Individual submission; graded on effort\nHomework (3): Individual submission; graded on correctness\nCase Studies (2): Team submission, technical analysis report + general communication\nFinal Project (1) : Team submission, due Tues of finals week w/ checkpoints prior"
+    "text": "Course components:\n\n\nLabs (7): Individual submission; graded on effort\nHomework (3): Individual submission; graded on correctness\nCase Studies (2): Team submission, technical analysis report + general communication\nFinal Project (1) : Team submission, due Tues of finals week w/ checkpoints prior"
   },
   {
     "objectID": "content/lectures/00-welcome-slides.html#grading",
@@ -730,7 +795,14 @@
     "href": "content/lectures/00-welcome-slides.html#datahub",
     "title": "Welcome to COGS 137",
     "section": "Datahub",
-    "text": "Datahub\nDatahub is a platform hosted by UCSD that gives students access to computational resources.\nThis means that while you’ll be typing on your keyboard, you’ll be using UCSD’s computers in this class.\nWebsite: https://datahub.ucsd.edu/\n\nLaunch Environment\nWhen working on “stuff” for this course, select the COGS 137 environment.\n ## Datahub Usage\nQ: Do I have to use datahub?\nA: Nope. You could download and install all the packages we use and complete the course locally! However, many packages have already been installed for you on datahub, so it will be a tiny bit more work up front…but you won’t be dependent on the internet/datahub!"
+    "text": "Datahub\nDatahub is a platform hosted by UCSD that gives students access to computational resources.\nThis means that while you’ll be typing on your keyboard, you’ll be using UCSD’s computers in this class.\nWebsite: https://datahub.ucsd.edu/\n\nLaunch Environment\nWhen working on “stuff” for this course, select the COGS 137 environment."
+  },
+  {
+    "objectID": "content/lectures/00-welcome-slides.html#datahub-usage",
+    "href": "content/lectures/00-welcome-slides.html#datahub-usage",
+    "title": "Welcome to COGS 137",
+    "section": "Datahub Usage",
+    "text": "Datahub Usage\nQ: Do I have to use datahub?\nA: Nope. You could download and install all the packages we use and complete the course locally! However, many packages have already been installed for you on datahub, so it will be a tiny bit more work up front…but you won’t be dependent on the internet/datahub!"
   },
   {
     "objectID": "content/lectures/00-welcome-slides.html#toolkit",
@@ -877,7 +949,7 @@
     "href": "content/lectures/00-welcome-slides.html#whos-in-this-class",
     "title": "Welcome to COGS 137",
     "section": "Who’s in this class?",
-    "text": "Who’s in this class?\n\nroster &lt;- read_sheet('1ALPAaDU6-GEoxwq3Q5WMGsqvbFoCw4jGDuz0C_VtqqM')\n\nggplot(roster, aes(x = College)) +\n  geom_bar() +\n  labs(title = \"COGS 137\") +\n  theme_bw(base_size = 14) + \n  theme(plot.title.position = \"plot\")\n\n\n\n\n\n\n\n\n\n\nNote: This code will not run for you because you don’t have access to the roster for this course."
+    "text": "Who’s in this class?\n\nroster &lt;- read_sheet('1ALPAaDU6-GEoxwq3Q5WMGsqvbFoCw4jGDuz0C_VtqqM')\n\nggplot(roster, aes(x = College)) +\n  geom_bar() +\n  labs(title = \"COGS 137\") +\n  theme_bw(base_size = 14) + \n  theme(plot.title.position = \"plot\")\n\n\nNote: This code will not run for you because you don’t have access to the roster for this course."
   },
   {
     "objectID": "content/lectures/00-welcome-slides.html#whos-in-this-class-1",
@@ -898,7 +970,7 @@
     "href": "content/lectures/00-welcome-slides.html#id-like-to-know-more",
     "title": "Welcome to COGS 137",
     "section": "I’d like to know more!",
-    "text": "I’d like to know more!\n(required)Student Survey - complete by Fri 10/4 at 11:59 PM.\nThis is required and completion will be used for CAA/#finaid. DO complete this even if you’re on the waitlist, please.\n\n(optional) Daily Post-Lecture Feedback\n\nopportunity to reflect on learning\nopportunity to ask questions (I will read and answer these.)\nopportunity for extra credit on final project\n\n\n\n\n\n\n🔗 https://cogs137.github.io/website/\n\n\n\n\nNote: Links to both surveys are also on Canvas. I will try to remind you at the end of lecture, but I’ll probably forget. Feel free to remind me/one another!"
+    "text": "I’d like to know more!\n(required)Student Survey - complete by Fri 10/4 at 11:59 PM.\nThis is required and completion will be used for CAA/#finaid. DO complete this even if you’re on the waitlist, please.\n\n(optional) Daily Post-Lecture Feedback\n\nopportunity to reflect on learning\nopportunity to ask questions (I will read & answer.)\nopportunity for EC on final project\n\n\n\n\n\n\n🔗 https://cogs137-fa24.github.io/cogs137-fa24/\n\n\n\n\nNote: Links to both surveys are also on Canvas. I will try to remind you at the end of lecture, but I’ll probably forget. Feel free to remind me/one another!"
   },
   {
     "objectID": "LICENSE.html",

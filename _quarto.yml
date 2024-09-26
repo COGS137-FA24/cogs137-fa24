@@ -50,12 +50,19 @@ website:
         href: https://github.com/COGS137-FA24
         text: "GitHub"
     contents:
-      - section: "Course information"
+      - section: "Schedule & Policies"
         contents:
           - href: schedule.qmd
             text: Schedule
           - href: policies.qmd
             text: Policies
+      - section: "Notes"
+        contents:
+          - text: "00-welcome"
+            href: content/lectures/00-welcome.qmd
+      - section: "Homework"
+      - section: "Labs"
+      - section: "Case Studies"
       - section: "Computing"
         contents:
           - href: computing/computing-access.qmd
@@ -64,14 +71,7 @@ website:
             text: Troubleshooting
           - href: computing/computing-cheatsheets.qmd
             text: Cheatsheets
-      - section: "Notes"
-        contents:
-          - text: "00-welcome"
-            href: content/lectures/00-welcome.qmd
-      - section: "Homework"
-      - section: "Labs"
-      - section: "Case Studies"
-
+            
     #   - section: "Lecture Slides"
     #     contents:
     #       # - text: "00-welcome"

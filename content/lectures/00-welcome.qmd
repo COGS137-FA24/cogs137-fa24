@@ -58,15 +58,6 @@ Shannon Ellis: Associate Teaching Professor, Mom & wife, volleyball-obsessed, an
 
 <i class="fa fa-envelope"></i>   [sellis\@ucsd.edu](mailto:sellis@ucsd.edu) <br> <i class="fa fa-home"></i>   [shannon-ellis.com](https://shannon-ellis.com/) <br> <i class="fa fa-university"></i>  CSB 002 <br> <i class="fa fa-calendar"></i>   Tu/Th 2-3:20PM (Lab: Fri 2-2:50 (RWAC 0103) or Mon 5-5:50 (DIB 121))
 
-## Who all is involved?
-
-|            |                                                |                  |               |                      |
-|---------------|---------------|---------------|---------------|---------------|
-| Instructor | [**Shannon Ellis**](http://www.shanellis.com/) | sellis\@ucsd.edu | Tu 11A-12P  | CSB 243 |
-|            |                                                |                  | Wed 10-11A  | Zoom by appt.              |
-| TA         | Quirine (Q) van-Engen                          |                  | Time TBD      | Location TBD         |
-| IA         | Eric Song                                      |                  | --    | --         |
-
 ## Course Staff
 
 | Quirine (Q) van-Engen (TA) | Eric Song     (IA) |
@@ -150,9 +141,9 @@ Note: This course has historically been back-loaded, as that's when group work h
 
 **Lab & Office Hours**
 
--   **Office hours** begin week 1
+-   **Office hours** begin Friday** week 1
     -   Prof: Tu: 11A-12P (drop-in); W 10-11A (10 min slots; appt.)
--   **Lab** begins week 1 (next Friday)
+-   **Lab** begins week 1 (next **Friday**)
     -   it's *not* in a computer lab, so you'll need to bring your own
     -   details about labs covered on Tues and in lab
     -   labs will always be released by Th night and due the following Th
@@ -174,7 +165,8 @@ Note: This course has historically been back-loaded, as that's when group work h
 ## Which Q&A Platform?
 
 **Q**: Which Q&A Platform should we use this quarter? Discuss with your neighbor!  
-**A**: Piazza, ClassQuestion, Discord, Slack, something else?  
+</br>
+**A**: Piazza, ClassQuestion, Slack, Canvas? Something else?  
 
 Put a <font color="#32cb31">green</font> sticky on the front of your computer when you're done discussing. Put a <font color="#ff65a3">pink</font> if you have a question.
 
@@ -449,7 +441,7 @@ Put a <font color="#32cb31">green</font> sticky on the front of your computer wh
 
 ## How will we use R Markdown?
 
--   Every lab / midterm / project / homework / notes / etc. is an R Markdown document
+-   Every lab / case study / project / homework / notes / etc. is an R Markdown document
 -   You'll always have a template R Markdown document to start with
 -   The amount of scaffolding in the template will decrease over the quarter
 
@@ -482,11 +474,11 @@ with human readable messages
 
 ## Git and GitHub tips {.scrollable}
 
--   Git is a version control system -- like "Track Changes" feature Google Docs...but optimized for code. GitHub is the home for your Git-based projects on the internet -- like Drive with additional features for code.
+-   Git is a **version control** system -- like "Track Changes" feature Google Docs...but optimized for code. GitHub is the home for your Git-based projects on the internet -- like Drive with additional features for code.
 
 . . .
 
--   There are millions of git commands -- ok, that's an exaggeration, but there are a lot of them -- and very few people know them all. 99% of the time you will use git to add, commit, push, and pull.
+-   There are millions of git commands -- ok, that's an exaggeration, but there are a lot of them -- and very few people know them all. **99% of the time you will use git to add, commit, push, and pull**.
 
 . . .
 
@@ -498,7 +490,7 @@ Resource: [happygitwithr.com](http://happygitwithr.com/): book for working with 
 
 ## Let's take a tour -- Git / GitHub
 
-**We'll cover this time permitting, you'll see it again in lab this week**
+**We'll cover this time permitting, you'll see it again in lab next week**
 
 Concepts introduced:
 

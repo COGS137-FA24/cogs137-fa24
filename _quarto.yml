@@ -60,9 +60,12 @@ website:
         contents:
           - text: "00-welcome"
             href: content/lectures/00-welcome.qmd
-      - section: "Homework"
       - section: "Labs"
+        contents:
+          - text: "Lab01: Tooling and R"
+            href: content/labs/01-lab-intro-r.qmd
       - section: "Case Studies"
+      - section: "Homework"
       - section: "Computing"
         contents:
           - href: computing/computing-access.qmd
@@ -157,9 +160,8 @@ website:
     #         href: content/lectures/19-wrap-up.html
     #   - section: "Labs"
     #     contents:
-    #       - text: "Lab01: Tooling and R"
-    #         href: content/labs/01-lab-intro-r.qmd
-    #       - text: "Lab02: Wrangling"
+
+          # - text: "Lab02: Wrangling"
     #         href: content/labs/02-lab-wrangling.qmd
     #       - text: "Lab03: Data Viz"
     #         href: content/labs/03-lab-viz.qmd

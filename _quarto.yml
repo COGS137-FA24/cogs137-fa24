@@ -60,6 +60,10 @@ website:
         contents:
           - text: "00-welcome"
             href: content/lectures/00-welcome.qmd
+          - text: "01-intro-to-r"
+            href: content/lectures/01-intro-to-r.qmd
+          - text: "02-cs01-intro"
+            href: content/lectures/02-cs01-intro.qmd
       - section: "Labs"
         contents:
           - text: "Lab01: Tooling and R"

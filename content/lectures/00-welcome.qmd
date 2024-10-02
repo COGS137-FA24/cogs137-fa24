@@ -7,6 +7,10 @@ format:
     output-file: 00-welcome.html
   revealjs:
     output-file: 00-welcome-slides.html
+    chalkboard: false
+    preview-links: auto
+    logo: images/cogs137-logo-hex.png
+    css: slides.css
 ---
 
 # Welcome to COGS 137!

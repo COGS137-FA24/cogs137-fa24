@@ -782,42 +782,42 @@
     "text": "Recap\n\nAlways best to think of data as part of a tibble\n\nThis plays nicely with the tidyverse as well\nRows are observations, columns are variables\n\nWhat are the common variable types in R\n\nHow do I create a variable of each type?\nWhen would I use each one?\n\nDo I know how to determine the class/type of a variable?\nCan I explain dynamic typing?\nCan I operate on variables and values using…\n\narithmetic operators?\ncomparison operators?\n\nWhat are dataframes/tibbles? and why are they useful?\nWhat is the difference between installing and loading a package?\nWhat are the components of an R Markdown file?\n\n\n\n\n\nhttps://cogs137.github.io/website/"
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html",
-    "href": "content/lectures/11-cs01-data.html",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html",
+    "href": "content/lectures/02-cs01-intro.html",
+    "title": "02-cs01-intro",
     "section": "",
-    "text": "Coming Soon\n\nQ:\nA:\n\n\n\n\nComing Soon\n\n\n\n\n\nBackground\nData Intro\nPaper Results\nWrangle",
+    "text": "Q: Does R let you perform arithmetic across number and integer types?\nA: Yup! For example 7L + 2 gives you 9. (Similarly 7L + 2.2 gives 9.2)\n\n\nQ: I am confused on how to open up projects, what it means to comit and pull.\nA: We’ll review this again today!\n\n\nQ: I am very new to using Github, so using Github is a bit confusing, but probably just b/c I am very new to it.\nA: This is a normal feeling at the start of this course! I promise in a week it will feel more comfortable!\n\n\nQ: I’m curious about the usage of R versus Python. Are there certain situations where R is more useful than Python?\nA: In a nutshell, almost everything you can do in one you can do in the other. However, in my opinion, R is most useful when 1) cleaning data, 2) using statistical models, and 3) visualizing data. (On the flip side, when I’m writing software, using APIs, and gathering data, I typically turn to Python.)\n\n\nQ: How do I save my lecture practice into a new file in R?\nA: I would recommend opening a new .Rmd file and then saving it with the name of the lecture.\n\n\nQ: i noticed that global variables remain in the environment panel even when i delete that variable in my rmd script. does it matter that they are still there? i tried clicking the broom and rerunning the code, and only the variables i wanted remained, but is this the right way to go about changing or deleting variables in my code?\nA: Yup! The broom will clean up your environment! There is also an rm() function if you ever want to remove an individual variable from your environment.\n\n\nQ: Am I supposed to create an “R Markdown” or an “R Notebook”?\nA: I’ll demo R Markdown, so encouraging use of that.\n\n\nQ: Will we be covering any syntax guidelines when programming in R? For example, in other programming languages indents/spaces are necessary for many functions but I’m wondering if there is anything like that used in R.\nA: I will highlight them as we go! R does not necessitate whitespace ever, but stylistically, we will encourage it. What I teach will be based off of this style guide.\n\n\nQ: How many points are there in total for the extra credits\nA: I’m not totally sure yet. At least a few points.\n\n\nQ: I wonder what will be the format of the lab session?\nA: Typically a short presentation (5 min) at the beginning to explain the lab or discuss the most difficult/confusing part. Then, time to work on lab and get questions answered by staff.\n\n\nQ: Could you please post the slides one or two days before class? I would like to review them in advance so I can better follow along during the lecture and not feel lost.   A: I totally understand the request, and I’ll do my best! (For example, these have been up since Monday), but I’m re-doing the slides up to class many days. While the examples will change this quarter, the concepts will overlap with last Fall, so feel free to reference those notes.\n\n\nQ: What are the main parts of the R interface that we will be interacting with?\nA: RMarkdown files, R Console, Git pane, Files pane, and Plots pane\n\n\nQ: I had a question about the survey for participation. I’m usually busy right after class. Is there any way to get credit for it even if I submit it a couple of hours later or for it to open a little before class ends.\nA: I do typically end class a few minutes early for completion then and we’re working to open it a few minutes before class ends. It’s always fine to fill it out later if it’s open. It will always be open until at least 5PM.\n\n\n\n\nDue Dates:\n\nStudent survey due Fri 10/4 (11:59 PM; #finaid)\nLab 01 now available (due next Thursday 10/10)\n\nNo in-class lab this Friday; Monday’s lab is happening\n\nLecture Participation survey “due” after class\n\nNote:\n\nRun this in console once: options(download.file.method=\"wget\")\nWe’re going to start CS01 in lecture/lab before you know your group mates.\nReminder to Shannon: demo lab clone, push pull\n\n\n\n\n\nBackground\nData Intro\nPaper Results\nWrangle",
     "crumbs": [
       "Notes",
       "02-cs01-intro"
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#qa",
-    "href": "content/lectures/11-cs01-data.html#qa",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#qa",
+    "href": "content/lectures/02-cs01-intro.html#qa",
+    "title": "02-cs01-intro",
     "section": "",
-    "text": "Coming Soon\n\nQ:\nA:",
+    "text": "Q: Does R let you perform arithmetic across number and integer types?\nA: Yup! For example 7L + 2 gives you 9. (Similarly 7L + 2.2 gives 9.2)\n\n\nQ: I am confused on how to open up projects, what it means to comit and pull.\nA: We’ll review this again today!\n\n\nQ: I am very new to using Github, so using Github is a bit confusing, but probably just b/c I am very new to it.\nA: This is a normal feeling at the start of this course! I promise in a week it will feel more comfortable!\n\n\nQ: I’m curious about the usage of R versus Python. Are there certain situations where R is more useful than Python?\nA: In a nutshell, almost everything you can do in one you can do in the other. However, in my opinion, R is most useful when 1) cleaning data, 2) using statistical models, and 3) visualizing data. (On the flip side, when I’m writing software, using APIs, and gathering data, I typically turn to Python.)\n\n\nQ: How do I save my lecture practice into a new file in R?\nA: I would recommend opening a new .Rmd file and then saving it with the name of the lecture.\n\n\nQ: i noticed that global variables remain in the environment panel even when i delete that variable in my rmd script. does it matter that they are still there? i tried clicking the broom and rerunning the code, and only the variables i wanted remained, but is this the right way to go about changing or deleting variables in my code?\nA: Yup! The broom will clean up your environment! There is also an rm() function if you ever want to remove an individual variable from your environment.\n\n\nQ: Am I supposed to create an “R Markdown” or an “R Notebook”?\nA: I’ll demo R Markdown, so encouraging use of that.\n\n\nQ: Will we be covering any syntax guidelines when programming in R? For example, in other programming languages indents/spaces are necessary for many functions but I’m wondering if there is anything like that used in R.\nA: I will highlight them as we go! R does not necessitate whitespace ever, but stylistically, we will encourage it. What I teach will be based off of this style guide.\n\n\nQ: How many points are there in total for the extra credits\nA: I’m not totally sure yet. At least a few points.\n\n\nQ: I wonder what will be the format of the lab session?\nA: Typically a short presentation (5 min) at the beginning to explain the lab or discuss the most difficult/confusing part. Then, time to work on lab and get questions answered by staff.\n\n\nQ: Could you please post the slides one or two days before class? I would like to review them in advance so I can better follow along during the lecture and not feel lost.   A: I totally understand the request, and I’ll do my best! (For example, these have been up since Monday), but I’m re-doing the slides up to class many days. While the examples will change this quarter, the concepts will overlap with last Fall, so feel free to reference those notes.\n\n\nQ: What are the main parts of the R interface that we will be interacting with?\nA: RMarkdown files, R Console, Git pane, Files pane, and Plots pane\n\n\nQ: I had a question about the survey for participation. I’m usually busy right after class. Is there any way to get credit for it even if I submit it a couple of hours later or for it to open a little before class ends.\nA: I do typically end class a few minutes early for completion then and we’re working to open it a few minutes before class ends. It’s always fine to fill it out later if it’s open. It will always be open until at least 5PM.",
     "crumbs": [
       "Notes",
       "02-cs01-intro"
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#course-announcements",
-    "href": "content/lectures/11-cs01-data.html#course-announcements",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#course-announcements",
+    "href": "content/lectures/02-cs01-intro.html#course-announcements",
+    "title": "02-cs01-intro",
     "section": "",
-    "text": "Coming Soon",
+    "text": "Due Dates:\n\nStudent survey due Fri 10/4 (11:59 PM; #finaid)\nLab 01 now available (due next Thursday 10/10)\n\nNo in-class lab this Friday; Monday’s lab is happening\n\nLecture Participation survey “due” after class\n\nNote:\n\nRun this in console once: options(download.file.method=\"wget\")\nWe’re going to start CS01 in lecture/lab before you know your group mates.\nReminder to Shannon: demo lab clone, push pull",
     "crumbs": [
       "Notes",
       "02-cs01-intro"
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#agenda",
-    "href": "content/lectures/11-cs01-data.html#agenda",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#agenda",
+    "href": "content/lectures/02-cs01-intro.html#agenda",
+    "title": "02-cs01-intro",
     "section": "",
     "text": "Background\nData Intro\nPaper Results\nWrangle",
     "crumbs": [
@@ -826,9 +826,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#case-studies-in-cogs-137",
-    "href": "content/lectures/11-cs01-data.html#case-studies-in-cogs-137",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#case-studies-in-cogs-137",
+    "href": "content/lectures/02-cs01-intro.html#case-studies-in-cogs-137",
+    "title": "02-cs01-intro",
     "section": "Case Studies in COGS 137",
     "text": "Case Studies in COGS 137\n\nQuestion + Data Provided\nWrangling + Analysis Discussed/Presented in Class\nIn groups:\n\nreproduce the analysis\nextend the analysis",
     "crumbs": [
@@ -837,9 +837,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#deliverables",
-    "href": "content/lectures/11-cs01-data.html#deliverables",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#deliverables",
+    "href": "content/lectures/02-cs01-intro.html#deliverables",
+    "title": "02-cs01-intro",
     "section": "Deliverables",
     "text": "Deliverables\n\nFull Rmd report (explanations, text and story matter!)\nGeneral Audience communication",
     "crumbs": [
@@ -848,9 +848,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#cs01-biomarkers-of-recent-use",
-    "href": "content/lectures/11-cs01-data.html#cs01-biomarkers-of-recent-use",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#cs01-biomarkers-of-recent-use-1",
+    "href": "content/lectures/02-cs01-intro.html#cs01-biomarkers-of-recent-use-1",
+    "title": "02-cs01-intro",
     "section": "CS01: Biomarkers of Recent Use",
     "text": "CS01: Biomarkers of Recent Use\n\nFocuses on Data Wrangling and EDA\nUses real research data from a collaboration w/ Rob Fitgerald’s group",
     "crumbs": [
@@ -859,9 +859,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#motor-vehicle-accidents-mvas",
-    "href": "content/lectures/11-cs01-data.html#motor-vehicle-accidents-mvas",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#motor-vehicle-accidents-mvas",
+    "href": "content/lectures/02-cs01-intro.html#motor-vehicle-accidents-mvas",
+    "title": "02-cs01-intro",
     "section": "Motor Vehicle Accidents (MVAs)",
     "text": "Motor Vehicle Accidents (MVAs)\n\n2/3 of US trauma center admissions are due to MVAs\n~60% of such patients testing positive for drugs or alcohol\nAlcohol and cannabis are most frequently detected\n\nSource: https://academic.oup.com/clinchem/article/59/3/478/5621997",
     "crumbs": [
@@ -870,9 +870,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#legalization-of-marijuana",
-    "href": "content/lectures/11-cs01-data.html#legalization-of-marijuana",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#legalization-of-marijuana",
+    "href": "content/lectures/02-cs01-intro.html#legalization-of-marijuana",
+    "title": "02-cs01-intro",
     "section": "Legalization of Marijuana",
     "text": "Legalization of Marijuana\n\nFederally illegal in the US\nDecriminalized in many states\nMedically available in 15 states\nLegal for recreational use in 24 states (including CA)",
     "crumbs": [
@@ -881,9 +881,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#increased-roadside-surveys",
-    "href": "content/lectures/11-cs01-data.html#increased-roadside-surveys",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#increased-roadside-surveys",
+    "href": "content/lectures/02-cs01-intro.html#increased-roadside-surveys",
+    "title": "02-cs01-intro",
     "section": "Increased roadside surveys",
     "text": "Increased roadside surveys\n\n\n25% increase in use nationwide from 2002 to 2015 (survey)\nTHC detection in drivers increased by 48% from 2007 to 2014\nIncreased prevalence of consumption -&gt; possible intoxication -&gt; possible impaired driving -&gt; public health concern",
     "crumbs": [
@@ -892,9 +892,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#dui-of-alcohol-duia",
-    "href": "content/lectures/11-cs01-data.html#dui-of-alcohol-duia",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#dui-of-alcohol-duia",
+    "href": "content/lectures/02-cs01-intro.html#dui-of-alcohol-duia",
+    "title": "02-cs01-intro",
     "section": "DUI of Alcohol (DUIA)",
     "text": "DUI of Alcohol (DUIA)\n\n\nThe science is there. Don’t do it.\nDUIA has decreased since the 1970s\n\n% of nighttime, weekend drivers testing over the legal limit (BAC &gt; 0.08 g/dL) decreased from 7.5% (1973) to 2.2% (2007) link",
     "crumbs": [
@@ -903,9 +903,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#dui-of-cannabis",
-    "href": "content/lectures/11-cs01-data.html#dui-of-cannabis",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#dui-of-cannabis",
+    "href": "content/lectures/02-cs01-intro.html#dui-of-cannabis",
+    "title": "02-cs01-intro",
     "section": "DUI of Cannabis",
     "text": "DUI of Cannabis\n\nIn a 2007 survey, 16.3% of nighttime drivers were drug-positive link\n\n8.6% of these tested positive for THC\n\nExperimental and cognitive studies suggest cannabis-induced impairment increases risk of motor vehicle crashes:\n\n. . .\n\nEvidence suggests recent smoking and/or blood THC concentrations 2–5 ng/mL are associated with substantial driving impairment, particularly in occasional smokers.link",
     "crumbs": [
@@ -914,9 +914,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#roadside-detection",
-    "href": "content/lectures/11-cs01-data.html#roadside-detection",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#roadside-detection",
+    "href": "content/lectures/02-cs01-intro.html#roadside-detection",
+    "title": "02-cs01-intro",
     "section": "Roadside Detection",
     "text": "Roadside Detection\n\nper se laws: “a driver is deemed to have committed an offense if THC is detected at or above a pre-determined cutoff” link\n\n. . .\n\nDefining cutoffs for safe driving is difficult\nTHC concentration differs by:\n\n“smoking topography” (time to smoke; number of puffs)\nfrequency of use\nroute of ingestion\n\n\n. . .\nAs of 2021…link\n\n\n19 states have per se or zero tolerance cannabis laws\nStates with per se laws (Illinois, Montana, Nevada, Ohio, Pennsylvania, Washington and West Virginia), cutoffs range from 1 to 5 ng/mL THC in whole blood.\nIn 3 states, per se limits also apply to THC metabolites\nColorado: “reasonable inference” - blood contained &gt;5 ng/mL THC at the time of the offense\n3 states zero tolerance for THC; 8 states for THC and metabolites",
     "crumbs": [
@@ -925,9 +925,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#metabolism",
-    "href": "content/lectures/11-cs01-data.html#metabolism",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#metabolism",
+    "href": "content/lectures/02-cs01-intro.html#metabolism",
+    "title": "02-cs01-intro",
     "section": "Metabolism",
     "text": "Metabolism\n\n\npeak blood concentrations occur during smoking, then drop rapidly link\nsubjective ‘high’ persists for several hours, varies greatly between individuals\nTHC concentrations remain detectable in frequent users longer than occasional users link\nTHC and certain metabolites can be detected in blood for weeks to months after use and do not necessarily indicate impairment",
     "crumbs": [
@@ -936,9 +936,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#detection",
-    "href": "content/lectures/11-cs01-data.html#detection",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#detection",
+    "href": "content/lectures/02-cs01-intro.html#detection",
+    "title": "02-cs01-intro",
     "section": "Detection",
     "text": "Detection\nVarious approaches:\n\nDetect impairment (officers detect DUIC)\nDetect recent use (test for compounds)\nCombine recent use + impairment\n\n. . .\nFocus here: Can we identify a biomarker of recent use?\n\nrecent use: defined here as within 3h\ntesting THC and metabolites in blood, oral fluid (OF), and breath",
     "crumbs": [
@@ -947,9 +947,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#aside-case-study-report",
-    "href": "content/lectures/11-cs01-data.html#aside-case-study-report",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#aside-case-study-report",
+    "href": "content/lectures/02-cs01-intro.html#aside-case-study-report",
+    "title": "02-cs01-intro",
     "section": "Aside: Case Study Report",
     "text": "Aside: Case Study Report\n\nYour Case study will need a background section\nIt can use/summarize/paraphrase the information here (you should cite the source, not me)\nBut, you’re not limited to this information\nYou are allowed/encouraged to dig deeper, include what’s most important, add to, remove, etc.\nThere are a lot of citations in this section - go ahead and peruse them/others/use references in these papers",
     "crumbs": [
@@ -958,9 +958,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#participants",
-    "href": "content/lectures/11-cs01-data.html#participants",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#participants",
+    "href": "content/lectures/02-cs01-intro.html#participants",
+    "title": "02-cs01-intro",
     "section": "Participants",
     "text": "Participants\n\nplacebo-controlled, double-blinded, randomized study\n\n. . .\n\nrecruited:\n\nvolunteers 21-55 y/o\nhad a driver’s license\nself-reported cannabis use &gt;= 4x in the past month\n\n\n. . .\n\nParticipants were:\n\ncompensated\nmedically evaluated (for safety)\nasked to refrain from use for 2d prior to participation\nexclusion criteria: OF THC concentration ≥5 ng/mL on day of study (n=7)\n\n\n. . .\n\nStudy included 191 participants",
     "crumbs": [
@@ -969,9 +969,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#demographics",
-    "href": "content/lectures/11-cs01-data.html#demographics",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#demographics",
+    "href": "content/lectures/02-cs01-intro.html#demographics",
+    "title": "02-cs01-intro",
     "section": "Demographics",
     "text": "Demographics\n\nSource: Hoffman et al.",
     "crumbs": [
@@ -980,9 +980,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#experimental-design",
-    "href": "content/lectures/11-cs01-data.html#experimental-design",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#experimental-design",
+    "href": "content/lectures/02-cs01-intro.html#experimental-design",
+    "title": "02-cs01-intro",
     "section": "Experimental Design",
     "text": "Experimental Design\nParticipants were:\n\n\nrandomly assigned to receive a cigarette containing placebo (0.02%), or 5.9% or 13.4% THC\nBlood, OF and breath were collected prior to smoking\nsmoked a 700 mg cigarette ad libitum within 10 min, with a minimum of four puffs.\nAfter smoking, 4 additional OF and breath and 8 blood collections were completed at time points up to ∼6h from the start of smoking.\nParticipants ate and drank water between collections, although not within 10 min of OF collection.",
     "crumbs": [
@@ -991,9 +991,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#timeline",
-    "href": "content/lectures/11-cs01-data.html#timeline",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#timeline",
+    "href": "content/lectures/02-cs01-intro.html#timeline",
+    "title": "02-cs01-intro",
     "section": "Timeline",
     "text": "Timeline\n\nSource: Fitzgerald et al.",
     "crumbs": [
@@ -1002,9 +1002,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#consumption",
-    "href": "content/lectures/11-cs01-data.html#consumption",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#consumption",
+    "href": "content/lectures/02-cs01-intro.html#consumption",
+    "title": "02-cs01-intro",
     "section": "Consumption",
     "text": "Consumption\n Source: Hoffman et al.",
     "crumbs": [
@@ -1013,9 +1013,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#topography",
-    "href": "content/lectures/11-cs01-data.html#topography",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#topography",
+    "href": "content/lectures/02-cs01-intro.html#topography",
+    "title": "02-cs01-intro",
     "section": "Topography",
     "text": "Topography\n Source: Hoffman et al.",
     "crumbs": [
@@ -1024,9 +1024,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#subjective-highness",
-    "href": "content/lectures/11-cs01-data.html#subjective-highness",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#subjective-highness",
+    "href": "content/lectures/02-cs01-intro.html#subjective-highness",
+    "title": "02-cs01-intro",
     "section": "Subjective Highness",
     "text": "Subjective Highness\n\nSource: Hoffman et al.",
     "crumbs": [
@@ -1035,9 +1035,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#our-datasets",
-    "href": "content/lectures/11-cs01-data.html#our-datasets",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#our-datasets",
+    "href": "content/lectures/02-cs01-intro.html#our-datasets",
+    "title": "02-cs01-intro",
     "section": "Our Datasets",
     "text": "Our Datasets\nThree matrices:\n\nBlood (WB): 8 compounds; 190 participants\nOral Fluid (OF): 7 compounds; 192 participants\nBreath (BR): 1 compound; 191 participants\n\n. . .\nVariables:\n\nID | participants identifier\nTreatment | placebo, 5.90%, 13.40%\nGroup | Occasional user, Frequent user\nTimepoint | indicator of which point in the timeline participant’s collection occurred\ntime.from.start | number of minutes from consumption\n& measurements for individual compounds",
     "crumbs": [
@@ -1046,9 +1046,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#the-data-1",
-    "href": "content/lectures/11-cs01-data.html#the-data-1",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#the-data-1",
+    "href": "content/lectures/02-cs01-intro.html#the-data-1",
+    "title": "02-cs01-intro",
     "section": "The Data",
     "text": "The Data\nYou’ll have access once your groups/repos are created…(today I want people to follow along; there will be time to try on your own soon!)\n\nWB &lt;- read_csv(\"data/Blood.csv\")\nBR &lt;- read_csv(\"data/Breath.csv\")\nOF &lt;- read_csv(\"data/OF.csv\")",
     "crumbs": [
@@ -1057,9 +1057,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#first-look-at-the-data-wb",
-    "href": "content/lectures/11-cs01-data.html#first-look-at-the-data-wb",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#first-look-at-the-data-wb",
+    "href": "content/lectures/02-cs01-intro.html#first-look-at-the-data-wb",
+    "title": "02-cs01-intro",
     "section": "First Look at the data (WB)",
     "text": "First Look at the data (WB)",
     "crumbs": [
@@ -1068,9 +1068,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#first-look-at-the-data-of",
-    "href": "content/lectures/11-cs01-data.html#first-look-at-the-data-of",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#first-look-at-the-data-of",
+    "href": "content/lectures/02-cs01-intro.html#first-look-at-the-data-of",
+    "title": "02-cs01-intro",
     "section": "First Look at the data (OF)",
     "text": "First Look at the data (OF)",
     "crumbs": [
@@ -1079,9 +1079,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#first-look-at-the-data-br",
-    "href": "content/lectures/11-cs01-data.html#first-look-at-the-data-br",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#first-look-at-the-data-br",
+    "href": "content/lectures/02-cs01-intro.html#first-look-at-the-data-br",
+    "title": "02-cs01-intro",
     "section": "First Look at the data (BR)",
     "text": "First Look at the data (BR)",
     "crumbs": [
@@ -1090,9 +1090,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#fig-1-pre-smoking",
-    "href": "content/lectures/11-cs01-data.html#fig-1-pre-smoking",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#fig-1-pre-smoking",
+    "href": "content/lectures/02-cs01-intro.html#fig-1-pre-smoking",
+    "title": "02-cs01-intro",
     "section": "Fig 1: Pre-smoking",
     "text": "Fig 1: Pre-smoking",
     "crumbs": [
@@ -1101,9 +1101,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#fig-2-sensitivity-and-specificity",
-    "href": "content/lectures/11-cs01-data.html#fig-2-sensitivity-and-specificity",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#fig-2-sensitivity-and-specificity",
+    "href": "content/lectures/02-cs01-intro.html#fig-2-sensitivity-and-specificity",
+    "title": "02-cs01-intro",
     "section": "Fig 2: Sensitivity and Specificity",
     "text": "Fig 2: Sensitivity and Specificity",
     "crumbs": [
@@ -1112,9 +1112,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#fig-3-cross-compound-relationship",
-    "href": "content/lectures/11-cs01-data.html#fig-3-cross-compound-relationship",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#fig-3-cross-compound-relationship",
+    "href": "content/lectures/02-cs01-intro.html#fig-3-cross-compound-relationship",
+    "title": "02-cs01-intro",
     "section": "Fig 3: Cross-compound relationship",
     "text": "Fig 3: Cross-compound relationship",
     "crumbs": [
@@ -1123,9 +1123,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#fig-4-cutoffs",
-    "href": "content/lectures/11-cs01-data.html#fig-4-cutoffs",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#fig-4-cutoffs",
+    "href": "content/lectures/02-cs01-intro.html#fig-4-cutoffs",
+    "title": "02-cs01-intro",
     "section": "Fig 4: Cutoffs",
     "text": "Fig 4: Cutoffs",
     "crumbs": [
@@ -1134,9 +1134,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#fig-5-youden",
-    "href": "content/lectures/11-cs01-data.html#fig-5-youden",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#fig-5-youden",
+    "href": "content/lectures/02-cs01-intro.html#fig-5-youden",
+    "title": "02-cs01-intro",
     "section": "Fig 5: Youden",
     "text": "Fig 5: Youden\n\n. . .\n…and if there’s time PPV and Accuracy post 3h",
     "crumbs": [
@@ -1145,9 +1145,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#what-came-after",
-    "href": "content/lectures/11-cs01-data.html#what-came-after",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#what-came-after",
+    "href": "content/lectures/02-cs01-intro.html#what-came-after",
+    "title": "02-cs01-intro",
     "section": "What Came After",
     "text": "What Came After\n Source: Fiztgerald et al.",
     "crumbs": [
@@ -1156,9 +1156,9 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data.html#recap",
-    "href": "content/lectures/11-cs01-data.html#recap",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro.html#recap",
+    "href": "content/lectures/02-cs01-intro.html#recap",
+    "title": "02-cs01-intro",
     "section": "Recap",
     "text": "Recap\n\nCould you summarize/explain background presented?\nCould you summarize the experiment that was done?\nCould you describe the datasets? (variables, observations, values, etc.)",
     "crumbs": [
@@ -1167,240 +1167,240 @@
     ]
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#qa",
-    "href": "content/lectures/11-cs01-data-slides.html#qa",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#qa",
+    "href": "content/lectures/02-cs01-intro-slides.html#qa",
+    "title": "02-cs01-intro",
     "section": "Q&A",
-    "text": "Q&A\nComing Soon\n\nQ:\nA:"
+    "text": "Q&A\n\nQ: Does R let you perform arithmetic across number and integer types?\nA: Yup! For example 7L + 2 gives you 9. (Similarly 7L + 2.2 gives 9.2)\n\n\nQ: I am confused on how to open up projects, what it means to comit and pull.\nA: We’ll review this again today!\n\n\nQ: I am very new to using Github, so using Github is a bit confusing, but probably just b/c I am very new to it.\nA: This is a normal feeling at the start of this course! I promise in a week it will feel more comfortable!\n\n\nQ: I’m curious about the usage of R versus Python. Are there certain situations where R is more useful than Python?\nA: In a nutshell, almost everything you can do in one you can do in the other. However, in my opinion, R is most useful when 1) cleaning data, 2) using statistical models, and 3) visualizing data. (On the flip side, when I’m writing software, using APIs, and gathering data, I typically turn to Python.)\n\n\nQ: How do I save my lecture practice into a new file in R?\nA: I would recommend opening a new .Rmd file and then saving it with the name of the lecture.\n\n\nQ: i noticed that global variables remain in the environment panel even when i delete that variable in my rmd script. does it matter that they are still there? i tried clicking the broom and rerunning the code, and only the variables i wanted remained, but is this the right way to go about changing or deleting variables in my code?\nA: Yup! The broom will clean up your environment! There is also an rm() function if you ever want to remove an individual variable from your environment.\n\n\nQ: Am I supposed to create an “R Markdown” or an “R Notebook”?\nA: I’ll demo R Markdown, so encouraging use of that.\n\n\nQ: Will we be covering any syntax guidelines when programming in R? For example, in other programming languages indents/spaces are necessary for many functions but I’m wondering if there is anything like that used in R.\nA: I will highlight them as we go! R does not necessitate whitespace ever, but stylistically, we will encourage it. What I teach will be based off of this style guide.\n\n\nQ: How many points are there in total for the extra credits\nA: I’m not totally sure yet. At least a few points.\n\n\nQ: I wonder what will be the format of the lab session?\nA: Typically a short presentation (5 min) at the beginning to explain the lab or discuss the most difficult/confusing part. Then, time to work on lab and get questions answered by staff.\n\n\nQ: Could you please post the slides one or two days before class? I would like to review them in advance so I can better follow along during the lecture and not feel lost.   A: I totally understand the request, and I’ll do my best! (For example, these have been up since Monday), but I’m re-doing the slides up to class many days. While the examples will change this quarter, the concepts will overlap with last Fall, so feel free to reference those notes.\n\n\nQ: What are the main parts of the R interface that we will be interacting with?\nA: RMarkdown files, R Console, Git pane, Files pane, and Plots pane\n\n\nQ: I had a question about the survey for participation. I’m usually busy right after class. Is there any way to get credit for it even if I submit it a couple of hours later or for it to open a little before class ends.\nA: I do typically end class a few minutes early for completion then and we’re working to open it a few minutes before class ends. It’s always fine to fill it out later if it’s open. It will always be open until at least 5PM."
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#course-announcements",
-    "href": "content/lectures/11-cs01-data-slides.html#course-announcements",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#course-announcements",
+    "href": "content/lectures/02-cs01-intro-slides.html#course-announcements",
+    "title": "02-cs01-intro",
     "section": "Course Announcements",
-    "text": "Course Announcements\nComing Soon"
+    "text": "Course Announcements\nDue Dates:\n\nStudent survey due Fri 10/4 (11:59 PM; #finaid)\nLab 01 now available (due next Thursday 10/10)\n\nNo in-class lab this Friday; Monday’s lab is happening\n\nLecture Participation survey “due” after class\n\nNote:\n\nRun this in console once: options(download.file.method=\"wget\")\nWe’re going to start CS01 in lecture/lab before you know your group mates.\nReminder to Shannon: demo lab clone, push pull"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#agenda",
-    "href": "content/lectures/11-cs01-data-slides.html#agenda",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#agenda",
+    "href": "content/lectures/02-cs01-intro-slides.html#agenda",
+    "title": "02-cs01-intro",
     "section": "Agenda",
     "text": "Agenda\n\nBackground\nData Intro\nPaper Results\nWrangle"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#case-studies-in-cogs-137",
-    "href": "content/lectures/11-cs01-data-slides.html#case-studies-in-cogs-137",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#case-studies-in-cogs-137",
+    "href": "content/lectures/02-cs01-intro-slides.html#case-studies-in-cogs-137",
+    "title": "02-cs01-intro",
     "section": "Case Studies in COGS 137",
     "text": "Case Studies in COGS 137\n\nQuestion + Data Provided\nWrangling + Analysis Discussed/Presented in Class\nIn groups:\n\nreproduce the analysis\nextend the analysis"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#deliverables",
-    "href": "content/lectures/11-cs01-data-slides.html#deliverables",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#deliverables",
+    "href": "content/lectures/02-cs01-intro-slides.html#deliverables",
+    "title": "02-cs01-intro",
     "section": "Deliverables",
     "text": "Deliverables\n\nFull Rmd report (explanations, text and story matter!)\nGeneral Audience communication"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#cs01-biomarkers-of-recent-use",
-    "href": "content/lectures/11-cs01-data-slides.html#cs01-biomarkers-of-recent-use",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#cs01-biomarkers-of-recent-use-1",
+    "href": "content/lectures/02-cs01-intro-slides.html#cs01-biomarkers-of-recent-use-1",
+    "title": "02-cs01-intro",
     "section": "CS01: Biomarkers of Recent Use",
     "text": "CS01: Biomarkers of Recent Use\n\nFocuses on Data Wrangling and EDA\nUses real research data from a collaboration w/ Rob Fitgerald’s group"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#motor-vehicle-accidents-mvas",
-    "href": "content/lectures/11-cs01-data-slides.html#motor-vehicle-accidents-mvas",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#motor-vehicle-accidents-mvas",
+    "href": "content/lectures/02-cs01-intro-slides.html#motor-vehicle-accidents-mvas",
+    "title": "02-cs01-intro",
     "section": "Motor Vehicle Accidents (MVAs)",
     "text": "Motor Vehicle Accidents (MVAs)\n\n2/3 of US trauma center admissions are due to MVAs\n~60% of such patients testing positive for drugs or alcohol\nAlcohol and cannabis are most frequently detected\n\nSource: https://academic.oup.com/clinchem/article/59/3/478/5621997"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#legalization-of-marijuana",
-    "href": "content/lectures/11-cs01-data-slides.html#legalization-of-marijuana",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#legalization-of-marijuana",
+    "href": "content/lectures/02-cs01-intro-slides.html#legalization-of-marijuana",
+    "title": "02-cs01-intro",
     "section": "Legalization of Marijuana",
     "text": "Legalization of Marijuana\n\nFederally illegal in the US\nDecriminalized in many states\nMedically available in 15 states\nLegal for recreational use in 24 states (including CA)"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#increased-roadside-surveys",
-    "href": "content/lectures/11-cs01-data-slides.html#increased-roadside-surveys",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#increased-roadside-surveys",
+    "href": "content/lectures/02-cs01-intro-slides.html#increased-roadside-surveys",
+    "title": "02-cs01-intro",
     "section": "Increased roadside surveys",
     "text": "Increased roadside surveys\n\n\n25% increase in use nationwide from 2002 to 2015 (survey)\nTHC detection in drivers increased by 48% from 2007 to 2014\nIncreased prevalence of consumption -&gt; possible intoxication -&gt; possible impaired driving -&gt; public health concern"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#dui-of-alcohol-duia",
-    "href": "content/lectures/11-cs01-data-slides.html#dui-of-alcohol-duia",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#dui-of-alcohol-duia",
+    "href": "content/lectures/02-cs01-intro-slides.html#dui-of-alcohol-duia",
+    "title": "02-cs01-intro",
     "section": "DUI of Alcohol (DUIA)",
     "text": "DUI of Alcohol (DUIA)\n\n\nThe science is there. Don’t do it.\nDUIA has decreased since the 1970s\n\n% of nighttime, weekend drivers testing over the legal limit (BAC &gt; 0.08 g/dL) decreased from 7.5% (1973) to 2.2% (2007) link"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#dui-of-cannabis",
-    "href": "content/lectures/11-cs01-data-slides.html#dui-of-cannabis",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#dui-of-cannabis",
+    "href": "content/lectures/02-cs01-intro-slides.html#dui-of-cannabis",
+    "title": "02-cs01-intro",
     "section": "DUI of Cannabis",
     "text": "DUI of Cannabis\n\nIn a 2007 survey, 16.3% of nighttime drivers were drug-positive link\n\n8.6% of these tested positive for THC\n\nExperimental and cognitive studies suggest cannabis-induced impairment increases risk of motor vehicle crashes:\n\n\n\nEvidence suggests recent smoking and/or blood THC concentrations 2–5 ng/mL are associated with substantial driving impairment, particularly in occasional smokers.link"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#roadside-detection",
-    "href": "content/lectures/11-cs01-data-slides.html#roadside-detection",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#roadside-detection",
+    "href": "content/lectures/02-cs01-intro-slides.html#roadside-detection",
+    "title": "02-cs01-intro",
     "section": "Roadside Detection",
     "text": "Roadside Detection\n\nper se laws: “a driver is deemed to have committed an offense if THC is detected at or above a pre-determined cutoff” link\n\n\n\nDefining cutoffs for safe driving is difficult\nTHC concentration differs by:\n\n“smoking topography” (time to smoke; number of puffs)\nfrequency of use\nroute of ingestion\n\n\n\n\nAs of 2021…link\n\n\n19 states have per se or zero tolerance cannabis laws\nStates with per se laws (Illinois, Montana, Nevada, Ohio, Pennsylvania, Washington and West Virginia), cutoffs range from 1 to 5 ng/mL THC in whole blood.\nIn 3 states, per se limits also apply to THC metabolites\nColorado: “reasonable inference” - blood contained &gt;5 ng/mL THC at the time of the offense\n3 states zero tolerance for THC; 8 states for THC and metabolites"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#metabolism",
-    "href": "content/lectures/11-cs01-data-slides.html#metabolism",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#metabolism",
+    "href": "content/lectures/02-cs01-intro-slides.html#metabolism",
+    "title": "02-cs01-intro",
     "section": "Metabolism",
     "text": "Metabolism\n\n\npeak blood concentrations occur during smoking, then drop rapidly link\nsubjective ‘high’ persists for several hours, varies greatly between individuals\nTHC concentrations remain detectable in frequent users longer than occasional users link\nTHC and certain metabolites can be detected in blood for weeks to months after use and do not necessarily indicate impairment"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#detection",
-    "href": "content/lectures/11-cs01-data-slides.html#detection",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#detection",
+    "href": "content/lectures/02-cs01-intro-slides.html#detection",
+    "title": "02-cs01-intro",
     "section": "Detection",
     "text": "Detection\nVarious approaches:\n\nDetect impairment (officers detect DUIC)\nDetect recent use (test for compounds)\nCombine recent use + impairment\n\n\nFocus here: Can we identify a biomarker of recent use?\n\nrecent use: defined here as within 3h\ntesting THC and metabolites in blood, oral fluid (OF), and breath"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#aside-case-study-report",
-    "href": "content/lectures/11-cs01-data-slides.html#aside-case-study-report",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#aside-case-study-report",
+    "href": "content/lectures/02-cs01-intro-slides.html#aside-case-study-report",
+    "title": "02-cs01-intro",
     "section": "Aside: Case Study Report",
     "text": "Aside: Case Study Report\n\nYour Case study will need a background section\nIt can use/summarize/paraphrase the information here (you should cite the source, not me)\nBut, you’re not limited to this information\nYou are allowed/encouraged to dig deeper, include what’s most important, add to, remove, etc.\nThere are a lot of citations in this section - go ahead and peruse them/others/use references in these papers"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#participants",
-    "href": "content/lectures/11-cs01-data-slides.html#participants",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#participants",
+    "href": "content/lectures/02-cs01-intro-slides.html#participants",
+    "title": "02-cs01-intro",
     "section": "Participants",
     "text": "Participants\n\nplacebo-controlled, double-blinded, randomized study\n\n\n\nrecruited:\n\nvolunteers 21-55 y/o\nhad a driver’s license\nself-reported cannabis use &gt;= 4x in the past month\n\n\n\n\n\nParticipants were:\n\ncompensated\nmedically evaluated (for safety)\nasked to refrain from use for 2d prior to participation\nexclusion criteria: OF THC concentration ≥5 ng/mL on day of study (n=7)\n\n\n\n\n\nStudy included 191 participants"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#demographics",
-    "href": "content/lectures/11-cs01-data-slides.html#demographics",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#demographics",
+    "href": "content/lectures/02-cs01-intro-slides.html#demographics",
+    "title": "02-cs01-intro",
     "section": "Demographics",
     "text": "Demographics\n\nSource: Hoffman et al."
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#experimental-design",
-    "href": "content/lectures/11-cs01-data-slides.html#experimental-design",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#experimental-design",
+    "href": "content/lectures/02-cs01-intro-slides.html#experimental-design",
+    "title": "02-cs01-intro",
     "section": "Experimental Design",
     "text": "Experimental Design\nParticipants were:\n\n\nrandomly assigned to receive a cigarette containing placebo (0.02%), or 5.9% or 13.4% THC\nBlood, OF and breath were collected prior to smoking\nsmoked a 700 mg cigarette ad libitum within 10 min, with a minimum of four puffs.\nAfter smoking, 4 additional OF and breath and 8 blood collections were completed at time points up to ∼6h from the start of smoking.\nParticipants ate and drank water between collections, although not within 10 min of OF collection."
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#timeline",
-    "href": "content/lectures/11-cs01-data-slides.html#timeline",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#timeline",
+    "href": "content/lectures/02-cs01-intro-slides.html#timeline",
+    "title": "02-cs01-intro",
     "section": "Timeline",
     "text": "Timeline\n\nSource: Fitzgerald et al."
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#consumption",
-    "href": "content/lectures/11-cs01-data-slides.html#consumption",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#consumption",
+    "href": "content/lectures/02-cs01-intro-slides.html#consumption",
+    "title": "02-cs01-intro",
     "section": "Consumption",
     "text": "Consumption\n Source: Hoffman et al."
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#topography",
-    "href": "content/lectures/11-cs01-data-slides.html#topography",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#topography",
+    "href": "content/lectures/02-cs01-intro-slides.html#topography",
+    "title": "02-cs01-intro",
     "section": "Topography",
     "text": "Topography\n Source: Hoffman et al."
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#subjective-highness",
-    "href": "content/lectures/11-cs01-data-slides.html#subjective-highness",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#subjective-highness",
+    "href": "content/lectures/02-cs01-intro-slides.html#subjective-highness",
+    "title": "02-cs01-intro",
     "section": "Subjective Highness",
     "text": "Subjective Highness\n\nSource: Hoffman et al."
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#our-datasets",
-    "href": "content/lectures/11-cs01-data-slides.html#our-datasets",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#our-datasets",
+    "href": "content/lectures/02-cs01-intro-slides.html#our-datasets",
+    "title": "02-cs01-intro",
     "section": "Our Datasets",
     "text": "Our Datasets\nThree matrices:\n\nBlood (WB): 8 compounds; 190 participants\nOral Fluid (OF): 7 compounds; 192 participants\nBreath (BR): 1 compound; 191 participants\n\n\nVariables:\n\nID | participants identifier\nTreatment | placebo, 5.90%, 13.40%\nGroup | Occasional user, Frequent user\nTimepoint | indicator of which point in the timeline participant’s collection occurred\ntime.from.start | number of minutes from consumption\n& measurements for individual compounds"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#the-data-1",
-    "href": "content/lectures/11-cs01-data-slides.html#the-data-1",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#the-data-1",
+    "href": "content/lectures/02-cs01-intro-slides.html#the-data-1",
+    "title": "02-cs01-intro",
     "section": "The Data",
     "text": "The Data\nYou’ll have access once your groups/repos are created…(today I want people to follow along; there will be time to try on your own soon!)\n\nWB &lt;- read_csv(\"data/Blood.csv\")\nBR &lt;- read_csv(\"data/Breath.csv\")\nOF &lt;- read_csv(\"data/OF.csv\")"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#first-look-at-the-data-wb",
-    "href": "content/lectures/11-cs01-data-slides.html#first-look-at-the-data-wb",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#first-look-at-the-data-wb",
+    "href": "content/lectures/02-cs01-intro-slides.html#first-look-at-the-data-wb",
+    "title": "02-cs01-intro",
     "section": "First Look at the data (WB)",
     "text": "First Look at the data (WB)"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#first-look-at-the-data-of",
-    "href": "content/lectures/11-cs01-data-slides.html#first-look-at-the-data-of",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#first-look-at-the-data-of",
+    "href": "content/lectures/02-cs01-intro-slides.html#first-look-at-the-data-of",
+    "title": "02-cs01-intro",
     "section": "First Look at the data (OF)",
     "text": "First Look at the data (OF)"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#first-look-at-the-data-br",
-    "href": "content/lectures/11-cs01-data-slides.html#first-look-at-the-data-br",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#first-look-at-the-data-br",
+    "href": "content/lectures/02-cs01-intro-slides.html#first-look-at-the-data-br",
+    "title": "02-cs01-intro",
     "section": "First Look at the data (BR)",
     "text": "First Look at the data (BR)"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#fig-1-pre-smoking",
-    "href": "content/lectures/11-cs01-data-slides.html#fig-1-pre-smoking",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#fig-1-pre-smoking",
+    "href": "content/lectures/02-cs01-intro-slides.html#fig-1-pre-smoking",
+    "title": "02-cs01-intro",
     "section": "Fig 1: Pre-smoking",
     "text": "Fig 1: Pre-smoking"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#fig-2-sensitivity-and-specificity",
-    "href": "content/lectures/11-cs01-data-slides.html#fig-2-sensitivity-and-specificity",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#fig-2-sensitivity-and-specificity",
+    "href": "content/lectures/02-cs01-intro-slides.html#fig-2-sensitivity-and-specificity",
+    "title": "02-cs01-intro",
     "section": "Fig 2: Sensitivity and Specificity",
     "text": "Fig 2: Sensitivity and Specificity"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#fig-3-cross-compound-relationship",
-    "href": "content/lectures/11-cs01-data-slides.html#fig-3-cross-compound-relationship",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#fig-3-cross-compound-relationship",
+    "href": "content/lectures/02-cs01-intro-slides.html#fig-3-cross-compound-relationship",
+    "title": "02-cs01-intro",
     "section": "Fig 3: Cross-compound relationship",
     "text": "Fig 3: Cross-compound relationship"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#fig-4-cutoffs",
-    "href": "content/lectures/11-cs01-data-slides.html#fig-4-cutoffs",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#fig-4-cutoffs",
+    "href": "content/lectures/02-cs01-intro-slides.html#fig-4-cutoffs",
+    "title": "02-cs01-intro",
     "section": "Fig 4: Cutoffs",
     "text": "Fig 4: Cutoffs"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#fig-5-youden",
-    "href": "content/lectures/11-cs01-data-slides.html#fig-5-youden",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#fig-5-youden",
+    "href": "content/lectures/02-cs01-intro-slides.html#fig-5-youden",
+    "title": "02-cs01-intro",
     "section": "Fig 5: Youden",
     "text": "Fig 5: Youden\n\n\n…and if there’s time PPV and Accuracy post 3h"
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#what-came-after",
-    "href": "content/lectures/11-cs01-data-slides.html#what-came-after",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#what-came-after",
+    "href": "content/lectures/02-cs01-intro-slides.html#what-came-after",
+    "title": "02-cs01-intro",
     "section": "What Came After",
     "text": "What Came After\n Source: Fiztgerald et al."
   },
   {
-    "objectID": "content/lectures/11-cs01-data-slides.html#recap",
-    "href": "content/lectures/11-cs01-data-slides.html#recap",
-    "title": "03-cs01-intro",
+    "objectID": "content/lectures/02-cs01-intro-slides.html#recap",
+    "href": "content/lectures/02-cs01-intro-slides.html#recap",
+    "title": "02-cs01-intro",
     "section": "Recap",
     "text": "Recap\n\nCould you summarize/explain background presented?\nCould you summarize the experiment that was done?\nCould you describe the datasets? (variables, observations, values, etc.)\n\n\n\n\n\nhttps://cogs137.github.io/website/"
   },
@@ -1456,7 +1456,7 @@
     "href": "content/labs/01-lab-intro-r.html#packages",
     "title": "Lab 01 - Tooling",
     "section": "Packages",
-    "text": "Packages\nIn this lab we will work with two packages: datasauRus which contains the dataset, and tidyverse which is a collection of packages for doing data analysis in a “tidy” way.\ntidyverse has already been installed for you, so it only needs to be loaded using library. (see below)\nHowever, datasauRus has not yet been installed. Run the following in your console to install this package:\n\ninstall.packages(\"datasauRus\")\n\n\n\nNote that often packages will already be installed for you on datahub in this course, but we want you to know how to install them if you need to install one at any point.\nNote that package installation happens a single time. But, any time you want to use a package (after it’s been installed), it has to be loaded, as we do here:\n\nlibrary(tidyverse) \nlibrary(datasauRus)\n\nYou should be able to Knit your document and see the results.\nNote that the packages are also loaded with the same commands in your R Markdown document.",
+    "text": "Packages\nIn this lab we will work with two packages: datasauRus which contains the dataset, and tidyverse which is a collection of packages for doing data analysis in a “tidy” way.\ntidyverse has already been installed for you, so it only needs to be loaded using library. (see below)\nHowever, datasauRus has not yet been installed. Run the following in your console to install this package:\n\ninstall.packages(\"datasauRus\")\n\n\n\nNote that often packages will already be installed for you on datahub in this course, but we want you to know how to install them if you need to install one at any point.\n\n\n\n\n\n\nImportant\n\n\n\nNote that if you get an error saying that datasauRus is not available for this version of R, run options(download.file.method=\"wget\") a single time in the console and then try to install again!\n\n\nAlso, package installation happens a single time. But, any time you want to use a package (after it’s been installed), it has to be loaded, as we do here:\n\nlibrary(tidyverse) \nlibrary(datasauRus)\n\nYou should be able to Knit your document and see the results.\nNote that the packages are also loaded with the same commands in your R Markdown document.",
     "crumbs": [
       "Labs",
       "Lab01: Tooling and R"

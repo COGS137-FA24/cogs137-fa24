@@ -187,7 +187,11 @@ install.packages("datasauRus")
 Note that often packages will already be installed for you on datahub in this course, but we want you to know how to install them if you need to install one at any point.
 :::
 
-Note that package installation happens a single time. But, any time you want to *use* a package (after it's been installed), it has to be loaded, as we do here:
+::: callout-important
+**Note** that if you get an error saying that datasauRus is not available for this version of R, run `options(download.file.method="wget")` a single time in the console and then try to install again!
+:::
+
+Also, package installation happens a single time. But, any time you want to *use* a package (after it's been installed), it has to be loaded, as we do here:
 
 ```{r eval = FALSE}
 library(tidyverse) 

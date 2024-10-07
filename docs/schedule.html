@@ -183,6 +183,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">02-cs01-intro</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./content/lectures/03-dplyr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">03-dplyr</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -207,8 +213,21 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Case Studies</span></span>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Homework</span></span>
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+ <span class="menu-text">Homework</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./content/hw/hw-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HW01</span></a>
+  </div>
+</li>
+      </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
@@ -273,23 +292,23 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell">
 <div class="cell-output-display">
 <div>
-<div id="jilenfypsq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#jilenfypsq table {
+<div id="ekxslzoqtx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ekxslzoqtx table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#jilenfypsq thead, #jilenfypsq tbody, #jilenfypsq tfoot, #jilenfypsq tr, #jilenfypsq td, #jilenfypsq th {
+#ekxslzoqtx thead, #ekxslzoqtx tbody, #ekxslzoqtx tfoot, #ekxslzoqtx tr, #ekxslzoqtx td, #ekxslzoqtx th {
   border-style: none;
 }
 
-#jilenfypsq p {
+#ekxslzoqtx p {
   margin: 0;
   padding: 0;
 }
 
-#jilenfypsq .gt_table {
+#ekxslzoqtx .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -315,12 +334,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#jilenfypsq .gt_caption {
+#ekxslzoqtx .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#jilenfypsq .gt_title {
+#ekxslzoqtx .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -332,7 +351,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#jilenfypsq .gt_subtitle {
+#ekxslzoqtx .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -344,7 +363,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#jilenfypsq .gt_heading {
+#ekxslzoqtx .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -356,13 +375,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#jilenfypsq .gt_bottom_border {
+#ekxslzoqtx .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#jilenfypsq .gt_col_headings {
+#ekxslzoqtx .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -377,7 +396,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#jilenfypsq .gt_col_heading {
+#ekxslzoqtx .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -397,7 +416,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#jilenfypsq .gt_column_spanner_outer {
+#ekxslzoqtx .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -409,15 +428,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#jilenfypsq .gt_column_spanner_outer:first-child {
+#ekxslzoqtx .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#jilenfypsq .gt_column_spanner_outer:last-child {
+#ekxslzoqtx .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#jilenfypsq .gt_column_spanner {
+#ekxslzoqtx .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -429,11 +448,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#jilenfypsq .gt_spanner_row {
+#ekxslzoqtx .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#jilenfypsq .gt_group_heading {
+#ekxslzoqtx .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -459,7 +478,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#jilenfypsq .gt_empty_group_heading {
+#ekxslzoqtx .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -474,15 +493,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#jilenfypsq .gt_from_md > :first-child {
+#ekxslzoqtx .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jilenfypsq .gt_from_md > :last-child {
+#ekxslzoqtx .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jilenfypsq .gt_row {
+#ekxslzoqtx .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -501,7 +520,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#jilenfypsq .gt_stub {
+#ekxslzoqtx .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -514,7 +533,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#jilenfypsq .gt_stub_row_group {
+#ekxslzoqtx .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -528,15 +547,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#jilenfypsq .gt_row_group_first td {
+#ekxslzoqtx .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#jilenfypsq .gt_row_group_first th {
+#ekxslzoqtx .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#jilenfypsq .gt_summary_row {
+#ekxslzoqtx .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -546,16 +565,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#jilenfypsq .gt_first_summary_row {
+#ekxslzoqtx .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#jilenfypsq .gt_first_summary_row.thick {
+#ekxslzoqtx .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#jilenfypsq .gt_last_summary_row {
+#ekxslzoqtx .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -565,7 +584,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#jilenfypsq .gt_grand_summary_row {
+#ekxslzoqtx .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -575,7 +594,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#jilenfypsq .gt_first_grand_summary_row {
+#ekxslzoqtx .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -585,7 +604,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#jilenfypsq .gt_last_grand_summary_row_top {
+#ekxslzoqtx .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -595,11 +614,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#jilenfypsq .gt_striped {
+#ekxslzoqtx .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#jilenfypsq .gt_table_body {
+#ekxslzoqtx .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -608,7 +627,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#jilenfypsq .gt_footnotes {
+#ekxslzoqtx .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -622,7 +641,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#jilenfypsq .gt_footnote {
+#ekxslzoqtx .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -631,7 +650,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#jilenfypsq .gt_sourcenotes {
+#ekxslzoqtx .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -645,7 +664,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#jilenfypsq .gt_sourcenote {
+#ekxslzoqtx .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -653,63 +672,63 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#jilenfypsq .gt_left {
+#ekxslzoqtx .gt_left {
   text-align: left;
 }
 
-#jilenfypsq .gt_center {
+#ekxslzoqtx .gt_center {
   text-align: center;
 }
 
-#jilenfypsq .gt_right {
+#ekxslzoqtx .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jilenfypsq .gt_font_normal {
+#ekxslzoqtx .gt_font_normal {
   font-weight: normal;
 }
 
-#jilenfypsq .gt_font_bold {
+#ekxslzoqtx .gt_font_bold {
   font-weight: bold;
 }
 
-#jilenfypsq .gt_font_italic {
+#ekxslzoqtx .gt_font_italic {
   font-style: italic;
 }
 
-#jilenfypsq .gt_super {
+#ekxslzoqtx .gt_super {
   font-size: 65%;
 }
 
-#jilenfypsq .gt_footnote_marks {
+#ekxslzoqtx .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#jilenfypsq .gt_asterisk {
+#ekxslzoqtx .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#jilenfypsq .gt_indent_1 {
+#ekxslzoqtx .gt_indent_1 {
   text-indent: 5px;
 }
 
-#jilenfypsq .gt_indent_2 {
+#ekxslzoqtx .gt_indent_2 {
   text-indent: 10px;
 }
 
-#jilenfypsq .gt_indent_3 {
+#ekxslzoqtx .gt_indent_3 {
   text-indent: 15px;
 }
 
-#jilenfypsq .gt_indent_4 {
+#ekxslzoqtx .gt_indent_4 {
   text-indent: 20px;
 }
 
-#jilenfypsq .gt_indent_5 {
+#ekxslzoqtx .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
@@ -764,16 +783,14 @@ ul.task-list li input[type="checkbox"] {
 </td>
 <td class="gt_row gt_left gt_striped" headers="materials" style="border-right-width: 1px; border-right-style: solid; border-right-color: #D3D3D3"><br>
 </td>
-<td class="gt_row gt_left gt_striped" headers="due"><p>🔘 <a href="">Survey #finaid</a></p></td>
+<td class="gt_row gt_left gt_striped" headers="due"><p>🔘 <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSLaJBNu-dm--yPhuzerS_DEHvsfhvkfqulrultVjRSlYcZA/viewform?usp=sf_link">Survey #finaid</a> <br></p></td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_center" headers="week">2</td>
 <td class="gt_row gt_right" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #D3D3D3">Tue, Oct 8</td>
-<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #D3D3D3"><p>Data Wrangling: <code>dplyr</code> + <code>tidyr</code></p></td>
-<td class="gt_row gt_left" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #D3D3D3"><br>
-</td>
-<td class="gt_row gt_left" headers="materials" style="border-right-width: 1px; border-right-style: solid; border-right-color: #D3D3D3"><br>
-</td>
+<td class="gt_row gt_left" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #D3D3D3"><p>Data Wrangling: <code>dplyr</code></p></td>
+<td class="gt_row gt_left" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #D3D3D3"><p>📕 R4DS Chapter 5: <a href="https://r4ds.hadley.nz/data-transform">Data Transformation</a> <br> 📕 R4DS Chapter 16: <a href="https://r4ds.hadley.nz/factors">Factors</a> <br></p></td>
+<td class="gt_row gt_left" headers="materials" style="border-right-width: 1px; border-right-style: solid; border-right-color: #D3D3D3"><p>📝 <a href="https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/03-dplyr.html">notes</a> <br> 🖥️ <a href="https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/03-dplyr-slides.html">slides</a> <br></p></td>
 <td class="gt_row gt_left" headers="due"><br>
 </td>
 </tr>
@@ -785,7 +802,7 @@ ul.task-list li input[type="checkbox"] {
 </td>
 <td class="gt_row gt_left gt_striped" headers="materials" style="border-right-width: 1px; border-right-style: solid; border-right-color: #D3D3D3"><br>
 </td>
-<td class="gt_row gt_left gt_striped" headers="due"><p>⌨️ <a href="">lab 01</a></p></td>
+<td class="gt_row gt_left gt_striped" headers="due"><p>⌨️ <a href="https://classroom.github.com/a/0nZJp8iO">lab 01</a></p></td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_center" headers="week"></td>
@@ -807,7 +824,7 @@ ul.task-list li input[type="checkbox"] {
 </td>
 <td class="gt_row gt_left gt_striped" headers="materials" style="border-right-width: 1px; border-right-style: solid; border-right-color: #D3D3D3"><br>
 </td>
-<td class="gt_row gt_left gt_striped" headers="due"><p>📚 <a href="">hw 01</a></p></td>
+<td class="gt_row gt_left gt_striped" headers="due"><p>📚 <a href="https://classroom.github.com/a/z3P5_KR_">hw 01</a></p></td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_center" headers="week"></td>
@@ -823,12 +840,12 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td class="gt_row gt_center gt_striped" headers="week"></td>
 <td class="gt_row gt_right gt_striped" headers="date" style="border-right-width: 1px; border-right-style: solid; border-right-color: #D3D3D3">Thu, Oct 17</td>
-<td class="gt_row gt_left gt_striped" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #D3D3D3"><p>Data Visualization: <code>ggplot2</code> (day 2)</p></td>
+<td class="gt_row gt_left gt_striped" headers="topic" style="border-right-width: 1px; border-right-style: solid; border-right-color: #D3D3D3"><p>Data Visualization: <code>ggplot2</code> + <code>tidyr</code> (day 2)</p></td>
 <td class="gt_row gt_left gt_striped" headers="prepare" style="border-right-width: 1px; border-right-style: solid; border-right-color: #D3D3D3"><br>
 </td>
 <td class="gt_row gt_left gt_striped" headers="materials" style="border-right-width: 1px; border-right-style: solid; border-right-color: #D3D3D3"><br>
 </td>
-<td class="gt_row gt_left gt_striped" headers="due"><p>⌨️ <a href="">lab 02</a></p></td>
+<td class="gt_row gt_left gt_striped" headers="due"><p>⌨️ <a href="https://classroom.github.com/a/R-I_Qy6l">lab 02</a></p></td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_center" headers="week"></td>

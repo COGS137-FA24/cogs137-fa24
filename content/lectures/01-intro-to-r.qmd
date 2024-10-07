@@ -13,11 +13,6 @@ format:
     preview-links: auto
     logo: images/cogs137-logo-hex.png
     css: slides.css
-    scrollable: true
-    footer: <https://cogs137.github.io/website/>
-    execute:
-     echo: true
-     output: true
 ---
 
 # Introduction to R {background-color="#92A86A"}

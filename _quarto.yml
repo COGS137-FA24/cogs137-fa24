@@ -64,12 +64,19 @@ website:
             href: content/lectures/01-intro-to-r.qmd
           - text: "02-cs01-intro"
             href: content/lectures/02-cs01-intro.qmd
+          - text: "03-dplyr"
+            href: content/lectures/03-dplyr.qmd
       - section: "Labs"
         contents:
           - text: "Lab01: Tooling and R"
             href: content/labs/01-lab-intro-r.qmd
+          # - text: "Lab02: CS01 Data Wrangling"
+            # href: content/labs/02-lab-cs01-wrangle.qmd
       - section: "Case Studies"
       - section: "Homework"
+        contents:
+          - text: "HW01"
+            href: content/hw/hw-01.qmd
       - section: "Computing"
         contents:
           - href: computing/computing-access.qmd

@@ -10,16 +10,10 @@ format:
   revealjs:
     output-file: 02-cs01-intro-slides.html
     slide-number: true
-    chalkboard: false 
+    chalkboard: false
     preview-links: auto
     logo: images/cogs137-logo-hex.png
     css: slides.css
-    footer: <https://cogs137.github.io/website/>
-    scrollable: true
-    embed-resources: true
-    execute:
-      echo: true
-      eval: true
 ---
 
 ```{r packages, echo = FALSE, message=FALSE, warning=FALSE}
@@ -39,13 +33,12 @@ knitr::opts_chunk$set(dpi = 300, echo=TRUE, warning=FALSE, message=FALSE)
 > Q: I am confused on how to open up projects, what it means to comit and pull.\
 > A: We'll review this again today!
 
-> Q: I am very new to using Github, so using Github is a bit confusing, but probably just b/c I am very new to it. \
-> A: This is a normal feeling at the start of this course! I promise in a week it will feel more comfortable! 
+> Q: I am very new to using Github, so using Github is a bit confusing, but probably just b/c I am very new to it.\
+> A: This is a normal feeling at the start of this course! I promise in a week it will feel more comfortable!
 
 > Q: I'm curious about the usage of R versus Python. Are there certain situations where R is more useful than Python?\
 > A: In a nutshell, *almost* everything you can do in one you can do in the other. However, in my opinion, R is most useful when 1) cleaning data, 2) using statistical models, and 3) visualizing data. (On the flip side, when I'm writing software, using APIs, and gathering data, I typically turn to Python.)
 
- 
 > Q: How do I save my lecture practice into a new file in R?\
 > A: I would recommend opening a new .Rmd file and then saving it with the name of the lecture.
 
@@ -58,19 +51,18 @@ knitr::opts_chunk$set(dpi = 300, echo=TRUE, warning=FALSE, message=FALSE)
 > Q: Will we be covering any syntax guidelines when programming in R? For example, in other programming languages indents/spaces are necessary for many functions but I'm wondering if there is anything like that used in R.\
 > A: I will highlight them as we go! R does not necessitate whitespace ever, but stylistically, we will encourage it. What I teach will be based off of this [style guide](https://style.tidyverse.org/).
 
-> Q: How many points are there in total for the extra credits \
+> Q: How many points are there in total for the extra credits\
 > A: I'm not totally sure yet. At least a few points.
 
-> Q: I wonder what will be the format of the lab session? \
+> Q: I wonder what will be the format of the lab session?\
 > A: Typically a short presentation (5 min) at the beginning to explain the lab or discuss the most difficult/confusing part. Then, time to work on lab and get questions answered by staff.
 
-> Q: Could you please post the slides one or two days before class? I would like to review them in advance so I can better follow along during the lecture and not feel lost. \ 
-> A: I totally understand the request, and I'll do my best! (For example, these have been up since Monday), but I'm re-doing the slides up to class many days. While the examples will change this quarter, the concepts will overlap with last Fall, so feel free to reference [those notes](https://cogs137.github.io/website/).
+> Q: Could you please post the slides one or two days before class? I would like to review them in advance so I can better follow along during the lecture and not feel lost.   A: I totally understand the request, and I'll do my best! (For example, these have been up since Monday), but I'm re-doing the slides up to class many days. While the examples will change this quarter, the concepts will overlap with last Fall, so feel free to reference [those notes](https://cogs137.github.io/website/).
 
-> Q: What are the main parts of the R interface that we will be interacting with?  \
+> Q: What are the main parts of the R interface that we will be interacting with?\
 > A: RMarkdown files, R Console, Git pane, Files pane, and Plots pane
 
-> Q: I had a question about the survey for participation. I'm usually busy right after class. Is there any way to get credit for it even if I submit it a couple of hours later or for it to open a little before class ends. \
+> Q: I had a question about the survey for participation. I'm usually busy right after class. Is there any way to get credit for it even if I submit it a couple of hours later or for it to open a little before class ends.\
 > A: I do typically end class a few minutes early for completion then and we're working to open it a few minutes before class ends. It's always fine to fill it out later if it's open. It will always be open until at least 5PM.
 
 ## Course Announcements
@@ -82,12 +74,11 @@ knitr::opts_chunk$set(dpi = 300, echo=TRUE, warning=FALSE, message=FALSE)
     -   No in-class lab this Friday; *Monday's lab is happening*
 -   Lecture Participation survey "due" after class
 
-Note: 
+Note:
 
-- Run this in console once: `options(download.file.method="wget")`
-- We're going to *start* CS01 in lecture/lab before you know your group mates.
-- Reminder to Shannon: demo lab clone, push pull 
-
+-   Run this in console once: `options(download.file.method="wget")`
+-   We're going to *start* CS01 in lecture/lab before you know your group mates.
+-   Reminder to Shannon: demo lab clone, push pull
 
 ## Agenda
 
@@ -100,21 +91,21 @@ Note:
 
 ## Case Studies in COGS 137
 
-- Question + Data Provided
-- Wrangling + Analysis Discussed/Presented in Class
-- In groups: 
-  - reproduce the analysis
-  - extend the analysis
+-   Question + Data Provided
+-   Wrangling + Analysis Discussed/Presented in Class
+-   In groups:
+    -   reproduce the analysis
+    -   extend the analysis
 
 ## Deliverables
 
-- Full Rmd report (explanations, text and story matter!)
-- General Audience communication
+-   Full Rmd report (explanations, text and story matter!)
+-   General Audience communication
 
 ## CS01: Biomarkers of Recent Use
 
-- Focuses on Data Wrangling and EDA
-- Uses real research data from a collaboration w/ Rob Fitgerald's group
+-   Focuses on Data Wrangling and EDA
+-   Uses real research data from a collaboration w/ Rob Fitgerald's group
 
 ## Motor Vehicle Accidents (MVAs)
 
@@ -244,7 +235,7 @@ Which compound, in which matrix, and at what cutoff is the best biomarker of rec
 
 ## Demographics
 
-![](images/11/demographics.png)
+![](images/02/demographics.png)
 
 Source: [Hoffman et al.](https://academic.oup.com/jat/article/45/8/851/6309824?login=false)
 
@@ -262,21 +253,27 @@ Participants were:
 
 ## Timeline
 
-![](images/11/experiment.jpeg)
+![](images/02/experiment.jpeg)
 
 Source: [Fitzgerald et al.](https://academic.oup.com/clinchem/article/69/7/724/7179849?login=false)
 
 ## Consumption
 
-![](images/11/puffs.jpeg) Source: [Hoffman et al.](https://academic.oup.com/jat/article/45/8/851/6309824?login=false)
+![](images/02/puffs.jpeg) Source: [Hoffman et al.](https://academic.oup.com/jat/article/45/8/851/6309824?login=false)
 
 ## Topography
 
-![](images/11/topography.png) Source: [Hoffman et al.](https://academic.oup.com/jat/article/45/8/851/6309824?login=false)
+![](images/02/topography.png) Source: [Hoffman et al.](https://academic.oup.com/jat/article/45/8/851/6309824?login=false)
+
+## What do we recall?
+
+-   Summarize what we know about Detection of Impairment for DUIC.
+-   Summarize what experiment was carried out.
+-   Summarize what we know about the data so far.
 
 ## Subjective Highness
 
-![](images/11/highness.jpeg)
+![](images/02/highness.jpeg)
 
 Source: [Hoffman et al.](https://academic.oup.com/jat/article/45/8/851/6309824?login=false)
 
@@ -292,16 +289,20 @@ Three matrices:
 
 Variables:
 
--   `ID` \| participants identifier
--   `Treatment` \| placebo, 5.90%, 13.40%
--   `Group` \| Occasional user, Frequent user
--   `Timepoint` \| indicator of which point in the timeline participant's collection occurred
--   `time.from.start` \| number of minutes from consumption
+-   `ID` | participants identifier
+-   `Treatment` | placebo, 5.90%, 13.40%
+-   `Group` | Occasional user, Frequent user
+-   `Timepoint` | indicator of which point in the timeline participant's collection occurred
+-   `time.from.start` | number of minutes from consumption
 -   & measurements for individual compounds
 
 ## The Data
 
 You'll have access once your groups/repos are created...(today I want people to follow along; there will be time to try on your own soon!)
+
+::: callout-important
+These data are for our use only and not to be shared widely, so this case study cannot be put in your portfolio, but CS02 and your final project can!
+:::
 
 ```{r, eval=TRUE}
 WB <- read_csv("data/Blood.csv")
@@ -341,23 +342,23 @@ Results from: Hubbard et al (2021) Biomarkers of Recent Cannabis Use in Blood, O
 
 ## Fig 1: Pre-smoking
 
-![](images/11/01_concentrations_pre.jpg)
+![](images/02/01_concentrations_pre.jpg)
 
 ## Fig 2: Sensitivity and Specificity
 
-![](images/11/02_known_cutoffs_THC_combined.jpg)
+![](images/02/02_known_cutoffs_THC_combined.jpg)
 
 ## Fig 3: Cross-compound relationship
 
-![](images/11/03_regression.jpg)
+![](images/02/03_regression.jpg)
 
 ## Fig 4: Cutoffs
 
-![](images/11/04_known_cutoffs_CBN_combined.jpg)
+![](images/02/04_known_cutoffs_CBN_combined.jpg)
 
 ## Fig 5: Youden
 
-![](images/11/05_ss_cutoffs_combined.jpg)
+![](images/02/05_ss_cutoffs_combined.jpg)
 
 . . .
 
@@ -365,7 +366,7 @@ Results from: Hubbard et al (2021) Biomarkers of Recent Cannabis Use in Blood, O
 
 ## What Came After
 
-![](images/11/duic_toxicology.jpeg) Source: [Fiztgerald et al.](https://academic.oup.com/clinchem/article/69/7/724/7179849?login=false)
+![](images/02/duic_toxicology.jpeg) Source: [Fiztgerald et al.](https://academic.oup.com/clinchem/article/69/7/724/7179849?login=false)
 
 ## Recap {.smaller background-color="#92A86A"}
 

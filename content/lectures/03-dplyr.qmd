@@ -66,6 +66,7 @@ Mentorship opportunity for women-identifying students:
 
 Notes:
 -   No Lecture on Thursday this week
+-   Discuss: GH<->RStudio issue (`OpenSSL version mismatch. Built against 30000020, you have 30300020`)
 -   Regular labs resume this week
 -   Mention: waitlist & dropping
 
@@ -155,7 +156,7 @@ To get started with lecture code: `library(tidyverse)`
 ## Whole Blood (WB) Data from THC Study
 
 ```{r load-data-real, message=FALSE}
-WB <- read_csv("data/Blood.csv")
+WB <- read_csv("https://github.com/ShanEllis/datasets/raw/refs/heads/master/Blood.csv")
 ```
 
 ::: callout-important
@@ -164,13 +165,11 @@ We're using these data to demonstrate the basic principles of `dplyr` and `tidyr
 
 . . . 
 
-You can find the data in lab02. Go ahead and accept that lab repo now, open up that in RStudio, and read in the Blood dataset
-
+Read the data in so you can follow along now!
 
 ::: aside
 Put a <font color="#32cb31">green</font> sticky on the front of your computer when you're done. Put a <font color="#ff65a3">pink</font> if you want help/have a question.
 :::
-
 
 
 ## Variables

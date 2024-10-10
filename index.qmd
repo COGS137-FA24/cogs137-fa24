@@ -17,12 +17,12 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 
 ##### Instructional Staff & Office Hours
 
-|            |                                                |                  |               |                                                                        |
+|            |                                                |                  |               |                                                               |
 |------------|--------------|------------|------------|-----------------------|
-| Instructor | [**Shannon Ellis**](http://www.shanellis.com/) | sellis\@ucsd.edu | Tu 11A-12P    | CSB 243                                                                |
-|            |                                                |                  | Wed 10-11A    | Zoom by [appt](CSB%20243https://calendar.app.google/3o4hAmJgYfWg2SnL8) |
-| TA         | Quirine (Q) van-Engen                          |                  | Th 8:30-9:30A | Zoom (see Canvas for link)                                             |
-| IA         | Eric Song                                      |                  | --            | --                                                                     |
+| Instructor | [**Shannon Ellis**](http://www.shanellis.com/) | sellis\@ucsd.edu | Tu 11A-12P    | CSB 243                                                       |
+|            |                                                |                  | Wed 10-11A    | Zoom by [appt](https://calendar.app.google/ceYuZSqE3ShYhYDE7) |
+| TA         | Quirine (Q) van-Engen                          |                  | Th 8:30-9:30A | Zoom (see Canvas for link)                                    |
+| IA         | Eric Song                                      |                  | --            | --                                                            |
 
 ### Course Objectives
 

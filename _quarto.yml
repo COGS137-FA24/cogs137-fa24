@@ -70,8 +70,8 @@ website:
         contents:
           - text: "Lab01: Tooling and R"
             href: content/labs/01-lab-intro-r.qmd
-          # - text: "Lab02: CS01 Data Wrangling"
-            # href: content/labs/02-lab-cs01-wrangle.qmd
+          - text: "Lab02: CS01 Data Wrangling"
+            href: content/labs/02-lab-cs01-wrangle.qmd
       - section: "Case Studies"
       - section: "Homework"
         contents:

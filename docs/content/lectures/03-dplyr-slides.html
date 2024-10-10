@@ -474,7 +474,13 @@ A: On your first lab, we ask you to put your name in the author field. We use th
 <li>Lecture Participation survey “due” after class</li>
 </ul>
 <div class="fragment">
-<p>Notes: - No Lecture on Thursday this week - Discuss: GH&lt;-&gt;RStudio issue (<code>OpenSSL version mismatch. Built against 30000020, you have 30300020</code>) - Regular labs resume this week - Mention: waitlist &amp; dropping</p>
+<p>Notes:</p>
+<ul>
+<li>No Lecture on Thursday this week</li>
+<li>Discuss: GH&lt;-&gt;RStudio issue (<code>OpenSSL version mismatch. Built against 30000020, you have 30300020</code>)</li>
+<li>Regular labs resume this week</li>
+<li>Mention: waitlist &amp; dropping</li>
+</ul>
 </div>
 </section>
 <section id="suggested-reading" class="slide level2">
@@ -533,8 +539,8 @@ A: On your first lab, we ask you to put your name in the author field. We use th
 </div>
 <p>You will see this frequently in code online. It’s equivalent to <code>|&gt;</code>.</p>
 </section>
-<section id="review-how-does-a-pipe-work" class="slide level2">
-<h2>Review: How does a pipe work?</h2>
+<section id="how-does-a-pipe-work" class="slide level2">
+<h2>How does a pipe work?</h2>
 <ul>
 <li>You can think about the following sequence of actions - find key, unlock car, start car, drive to school, park.</li>
 </ul>
@@ -715,8 +721,8 @@ $ time.from.start &lt;dbl&gt; -27, 15, 69, 111, 156, 236, 283, 315, 360, -10, 20
 </div>
 </div>
 </section>
-<section id="or-select-a-range-of-variables" class="slide level2">
-<h2>or <code>select</code> a range of variables</h2>
+<section id="select-a-range-of-variables" class="slide level2">
+<h2>select` a range of variables</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12" data-code-line-numbers="2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>WB <span class="sc">|&gt;</span></span>
 <span id="cb12-2"><a></a>  <span class="fu">select</span>(ID<span class="sc">:</span><span class="st">`</span><span class="at">FLUID TYPE</span><span class="st">`</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -765,8 +771,8 @@ $ time.from.start &lt;dbl&gt; -27, 15, 69, 111, 156, 236, 283, 315, 360, -10, 20
 </div>
 </div>
 </section>
-<section id="or-select-to-exclude-variables" class="slide level2">
-<h2>or <code>select</code> to exclude variables</h2>
+<section id="select-to-exclude-variables" class="slide level2">
+<h2><code>select</code> to exclude variables</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16" data-code-line-numbers="2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>WB <span class="sc">|&gt;</span></span>
 <span id="cb16-2"><a></a>  <span class="fu">select</span>(<span class="sc">-</span>Timepoint)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1065,8 +1071,8 @@ Levels: BS MS PhD</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a></a>WB_sub <span class="ot">&lt;-</span> WB_sub <span class="sc">|&gt;</span></span>
 <span id="cb46-2"><a></a>  <span class="fu">mutate</span>(<span class="at">Treatment =</span> <span class="fu">fct_recode</span>(Treatment, </span>
-<span id="cb46-3"><a></a>         <span class="st">"5.9% THC (low dose)"</span> <span class="ot">=</span> <span class="st">"5.90%"</span>,</span>
-<span id="cb46-4"><a></a>         <span class="st">"13.4% THC (high dose)"</span> <span class="ot">=</span> <span class="st">"13.40%"</span>),</span>
+<span id="cb46-3"><a></a>                                <span class="st">"5.9% THC (low dose)"</span> <span class="ot">=</span> <span class="st">"5.90%"</span>,</span>
+<span id="cb46-4"><a></a>                                <span class="st">"13.4% THC (high dose)"</span> <span class="ot">=</span> <span class="st">"13.40%"</span>),</span>
 <span id="cb46-5"><a></a>         <span class="at">Treatment =</span> <span class="fu">fct_relevel</span>(Treatment, <span class="st">"Placebo"</span>, <span class="st">"5.9% THC (low dose)"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="fragment">

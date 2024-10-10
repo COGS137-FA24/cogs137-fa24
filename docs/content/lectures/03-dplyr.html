@@ -245,6 +245,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Lab01: Tooling and R</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/labs/02-lab-cs01-wrangle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab02: CS01 Data Wrangling</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -320,7 +326,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#the-pipe-in-baser" id="toc-the-pipe-in-baser" class="nav-link" data-scroll-target="#the-pipe-in-baser">The pipe in baseR</a></li>
   <li><a href="#where-does-the-name-come-from" id="toc-where-does-the-name-come-from" class="nav-link" data-scroll-target="#where-does-the-name-come-from">Where does the name come from?</a></li>
-  <li><a href="#review-how-does-a-pipe-work" id="toc-review-how-does-a-pipe-work" class="nav-link" data-scroll-target="#review-how-does-a-pipe-work">Review: How does a pipe work?</a></li>
+  <li><a href="#how-does-a-pipe-work" id="toc-how-does-a-pipe-work" class="nav-link" data-scroll-target="#how-does-a-pipe-work">How does a pipe work?</a></li>
   </ul></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a>
   <ul class="collapse">
@@ -335,9 +341,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#filter-rows-with-filter" id="toc-filter-rows-with-filter" class="nav-link" data-scroll-target="#filter-rows-with-filter">Filter rows with <code>filter</code></a></li>
   <li><a href="#filter-single-condition" id="toc-filter-single-condition" class="nav-link" data-scroll-target="#filter-single-condition"><code>filter</code> (single condition)</a></li>
   <li><a href="#filter-mutiple-conditions" id="toc-filter-mutiple-conditions" class="nav-link" data-scroll-target="#filter-mutiple-conditions"><code>filter</code> (mutiple conditions)</a></li>
-  <li><a href="#or-select-a-range-of-variables" id="toc-or-select-a-range-of-variables" class="nav-link" data-scroll-target="#or-select-a-range-of-variables">or <code>select</code> a range of variables</a></li>
+  <li><a href="#select-a-range-of-variables" id="toc-select-a-range-of-variables" class="nav-link" data-scroll-target="#select-a-range-of-variables">select` a range of variables</a></li>
   <li><a href="#select-to-keep-range-others" id="toc-select-to-keep-range-others" class="nav-link" data-scroll-target="#select-to-keep-range-others"><code>select</code> to keep range + others</a></li>
-  <li><a href="#or-select-to-exclude-variables" id="toc-or-select-to-exclude-variables" class="nav-link" data-scroll-target="#or-select-to-exclude-variables">or <code>select</code> to exclude variables</a></li>
+  <li><a href="#select-to-exclude-variables" id="toc-select-to-exclude-variables" class="nav-link" data-scroll-target="#select-to-exclude-variables"><code>select</code> to exclude variables</a></li>
   <li><a href="#select-can-rename-columns" id="toc-select-can-rename-columns" class="nav-link" data-scroll-target="#select-can-rename-columns"><code>select</code> can rename columns</a></li>
   <li><a href="#save-when-you-make-dataset-changes" id="toc-save-when-you-make-dataset-changes" class="nav-link" data-scroll-target="#save-when-you-make-dataset-changes">“Save” when you make dataset changes</a></li>
   <li><a href="#check-before-you-move-on" id="toc-check-before-you-move-on" class="nav-link" data-scroll-target="#check-before-you-move-on">Check before you move on</a></li>
@@ -465,7 +471,13 @@ A: On your first lab, we ask you to put your name in the author field. We use th
 <li>Lecture Participation survey “due” after class</li>
 </ul>
 <p>. . .</p>
-<p>Notes: - No Lecture on Thursday this week - Discuss: GH&lt;-&gt;RStudio issue (<code>OpenSSL version mismatch. Built against 30000020, you have 30300020</code>) - Regular labs resume this week - Mention: waitlist &amp; dropping</p>
+<p>Notes:</p>
+<ul>
+<li>No Lecture on Thursday this week</li>
+<li>Discuss: GH&lt;-&gt;RStudio issue (<code>OpenSSL version mismatch. Built against 30000020, you have 30300020</code>)</li>
+<li>Regular labs resume this week</li>
+<li>Mention: waitlist &amp; dropping</li>
+</ul>
 </section>
 <section id="suggested-reading" class="level2">
 <h2 class="anchored" data-anchor-id="suggested-reading">Suggested Reading</h2>
@@ -521,8 +533,8 @@ A: On your first lab, we ask you to put your name in the author field. We use th
 </div>
 <p>You will see this frequently in code online. It’s equivalent to <code>|&gt;</code>.</p>
 </section>
-<section id="review-how-does-a-pipe-work" class="level2">
-<h2 class="anchored" data-anchor-id="review-how-does-a-pipe-work">Review: How does a pipe work?</h2>
+<section id="how-does-a-pipe-work" class="level2">
+<h2 class="anchored" data-anchor-id="how-does-a-pipe-work">How does a pipe work?</h2>
 <ul>
 <li>You can think about the following sequence of actions - find key, unlock car, start car, drive to school, park.</li>
 </ul>
@@ -696,8 +708,8 @@ $ time.from.start &lt;dbl&gt; -27, 15, 69, 111, 156, 236, 283, 315, 360, -10, 20
 </div>
 </div>
 </section>
-<section id="or-select-a-range-of-variables" class="level2">
-<h2 class="anchored" data-anchor-id="or-select-a-range-of-variables">or <code>select</code> a range of variables</h2>
+<section id="select-a-range-of-variables" class="level2">
+<h2 class="anchored" data-anchor-id="select-a-range-of-variables">select` a range of variables</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>WB <span class="sc">|&gt;</span></span>
 <span id="cb12-2"><a href="#cb12-2"></a>  <span class="fu">select</span>(ID<span class="sc">:</span><span class="st">`</span><span class="at">FLUID TYPE</span><span class="st">`</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -746,8 +758,8 @@ $ time.from.start &lt;dbl&gt; -27, 15, 69, 111, 156, 236, 283, 315, 360, -10, 20
 </div>
 </div>
 </section>
-<section id="or-select-to-exclude-variables" class="level2">
-<h2 class="anchored" data-anchor-id="or-select-to-exclude-variables">or <code>select</code> to exclude variables</h2>
+<section id="select-to-exclude-variables" class="level2">
+<h2 class="anchored" data-anchor-id="select-to-exclude-variables"><code>select</code> to exclude variables</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a>WB <span class="sc">|&gt;</span></span>
 <span id="cb16-2"><a href="#cb16-2"></a>  <span class="fu">select</span>(<span class="sc">-</span>Timepoint)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1046,8 +1058,8 @@ Levels: BS MS PhD</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>WB_sub <span class="ot">&lt;-</span> WB_sub <span class="sc">|&gt;</span></span>
 <span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">Treatment =</span> <span class="fu">fct_recode</span>(Treatment, </span>
-<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>         <span class="st">"5.9% THC (low dose)"</span> <span class="ot">=</span> <span class="st">"5.90%"</span>,</span>
-<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>         <span class="st">"13.4% THC (high dose)"</span> <span class="ot">=</span> <span class="st">"13.40%"</span>),</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"5.9% THC (low dose)"</span> <span class="ot">=</span> <span class="st">"5.90%"</span>,</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"13.4% THC (high dose)"</span> <span class="ot">=</span> <span class="st">"13.40%"</span>),</span>
 <span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">Treatment =</span> <span class="fu">fct_relevel</span>(Treatment, <span class="st">"Placebo"</span>, <span class="st">"5.9% THC (low dose)"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>. . .</p>

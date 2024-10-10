@@ -65,6 +65,7 @@ Mentorship opportunity for women-identifying students:
 . . . 
 
 Notes:
+
 -   No Lecture on Thursday this week
 -   Discuss: GH<->RStudio issue (`OpenSSL version mismatch. Built against 30000020, you have 30300020`)
 -   Regular labs resume this week
@@ -122,7 +123,7 @@ The pipe operator was *first* implemented in the package **magrittr**.
 
 You will see this frequently in code online. It's equivalent to `|>`.
 
-## Review: How does a pipe work?
+## How does a pipe work?
 
 -   You can think about the following sequence of actions - find key, unlock car, start car, drive to school, park.
 
@@ -249,7 +250,7 @@ WB |>
   filter(Group == "Occasional user", THC > 100)
 ```
 
-## or `select` a range of variables
+## select` a range of variables
 
 ```{r}
 #| code-line-numbers: "2"
@@ -270,7 +271,7 @@ WB |>
   select(ID:`FLUID TYPE`, THC, time.from.start)
 ```
 
-## or `select` to exclude variables
+## `select` to exclude variables
 
 ```{r}
 #| code-line-numbers: "2"
@@ -450,8 +451,8 @@ Note: we'll discuss this specific code soon.
 ```{r}
 WB_sub <- WB_sub |>
   mutate(Treatment = fct_recode(Treatment, 
-         "5.9% THC (low dose)" = "5.90%",
-         "13.4% THC (high dose)" = "13.40%"),
+                                "5.9% THC (low dose)" = "5.90%",
+                                "13.4% THC (high dose)" = "13.40%"),
          Treatment = fct_relevel(Treatment, "Placebo", "5.9% THC (low dose)"))
 ```
 

@@ -30,7 +30,7 @@ The only package required for completion of this lab is `tidyverse`, as `dplyr` 
 
 # Data
 
-The three data files you'll be using in this lab have been provided in the \`data/\` folder. You'll see the following three lines in the provided .Rmd template for this lab, which, when run, will read each of the files into R for you:
+The three data files you'll be using in this lab have been provided in the `data/` folder. You'll see the following three lines in the provided .Rmd template for this lab, which, when run, will read each of the files into R for you:
 
 ``` r
 WB <- read_csv("data/WB")
@@ -42,9 +42,7 @@ BR <- read_csv("data/Breath.csv")
 
 ### Exercise 1: **Whole Blood**
 
-Using the CS01 wrangling code from the `dplyr` lecture here, wrangle the whole blood data as we did in class.
-
-But, *in addition* to what we did in class, add a column to this dataset called `Matrix` that has the value "WB" for every row. (This way when we eventually combine all three datasets, we'll know which values came from which dataset.)
+Using the CS01 wrangling code from the `dplyr` lecture [here](https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/03-dplyr.html#cs01-wrangling), wrangle the whole blood data as we did in class.
 
 ### Exercise 2: **Oral Fluid**
 
@@ -53,9 +51,8 @@ In a *similar* manner to how the whole blood data were wrangled and cleaned, car
 -   `Treatment` re-coded and re-leveled as was done with WB
 -   `Group` re-coded as with WB
 -   column names cleaned using `clean_names()` as with WB
--   The following columns renamed: `thcoh = x11_oh_th`; `thcv = thc_v`
+-   The following columns renamed: `thcoh = x11_oh_th`; `thcv = thc_v`; `fluid_type=fluid`
 -   The following `timepoints` (note these are different than WB): `"pre-smoking","0-30 min","31-90 min","91-180 min", "181-210 min", "211-240 min","241-270 min", "271+ min"`
--   add a column to this dataset called `Matrix` that has the value "OF" for every row
 
 ### Exercise 3: **Breath**
 
@@ -64,11 +61,11 @@ In a *similar* manner to both previous datatasets, carry out wrangling on the br
 -   `Treatment` re-coded and re-leveled as was done with WB/OF
 -   `Group` re-coded as with WB/OF
 -   column names cleaned using `clean_names()` as with WB/OF
--   The following columns renamed: `thc = thc_pg_pad`
+-   The following columns renamed: `thc = thc_pg_pad`; ; `fluid_type=fluid`
 -   The following `timepoints` (note these are different than WB/OF): `"pre-smoking","0-40 min","41-90 min", "91-180 min", "181-210 min", "211-240 min", "241-270 min", "271+ min"`
 -   add a column to this dataset called `Matrix` that has the value "BR" for every row
 
-### Exercise 4: **Combine**
+### Exercise 4: **Combine** (*time-permitting*)
 
 Combine all three datasets into a single dataframe. Note that there is a function in `dplyr` called `bind_rows()` for accomplishing such a task.
 

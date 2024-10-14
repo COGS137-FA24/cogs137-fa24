@@ -66,17 +66,23 @@ website:
             href: content/lectures/02-cs01-intro.qmd
           - text: "03-dplyr"
             href: content/lectures/03-dplyr.qmd
+          - text: "04-ggplot2"
+            href: content/lectures/04-ggplot2.qmd     
       - section: "Labs"
         contents:
           - text: "Lab01: Tooling and R"
             href: content/labs/01-lab-intro-r.qmd
           - text: "Lab02: CS01 Data Wrangling"
             href: content/labs/02-lab-cs01-wrangle.qmd
+          # - text: "Lab03: CS01 Data Visualization"
+            # href: content/labs/03-lab-cs01-viz.qmd
       - section: "Case Studies"
       - section: "Homework"
         contents:
           - text: "HW01"
             href: content/hw/hw-01.qmd
+          # - text: "HW02"
+            # href: content/hw/hw-02.qmd
       - section: "Computing"
         contents:
           - href: computing/computing-access.qmd
@@ -86,57 +92,9 @@ website:
           - href: computing/computing-cheatsheets.qmd
             text: Cheatsheets
             
-    #   - section: "Lecture Slides"
-    #     contents:
-    #       # - text: "00-welcome"
-    #       #   href: content/lectures/00-welcome-slides.html
-    #       # - text: "01-intro-to-r"
-    #       #   href: content/lectures/01-intro-to-r-slides.html
-    #       # - text: "02-dplyr"
-    #       #   href: content/lectures/02-dplyr-slides.html
-    #       # - text: "03-tidyr"
-    #       #   href: content/lectures/03-tidyr-slides.html
-    #       # - text: "04-ggplot2"
-    #       #   href: content/lectures/04-ggplot2-slides.html
-    #       # - text: "05-viz"
-    #       #   href: content/lectures/05-viz-slides.html
-    #       # - text: "06-analysis"
-    #       #   href: content/lectures/06-analysis-slides.html
-    #       # - text: "07-linear-models"
-    #       #   href: content/lectures/07-linear-models-slides.html
-    #       # - text: "08-effective-communication"
-    #       #   href: content/lectures/08-effective-communication-slides.html
-    #       # - text: "09-mlr"
-    #       #   href: content/lectures/09-mlr-slides.html
-    #       # - text: "10-projects"
-    #       #   href: content/lectures/10-projects-slides.html
-    #       # - text: "11-cs01-data"
-    #       #   href: content/lectures/11-cs01-data-slides.html
-    #       # - text: "12-cs01-eda"
-    #       #   href: content/lectures/12-cs01-eda-slides.html
-    #       # - text: "13-cs01-analysis"
-    #       #   href: content/lectures/13-cs01-analysis-slides.html
-    #       # - text: "14-tidymodels"
-    #       #   href: content/lectures/14-tidymodels-slides.html
-    #       # - text: "15-cs02-data"
-    #       #   href: content/lectures/15-cs02-data-slides.html
-    #       # - text: "16-cs02-eda"
-    #       #   href: content/lectures/16-cs02-eda-slides.html
-    #       # - text: "17-cs02-analysis"
-    #       #   href: content/lectures/17-cs02-analysis-slides.html
-    #       # - text: "18-brainstorming"
-    #       #   href: content/lectures/18-brainstorming-slides.html
-    #       # - text: "19-wrap-up"
-    #       #   href: content/lectures/19-wrap-up-slides.html
+  
     #   - section: "Lecture Notes"
     #     contents:
-
-    #       - text: "01-intro-to-r"
-    #         href: content/lectures/01-intro-to-r.qmd
-    #       - text: "02-dplyr"
-    #         href: content/lectures/02-dplyr.qmd
-    #       - text: "03-tidyr"
-    #         href: content/lectures/03-tidyr.qmd
     #       - text: "04-ggplot2"
     #         href: content/lectures/04-ggplot2.qmd
     #       - text: "05-viz"

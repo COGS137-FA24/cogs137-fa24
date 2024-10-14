@@ -1,6 +1,5 @@
 .DS_Store
 Thumbs.db
-
 .Rhistory
 .Rprofile
 .Rproj.user
@@ -32,3 +31,5 @@ Makefile
 
 _site/
 _coming_soon/
+
+gmailr.json

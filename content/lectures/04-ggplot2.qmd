@@ -37,6 +37,10 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 -   **Lab 02** due Thursday (11:59 PM)
 -   Lecture Participation survey "due" after class
 
+**Notes**:
+
+-   HW02 now available; Lab03 posted Th
+
 ## Suggested Reading
 
 -   R4DS Chapter 9: [Data Visualization](https://r4ds.hadley.nz/layers)

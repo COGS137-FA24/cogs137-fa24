@@ -32,7 +32,7 @@ The only package required for completion of this lab is `tidyverse`, as `ggplot2
 
 In this lab, you'll start from the cleaned version of the three data files you would have had after the completion of lab02. This file can be read in as follows:
 
-``` r
+```r
 cs_data <- read_csv("data/cs01_combined.csv")
 ```
 

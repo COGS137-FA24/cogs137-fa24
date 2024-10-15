@@ -81,8 +81,8 @@ website:
         contents:
           - text: "HW01"
             href: content/hw/hw-01.qmd
-          # - text: "HW02"
-            # href: content/hw/hw-02.qmd
+          - text: "HW02"
+            href: content/hw/hw-02.qmd
       - section: "Computing"
         contents:
           - href: computing/computing-access.qmd

@@ -21,56 +21,64 @@
     <lastmod>2024-10-14T21:39:42.561Z</lastmod>
   </url>
   <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/03-dplyr.html</loc>
-    <lastmod>2024-10-14T20:04:44.773Z</lastmod>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/05-viz.html</loc>
+    <lastmod>2024-10-16T23:18:06.296Z</lastmod>
   </url>
   <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/03-dplyr-slides.html</loc>
-    <lastmod>2024-10-14T20:04:44.773Z</lastmod>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/05-viz-slides.html</loc>
+    <lastmod>2024-10-16T23:18:06.296Z</lastmod>
   </url>
   <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/02-cs01-intro.html</loc>
-    <lastmod>2024-10-07T17:11:00.669Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/02-cs01-intro-slides.html</loc>
-    <lastmod>2024-10-07T17:11:00.669Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/hw/hw-02.html</loc>
-    <lastmod>2024-10-14T20:53:56.387Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/01-lab-intro-r.html</loc>
-    <lastmod>2024-10-08T23:56:30.786Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/03-lab-cs01-viz.html</loc>
-    <lastmod>2024-10-14T21:39:51.981Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/LICENSE.html</loc>
-    <lastmod>2023-09-22T17:18:24.259Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/02-lab-cs01-wrangle.html</loc>
-    <lastmod>2024-10-14T21:46:53.202Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/hw/hw-01.html</loc>
-    <lastmod>2024-10-07T22:47:20.728Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/cs/cs01.html</loc>
-    <lastmod>2024-10-07T21:26:57.988Z</lastmod>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/00-welcome.html</loc>
+    <lastmod>2024-10-03T22:34:18.038Z</lastmod>
   </url>
   <url>
     <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/00-welcome-slides.html</loc>
     <lastmod>2024-10-03T22:34:18.038Z</lastmod>
   </url>
   <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/00-welcome.html</loc>
-    <lastmod>2024-10-03T22:34:18.038Z</lastmod>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/cs/cs01.html</loc>
+    <lastmod>2024-10-07T21:26:57.988Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/hw/hw-01.html</loc>
+    <lastmod>2024-10-07T22:47:20.728Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/02-lab-cs01-wrangle.html</loc>
+    <lastmod>2024-10-16T23:17:47.524Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/LICENSE.html</loc>
+    <lastmod>2023-09-22T17:18:24.259Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/03-lab-cs01-viz.html</loc>
+    <lastmod>2024-10-14T21:39:51.981Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/01-lab-intro-r.html</loc>
+    <lastmod>2024-10-08T23:56:30.786Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/hw/hw-02.html</loc>
+    <lastmod>2024-10-14T20:53:56.387Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/02-cs01-intro-slides.html</loc>
+    <lastmod>2024-10-07T17:11:00.669Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/02-cs01-intro.html</loc>
+    <lastmod>2024-10-07T17:11:00.669Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/03-dplyr-slides.html</loc>
+    <lastmod>2024-10-14T20:04:44.773Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/03-dplyr.html</loc>
+    <lastmod>2024-10-14T20:04:44.773Z</lastmod>
   </url>
   <url>
     <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/01-intro-to-r-slides.html</loc>

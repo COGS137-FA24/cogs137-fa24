@@ -68,14 +68,16 @@ website:
             href: content/lectures/03-dplyr.qmd
           - text: "04-ggplot2"
             href: content/lectures/04-ggplot2.qmd     
+          - text: "05-viz"
+            href: content/lectures/05-viz.qmd   
       - section: "Labs"
         contents:
           - text: "Lab01: Tooling and R"
             href: content/labs/01-lab-intro-r.qmd
           - text: "Lab02: CS01 Data Wrangling"
             href: content/labs/02-lab-cs01-wrangle.qmd
-          # - text: "Lab03: CS01 Data Visualization"
-            # href: content/labs/03-lab-cs01-viz.qmd
+          - text: "Lab03: CS01 Data Visualization"
+            href: content/labs/03-lab-cs01-viz.qmd
       - section: "Case Studies"
       - section: "Homework"
         contents:

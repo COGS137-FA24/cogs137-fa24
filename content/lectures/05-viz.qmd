@@ -29,13 +29,14 @@ Slides modified from [datascienceinabox.org](https://datasciencebox.org/)
 
 **Due Dates**:
 
--   **Lab 02** due tonight (11:59 PM)
+- **Lab 02** due tonight (11:59 PM)
   - ~~`Group` re-coded as with WB/OF~~ <- removed from instructions
--   Lecture Participation survey "due" after class
+- Lecture Participation survey "due" after class
 
 **Notes**:
 
 -   Lab03 now available
+-   Lab01 scores posted; Scores on Canvas; feedback as "issue" on GH
 -   Case Study Groups will be sent tomorrow; will discuss case study in class on Tues.
 
 ## Suggested Reading
@@ -710,7 +711,7 @@ ggplot(brexit, aes(y = opinion, fill = opinion)) +
 
 ## Your Turn
 
--   Read in the data ([Data slide](https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/05-viz.html#data))
+-   Read in the data ([Data](https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/05-viz.html#the-data-code))
 -   Think of at least three different ways to tell slightly different stories with these data
 -   Try to implement at least one of these ideas!
 

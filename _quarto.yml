@@ -41,8 +41,8 @@ website:
         href: https://datahub.ucsd.edu/hub/spawn
         text: "Datahub"
       - icon: question
-        href: TBD
-        text: "TBD"
+        href: https://piazza.com/class/m1jv2820hu54m
+        text: "Piazza"
       - icon: robot
         href: https://chatgpt.com/
         text: "ChatGPT"
@@ -79,6 +79,9 @@ website:
           - text: "Lab03: CS01 Data Visualization"
             href: content/labs/03-lab-cs01-viz.qmd
       - section: "Case Studies"
+        contents:
+          - text: "CS01: Biomarkers of Recent Use"
+            href: content/cs/cs01.qmd
       - section: "Homework"
         contents:
           - text: "HW01"

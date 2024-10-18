@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-11-30">
+<meta name="dcterms.date" content="2024-11-04">
 
 <title>COGS 137 - CS01: Biomarkers of Recent Use</title>
 <style>
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<link href="../../content/hw/hw-01.html" rel="next">
+<link href="../../content/labs/03-lab-cs01-viz.html" rel="prev">
 <link href="../../images/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -77,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 <meta property="og:site_name" content="COGS 137">
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar docked slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -86,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">CS01: Biomarkers of Recent Use</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/cs/cs01.html">Case Studies</a></li><li class="breadcrumb-item"><a href="../../content/cs/cs01.html">CS01: Biomarkers of Recent Use</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -120,7 +122,7 @@ ul.task-list li input[type="checkbox"] {
       </ul>
     </div>
     <a href="https://datahub.ucsd.edu/hub/spawn" title="Datahub" class="quarto-navigation-tool px-1" aria-label="Datahub"><i class="bi bi-cloud"></i></a>
-    <a href="../../TBD" title="TBD" class="quarto-navigation-tool px-1" aria-label="TBD"><i class="bi bi-question"></i></a>
+    <a href="https://piazza.com/class/m1jv2820hu54m" title="Piazza" class="quarto-navigation-tool px-1" aria-label="Piazza"><i class="bi bi-question"></i></a>
     <a href="https://chatgpt.com/" title="ChatGPT" class="quarto-navigation-tool px-1" aria-label="ChatGPT"><i class="bi bi-robot"></i></a>
     <a href="https://github.com/COGS137-FA24" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -233,8 +235,21 @@ ul.task-list li input[type="checkbox"] {
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Case Studies</span></span>
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Case Studies</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/cs/cs01.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">CS01: Biomarkers of Recent Use</span></a>
+  </div>
+</li>
+      </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
@@ -302,20 +317,22 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#imports" id="toc-imports" class="nav-link" data-scroll-target="#imports">Imports</a></li>
   </ul></li>
+  <li><a href="#main-question" id="toc-main-question" class="nav-link" data-scroll-target="#main-question">Main Question</a></li>
   <li><a href="#case-study-report" id="toc-case-study-report" class="nav-link" data-scroll-target="#case-study-report">Case Study Report</a>
   <ul class="collapse">
   <li><a href="#extending-the-analysis" id="toc-extending-the-analysis" class="nav-link" data-scroll-target="#extending-the-analysis">Extending the Analysis</a></li>
   </ul></li>
   <li><a href="#general-communication" id="toc-general-communication" class="nav-link" data-scroll-target="#general-communication">General Communication</a></li>
   <li><a href="#group-feedback" id="toc-group-feedback" class="nav-link" data-scroll-target="#group-feedback">Group Feedback</a></li>
+  <li><a href="#strong-case-studies" id="toc-strong-case-studies" class="nav-link" data-scroll-target="#strong-case-studies">Strong Case Studies…</a></li>
   <li><a href="#common-deductions" id="toc-common-deductions" class="nav-link" data-scroll-target="#common-deductions">Common Deductions</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/cs/cs01.html">Case Studies</a></li><li class="breadcrumb-item"><a href="../../content/cs/cs01.html">CS01: Biomarkers of Recent Use</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">CS01: Biomarkers of Recent Use</h1>
 </div>
@@ -328,7 +345,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 30, 2023</p>
+      <p class="date">November 4, 2024</p>
     </div>
   </div>
   
@@ -343,23 +360,39 @@ ul.task-list li input[type="checkbox"] {
 <p>This is where you get to put together all you’ve learned so far this quarter into a full data science report! This report will include your analysis from top (the background and question) to bottom (your analysis, interpretation, and conclusions.)</p>
 <p>We’ll be grading to see that you have: 1) all necessary code for each section of the project. 2) explanatory text that guides the reader from start to finish. 3) polished visualizations that allow the reader to both understand the data you’re working with an your conclusions.</p>
 <p>This will be submitted and graded as a group. <strong>One submission per group.</strong></p>
-<section id="getting-started" class="level2">
+<section id="getting-started" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
 <p>Here are the steps for getting started:</p>
 <ul>
 <li>This will be completed in cs01 group repository that has been created for you and your group mates.</li>
 <li>Make any changes needed as outlined by the tasks you need to complete for the assignment</li>
-<li>Periodically knit and commit changes (for example, once per each new part)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+<li>Periodically knit and commit changes (for example, once per each new part)[^1]</li>
 <li>Push all your changes back to your GitHub repo</li>
 <li>This case study will be graded from GitHub.</li>
 </ul>
-<p>Your final GitHub push prior to the deadline will be used for grading.</p>
-<section id="imports" class="level3">
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p>Avoid waiting until the end to knit for the first time. It will be better/easier/less of a headache if you knit periodically and know it’s all working as intended.</p>
+</div></div><p>The HTML of your report from your final GitHub push prior to the deadline will be used for grading.</p>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p>A reminder that there is a <a href="https://bookdown.org/yihui/rmarkdown-cookbook/html-output.html">book dedicated to RMarkdown</a>, with a whole section on controlling HTML output, in case you want to customize your output in some way.</p>
+</div></div><section id="imports" class="level3">
 <h3 class="anchored" data-anchor-id="imports">Imports</h3>
 <p>You are allowed to import whichever packages you like for this case study report.</p>
 </section>
 </section>
-<section id="case-study-report" class="level2">
+<section id="main-question" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="main-question">Main Question</h2>
+<p>All groups will be answering the following question in their case study:</p>
+<blockquote class="blockquote">
+<p>Which compound, in which matrix, and at what cutoff is the best biomarker of recent use?</p>
+</blockquote>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p>As noted in class, different groups may have different answers, and that’s ok. You have to explain your thinking and use your analysis to help guide your conclusions.</p>
+</div></div></section>
+<section id="case-study-report" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="case-study-report">Case Study Report</h2>
 <p>Your case study can be organized however you see best fit, but we’ll be looking for the following <em>general</em> sections:</p>
 <ul>
@@ -373,26 +406,25 @@ ul.task-list li input[type="checkbox"] {
 <li>Data Import</li>
 <li>Data Wrangling</li>
 </ul></li>
-<li>Analysis
-<ul>
-<li>Exploratory Data Analysis</li>
-<li>Data Analysis</li>
-</ul></li>
-<li>Results</li>
-<li>Discussion of results</li>
+<li>Analysis</li>
+<li>Results &amp; Discussion (including limitations of your work)</li>
 <li>Conclusion</li>
 </ul>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
 <p>Now, you may want to combine some of these sections (i.e.&nbsp;include your results and discussion among your analysis code). That’s <em>totally</em> allowed, but we’ll be looking to see that your report includes sufficient information to understand what you did, why you did it, and what your results are.</p>
-<section id="extending-the-analysis" class="level3">
+</div></div><section id="extending-the-analysis" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="extending-the-analysis">Extending the Analysis</h3>
-<p>In addition to getting the code presented in class working, adding explanatory text to your report, and generating polished visualizations, you and your group must “extend the analysis” presented in class in a meaningful way. Now “meaningful” is not a very-easily-measured term. A meaningful extension could be carrying out analysis to answer an additional sub-question beyond what was presented in class, or including a really extensive exploratory data analysis, or generating a really superb set of visualizations to convey your groups’ results, or finding a related dataset and incorporating it into your case study. To determine whether your extension is “meaningful,” you and your group should be able to answer “yes” to the question “Does our extension add something important to this report beyond what was presented in class?”</p>
-<p>This extension should be included/weaved into your report, meaning it should only be “separated out” as its own section if it makes most sense for the story you’re telling.</p>
-</section>
+<p>In addition to getting the code presented in class working, adding explanatory text to your report, and generating polished visualizations, you and your group must “extend the analysis” beyond what was presented in class in a meaningful way. Now “meaningful” is not a very-easily-measured term. A meaningful extension could be carrying out analysis to answer an additional question beyond what was presented in class, or asking the same main question among subgroups, or finding a related dataset and incorporating it into your case study. To determine whether your extension is “meaningful,” you and your group should be able to answer “yes” to the question “Does our extension add something important to this report beyond what was presented in class?”</p>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p>This extension should be included/woven into your report, meaning it should only be “separated out” as its own section if it makes most sense for the story you’re telling.</p>
+</div></div></section>
 </section>
 <section id="general-communication" class="level2">
 <h2 class="anchored" data-anchor-id="general-communication">General Communication</h2>
 <p>Each group will need to convey the most important finding(s) to a <em>general audience</em> through some form of communication.</p>
-<p>This is very open-ended in its format. It could be a short video, an infographic, an effective email, a graphic, instagram slides, a short presentation, etc. It will be submitted by one group member on Canvas. (All group members will receive credit.)</p>
+<p>This is very open-ended in its format. It could be a short video, an infographic, an effective email, a graphic, Instagram slides, a short presentation, etc. It will be submitted by one group member on Canvas. (All group members will receive credit.)</p>
 <p>The specific audience you want to target can be specified (i.e.&nbsp;police officers, undergraduate students, parents, etc.); however, the assumption is that these are NOT data scientists.</p>
 <p>Your communication SHOULD include your take-home message…and that may be all it includes! Basically, we want you to distill down your case study to its most important message and then convey that to the general public in an effective manner.</p>
 <p>It should NOT contain specifics of your analysis or anywhere near all the information included in your report.</p>
@@ -401,20 +433,30 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="group-feedback">Group Feedback</h2>
 <p>There will be a form to submit upon submission of the case study to provide feedback about working with your group mates. This is meant to motivate not scare. Most groups work out really really well and everyone contributes to the best of their ability. However, if and when that doesn’t happen, I want to be sure I’m aware of the circumstances and follow up as necessary.</p>
 </section>
+<section id="strong-case-studies" class="level2">
+<h2 class="anchored" data-anchor-id="strong-case-studies">Strong Case Studies…</h2>
+<ul>
+<li><p>can be read from start to finish and make sense (i.e.&nbsp;if you displayed only text and outputs from code, the story would make sense)</p></li>
+<li><p>have text to guide the viewer throughout, including interpretations of all viz/calculations, that explain to the reader what the results have to do with the question(s) at hand</p></li>
+<li><p>have clean, easy-to-read code</p></li>
+<li><p>have clear, well-designed visualizations, with consistent colors/style throughout report.</p></li>
+</ul>
+</section>
 <section id="common-deductions" class="level2">
 <h2 class="anchored" data-anchor-id="common-deductions">Common Deductions</h2>
 <p>In past iterations of the course, students have commonly lost points on CS01 for the following reasons:</p>
+<ul>
+<li><p><strong>Background &amp; Question</strong> | 1) background section is lacking necessary information for the reader; often, the information missing pertains to the groups extension question; 2) report doesn’t state question(s) being answered clearly</p></li>
+<li><p><strong>Data</strong> | Failing to introduce the dataset(s) and the information contained in each</p></li>
+<li><p><strong>Visualization</strong> | 1) including <em>all</em> the visualizations a group could think of without deciding which best tell the story 2) including multiple visualizations that all display the same information in slightly different ways</p></li>
+<li><p><strong>Analysis</strong> | 1) lacking explanation to guide the viewer. All plots and calculations should be explained/interpreted, explaining what we learn from the plot more than just what is included on the plot or what analysis was carried out. We care about the <em>why</em> a lot. 2) making decisions without explanation (i.e.&nbsp;choosing a seemingly-random cutoff without explanation as to why). 3) Referencing things before they’re explained (i.e.&nbsp;referencing T2A without having text explaining what that is)</p></li>
+<li><p><strong>Results, Discussion &amp; Conclusion</strong> | numbers/results presented without sufficient guidance as to what the results mean <em>in the context of your question</em></p></li>
+</ul>
 
 
 </section>
 
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Avoid waiting until the end to knit for the first time. It will be better/easier/less of a headache if you knit periodically and know it’s all working as intended.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -968,6 +1010,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../content/labs/03-lab-cs01-viz.html" class="pagination-link" aria-label="Lab03: CS01 Data Visualization">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab03: CS01 Data Visualization</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../content/hw/hw-01.html" class="pagination-link" aria-label="HW01">
+        <span class="nav-page-text">HW01</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

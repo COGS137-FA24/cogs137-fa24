@@ -4,7 +4,7 @@
     "href": "schedule.html",
     "title": "COGS 137 Course Schedule",
     "section": "",
-    "text": "Here you’ll find topics, links to materials, and deadlines for the entire term. Should any dates changes, this page will be updated throughout the quarter.\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nPREPARE\nMATERIALS\nDUE\n\n\n\n\n0\nThu, Sep 26\nWelcome & Tooling\n\n\n📝 notes  🖥️ slides \n\n\n\n\n1\nTue, Oct 1\nIntro to R\n\n\n📝 notes  🖥️ slides \n\n\n\n\n\nThu, Oct 3\nCS01: Introduction\n\n\n📝 notes  🖥️ slides \n\n\n\n\n\nFri, Oct 4\nLab01: Intro to R\n\n\n\n\n🔘 Survey #finaid \n\n\n2\nTue, Oct 8\nData Wrangling: dplyr\n📕 R4DS Chapter 5: Data Transformation  📕 R4DS Chapter 16: Factors \n📝 notes  🖥️ slides \n\n\n\n\n\nThu, Oct 10\n✈️ No Class - Prof Travel\n\n\n\n\n\n\n\n\n\nFri, Oct 11\nLab02: CS01 + Data Wrangling\n\n\n\n\n\n\n\n\n3\nMon, Oct 14\n\n\n\n\n\n\n⌨️ lab 01  📚 hw 01\n\n\n\nTue, Oct 15\nData Visualization: ggplot2 (day 1)\n📕 R4DS Chapter 9: Data Visualization  💻 Data to Viz: https://www.data-to-viz.com/ \n📝 notes  🖥️ slides \n\n\n\n\n\nThu, Oct 17\nData Visualization: ggplot2 (day 2)\n📕 R4DS Chapter 11: Data Communication  🎥 The Glamour of Graphics: [video]; [slides]\n📝 notes  🖥️ slides \n⌨️ lab 02\n\n\n\nFri, Oct 18\nLab 03: CS01 + Data Visualization\n\n\n\n\n\n\n\n\n4\nTue, Oct 22\nExploratory Data Analysis (EDA)\n\n\n\n\n\n\n\n\n\nThu, Oct 24\nEffective Communication\n\n\n\n\n⌨️ lab 03\n\n\n\nFri, Oct 25\nLab 04: CS01 + EDA\n\n\n\n\n\n\n\n\n5\nMon, Oct 28\n\n\n\n\n\n\n📚 hw 02\n\n\n\nTue, Oct 29\nCS01: In-class Group Work\n\n\n\n\n\n\n\n\n\nThu, Oct 31\nCS02 + Final Project: Introduction\n\n\n\n\n⌨️ lab 04\n\n\n\nFri, Nov 1\nLab 05: Communication + Finalizing CS01\n\n\n\n\n\n\n\n\n6\nMon, Nov 4\n\n\n\n\n\n\n💻 cs 01\n\n\n\nTue, Nov 5\nCS02: Data\n\n\n\n\n\n\n\n\n\nThu, Nov 7\nCS02: EDA\n\n\n\n\n⌨️ lab 05\n\n\n\nFri, Nov 8\nLab 06: CS02 EDA + Final Project Brainstorming\n\n\n\n\n\n\n\n\n7\nMon, Nov 11\n\n\n\n\n\n\n📄 Final Project Proposal\n\n\n\nTue, Nov 12\nRegression\n\n\n\n\n\n\n\n\n\nThu, Nov 14\nCS02: Analysis (regression)\n\n\n\n\n⌨️ lab 06\n\n\n\nFri, Nov 15\nLab 07: CS02 + Regression\n\n\n\n\n\n\n\n\n8\nMon, Nov 18\n\n\n\n\n\n\n📚 hw 03\n\n\n\nTue, Nov 19\nCS02: Analysis (ML)\n\n\n\n\n\n\n\n\n\nThu, Nov 21\nCS02: In-class Group Work\n\n\n\n\n⌨️ lab 07\n\n\n\nFri, Nov 22\nLab: Final Project Progress\n\n\n\n\n\n\n\n\n9\nMon, Nov 25\n\n\n\n\n\n\n💻 cs 02 + 📄 Final Project - rough draft\n\n\n\nTue, Nov 26\nFinal Project: In-class Group Work\n\n\n\n\n\n\n\n\n\nThu, Nov 28\n🦃 Thanksgiving Break - No Lecture\n\n\n\n\n\n\n\n\n\nFri, Nov 29\n🦃 Thanksgiving Break - No Lab\n\n\n\n\n\n\n\n\n10\nMon, Dec 2\n\n\n\n\n\n\n👯‍♀️ Peer Evaluation\n\n\n\nTue, Dec 3\nFinal Project Presentations\n\n\n\n\n\n\n\n\n\nThu, Dec 5\nFinal Project Presentations\n\n\n\n\n\n\n\n\nFinals\nFri, Dec 6\nLab: Final Project Progress\n\n\n\n\n\n\n\n\n\nTue, Dec 10\n\n\n\n\n\n\n📄 Final Project",
+    "text": "Here you’ll find topics, links to materials, and deadlines for the entire term. Should any dates changes, this page will be updated throughout the quarter.\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nTOPIC\nPREPARE\nMATERIALS\nDUE\n\n\n\n\n0\nThu, Sep 26\nWelcome & Tooling\n\n\n📝 notes  🖥️ slides \n\n\n\n\n1\nTue, Oct 1\nIntro to R\n\n\n📝 notes  🖥️ slides \n\n\n\n\n\nThu, Oct 3\nCS01: Introduction\n\n\n📝 notes  🖥️ slides \n\n\n\n\n\nFri, Oct 4\nLab01: Intro to R\n\n\n\n\n🔘 Survey #finaid \n\n\n2\nTue, Oct 8\nData Wrangling: dplyr\n📕 R4DS Chapter 5: Data Transformation  📕 R4DS Chapter 16: Factors \n📝 notes  🖥️ slides \n\n\n\n\n\nThu, Oct 10\n✈️ No Class - Prof Travel\n\n\n\n\n\n\n\n\n\nFri, Oct 11\nLab02: CS01 + Data Wrangling\n\n\n\n\n\n\n\n\n3\nMon, Oct 14\n\n\n\n\n\n\n⌨️ lab 01  📚 hw 01\n\n\n\nTue, Oct 15\nData Visualization: ggplot2 (day 1)\n📕 R4DS Chapter 9: Data Visualization  💻 Data to Viz: https://www.data-to-viz.com/ \n📝 notes  🖥️ slides \n\n\n\n\n\nThu, Oct 17\nData Visualization: ggplot2 (day 2)\n📕 R4DS Chapter 11: Data Communication  🎥 The Glamour of Graphics: [video]; [slides]\n📝 notes  🖥️ slides \n⌨️ lab 02\n\n\n\nFri, Oct 18\nLab 03: CS01 + Data Visualization\n\n\n\n\n\n\n\n\n4\nTue, Oct 22\nExploratory Data Analysis (EDA)\n\n\n\n\n\n\n\n\n\nThu, Oct 24\nEffective Communication\n\n\n\n\n⌨️ lab 03\n\n\n\nFri, Oct 25\nLab 04: CS01 + EDA\n\n\n\n\n\n\n\n\n5\nMon, Oct 28\n\n\n\n\n\n\n📚 hw 02\n\n\n\nTue, Oct 29\nCS01: In-class Group Work\n\n\n\n\n\n\n\n\n\nThu, Oct 31\nCS02 + Final Project: Introduction\n\n\n\n\n⌨️ lab 04\n\n\n\nFri, Nov 1\nLab 05: Communication + Finalizing CS01\n\n\n\n\n\n\n\n\n6\nMon, Nov 4\n\n\n\n\n\n\n💻 cs 01\n\n\n\nTue, Nov 5\nCS02: Data\n\n\n\n\n\n\n\n\n\nThu, Nov 7\nCS02: EDA\n\n\n\n\n⌨️ lab 05\n\n\n\nFri, Nov 8\nLab 06: CS02 EDA + Final Project Brainstorming\n\n\n\n\n\n\n\n\n7\nMon, Nov 11\n\n\n\n\n\n\n📄 Final Project Proposal\n\n\n\nTue, Nov 12\nRegression\n\n\n\n\n\n\n\n\n\nThu, Nov 14\nCS02: Analysis (regression)\n\n\n\n\n⌨️ lab 06\n\n\n\nFri, Nov 15\nLab 07: CS02 + Regression\n\n\n\n\n\n\n\n\n8\nMon, Nov 18\n\n\n\n\n\n\n📚 hw 03\n\n\n\nTue, Nov 19\nCS02: Analysis (ML)\n\n\n\n\n\n\n\n\n\nThu, Nov 21\nCS02: In-class Group Work\n\n\n\n\n⌨️ lab 07\n\n\n\nFri, Nov 22\nLab: Final Project Progress\n\n\n\n\n\n\n\n\n9\nMon, Nov 25\n\n\n\n\n\n\n💻 cs 02 + 📄 Final Project - rough draft]\n\n\n\nTue, Nov 26\nFinal Project: In-class Group Work\n\n\n\n\n\n\n\n\n\nThu, Nov 28\n🦃 Thanksgiving Break - No Lecture\n\n\n\n\n\n\n\n\n\nFri, Nov 29\n🦃 Thanksgiving Break - No Lab\n\n\n\n\n\n\n\n\n10\nMon, Dec 2\n\n\n\n\n\n\n👯‍♀️ Peer Evaluation\n\n\n\nTue, Dec 3\nFinal Project Presentations\n\n\n\n\n\n\n\n\n\nThu, Dec 5\nFinal Project Presentations\n\n\n\n\n\n\n\n\nFinals\nFri, Dec 6\nLab: Final Project Progress\n\n\n\n\n\n\n\n\n\nTue, Dec 10\n\n\n\n\n\n\n📄 Final Project",
     "crumbs": [
       "Schedule & Policies",
       "Schedule"
@@ -2248,49 +2248,88 @@
     "href": "content/cs/cs01.html",
     "title": "CS01: Biomarkers of Recent Use",
     "section": "",
-    "text": "This is where you get to put together all you’ve learned so far this quarter into a full data science report! This report will include your analysis from top (the background and question) to bottom (your analysis, interpretation, and conclusions.)\nWe’ll be grading to see that you have: 1) all necessary code for each section of the project. 2) explanatory text that guides the reader from start to finish. 3) polished visualizations that allow the reader to both understand the data you’re working with an your conclusions.\nThis will be submitted and graded as a group. One submission per group."
+    "text": "This is where you get to put together all you’ve learned so far this quarter into a full data science report! This report will include your analysis from top (the background and question) to bottom (your analysis, interpretation, and conclusions.)\nWe’ll be grading to see that you have: 1) all necessary code for each section of the project. 2) explanatory text that guides the reader from start to finish. 3) polished visualizations that allow the reader to both understand the data you’re working with an your conclusions.\nThis will be submitted and graded as a group. One submission per group.",
+    "crumbs": [
+      "Case Studies",
+      "CS01: Biomarkers of Recent Use"
+    ]
   },
   {
     "objectID": "content/cs/cs01.html#getting-started",
     "href": "content/cs/cs01.html#getting-started",
     "title": "CS01: Biomarkers of Recent Use",
     "section": "Getting started",
-    "text": "Getting started\nHere are the steps for getting started:\n\nThis will be completed in cs01 group repository that has been created for you and your group mates.\nMake any changes needed as outlined by the tasks you need to complete for the assignment\nPeriodically knit and commit changes (for example, once per each new part)1\nPush all your changes back to your GitHub repo\nThis case study will be graded from GitHub.\n\nYour final GitHub push prior to the deadline will be used for grading.\n\nImports\nYou are allowed to import whichever packages you like for this case study report."
+    "text": "Getting started\nHere are the steps for getting started:\n\nThis will be completed in cs01 group repository that has been created for you and your group mates.\nMake any changes needed as outlined by the tasks you need to complete for the assignment\nPeriodically knit and commit changes (for example, once per each new part)[^1]\nPush all your changes back to your GitHub repo\nThis case study will be graded from GitHub.\n\n\n\nAvoid waiting until the end to knit for the first time. It will be better/easier/less of a headache if you knit periodically and know it’s all working as intended.\nThe HTML of your report from your final GitHub push prior to the deadline will be used for grading.\n\n\nA reminder that there is a book dedicated to RMarkdown, with a whole section on controlling HTML output, in case you want to customize your output in some way.\n\nImports\nYou are allowed to import whichever packages you like for this case study report.",
+    "crumbs": [
+      "Case Studies",
+      "CS01: Biomarkers of Recent Use"
+    ]
+  },
+  {
+    "objectID": "content/cs/cs01.html#main-question",
+    "href": "content/cs/cs01.html#main-question",
+    "title": "CS01: Biomarkers of Recent Use",
+    "section": "Main Question",
+    "text": "Main Question\nAll groups will be answering the following question in their case study:\n\nWhich compound, in which matrix, and at what cutoff is the best biomarker of recent use?\n\n\n\nAs noted in class, different groups may have different answers, and that’s ok. You have to explain your thinking and use your analysis to help guide your conclusions.",
+    "crumbs": [
+      "Case Studies",
+      "CS01: Biomarkers of Recent Use"
+    ]
   },
   {
     "objectID": "content/cs/cs01.html#case-study-report",
     "href": "content/cs/cs01.html#case-study-report",
     "title": "CS01: Biomarkers of Recent Use",
     "section": "Case Study Report",
-    "text": "Case Study Report\nYour case study can be organized however you see best fit, but we’ll be looking for the following general sections:\n\nTitle\nAuthors\nBackground/Introduction\nQuestion(s)\nData\n\nData Explanation\nData Import\nData Wrangling\n\nAnalysis\n\nExploratory Data Analysis\nData Analysis\n\nResults\nDiscussion of results\nConclusion\n\nNow, you may want to combine some of these sections (i.e. include your results and discussion among your analysis code). That’s totally allowed, but we’ll be looking to see that your report includes sufficient information to understand what you did, why you did it, and what your results are.\n\nExtending the Analysis\nIn addition to getting the code presented in class working, adding explanatory text to your report, and generating polished visualizations, you and your group must “extend the analysis” presented in class in a meaningful way. Now “meaningful” is not a very-easily-measured term. A meaningful extension could be carrying out analysis to answer an additional sub-question beyond what was presented in class, or including a really extensive exploratory data analysis, or generating a really superb set of visualizations to convey your groups’ results, or finding a related dataset and incorporating it into your case study. To determine whether your extension is “meaningful,” you and your group should be able to answer “yes” to the question “Does our extension add something important to this report beyond what was presented in class?”\nThis extension should be included/weaved into your report, meaning it should only be “separated out” as its own section if it makes most sense for the story you’re telling."
+    "text": "Case Study Report\nYour case study can be organized however you see best fit, but we’ll be looking for the following general sections:\n\nTitle\nAuthors\nBackground/Introduction\nQuestion(s)\nData\n\nData Explanation\nData Import\nData Wrangling\n\nAnalysis\nResults & Discussion (including limitations of your work)\nConclusion\n\n\n\nNow, you may want to combine some of these sections (i.e. include your results and discussion among your analysis code). That’s totally allowed, but we’ll be looking to see that your report includes sufficient information to understand what you did, why you did it, and what your results are.\n\nExtending the Analysis\nIn addition to getting the code presented in class working, adding explanatory text to your report, and generating polished visualizations, you and your group must “extend the analysis” beyond what was presented in class in a meaningful way. Now “meaningful” is not a very-easily-measured term. A meaningful extension could be carrying out analysis to answer an additional question beyond what was presented in class, or asking the same main question among subgroups, or finding a related dataset and incorporating it into your case study. To determine whether your extension is “meaningful,” you and your group should be able to answer “yes” to the question “Does our extension add something important to this report beyond what was presented in class?”\n\n\nThis extension should be included/woven into your report, meaning it should only be “separated out” as its own section if it makes most sense for the story you’re telling.",
+    "crumbs": [
+      "Case Studies",
+      "CS01: Biomarkers of Recent Use"
+    ]
   },
   {
     "objectID": "content/cs/cs01.html#general-communication",
     "href": "content/cs/cs01.html#general-communication",
     "title": "CS01: Biomarkers of Recent Use",
     "section": "General Communication",
-    "text": "General Communication\nEach group will need to convey the most important finding(s) to a general audience through some form of communication.\nThis is very open-ended in its format. It could be a short video, an infographic, an effective email, a graphic, instagram slides, a short presentation, etc. It will be submitted by one group member on Canvas. (All group members will receive credit.)\nThe specific audience you want to target can be specified (i.e. police officers, undergraduate students, parents, etc.); however, the assumption is that these are NOT data scientists.\nYour communication SHOULD include your take-home message…and that may be all it includes! Basically, we want you to distill down your case study to its most important message and then convey that to the general public in an effective manner.\nIt should NOT contain specifics of your analysis or anywhere near all the information included in your report."
+    "text": "General Communication\nEach group will need to convey the most important finding(s) to a general audience through some form of communication.\nThis is very open-ended in its format. It could be a short video, an infographic, an effective email, a graphic, Instagram slides, a short presentation, etc. It will be submitted by one group member on Canvas. (All group members will receive credit.)\nThe specific audience you want to target can be specified (i.e. police officers, undergraduate students, parents, etc.); however, the assumption is that these are NOT data scientists.\nYour communication SHOULD include your take-home message…and that may be all it includes! Basically, we want you to distill down your case study to its most important message and then convey that to the general public in an effective manner.\nIt should NOT contain specifics of your analysis or anywhere near all the information included in your report.",
+    "crumbs": [
+      "Case Studies",
+      "CS01: Biomarkers of Recent Use"
+    ]
   },
   {
     "objectID": "content/cs/cs01.html#group-feedback",
     "href": "content/cs/cs01.html#group-feedback",
     "title": "CS01: Biomarkers of Recent Use",
     "section": "Group Feedback",
-    "text": "Group Feedback\nThere will be a form to submit upon submission of the case study to provide feedback about working with your group mates. This is meant to motivate not scare. Most groups work out really really well and everyone contributes to the best of their ability. However, if and when that doesn’t happen, I want to be sure I’m aware of the circumstances and follow up as necessary."
+    "text": "Group Feedback\nThere will be a form to submit upon submission of the case study to provide feedback about working with your group mates. This is meant to motivate not scare. Most groups work out really really well and everyone contributes to the best of their ability. However, if and when that doesn’t happen, I want to be sure I’m aware of the circumstances and follow up as necessary.",
+    "crumbs": [
+      "Case Studies",
+      "CS01: Biomarkers of Recent Use"
+    ]
+  },
+  {
+    "objectID": "content/cs/cs01.html#strong-case-studies",
+    "href": "content/cs/cs01.html#strong-case-studies",
+    "title": "CS01: Biomarkers of Recent Use",
+    "section": "Strong Case Studies…",
+    "text": "Strong Case Studies…\n\ncan be read from start to finish and make sense (i.e. if you displayed only text and outputs from code, the story would make sense)\nhave text to guide the viewer throughout, including interpretations of all viz/calculations, that explain to the reader what the results have to do with the question(s) at hand\nhave clean, easy-to-read code\nhave clear, well-designed visualizations, with consistent colors/style throughout report.",
+    "crumbs": [
+      "Case Studies",
+      "CS01: Biomarkers of Recent Use"
+    ]
   },
   {
     "objectID": "content/cs/cs01.html#common-deductions",
     "href": "content/cs/cs01.html#common-deductions",
     "title": "CS01: Biomarkers of Recent Use",
     "section": "Common Deductions",
-    "text": "Common Deductions\nIn past iterations of the course, students have commonly lost points on CS01 for the following reasons:"
-  },
-  {
-    "objectID": "content/cs/cs01.html#footnotes",
-    "href": "content/cs/cs01.html#footnotes",
-    "title": "CS01: Biomarkers of Recent Use",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nAvoid waiting until the end to knit for the first time. It will be better/easier/less of a headache if you knit periodically and know it’s all working as intended.↩︎"
+    "text": "Common Deductions\nIn past iterations of the course, students have commonly lost points on CS01 for the following reasons:\n\nBackground & Question | 1) background section is lacking necessary information for the reader; often, the information missing pertains to the groups extension question; 2) report doesn’t state question(s) being answered clearly\nData | Failing to introduce the dataset(s) and the information contained in each\nVisualization | 1) including all the visualizations a group could think of without deciding which best tell the story 2) including multiple visualizations that all display the same information in slightly different ways\nAnalysis | 1) lacking explanation to guide the viewer. All plots and calculations should be explained/interpreted, explaining what we learn from the plot more than just what is included on the plot or what analysis was carried out. We care about the why a lot. 2) making decisions without explanation (i.e. choosing a seemingly-random cutoff without explanation as to why). 3) Referencing things before they’re explained (i.e. referencing T2A without having text explaining what that is)\nResults, Discussion & Conclusion | numbers/results presented without sufficient guidance as to what the results mean in the context of your question",
+    "crumbs": [
+      "Case Studies",
+      "CS01: Biomarkers of Recent Use"
+    ]
   },
   {
     "objectID": "content/hw/hw-01.html",

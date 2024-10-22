@@ -45,13 +45,13 @@ knitr::opts_chunk$set(dpi=300, echo=TRUE, warning=FALSE, message=FALSE)
 **Due Dates**:
 
 - `r emo::ji("science")` **Lab 03** due Thursday (10/24; 11:59 PM)
-- `r emo::ji("computer")` HW02 (Viz) due Mon (10/28; 11:59 PM)
+- `r emo::ji("computer")` **HW02** (Viz) due Mon (10/28; 11:59 PM)
 - `r emo::ji('clipboard')` Lecture Participation survey "due" after class
 
 **Notes**:
 
--   HW01 scores posted; Scores on Canvas; feedback as "issue" on GH
--   CS01 Groups have been sent out
+-   **hw01** and **lab02** scores posted; Scores on Canvas; feedback as "issue" on GH
+-   **CS01 Groups** have been sent out
     -   email for contact 
     -   GitHub repo \<- please accept and open; make sure you have access; (or try: https://github.com/GHUsername/cs01-fa24-team##/invitations )
     -   group mate feedback is required (on submission)
@@ -61,6 +61,11 @@ knitr::opts_chunk$set(dpi=300, echo=TRUE, warning=FALSE, message=FALSE)
 ::: callout-important
 The CS01 data are data for you only. My collaborator is excited that y'all will be working on this...but these are still research data, so please do not share with others or post publicly.
 :::
+
+## Suggested Reading
+
+- 📕 R4DS Chapter 10: [EDA](https://r4ds.hadley.nz/eda)
+- 📕 R4DS Chapter 25: [Functions](https://r4ds.hadley.nz/functions)
 
 ## Agenda
 - CS01

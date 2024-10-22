@@ -70,6 +70,8 @@ website:
             href: content/lectures/04-ggplot2.qmd     
           - text: "05-viz"
             href: content/lectures/05-viz.qmd   
+          - text: "06-cs01-eda"
+            href: content/lectures/06-cs01-eda.qmd
       - section: "Labs"
         contents:
           - text: "Lab01: Tooling and R"
@@ -80,6 +82,8 @@ website:
             href: content/labs/03-lab-cs01-viz.qmd
       - section: "Case Studies"
         contents:
+          - text: "CS: Example"
+            href: content/cs/cs-example.qmd
           - text: "CS01: Biomarkers of Recent Use"
             href: content/cs/cs01.qmd
       - section: "Homework"

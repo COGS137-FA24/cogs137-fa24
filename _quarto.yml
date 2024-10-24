@@ -72,6 +72,8 @@ website:
             href: content/lectures/05-viz.qmd   
           - text: "06-cs01-eda"
             href: content/lectures/06-cs01-eda.qmd
+          - text: "07-written-communication"
+            href: content/lectures/07-written-communication.qmd
       - section: "Labs"
         contents:
           - text: "Lab01: Tooling and R"
@@ -80,6 +82,8 @@ website:
             href: content/labs/02-lab-cs01-wrangle.qmd
           - text: "Lab03: CS01 Data Visualization"
             href: content/labs/03-lab-cs01-viz.qmd
+          - text: "Lab04: CS01 EDA"
+            href: content/labs/04-lab-cs01-eda.qmd
       - section: "Case Studies"
         contents:
           - text: "CS: Example"

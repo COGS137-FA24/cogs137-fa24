@@ -460,7 +460,7 @@ A: Yup! There are standalone packages (not ggplot2-compatible) for this, but it�
 <li><strong>CS01 Groups</strong> have been sent out
 <ul>
 <li>email for contact</li>
-<li>GitHub repo &lt;- please accept and open; make sure you have access; (or try: https://github.com/GHUsername/cs01-fa24-team##/invitations )</li>
+<li>GitHub repo &lt;- please accept and open; make sure you have access; (or try: https://github.com/GHUsername/cs01-fa24-team##/invitations)</li>
 <li>group mate feedback is required (on submission)</li>
 </ul></li>
 </ul>
@@ -932,7 +932,7 @@ A: Yup! There are standalone packages (not ggplot2-compatible) for this, but it�
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p>While I drop duplicatess <em>after</em> making the plots above, you and your group will want to think about when it should be done for telling the clearest story. The order we do things in EDA is not typically the order in which we communicate information.</p>
+<p>While I drop duplicates <em>after</em> making the plots above, you and your group will want to think about when it should be done for telling the clearest story. The order we do things in EDA is not typically the order in which we communicate information.</p>
 </div>
 </div>
 </div>
@@ -1146,9 +1146,390 @@ A: Yup! There are standalone packages (not ggplot2-compatible) for this, but it�
 </ul>
 </div>
 </section>
-<section id="calculation-notes" class="slide level2">
-<h2>Calculation Notes</h2>
-<p>⚠️ Coming soon….</p>
+<section id="the-code-to-come" class="slide level2">
+<h2>The Code to come</h2>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p>This is beyond code I would expect you all to be able to write yourself. It’s here so that 1) you can make these calculations and interpret the results, and 2) because we have a wide range of background and experience. I want <em>everyone</em> to get as much as they can out of this course.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="calculating-sensitivity-and-specificity" class="slide level2">
+<h2>Calculating Sensitivity and Specificity</h2>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Calculate</a></li><li><a href="#tabset-4-2">Apply</a></li><li><a href="#tabset-4-3">Run</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a>make_calculations <span class="ot">&lt;-</span> <span class="cf">function</span>(dataset, cutoff, compound, timepoint_use){</span>
+<span id="cb28-2"><a></a>  <span class="do">## remove NAs</span></span>
+<span id="cb28-3"><a></a>  df <span class="ot">&lt;-</span> dataset <span class="sc">|&gt;</span></span>
+<span id="cb28-4"><a></a>    <span class="fu">select</span>(treatment, {{ compound }}, timepoint) <span class="sc">|&gt;</span></span>
+<span id="cb28-5"><a></a>    <span class="fu">filter</span>(timepoint <span class="sc">==</span> timepoint_use, <span class="sc">!</span><span class="fu">is.na</span>({{ compound }}))</span>
+<span id="cb28-6"><a></a></span>
+<span id="cb28-7"><a></a>  <span class="cf">if</span>(<span class="fu">nrow</span>(df)<span class="sc">&gt;</span><span class="dv">0</span>){</span>
+<span id="cb28-8"><a></a>    <span class="cf">if</span>(timepoint_use <span class="sc">==</span> <span class="st">"pre-smoking"</span>){</span>
+<span id="cb28-9"><a></a>      output <span class="ot">&lt;-</span> df <span class="sc">|&gt;</span> </span>
+<span id="cb28-10"><a></a>        <span class="fu">summarize</span>(<span class="at">TP =</span> <span class="dv">0</span>,</span>
+<span id="cb28-11"><a></a>                  <span class="at">FN =</span> <span class="dv">0</span>,</span>
+<span id="cb28-12"><a></a>                  <span class="at">FP =</span> <span class="fu">sum</span>(<span class="sc">!!</span><span class="fu">sym</span>(compound) <span class="sc">&gt;=</span> cutoff),</span>
+<span id="cb28-13"><a></a>                  <span class="at">TN =</span> <span class="fu">sum</span>(<span class="sc">!!</span><span class="fu">sym</span>(compound) <span class="sc">&lt;</span> cutoff)) </span>
+<span id="cb28-14"><a></a>    }<span class="cf">else</span>{</span>
+<span id="cb28-15"><a></a>      <span class="cf">if</span>(cutoff <span class="sc">==</span> <span class="dv">0</span>){</span>
+<span id="cb28-16"><a></a>        output_pre <span class="ot">&lt;-</span> df <span class="sc">|&gt;</span> </span>
+<span id="cb28-17"><a></a>          <span class="fu">filter</span>(timepoint_use <span class="sc">==</span> <span class="st">"pre-smoking"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb28-18"><a></a>          <span class="fu">summarize</span>(<span class="at">TP =</span> <span class="dv">0</span>,</span>
+<span id="cb28-19"><a></a>                    <span class="at">FN =</span> <span class="dv">0</span>,</span>
+<span id="cb28-20"><a></a>                    <span class="at">FP =</span> <span class="fu">sum</span>(<span class="sc">!!</span><span class="fu">sym</span>(compound) <span class="sc">&gt;=</span> cutoff),</span>
+<span id="cb28-21"><a></a>                    <span class="at">TN =</span> <span class="fu">sum</span>(<span class="sc">!!</span><span class="fu">sym</span>(compound) <span class="sc">&lt;</span> cutoff)) </span>
+<span id="cb28-22"><a></a>        </span>
+<span id="cb28-23"><a></a>        output <span class="ot">&lt;-</span> df <span class="sc">|&gt;</span> </span>
+<span id="cb28-24"><a></a>          <span class="fu">filter</span>(timepoint_use <span class="sc">!=</span> <span class="st">"pre-smoking"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb28-25"><a></a>          <span class="fu">summarize</span>(<span class="at">TP =</span> <span class="fu">sum</span>(treatment <span class="sc">!=</span> <span class="st">"Placebo"</span> <span class="sc">&amp;</span> <span class="sc">!!</span><span class="fu">sym</span>(compound) <span class="sc">&gt;</span> cutoff),</span>
+<span id="cb28-26"><a></a>                    <span class="at">FN =</span> <span class="fu">sum</span>(treatment <span class="sc">!=</span> <span class="st">"Placebo"</span> <span class="sc">&amp;</span> <span class="sc">!!</span><span class="fu">sym</span>(compound) <span class="sc">&lt;=</span> cutoff),</span>
+<span id="cb28-27"><a></a>                    <span class="at">FP =</span> <span class="fu">sum</span>(treatment <span class="sc">==</span> <span class="st">"Placebo"</span> <span class="sc">&amp;</span> <span class="sc">!!</span><span class="fu">sym</span>(compound) <span class="sc">&gt;</span> cutoff),</span>
+<span id="cb28-28"><a></a>                    <span class="at">TN =</span> <span class="fu">sum</span>(treatment <span class="sc">==</span> <span class="st">"Placebo"</span> <span class="sc">&amp;</span> <span class="sc">!!</span><span class="fu">sym</span>(compound) <span class="sc">&lt;</span> cutoff))</span>
+<span id="cb28-29"><a></a>        </span>
+<span id="cb28-30"><a></a>        output <span class="ot">&lt;-</span> output <span class="sc">+</span> output_pre</span>
+<span id="cb28-31"><a></a>      }<span class="cf">else</span>{</span>
+<span id="cb28-32"><a></a>        output_pre <span class="ot">&lt;-</span> df <span class="sc">|&gt;</span> </span>
+<span id="cb28-33"><a></a>          <span class="fu">filter</span>(timepoint_use <span class="sc">==</span> <span class="st">"pre-smoking"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb28-34"><a></a>          <span class="fu">summarise</span>(<span class="at">TP =</span> <span class="dv">0</span>,</span>
+<span id="cb28-35"><a></a>                    <span class="at">FN =</span> <span class="dv">0</span>,</span>
+<span id="cb28-36"><a></a>                    <span class="at">FP =</span> <span class="fu">sum</span>(<span class="sc">!!</span><span class="fu">sym</span>(compound) <span class="sc">&gt;=</span> cutoff),</span>
+<span id="cb28-37"><a></a>                    <span class="at">TN =</span> <span class="fu">sum</span>(<span class="sc">!!</span><span class="fu">sym</span>(compound) <span class="sc">&lt;</span> cutoff)) </span>
+<span id="cb28-38"><a></a>        </span>
+<span id="cb28-39"><a></a>        output <span class="ot">&lt;-</span> df <span class="sc">|&gt;</span> </span>
+<span id="cb28-40"><a></a>          <span class="fu">filter</span>(timepoint_use <span class="sc">!=</span> <span class="st">"pre-smoking"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb28-41"><a></a>          <span class="fu">summarise</span>(<span class="at">TP =</span> <span class="fu">sum</span>(treatment <span class="sc">!=</span> <span class="st">"Placebo"</span> <span class="sc">&amp;</span> <span class="sc">!!</span><span class="fu">sym</span>(compound) <span class="sc">&gt;=</span> cutoff),</span>
+<span id="cb28-42"><a></a>                    <span class="at">FN =</span> <span class="fu">sum</span>(treatment <span class="sc">!=</span> <span class="st">"Placebo"</span> <span class="sc">&amp;</span> <span class="sc">!!</span><span class="fu">sym</span>(compound) <span class="sc">&lt;</span> cutoff),</span>
+<span id="cb28-43"><a></a>                    <span class="at">FP =</span> <span class="fu">sum</span>(treatment <span class="sc">==</span> <span class="st">"Placebo"</span> <span class="sc">&amp;</span> <span class="sc">!!</span><span class="fu">sym</span>(compound) <span class="sc">&gt;=</span> cutoff),</span>
+<span id="cb28-44"><a></a>                    <span class="at">TN =</span> <span class="fu">sum</span>(treatment <span class="sc">==</span> <span class="st">"Placebo"</span> <span class="sc">&amp;</span> <span class="sc">!!</span><span class="fu">sym</span>(compound) <span class="sc">&lt;</span> cutoff))</span>
+<span id="cb28-45"><a></a>        </span>
+<span id="cb28-46"><a></a>        output <span class="ot">&lt;-</span> output <span class="sc">+</span> output_pre</span>
+<span id="cb28-47"><a></a>      }</span>
+<span id="cb28-48"><a></a>    }</span>
+<span id="cb28-49"><a></a>  </span>
+<span id="cb28-50"><a></a>  <span class="co"># clean things up; make calculations on above values</span></span>
+<span id="cb28-51"><a></a>  output <span class="ot">&lt;-</span> output <span class="sc">|&gt;</span></span>
+<span id="cb28-52"><a></a>    <span class="fu">mutate</span>(<span class="at">detection_limit =</span> cutoff,</span>
+<span id="cb28-53"><a></a>           <span class="at">compound =</span> compound,</span>
+<span id="cb28-54"><a></a>           <span class="at">time_window =</span> timepoint_use,</span>
+<span id="cb28-55"><a></a>           <span class="at">NAs =</span> <span class="fu">nrow</span>(dataset) <span class="sc">-</span> <span class="fu">nrow</span>(df),</span>
+<span id="cb28-56"><a></a>           <span class="at">N =</span> <span class="fu">nrow</span>(dataset),</span>
+<span id="cb28-57"><a></a>           <span class="at">Sensitivity =</span> (TP<span class="sc">/</span>(TP <span class="sc">+</span> FN)), </span>
+<span id="cb28-58"><a></a>           <span class="at">Specificity =</span> (TN <span class="sc">/</span>(TN <span class="sc">+</span> FP)),</span>
+<span id="cb28-59"><a></a>           <span class="at">PPV =</span> (TP<span class="sc">/</span>(TP<span class="sc">+</span>FP)),</span>
+<span id="cb28-60"><a></a>           <span class="at">NPV =</span> (TN<span class="sc">/</span>(TN <span class="sc">+</span> FN)),</span>
+<span id="cb28-61"><a></a>           <span class="at">Efficiency =</span> ((TP <span class="sc">+</span> TN)<span class="sc">/</span>(TP <span class="sc">+</span> TN <span class="sc">+</span> FP <span class="sc">+</span> FN))<span class="sc">*</span><span class="dv">100</span></span>
+<span id="cb28-62"><a></a>    )</span>
+<span id="cb28-63"><a></a>  <span class="fu">return</span>(output)</span>
+<span id="cb28-64"><a></a>}</span>
+<span id="cb28-65"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p><code>\{{ compound }\}</code> is used to refer to the argument stored in the compound parameter; <code>!!sym(compound)</code> is used to dynamically refer to the column whose name is stored in compound. <code>sym()</code> converts the string in compound into a symbol that refers to the column, and <code>!!</code> unquotes it to evaluate the column in the expression.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-4-2">
+<p>Map the above for each matrix…</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a>sens_spec_cpd <span class="ot">&lt;-</span> <span class="cf">function</span>(dataset, cpd, timepoints){</span>
+<span id="cb29-2"><a></a>  args2 <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">start =</span> timepoints<span class="sc">$</span>start, </span>
+<span id="cb29-3"><a></a>                <span class="at">stop =</span> timepoints<span class="sc">$</span>stop, </span>
+<span id="cb29-4"><a></a>                <span class="at">tpt_use =</span> timepoints<span class="sc">$</span>timepoint)</span>
+<span id="cb29-5"><a></a>  out <span class="ot">&lt;-</span> args2 <span class="sc">|&gt;</span> </span>
+<span id="cb29-6"><a></a>    <span class="fu">pmap_dfr</span>(make_calculations, dataset, <span class="at">compound =</span> cpd)</span>
+<span id="cb29-7"><a></a>  <span class="fu">return</span>(out)</span>
+<span id="cb29-8"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-4-3">
+<ul>
+<li>determine what cutoff values to try</li>
+<li>carry out above function on those cutoffs</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="calculate-1" class="slide level2">
+<h2>Calculate</h2>
+<p>Reminder: Currently, states have laws on the books from zero tolerance (detection of any level) to 5ng/mL THC</p>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">WB</a></li><li><a href="#tabset-5-2">OF</a></li><li><a href="#tabset-5-3">BR</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="co"># specify which calculations to make</span></span>
+<span id="cb30-2"><a></a>cutoffs <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">10</span>)</span>
+<span id="cb30-3"><a></a>compounds <span class="ot">&lt;-</span> cs01_nodups_long <span class="sc">|&gt;</span> <span class="fu">filter</span>(fluid_type<span class="sc">==</span><span class="st">"WB"</span>) <span class="sc">|&gt;</span> <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(value)) <span class="sc">|&gt;</span> <span class="fu">distinct</span>(name) <span class="sc">|&gt;</span> <span class="fu">pull</span>(name)</span>
+<span id="cb30-4"><a></a>WB_timepoints <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"pre-smoking"</span>,<span class="st">"0-30 min"</span>,<span class="st">"31-70 min"</span>, <span class="st">"71-100 min"</span>,<span class="st">"101-180 min"</span>,<span class="st">"181-210 min"</span>, <span class="st">"211-240 min"</span>,<span class="st">"241-270 min"</span>, <span class="st">"271-300 min"</span>, <span class="st">"301+ min"</span>) </span>
+<span id="cb30-5"><a></a>WB <span class="ot">&lt;-</span> cs01_data <span class="sc">|&gt;</span> <span class="fu">filter</span>(fluid_type<span class="sc">==</span><span class="st">"WB"</span>)</span>
+<span id="cb30-6"><a></a></span>
+<span id="cb30-7"><a></a><span class="co"># Specify all parameter combinations</span></span>
+<span id="cb30-8"><a></a>param_grid <span class="ot">&lt;-</span> <span class="fu">expand.grid</span>(</span>
+<span id="cb30-9"><a></a>  <span class="at">cutoffs =</span> cutoffs,</span>
+<span id="cb30-10"><a></a>  <span class="at">compounds =</span> compounds,</span>
+<span id="cb30-11"><a></a>  <span class="at">timepoint_use =</span> WB_timepoints)</span>
+<span id="cb30-12"><a></a></span>
+<span id="cb30-13"><a></a></span>
+<span id="cb30-14"><a></a><span class="co"># Calculate for all cutoff-compound-timepoint combinations</span></span>
+<span id="cb30-15"><a></a>WB_ss <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">pmap_dfr</span>(param_grid, <span class="sc">~</span> <span class="fu">make_calculations</span>(<span class="at">dataset=</span>WB, <span class="at">cutoff =</span> ..<span class="dv">1</span>, <span class="at">compound =</span> <span class="fu">as.character</span>(..<span class="dv">2</span>), <span class="at">timepoint_use =</span> ..<span class="dv">3</span>))</span>
+<span id="cb30-16"><a></a></span>
+<span id="cb30-17"><a></a>WB_ss</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 400 × 14
+      TP    FN    FP    TN detection_limit compound time_window   NAs     N
+   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;int&gt;           &lt;dbl&gt; &lt;chr&gt;    &lt;fct&gt;       &lt;int&gt; &lt;int&gt;
+ 1     0     0     1   188             0.5 cbn      pre-smoking  1336  1525
+ 2     0     0     0   189             1   cbn      pre-smoking  1336  1525
+ 3     0     0     0   189             2   cbn      pre-smoking  1336  1525
+ 4     0     0     0   189             5   cbn      pre-smoking  1336  1525
+ 5     0     0     0   189            10   cbn      pre-smoking  1336  1525
+ 6     0     0     4   185             0.5 cbd      pre-smoking  1336  1525
+ 7     0     0     1   188             1   cbd      pre-smoking  1336  1525
+ 8     0     0     1   188             2   cbd      pre-smoking  1336  1525
+ 9     0     0     0   189             5   cbd      pre-smoking  1336  1525
+10     0     0     0   189            10   cbd      pre-smoking  1336  1525
+# ℹ 390 more rows
+# ℹ 5 more variables: Sensitivity &lt;dbl&gt;, Specificity &lt;dbl&gt;, PPV &lt;dbl&gt;,
+#   NPV &lt;dbl&gt;, Efficiency &lt;dbl&gt;</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-5-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a><span class="co"># specify which calculations to make</span></span>
+<span id="cb32-2"><a></a>cutoffs <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">10</span>)</span>
+<span id="cb32-3"><a></a>compounds <span class="ot">&lt;-</span> cs01_nodups_long <span class="sc">|&gt;</span> <span class="fu">filter</span>(fluid_type<span class="sc">==</span><span class="st">"OF"</span>) <span class="sc">|&gt;</span> <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(value)) <span class="sc">|&gt;</span> <span class="fu">distinct</span>(name) <span class="sc">|&gt;</span> <span class="fu">pull</span>(name)</span>
+<span id="cb32-4"><a></a>OF_timepoints <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"pre-smoking"</span>,<span class="st">"0-30 min"</span>,<span class="st">"31-90 min"</span>,</span>
+<span id="cb32-5"><a></a>                   <span class="st">"91-180 min"</span>, <span class="st">"181-210 min"</span>, <span class="st">"211-240 min"</span>,</span>
+<span id="cb32-6"><a></a>                   <span class="st">"241-270 min"</span>, <span class="st">"271+ min"</span>) </span>
+<span id="cb32-7"><a></a>OF <span class="ot">&lt;-</span> cs01_data <span class="sc">|&gt;</span> <span class="fu">filter</span>(fluid_type<span class="sc">==</span><span class="st">"OF"</span>)</span>
+<span id="cb32-8"><a></a></span>
+<span id="cb32-9"><a></a><span class="co"># Specify all parameter combinations</span></span>
+<span id="cb32-10"><a></a>param_grid <span class="ot">&lt;-</span> <span class="fu">expand.grid</span>(</span>
+<span id="cb32-11"><a></a>  <span class="at">cutoffs =</span> cutoffs,</span>
+<span id="cb32-12"><a></a>  <span class="at">compounds =</span> compounds,</span>
+<span id="cb32-13"><a></a>  <span class="at">timepoint_use =</span> OF_timepoints)</span>
+<span id="cb32-14"><a></a></span>
+<span id="cb32-15"><a></a><span class="co"># Calculate for all cutoff-compound-timepoint combinations</span></span>
+<span id="cb32-16"><a></a>OF_ss <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">pmap_dfr</span>(param_grid, <span class="sc">~</span> <span class="fu">make_calculations</span>(<span class="at">dataset=</span>OF, <span class="at">cutoff =</span> ..<span class="dv">1</span>, <span class="at">compound =</span> <span class="fu">as.character</span>(..<span class="dv">2</span>), <span class="at">timepoint_use =</span> ..<span class="dv">3</span>))</span>
+<span id="cb32-17"><a></a></span>
+<span id="cb32-18"><a></a>OF_ss</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 210 × 14
+      TP    FN    FP    TN detection_limit compound time_window   NAs     N
+   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;int&gt;           &lt;dbl&gt; &lt;chr&gt;    &lt;fct&gt;       &lt;int&gt; &lt;int&gt;
+ 1     0     0     5   187             0.5 cbn      pre-smoking   761   953
+ 2     0     0     1   191             1   cbn      pre-smoking   761   953
+ 3     0     0     1   191             2   cbn      pre-smoking   761   953
+ 4     0     0     1   191             5   cbn      pre-smoking   761   953
+ 5     0     0     0   192            10   cbn      pre-smoking   761   953
+ 6     0     0     4   188             0.5 cbd      pre-smoking   761   953
+ 7     0     0     1   191             1   cbd      pre-smoking   761   953
+ 8     0     0     1   191             2   cbd      pre-smoking   761   953
+ 9     0     0     0   192             5   cbd      pre-smoking   761   953
+10     0     0     0   192            10   cbd      pre-smoking   761   953
+# ℹ 200 more rows
+# ℹ 5 more variables: Sensitivity &lt;dbl&gt;, Specificity &lt;dbl&gt;, PPV &lt;dbl&gt;,
+#   NPV &lt;dbl&gt;, Efficiency &lt;dbl&gt;</code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-5-3">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a><span class="co"># specify which calculations to make</span></span>
+<span id="cb34-2"><a></a>cutoffs <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">10</span>)</span>
+<span id="cb34-3"><a></a>compounds <span class="ot">&lt;-</span> cs01_nodups_long <span class="sc">|&gt;</span> <span class="fu">filter</span>(fluid_type<span class="sc">==</span><span class="st">"BR"</span>) <span class="sc">|&gt;</span> <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(value)) <span class="sc">|&gt;</span> <span class="fu">distinct</span>(name) <span class="sc">|&gt;</span> <span class="fu">pull</span>(name)</span>
+<span id="cb34-4"><a></a>BR_timepoints <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"pre-smoking"</span>,<span class="st">"0-40 min"</span>,<span class="st">"41-90 min"</span>,</span>
+<span id="cb34-5"><a></a>                   <span class="st">"91-180 min"</span>, <span class="st">"181-210 min"</span>, <span class="st">"211-240 min"</span>,</span>
+<span id="cb34-6"><a></a>                   <span class="st">"241-270 min"</span>, <span class="st">"271+ min"</span>)</span>
+<span id="cb34-7"><a></a>BR <span class="ot">&lt;-</span> cs01_data <span class="sc">|&gt;</span> <span class="fu">filter</span>(fluid_type<span class="sc">==</span><span class="st">"BR"</span>)</span>
+<span id="cb34-8"><a></a></span>
+<span id="cb34-9"><a></a><span class="co"># Specify all parameter combinations</span></span>
+<span id="cb34-10"><a></a>param_grid <span class="ot">&lt;-</span> <span class="fu">expand.grid</span>(</span>
+<span id="cb34-11"><a></a>  <span class="at">cutoffs =</span> cutoffs,</span>
+<span id="cb34-12"><a></a>  <span class="at">compounds =</span> compounds,</span>
+<span id="cb34-13"><a></a>  <span class="at">timepoint_use =</span> OF_timepoints)</span>
+<span id="cb34-14"><a></a></span>
+<span id="cb34-15"><a></a><span class="co"># Calculate for all cutoff-compound-timepoint combinations</span></span>
+<span id="cb34-16"><a></a>BR_ss <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">pmap_dfr</span>(param_grid, <span class="sc">~</span> <span class="fu">make_calculations</span>(<span class="at">dataset=</span>BR, <span class="at">cutoff =</span> ..<span class="dv">1</span>, <span class="at">compound =</span> <span class="fu">as.character</span>(..<span class="dv">2</span>), <span class="at">timepoint_use =</span> ..<span class="dv">3</span>))</span>
+<span id="cb34-17"><a></a></span>
+<span id="cb34-18"><a></a>BR_ss</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 25 × 14
+      TP    FN    FP    TN detection_limit compound time_window   NAs     N
+   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;int&gt;           &lt;dbl&gt; &lt;chr&gt;    &lt;fct&gt;       &lt;int&gt; &lt;int&gt;
+ 1     0     0     6   185             0.5 thc      pre-smoking   758   949
+ 2     0     0     6   185             1   thc      pre-smoking   758   949
+ 3     0     0     6   185             2   thc      pre-smoking   758   949
+ 4     0     0     6   185             5   thc      pre-smoking   758   949
+ 5     0     0     6   185            10   thc      pre-smoking   758   949
+ 6    24    66     0    30             0.5 thc      91-180 min    829   949
+ 7    24    66     0    30             1   thc      91-180 min    829   949
+ 8    24    66     0    30             2   thc      91-180 min    829   949
+ 9    24    66     0    30             5   thc      91-180 min    829   949
+10    24    66     0    30            10   thc      91-180 min    829   949
+# ℹ 15 more rows
+# ℹ 5 more variables: Sensitivity &lt;dbl&gt;, Specificity &lt;dbl&gt;, PPV &lt;dbl&gt;,
+#   NPV &lt;dbl&gt;, Efficiency &lt;dbl&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="plot-results" class="slide level2">
+<h2>Plot Results</h2>
+<div class="panel-tabset">
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Code</a></li><li><a href="#tabset-6-2">WB</a></li><li><a href="#tabset-6-3">OF</a></li><li><a href="#tabset-6-4">BR</a></li><li><a href="#tabset-6-5">Thoughts</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1">
+<p>Note: requires <code>library(patchwork)</code></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a></a>plot_cutoffs <span class="ot">&lt;-</span> <span class="cf">function</span>(dataset, timepoint_use_variable, tissue, cpd){</span>
+<span id="cb36-2"><a></a>    <span class="co"># control colors and lines used in plots</span></span>
+<span id="cb36-3"><a></a>    col_val <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"#D9D9D9"</span>, <span class="st">"#BDBDBD"</span>, <span class="st">"#969696"</span>, <span class="st">"#636363"</span>, <span class="st">"#252525"</span>)</span>
+<span id="cb36-4"><a></a>    lines <span class="ot">=</span> <span class="fu">rep</span>(<span class="st">"solid"</span>, <span class="dv">5</span>)</span>
+<span id="cb36-5"><a></a>    </span>
+<span id="cb36-6"><a></a>    <span class="co"># prep data</span></span>
+<span id="cb36-7"><a></a>    df_ss <span class="ot">&lt;-</span> dataset <span class="sc">|&gt;</span> </span>
+<span id="cb36-8"><a></a>      <span class="fu">filter</span>(compound <span class="sc">==</span> cpd) <span class="sc">|&gt;</span></span>
+<span id="cb36-9"><a></a>      <span class="fu">mutate</span>(<span class="at">time_window =</span> <span class="fu">fct_relevel</span>(<span class="fu">as.factor</span>(time_window), <span class="fu">levels</span>(timepoint_use_variable)),</span>
+<span id="cb36-10"><a></a>             <span class="at">detection_limit =</span> <span class="fu">as.factor</span>(detection_limit),</span>
+<span id="cb36-11"><a></a>             <span class="at">Sensitivity =</span>  <span class="fu">round</span>(Sensitivity<span class="sc">*</span><span class="dv">100</span>, <span class="dv">0</span>),</span>
+<span id="cb36-12"><a></a>             <span class="at">Specificity =</span>  <span class="fu">round</span>(Specificity<span class="sc">*</span><span class="dv">100</span>, <span class="dv">0</span>))        </span>
+<span id="cb36-13"><a></a>      </span>
+<span id="cb36-14"><a></a>    <span class="co"># plot sensitivity</span></span>
+<span id="cb36-15"><a></a>    p1 <span class="ot">&lt;-</span> df_ss <span class="sc">|&gt;</span> </span>
+<span id="cb36-16"><a></a>      <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> time_window, <span class="at">y =</span> Sensitivity, </span>
+<span id="cb36-17"><a></a>                 <span class="at">color =</span> detection_limit)) <span class="sc">+</span> </span>
+<span id="cb36-18"><a></a>      <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">1.2</span>, <span class="fu">aes</span>(<span class="at">group =</span> detection_limit, </span>
+<span id="cb36-19"><a></a>                                <span class="at">linetype =</span> detection_limit)) <span class="sc">+</span> </span>
+<span id="cb36-20"><a></a>      <span class="fu">geom_point</span>(<span class="at">show.legend=</span><span class="cn">FALSE</span>) <span class="sc">+</span> </span>
+<span id="cb36-21"><a></a>      <span class="fu">ylim</span>(<span class="dv">0</span>,<span class="dv">100</span>) <span class="sc">+</span></span>
+<span id="cb36-22"><a></a>      <span class="fu">scale_x_discrete</span>(<span class="at">labels =</span> <span class="cf">function</span>(x) <span class="fu">str_wrap</span>(x, <span class="at">width =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb36-23"><a></a>      <span class="fu">scale_linetype_manual</span>(<span class="at">values=</span>lines) <span class="sc">+</span></span>
+<span id="cb36-24"><a></a>      <span class="fu">scale_color_manual</span>(<span class="at">values =</span> col_val, <span class="at">name =</span> <span class="st">"Cutoff </span><span class="sc">\n</span><span class="st"> (ng/mL)"</span>,</span>
+<span id="cb36-25"><a></a>                        <span class="at">guide =</span> <span class="fu">guide_legend</span>(<span class="at">override.aes =</span> <span class="fu">list</span>(<span class="at">linetype =</span> <span class="fu">c</span>(<span class="dv">1</span>),</span>
+<span id="cb36-26"><a></a>                        <span class="at">shape =</span> <span class="fu">rep</span>(<span class="cn">NA</span>, <span class="fu">length</span>(lines))) )) <span class="sc">+</span></span>
+<span id="cb36-27"><a></a>      <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb36-28"><a></a>      <span class="fu">theme</span>(<span class="at">plot.title.position =</span> <span class="st">"plot"</span>,</span>
+<span id="cb36-29"><a></a>            <span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">14</span>),</span>
+<span id="cb36-30"><a></a>            <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">10</span>),</span>
+<span id="cb36-31"><a></a>            <span class="at">legend.position =</span> <span class="st">"none"</span>, </span>
+<span id="cb36-32"><a></a>            <span class="at">panel.grid =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb36-33"><a></a>            <span class="at">strip.background =</span> <span class="fu">element_blank</span>()</span>
+<span id="cb36-34"><a></a>            ) <span class="sc">+</span></span>
+<span id="cb36-35"><a></a>      <span class="fu">guides</span>(<span class="at">linetype =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
+<span id="cb36-36"><a></a>      <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Time Window (min)"</span>, </span>
+<span id="cb36-37"><a></a>           <span class="at">y =</span> <span class="st">"Sensitivity"</span>, </span>
+<span id="cb36-38"><a></a>           <span class="at">title =</span> <span class="fu">paste0</span>(tissue,<span class="st">": "</span>, <span class="fu">toupper</span>(cpd)) )</span>
+<span id="cb36-39"><a></a>  </span>
+<span id="cb36-40"><a></a>  <span class="co"># plot specificity</span></span>
+<span id="cb36-41"><a></a>  p2 <span class="ot">&lt;-</span> df_ss <span class="sc">|&gt;</span> </span>
+<span id="cb36-42"><a></a>      <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> time_window, <span class="at">y =</span> Specificity,</span>
+<span id="cb36-43"><a></a>                 <span class="at">group =</span> detection_limit, </span>
+<span id="cb36-44"><a></a>                 <span class="at">color =</span> detection_limit, </span>
+<span id="cb36-45"><a></a>                 <span class="at">linetype =</span> detection_limit)) <span class="sc">+</span> </span>
+<span id="cb36-46"><a></a>      <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
+<span id="cb36-47"><a></a>      <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb36-48"><a></a>      <span class="fu">ylim</span>(<span class="dv">0</span>,<span class="dv">100</span>) <span class="sc">+</span></span>
+<span id="cb36-49"><a></a>      <span class="fu">scale_color_manual</span>(<span class="at">values =</span> col_val) <span class="sc">+</span></span>
+<span id="cb36-50"><a></a>      <span class="fu">scale_x_discrete</span>(<span class="at">labels =</span> <span class="cf">function</span>(x) <span class="fu">str_wrap</span>(x, <span class="at">width =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb36-51"><a></a>      <span class="fu">scale_linetype_manual</span>(<span class="at">values =</span> lines, </span>
+<span id="cb36-52"><a></a>                            <span class="at">guide =</span> <span class="fu">guide_legend</span>(<span class="at">override.aes =</span> <span class="fu">list</span>(<span class="at">linetype =</span> <span class="st">"solid"</span>,</span>
+<span id="cb36-53"><a></a>                                                                     <span class="at">shape =</span> <span class="fu">rep</span>(<span class="cn">NA</span>, <span class="fu">length</span>(lines))) )) <span class="sc">+</span></span>
+<span id="cb36-54"><a></a>      <span class="fu">theme_classic</span>() <span class="sc">+</span></span>
+<span id="cb36-55"><a></a>      <span class="fu">theme</span>(<span class="at">axis.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">14</span>),</span>
+<span id="cb36-56"><a></a>            <span class="at">axis.text =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">10</span>),</span>
+<span id="cb36-57"><a></a>            <span class="at">legend.position =</span> <span class="fu">c</span>(<span class="fl">0.35</span>, <span class="fl">0.25</span>),</span>
+<span id="cb36-58"><a></a>            <span class="at">panel.grid =</span> <span class="fu">element_blank</span>(),</span>
+<span id="cb36-59"><a></a>            <span class="at">strip.background =</span> <span class="fu">element_blank</span>()) <span class="sc">+</span></span>
+<span id="cb36-60"><a></a>      <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Time Window"</span>, </span>
+<span id="cb36-61"><a></a>           <span class="at">y =</span> <span class="st">"Specificity"</span>,</span>
+<span id="cb36-62"><a></a>           <span class="at">title =</span> <span class="st">""</span> )</span>
+<span id="cb36-63"><a></a>  </span>
+<span id="cb36-64"><a></a>  <span class="co"># combine plots (uses patchwork)</span></span>
+<span id="cb36-65"><a></a>  p1 <span class="sc">+</span> p2</span>
+<span id="cb36-66"><a></a>  </span>
+<span id="cb36-67"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-6-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a></a><span class="fu">plot_cutoffs</span>(<span class="at">dataset=</span>WB_ss, </span>
+<span id="cb37-2"><a></a>             <span class="at">timepoint_use_variable=</span>WB<span class="sc">$</span>timepoint, </span>
+<span id="cb37-3"><a></a>             <span class="at">tissue=</span><span class="st">"Blood"</span>, </span>
+<span id="cb37-4"><a></a>             <span class="at">cpd=</span><span class="st">"thc"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="06-cs01-eda_files/figure-html/unnamed-chunk-29-1.png" width="2100"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-6-3">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a></a><span class="fu">plot_cutoffs</span>(<span class="at">dataset=</span>OF_ss, </span>
+<span id="cb38-2"><a></a>             <span class="at">timepoint_use_variable=</span>OF<span class="sc">$</span>timepoint, </span>
+<span id="cb38-3"><a></a>             <span class="at">tissue=</span><span class="st">"Oral Fluid"</span>, </span>
+<span id="cb38-4"><a></a>             <span class="at">cpd=</span><span class="st">"thc"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="06-cs01-eda_files/figure-html/unnamed-chunk-30-1.png" width="2100"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-6-4">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a><span class="fu">plot_cutoffs</span>(<span class="at">dataset=</span>BR_ss, </span>
+<span id="cb39-2"><a></a>             <span class="at">timepoint_use_variable=</span>BR<span class="sc">$</span>timepoint, </span>
+<span id="cb39-3"><a></a>             <span class="at">tissue=</span><span class="st">"Breath"</span>, </span>
+<span id="cb39-4"><a></a>             <span class="at">cpd=</span><span class="st">"thc"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="06-cs01-eda_files/figure-html/unnamed-chunk-31-1.png" width="2100"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-6-5">
+<ul>
+<li>This is only THC</li>
+<li>For five semi-random cutoffs</li>
+<li>There are other compounds and other cutoffs to consdier</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
 <section id="possible-extensions" class="slide level2">
 <h2>Possible Extensions</h2>
@@ -1193,7 +1574,7 @@ A: Yup! There are standalone packages (not ggplot2-compatible) for this, but it�
 <li class="fragment">Data
 <ul>
 <li class="fragment">Describe data &amp; variables</li>
-<li class="fragment">Data wrangling | likely copy + paste from notes; add explanation as you go</li>
+<li class="fragment">Data wrangling | likely copy + paste from notes/lab; add explanation as you go</li>
 </ul></li>
 <li class="fragment">Analysis
 <ul>
@@ -1205,6 +1586,19 @@ A: Yup! There are standalone packages (not ggplot2-compatible) for this, but it�
 <li class="fragment">Proofread | ensure it makes sense from top to bottom</li>
 <li class="fragment">General Audience communication (submit on Canvas; 1 submission per group)</li>
 </ul>
+</div>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p>Avoid the temptation to assign “Analysis” to one group member. You’ll all likely have to contribute here.</p>
+</div>
+</div>
 </div>
 </section>
 <section id="collaborating-on-github" class="slide level2">

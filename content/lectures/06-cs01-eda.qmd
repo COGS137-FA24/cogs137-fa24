@@ -13,6 +13,7 @@ format:
 
 ```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
+library(patchwork)
 library(emo)
 
 knitr::opts_chunk$set(dpi=300, echo=TRUE, warning=FALSE, message=FALSE) 
@@ -53,7 +54,7 @@ knitr::opts_chunk$set(dpi=300, echo=TRUE, warning=FALSE, message=FALSE)
 -   **hw01** and **lab02** scores posted; Scores on Canvas; feedback as "issue" on GH
 -   **CS01 Groups** have been sent out
     -   email for contact 
-    -   GitHub repo \<- please accept and open; make sure you have access; (or try: https://github.com/GHUsername/cs01-fa24-team##/invitations )
+    -   GitHub repo \<- please accept and open; make sure you have access; (or try: https://github.com/GHUsername/cs01-fa24-team##/invitations)
     -   group mate feedback is required (on submission)
     
 . . . 
@@ -453,7 +454,7 @@ cs01_nodups_long <- cs01_nodups |>
 ```
 
 ::: callout-note
-While I drop duplicatess *after* making the plots above, you and your group will want to think about when it should be done for telling the clearest story. The order we do things in EDA is not typically the order in which we communicate information.
+While I drop duplicates *after* making the plots above, you and your group will want to think about when it should be done for telling the clearest story. The order we do things in EDA is not typically the order in which we communicate information.
 :::
 
 
@@ -623,9 +624,299 @@ Cannot be a TP or FN before consuming...
 -   FP = value \>= cutoff
 -   TN = value \< cutoff
 
-## Calculation Notes
+## The Code to come
 
-⚠️ Coming soon....
+::: callout-warning
+This is beyond code I would expect you all to be able to write yourself. It's here so that 1) you can make these calculations and interpret the results, and 2) because we have a wide range of background and experience. I want *everyone* to get as much as they can out of this course.
+:::
+
+
+## Calculating Sensitivity and Specificity
+
+::: panel-tabset
+### Calculate
+
+```{r}
+make_calculations <- function(dataset, cutoff, compound, timepoint_use){
+  ## remove NAs
+  df <- dataset |>
+    select(treatment, {{ compound }}, timepoint) |>
+    filter(timepoint == timepoint_use, !is.na({{ compound }}))
+
+  if(nrow(df)>0){
+    if(timepoint_use == "pre-smoking"){
+      output <- df |> 
+        summarize(TP = 0,
+                  FN = 0,
+                  FP = sum(!!sym(compound) >= cutoff),
+                  TN = sum(!!sym(compound) < cutoff)) 
+    }else{
+      if(cutoff == 0){
+        output_pre <- df |> 
+          filter(timepoint_use == "pre-smoking") |>
+          summarize(TP = 0,
+                    FN = 0,
+                    FP = sum(!!sym(compound) >= cutoff),
+                    TN = sum(!!sym(compound) < cutoff)) 
+        
+        output <- df |> 
+          filter(timepoint_use != "pre-smoking") |>
+          summarize(TP = sum(treatment != "Placebo" & !!sym(compound) > cutoff),
+                    FN = sum(treatment != "Placebo" & !!sym(compound) <= cutoff),
+                    FP = sum(treatment == "Placebo" & !!sym(compound) > cutoff),
+                    TN = sum(treatment == "Placebo" & !!sym(compound) < cutoff))
+        
+        output <- output + output_pre
+      }else{
+        output_pre <- df |> 
+          filter(timepoint_use == "pre-smoking") |>
+          summarise(TP = 0,
+                    FN = 0,
+                    FP = sum(!!sym(compound) >= cutoff),
+                    TN = sum(!!sym(compound) < cutoff)) 
+        
+        output <- df |> 
+          filter(timepoint_use != "pre-smoking") |>
+          summarise(TP = sum(treatment != "Placebo" & !!sym(compound) >= cutoff),
+                    FN = sum(treatment != "Placebo" & !!sym(compound) < cutoff),
+                    FP = sum(treatment == "Placebo" & !!sym(compound) >= cutoff),
+                    TN = sum(treatment == "Placebo" & !!sym(compound) < cutoff))
+        
+        output <- output + output_pre
+      }
+    }
+  
+  # clean things up; make calculations on above values
+  output <- output |>
+    mutate(detection_limit = cutoff,
+           compound = compound,
+           time_window = timepoint_use,
+           NAs = nrow(dataset) - nrow(df),
+           N = nrow(dataset),
+           Sensitivity = (TP/(TP + FN)), 
+           Specificity = (TN /(TN + FP)),
+           PPV = (TP/(TP+FP)),
+           NPV = (TN/(TN + FN)),
+           Efficiency = ((TP + TN)/(TP + TN + FP + FN))*100
+    )
+  return(output)
+}
+}
+```
+
+
+::: callout-note
+`\{{ compound }\}` is used to refer to the argument stored in the compound parameter; `!!sym(compound)` is used to dynamically refer to the column whose name is stored in compound. `sym()` converts the string in compound into a symbol that refers to the column, and `!!` unquotes it to evaluate the column in the expression.
+:::
+
+### Apply
+
+Map the above for each matrix...
+
+```{r}
+sens_spec_cpd <- function(dataset, cpd, timepoints){
+  args2 <- list(start = timepoints$start, 
+                stop = timepoints$stop, 
+                tpt_use = timepoints$timepoint)
+  out <- args2 |> 
+    pmap_dfr(make_calculations, dataset, compound = cpd)
+  return(out)
+}
+
+```
+
+### Run
+
+-   determine what cutoff values to try
+-   carry out above function on those cutoffs
+
+:::
+
+## Calculate
+
+Reminder: Currently, states have laws on the books from zero tolerance (detection of any level) to 5ng/mL THC
+
+::: panel-tabset
+### WB
+
+```{r, cache=TRUE}
+# specify which calculations to make
+cutoffs <- c(0.5, 1, 2, 5, 10)
+compounds <- cs01_nodups_long |> filter(fluid_type=="WB") |> filter(!is.na(value)) |> distinct(name) |> pull(name)
+WB_timepoints <- c("pre-smoking","0-30 min","31-70 min", "71-100 min","101-180 min","181-210 min", "211-240 min","241-270 min", "271-300 min", "301+ min") 
+WB <- cs01_data |> filter(fluid_type=="WB")
+
+# Specify all parameter combinations
+param_grid <- expand.grid(
+  cutoffs = cutoffs,
+  compounds = compounds,
+  timepoint_use = WB_timepoints)
+
+
+# Calculate for all cutoff-compound-timepoint combinations
+WB_ss <- purrr::pmap_dfr(param_grid, ~ make_calculations(dataset=WB, cutoff = ..1, compound = as.character(..2), timepoint_use = ..3))
+
+WB_ss
+```
+
+### OF
+
+```{r, cache=TRUE}
+# specify which calculations to make
+cutoffs <- c(0.5, 1, 2, 5, 10)
+compounds <- cs01_nodups_long |> filter(fluid_type=="OF") |> filter(!is.na(value)) |> distinct(name) |> pull(name)
+OF_timepoints <- c("pre-smoking","0-30 min","31-90 min",
+                   "91-180 min", "181-210 min", "211-240 min",
+                   "241-270 min", "271+ min") 
+OF <- cs01_data |> filter(fluid_type=="OF")
+
+# Specify all parameter combinations
+param_grid <- expand.grid(
+  cutoffs = cutoffs,
+  compounds = compounds,
+  timepoint_use = OF_timepoints)
+
+# Calculate for all cutoff-compound-timepoint combinations
+OF_ss <- purrr::pmap_dfr(param_grid, ~ make_calculations(dataset=OF, cutoff = ..1, compound = as.character(..2), timepoint_use = ..3))
+
+OF_ss
+```
+
+### BR
+
+```{r, cache=TRUE}
+# specify which calculations to make
+cutoffs <- c(0.5, 1, 2, 5, 10)
+compounds <- cs01_nodups_long |> filter(fluid_type=="BR") |> filter(!is.na(value)) |> distinct(name) |> pull(name)
+BR_timepoints <- c("pre-smoking","0-40 min","41-90 min",
+                   "91-180 min", "181-210 min", "211-240 min",
+                   "241-270 min", "271+ min")
+BR <- cs01_data |> filter(fluid_type=="BR")
+
+# Specify all parameter combinations
+param_grid <- expand.grid(
+  cutoffs = cutoffs,
+  compounds = compounds,
+  timepoint_use = OF_timepoints)
+
+# Calculate for all cutoff-compound-timepoint combinations
+BR_ss <- purrr::pmap_dfr(param_grid, ~ make_calculations(dataset=BR, cutoff = ..1, compound = as.character(..2), timepoint_use = ..3))
+
+BR_ss
+```
+:::
+
+## Plot Results
+
+::: panel-tabset
+### Code
+
+Note: requires `library(patchwork)`
+
+```{r}
+plot_cutoffs <- function(dataset, timepoint_use_variable, tissue, cpd){
+    # control colors and lines used in plots
+    col_val = c("#D9D9D9", "#BDBDBD", "#969696", "#636363", "#252525")
+    lines = rep("solid", 5)
+    
+    # prep data
+    df_ss <- dataset |> 
+      filter(compound == cpd) |>
+      mutate(time_window = fct_relevel(as.factor(time_window), levels(timepoint_use_variable)),
+             detection_limit = as.factor(detection_limit),
+             Sensitivity =  round(Sensitivity*100, 0),
+             Specificity =  round(Specificity*100, 0))        
+      
+    # plot sensitivity
+    p1 <- df_ss |> 
+      ggplot(aes(x = time_window, y = Sensitivity, 
+                 color = detection_limit)) + 
+      geom_line(linewidth = 1.2, aes(group = detection_limit, 
+                                linetype = detection_limit)) + 
+      geom_point(show.legend=FALSE) + 
+      ylim(0,100) +
+      scale_x_discrete(labels = function(x) str_wrap(x, width = 5)) +
+      scale_linetype_manual(values=lines) +
+      scale_color_manual(values = col_val, name = "Cutoff \n (ng/mL)",
+                        guide = guide_legend(override.aes = list(linetype = c(1),
+                        shape = rep(NA, length(lines))) )) +
+      theme_classic() +
+      theme(plot.title.position = "plot",
+            axis.title = element_text(size=14),
+            axis.text = element_text(size=10),
+            legend.position = "none", 
+            panel.grid = element_blank(),
+            strip.background = element_blank()
+            ) +
+      guides(linetype = "none") +
+      labs(x = "Time Window (min)", 
+           y = "Sensitivity", 
+           title = paste0(tissue,": ", toupper(cpd)) )
+  
+  # plot specificity
+  p2 <- df_ss |> 
+      ggplot(aes(x = time_window, y = Specificity,
+                 group = detection_limit, 
+                 color = detection_limit, 
+                 linetype = detection_limit)) + 
+      geom_line(linewidth = 1.2) +
+      geom_point() + 
+      ylim(0,100) +
+      scale_color_manual(values = col_val) +
+      scale_x_discrete(labels = function(x) str_wrap(x, width = 5)) +
+      scale_linetype_manual(values = lines, 
+                            guide = guide_legend(override.aes = list(linetype = "solid",
+                                                                     shape = rep(NA, length(lines))) )) +
+      theme_classic() +
+      theme(axis.title = element_text(size=14),
+            axis.text = element_text(size=10),
+            legend.position = c(0.35, 0.25),
+            panel.grid = element_blank(),
+            strip.background = element_blank()) +
+      labs(x = "Time Window", 
+           y = "Specificity",
+           title = "" )
+  
+  # combine plots (uses patchwork)
+  p1 + p2
+  
+}
+```
+
+### WB
+
+```{r}
+plot_cutoffs(dataset=WB_ss, 
+             timepoint_use_variable=WB$timepoint, 
+             tissue="Blood", 
+             cpd="thc")
+```
+
+### OF
+
+```{r}
+plot_cutoffs(dataset=OF_ss, 
+             timepoint_use_variable=OF$timepoint, 
+             tissue="Oral Fluid", 
+             cpd="thc")
+```
+
+### BR
+
+```{r}
+plot_cutoffs(dataset=BR_ss, 
+             timepoint_use_variable=BR$timepoint, 
+             tissue="Breath", 
+             cpd="thc")
+```
+
+### Thoughts
+
+- This is only THC
+- For five semi-random cutoffs
+- There are other compounds and other cutoffs to consdier
+:::
+
 
 ## Possible Extensions
 
@@ -667,7 +958,7 @@ Things to keep in mind:
 -   Background \| summarize and add to what was discussed in classed
 -   Data
     -   Describe data & variables
-    -   Data wrangling \| likely copy + paste from notes; add explanation as you go
+    -   Data wrangling \| likely copy + paste from notes/lab; add explanation as you go
 -   Analysis
     -   EDA \| likely borrowing parts from notes and modifying/adding more in to tell your story; be sure to include interpretations of output & guide the reader
     -   Drawing conclusions to answer the question
@@ -676,6 +967,11 @@ Things to keep in mind:
 -   Proofread \| ensure it makes sense from top to bottom
 -   General Audience communication (submit on Canvas; 1 submission per group)
 :::
+
+::: callout-important
+Avoid the temptation to assign "Analysis" to one group member. You'll all likely have to contribute here.
+:::
+
 
 ## Collaborating on GitHub
 

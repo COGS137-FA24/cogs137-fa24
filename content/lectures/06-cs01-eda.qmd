@@ -627,7 +627,7 @@ Cannot be a TP or FN before consuming...
 ## The Code to come
 
 ::: callout-warning
-This is beyond code I would expect you all to be able to write yourself. It's here so that 1) you can make these calculations and interpret the results, and 2) because we have a wide range of background and experience. I want *everyone* to get as much as they can out of this course.
+This is beyond code I would expect you all to be able to write yourself. It's here so that 1) you can make these calculations and interpret the results,  2) because we have a wide range of background and experience. I want *everyone* to get as much as they can out of this course,  and 3) I do want you all to talk to one another. That's one reason you all are in groups for case studies.
 :::
 
 

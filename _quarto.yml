@@ -84,6 +84,8 @@ website:
             href: content/labs/03-lab-cs01-viz.qmd
           - text: "Lab04: CS01 EDA"
             href: content/labs/04-lab-cs01-eda.qmd
+          - text: "Lab05: CS01 Communication"
+            href: content/labs/05-lab-cs01-communication.qmd
       - section: "Case Studies"
         contents:
           - text: "CS: Example"

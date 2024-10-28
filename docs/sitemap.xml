@@ -38,11 +38,11 @@
   </url>
   <url>
     <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/07-written-communication.html</loc>
-    <lastmod>2024-10-24T16:45:43.756Z</lastmod>
+    <lastmod>2024-10-28T21:11:05.528Z</lastmod>
   </url>
   <url>
     <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/07-written-communication-slides.html</loc>
-    <lastmod>2024-10-24T16:45:43.756Z</lastmod>
+    <lastmod>2024-10-28T21:11:05.528Z</lastmod>
   </url>
   <url>
     <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/cs/cs01.html</loc>
@@ -57,16 +57,20 @@
     <lastmod>2024-10-08T23:56:30.786Z</lastmod>
   </url>
   <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/02-lab-cs01-wrangle.html</loc>
-    <lastmod>2024-10-24T02:55:45.883Z</lastmod>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/05-lab-cs01-communication.html</loc>
+    <lastmod>2024-10-28T21:06:58.614Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/03-lab-cs01-viz.html</loc>
+    <lastmod>2024-10-14T21:39:51.981Z</lastmod>
   </url>
   <url>
     <loc>https://cogs137-fa24.github.io/cogs137-fa24/LICENSE.html</loc>
     <lastmod>2023-09-22T17:18:24.259Z</lastmod>
   </url>
   <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/03-lab-cs01-viz.html</loc>
-    <lastmod>2024-10-14T21:39:51.981Z</lastmod>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/02-lab-cs01-wrangle.html</loc>
+    <lastmod>2024-10-24T02:55:45.883Z</lastmod>
   </url>
   <url>
     <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/04-lab-cs01-eda.html</loc>

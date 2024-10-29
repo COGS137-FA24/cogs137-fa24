@@ -38,6 +38,7 @@ UC San Diego's one-year M.S. in Computational Social Science combines coursework
 **Due Dates**:
 
 - `r emo::ji("science")` **Lab 04** due Thursday (11:59 PM)
+- `r emo::ji("computer")` **CS01** due Monday (11:59 PM)
 - `r emo::ji('clipboard')` Lecture Participation survey "due" after class
 - `r emo::ji('computer')` [mid-course survey](https://docs.google.com/forms/d/e/1FAIpQLScYyxJ-UkBMbSabSYtvhmY9NuQwtt4XabIj-OkSHEgRpRrhEA/viewform?usp=sf_link) now available (due Fri at 11:59 PM)
 

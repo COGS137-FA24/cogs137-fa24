@@ -42,6 +42,7 @@ UC San Diego's one-year M.S. in Computational Social Science combines coursework
 - `r emo::ji('computer')` [mid-course survey](https://docs.google.com/forms/d/e/1FAIpQLScYyxJ-UkBMbSabSYtvhmY9NuQwtt4XabIj-OkSHEgRpRrhEA/viewform?usp=sf_link) now available (due Fri at 11:59 PM)
 
 Notes: 
+
 - lab 03 scores and feedback posted; everyone received feedback; check GH issue
 - lab 05 is available and the focus this Fri/Mon lab...but not due until after CS01. Best to do it before CS01, as it will help CS01 completion
 - Thursday will be semi-guided class time for working on your case study. Communicate with your group to encourage attendance.

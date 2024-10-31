@@ -74,6 +74,8 @@ website:
             href: content/lectures/06-cs01-eda.qmd
           - text: "07-written-communication"
             href: content/lectures/07-written-communication.qmd
+          - text: "08-cs01-inclass"
+            href: content/lectures/08-cs01-inclass.qmd
       - section: "Labs"
         contents:
           - text: "Lab01: Tooling and R"

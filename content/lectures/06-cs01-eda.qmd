@@ -914,7 +914,7 @@ plot_cutoffs(dataset=BR_ss,
 
 - This is only THC
 - For five semi-random cutoffs
-- There are other compounds and other cutoffs to consdier
+- There are other compounds and other cutoffs to consider
 :::
 
 

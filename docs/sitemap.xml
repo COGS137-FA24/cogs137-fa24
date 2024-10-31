@@ -21,100 +21,108 @@
     <lastmod>2024-10-14T21:39:42.561Z</lastmod>
   </url>
   <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/01-intro-to-r.html</loc>
-    <lastmod>2024-10-03T22:33:54.198Z</lastmod>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/08-cs01-inclass.html</loc>
+    <lastmod>2024-10-31T17:39:01.720Z</lastmod>
   </url>
   <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/01-intro-to-r-slides.html</loc>
-    <lastmod>2024-10-03T22:33:54.198Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/03-dplyr.html</loc>
-    <lastmod>2024-10-14T20:04:44.773Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/03-dplyr-slides.html</loc>
-    <lastmod>2024-10-14T20:04:44.773Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/07-written-communication.html</loc>
-    <lastmod>2024-10-29T18:50:04.549Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/07-written-communication-slides.html</loc>
-    <lastmod>2024-10-29T18:50:04.549Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/cs/cs01.html</loc>
-    <lastmod>2024-10-22T18:07:32.691Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/hw/hw-02.html</loc>
-    <lastmod>2024-10-14T20:53:56.387Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/01-lab-intro-r.html</loc>
-    <lastmod>2024-10-08T23:56:30.786Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/05-lab-cs01-communication.html</loc>
-    <lastmod>2024-10-28T21:06:58.614Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/03-lab-cs01-viz.html</loc>
-    <lastmod>2024-10-14T21:39:51.981Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/LICENSE.html</loc>
-    <lastmod>2023-09-22T17:18:24.259Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/02-lab-cs01-wrangle.html</loc>
-    <lastmod>2024-10-24T02:55:45.883Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/04-lab-cs01-eda.html</loc>
-    <lastmod>2024-10-24T16:14:20.271Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/hw/hw-01.html</loc>
-    <lastmod>2024-10-07T22:47:20.728Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/cs/cs-example.html</loc>
-    <lastmod>2024-10-18T21:15:34.156Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/02-cs01-intro-slides.html</loc>
-    <lastmod>2024-10-07T17:11:00.669Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/02-cs01-intro.html</loc>
-    <lastmod>2024-10-07T17:11:00.669Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/00-welcome-slides.html</loc>
-    <lastmod>2024-10-03T22:34:18.038Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/00-welcome.html</loc>
-    <lastmod>2024-10-03T22:34:18.038Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/05-viz-slides.html</loc>
-    <lastmod>2024-10-17T17:44:42.433Z</lastmod>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/08-cs01-inclass-slides.html</loc>
+    <lastmod>2024-10-31T17:39:01.720Z</lastmod>
   </url>
   <url>
     <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/05-viz.html</loc>
     <lastmod>2024-10-17T17:44:42.433Z</lastmod>
   </url>
   <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/05-viz-slides.html</loc>
+    <lastmod>2024-10-17T17:44:42.433Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/00-welcome.html</loc>
+    <lastmod>2024-10-03T22:34:18.038Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/00-welcome-slides.html</loc>
+    <lastmod>2024-10-03T22:34:18.038Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/02-cs01-intro.html</loc>
+    <lastmod>2024-10-07T17:11:00.669Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/02-cs01-intro-slides.html</loc>
+    <lastmod>2024-10-07T17:11:00.669Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/cs/cs-example.html</loc>
+    <lastmod>2024-10-18T21:15:34.156Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/hw/hw-01.html</loc>
+    <lastmod>2024-10-07T22:47:20.728Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/04-lab-cs01-eda.html</loc>
+    <lastmod>2024-10-24T16:14:20.271Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/02-lab-cs01-wrangle.html</loc>
+    <lastmod>2024-10-24T02:55:45.883Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/LICENSE.html</loc>
+    <lastmod>2023-09-22T17:18:24.259Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/03-lab-cs01-viz.html</loc>
+    <lastmod>2024-10-14T21:39:51.981Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/05-lab-cs01-communication.html</loc>
+    <lastmod>2024-10-28T21:06:58.614Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/labs/01-lab-intro-r.html</loc>
+    <lastmod>2024-10-08T23:56:30.786Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/hw/hw-02.html</loc>
+    <lastmod>2024-10-14T20:53:56.387Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/cs/cs01.html</loc>
+    <lastmod>2024-10-22T18:07:32.691Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/07-written-communication-slides.html</loc>
+    <lastmod>2024-10-30T17:57:27.654Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/07-written-communication.html</loc>
+    <lastmod>2024-10-30T17:57:27.654Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/03-dplyr-slides.html</loc>
+    <lastmod>2024-10-14T20:04:44.773Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/03-dplyr.html</loc>
+    <lastmod>2024-10-14T20:04:44.773Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/01-intro-to-r-slides.html</loc>
+    <lastmod>2024-10-03T22:33:54.198Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/01-intro-to-r.html</loc>
+    <lastmod>2024-10-03T22:33:54.198Z</lastmod>
+  </url>
+  <url>
     <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/06-cs01-eda-slides.html</loc>
-    <lastmod>2024-10-24T16:48:17.158Z</lastmod>
+    <lastmod>2024-10-30T17:59:06.390Z</lastmod>
   </url>
   <url>
     <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/06-cs01-eda.html</loc>
-    <lastmod>2024-10-24T16:48:17.158Z</lastmod>
+    <lastmod>2024-10-30T17:59:06.390Z</lastmod>
   </url>
   <url>
     <loc>https://cogs137-fa24.github.io/cogs137-fa24/index.html</loc>

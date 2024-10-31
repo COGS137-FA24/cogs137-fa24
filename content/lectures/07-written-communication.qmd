@@ -434,7 +434,8 @@ A reminder that when you're doing EDA, you're going to generate a lot of plots. 
 
 :::
 
-## Recap
+## Recap {background-color="#92A86A"}
+
 - Tailor communication for setting and audience
 - Written communication has benefit of time; limitation of additional explanation
 - Can you control your HTML output from .Rmd document?

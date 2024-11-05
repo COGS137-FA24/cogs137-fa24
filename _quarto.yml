@@ -76,6 +76,8 @@ website:
             href: content/lectures/07-written-communication.qmd
           - text: "08-cs01-inclass"
             href: content/lectures/08-cs01-inclass.qmd
+          - text: "09-cs02-intro"
+            href: content/lectures/09-cs02-intro.qmd
       - section: "Labs"
         contents:
           - text: "Lab01: Tooling and R"
@@ -94,6 +96,10 @@ website:
             href: content/cs/cs-example.qmd
           - text: "CS01: Biomarkers of Recent Use"
             href: content/cs/cs01.qmd
+          - text: "CS02: Predicting Annual Air Pollution"
+            href: content/cs/cs02.qmd
+          - text: "Final Project"
+            href: content/cs/final.qmd
       - section: "Homework"
         contents:
           - text: "HW01"

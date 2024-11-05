@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Professor Shannon Ellis">
+<meta name="dcterms.date" content="2024-11-05">
+
+<title>COGS 137 - 09-cs02-intro</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../content/labs/01-lab-intro-r.html" rel="next">
+<link href="../../content/lectures/08-cs01-inclass.html" rel="prev">
+<link href="../../images/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<meta property="og:title" content="COGS 137 - 09-cs02-intro">
+<meta property="og:description" content="Homepage for COGS 137 - Practical Data Science in R, Fall 2024.">
+<meta property="og:image" content="https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/images/background.png">
+<meta property="og:site_name" content="COGS 137">
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/lectures/00-welcome.html">Notes</a></li><li class="breadcrumb-item"><a href="../../content/lectures/09-cs02-intro.html">09-cs02-intro</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../images/cogs137-logo-hex.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <div class="dropdown">
+      <a href="" title="Canvas" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Canvas"><i class="bi bi-person-fill"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://canvas.ucsd.edu/courses/58555">
+            Homepage
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://canvas.ucsd.edu/courses/58555/gradebook">
+            Grades
+            </a>
+          </li>
+      </ul>
+    </div>
+    <a href="https://datahub.ucsd.edu/hub/spawn" title="Datahub" class="quarto-navigation-tool px-1" aria-label="Datahub"><i class="bi bi-cloud"></i></a>
+    <a href="https://piazza.com/class/m1jv2820hu54m" title="Piazza" class="quarto-navigation-tool px-1" aria-label="Piazza"><i class="bi bi-question"></i></a>
+    <a href="https://chatgpt.com/" title="ChatGPT" class="quarto-navigation-tool px-1" aria-label="ChatGPT"><i class="bi bi-robot"></i></a>
+    <a href="https://github.com/COGS137-FA24" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text">Schedule &amp; Policies</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../policies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Policies</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Notes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/lectures/00-welcome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">00-welcome</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/lectures/01-intro-to-r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">01-intro-to-r</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/lectures/02-cs01-intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">02-cs01-intro</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/lectures/03-dplyr.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">03-dplyr</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/lectures/04-ggplot2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">04-ggplot2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/lectures/05-viz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">05-viz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/lectures/06-cs01-eda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">06-cs01-eda</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/lectures/07-written-communication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">07-written-communication</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/lectures/08-cs01-inclass.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">08-cs01-inclass</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/lectures/09-cs02-intro.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">09-cs02-intro</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+ <span class="menu-text">Labs</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/labs/01-lab-intro-r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab01: Tooling and R</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/labs/02-lab-cs01-wrangle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab02: CS01 Data Wrangling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/labs/03-lab-cs01-viz.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab03: CS01 Data Visualization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/labs/04-lab-cs01-eda.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab04: CS01 EDA</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/labs/05-lab-cs01-communication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab05: CS01 Communication</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text">Case Studies</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/cs/cs-example.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS: Example</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/cs/cs01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS01: Biomarkers of Recent Use</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/cs/cs02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CS02: Predicting Annual Air Pollution</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/cs/final.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final Project</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+ <span class="menu-text">Homework</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/hw/hw-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HW01</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/hw/hw-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">HW02</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text">Computing</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../computing/computing-access.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Access</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../computing/computing-troubleshooting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Troubleshooting</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../computing/computing-cheatsheets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cheatsheets</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#qa" id="toc-qa" class="nav-link active" data-scroll-target="#qa">Q&amp;A</a></li>
+  <li><a href="#course-announcements" id="toc-course-announcements" class="nav-link" data-scroll-target="#course-announcements">Course Announcements</a></li>
+  <li><a href="#mid-course-survey-n55-57" id="toc-mid-course-survey-n55-57" class="nav-link" data-scroll-target="#mid-course-survey-n55-57">Mid-course survey (N=55; 57%)</a></li>
+  <li><a href="#planning-ahead" id="toc-planning-ahead" class="nav-link" data-scroll-target="#planning-ahead">Planning Ahead</a>
+  <ul class="collapse">
+  <li><a href="#group-formation-cs02-final-project" id="toc-group-formation-cs02-final-project" class="nav-link" data-scroll-target="#group-formation-cs02-final-project">Group Formation (CS02 + Final Project)</a></li>
+  <li><a href="#final-project" id="toc-final-project" class="nav-link" data-scroll-target="#final-project">Final Project</a></li>
+  <li><a href="#topic-brainstorming" id="toc-topic-brainstorming" class="nav-link" data-scroll-target="#topic-brainstorming">Topic Brainstorming</a></li>
+  </ul></li>
+  <li><a href="#cs02-predicting-air-pollution-data" id="toc-cs02-predicting-air-pollution-data" class="nav-link" data-scroll-target="#cs02-predicting-air-pollution-data">CS02: Predicting Air Pollution (Data)</a>
+  <ul class="collapse">
+  <li><a href="#agenda" id="toc-agenda" class="nav-link" data-scroll-target="#agenda">Agenda</a></li>
+  </ul></li>
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a>
+  <ul class="collapse">
+  <li><a href="#opencasestudies" id="toc-opencasestudies" class="nav-link" data-scroll-target="#opencasestudies">OpenCaseStudies</a></li>
+  <li><a href="#air-pollutants" id="toc-air-pollutants" class="nav-link" data-scroll-target="#air-pollutants">Air Pollutants</a></li>
+  <li><a href="#major-types-of-air-pollutants" id="toc-major-types-of-air-pollutants" class="nav-link" data-scroll-target="#major-types-of-air-pollutants">Major types of air pollutants</a></li>
+  <li><a href="#particulate-pollution" id="toc-particulate-pollution" class="nav-link" data-scroll-target="#particulate-pollution">Particulate Pollution</a></li>
+  <li><a href="#common-pollutants-and-their-size" id="toc-common-pollutants-and-their-size" class="nav-link" data-scroll-target="#common-pollutants-and-their-size">Common Pollutants and their size</a></li>
+  <li><a href="#penetration-into-the-human-body" id="toc-penetration-into-the-human-body" class="nav-link" data-scroll-target="#penetration-into-the-human-body">Penetration into the human body</a></li>
+  <li><a href="#negative-health-impacts" id="toc-negative-health-impacts" class="nav-link" data-scroll-target="#negative-health-impacts">Negative Health Impacts</a></li>
+  <li><a href="#sparse-monitoring-ph-issue" id="toc-sparse-monitoring-ph-issue" class="nav-link" data-scroll-target="#sparse-monitoring-ph-issue">Sparse monitoring PH issue</a></li>
+  <li><a href="#machine-learning-offers-a-solution" id="toc-machine-learning-offers-a-solution" class="nav-link" data-scroll-target="#machine-learning-offers-a-solution">Machine Learning offers a solution</a></li>
+  </ul></li>
+  <li><a href="#question" id="toc-question" class="nav-link" data-scroll-target="#question">Question</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a>
+  <ul class="collapse">
+  <li><a href="#the-state-of-global-air" id="toc-the-state-of-global-air" class="nav-link" data-scroll-target="#the-state-of-global-air">The State of Global Air</a></li>
+  <li><a href="#overall-improvement" id="toc-overall-improvement" class="nav-link" data-scroll-target="#overall-improvement">Overall Improvement</a></li>
+  <li><a href="#an-issue-nonetheless" id="toc-an-issue-nonetheless" class="nav-link" data-scroll-target="#an-issue-nonetheless">An Issue Nonetheless</a></li>
+  <li><a href="#adverse-health-effects" id="toc-adverse-health-effects" class="nav-link" data-scroll-target="#adverse-health-effects">Adverse health effects</a></li>
+  <li><a href="#monitor-data" id="toc-monitor-data" class="nav-link" data-scroll-target="#monitor-data">Monitor Data</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  <li><a href="#supervised-ml" id="toc-supervised-ml" class="nav-link" data-scroll-target="#supervised-ml">Supervised ML</a></li>
+  <li><a href="#outcome" id="toc-outcome" class="nav-link" data-scroll-target="#outcome">Outcome</a></li>
+  <li><a href="#data-import" id="toc-data-import" class="nav-link" data-scroll-target="#data-import">Data Import</a></li>
+  <li><a href="#pm-2.5-data" id="toc-pm-2.5-data" class="nav-link" data-scroll-target="#pm-2.5-data">PM 2.5 Data</a></li>
+  <li><a href="#features" id="toc-features" class="nav-link" data-scroll-target="#features">Features</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="09-cs02-intro-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/lectures/00-welcome.html">Notes</a></li><li class="breadcrumb-item"><a href="../../content/lectures/09-cs02-intro.html">09-cs02-intro</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">09-cs02-intro</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Professor Shannon Ellis </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            UC San Diego <br> COGS 137 - Fall 2024
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 5, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="qa" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="qa">Q&amp;A</h2>
+<blockquote class="blockquote">
+<p>Q: I’m not entirely sure how to balance conveying all the useful information from the study to general audiences without over or under-explaining details. I feel like I’m going to get this done via practice.<br>
+A: This is absolutely why we do two case studies! We don’t expect you to get it perfect this first go around…but we also grade with that in mind and give feedback! We do expect students to improve by CS02 and incorporate our feedback going forward.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Q: I think it’s just confusing thinking about how to naturally intertwine the extension into meaningful analysis.<br>
+A: This is the harder thing and is very group specific. We’re happy to help as your group comes up with ideas.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Q: Not sure what to focus on for answering our main question<br>
+A: General advice: Use EDA to eliminate as many compounds as possible - which ones are definitely NOT good biomarkers of recent use. Then, once you have fewer matrix-compound combos to look at, do calculations on those remaining.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Q: How you would present some of your research to the public, what would you personally prioritize.<br>
+A: The most critical information while ALSO discussing the <em>necessary</em> nuance. For example, my fear with this work is that more people would be sent to jail/see consequences that should NOT. So, I wanted to always be sure to communicate findings <em>as well as</em> how people should NOT misinterpret/misuse these findings.</p>
+</blockquote>
+</section>
+<section id="course-announcements" class="level2">
+<h2 class="anchored" data-anchor-id="course-announcements">Course Announcements</h2>
+<p><strong>Due Dates</strong>:</p>
+<ul>
+<li>💻 <strong>CS01</strong> due Wednesday</li>
+<li>🔬 <strong>Lab 05</strong> due Thursday</li>
+<li>🔘 <strong>CS01 Team Eval</strong> survey due Thursday</li>
+<li>📄 <strong>Final Project Proposal</strong> due Monday</li>
+<li>📋 Lecture Participation survey “due” after class</li>
+</ul>
+<p>Notes:</p>
+<ul>
+<li>hw02 and lab04 feedback and scores posted</li>
+</ul>
+</section>
+<section id="mid-course-survey-n55-57" class="level2">
+<h2 class="anchored" data-anchor-id="mid-course-survey-n55-57">Mid-course survey (N=55; 57%)</h2>
+<p>Generally, things are going well, pacing is ok, and people are getting their questions answered.</p>
+<p>Some great suggestions:</p>
+<ul>
+<li>Give us time in class to meet groups right after assignment</li>
+<li>Keep instructions in same document for completion</li>
+<li>More text in notes</li>
+<li>More cs01 guidance/time</li>
+<li>include some details about R in the wild</li>
+</ul>
+</section>
+<section id="planning-ahead" class="level1" data-background-color="#92A86A">
+<h1 data-background-color="#92A86A">Planning Ahead</h1>
+<section id="group-formation-cs02-final-project" class="level2">
+<h2 class="anchored" data-anchor-id="group-formation-cs02-final-project">Group Formation (CS02 + Final Project)</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>CS02 and Final Project are completed in groups (4-5) that you choose
+<ul class="incremental">
+<li>CS02 - we choose the topic</li>
+<li>Final project - you choose the topic</li>
+</ul></li>
+<li>You specify that group by submitting your final project proposal (due Monday)</li>
+<li>I will create repos for CS02 and final project after proposals are submitted</li>
+<li>You will still submit feedback about your experience working with your group</li>
+</ul>
+</div>
+<p>. . .</p>
+<p>The final project proposal <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXBztrZuK0CeB8p3YZWr6M37oe16DGazuow7_g9Ulr6AiyXg/viewform?usp=sf_link">link</a></p>
+</section>
+<section id="final-project" class="level2">
+<h2 class="anchored" data-anchor-id="final-project">Final Project</h2>
+<p>Carry out a data analysis on a topic and dataset of your choosing</p>
+<div class="incremental">
+<ul class="incremental">
+<li>not something that has already been done</li>
+<li>pick a topic you care about</li>
+<li>asking and answering a small-ish, specific question OR building a model to complete a useful task</li>
+</ul>
+</div>
+<p>. . .</p>
+<p><strong>Components</strong></p>
+<ul>
+<li>Proposal | week 7</li>
+<li>Rough Draft of report | week 9</li>
+<li>Peer Feedback | week 10</li>
+<li>Final Deliverable | Tues of finals week
+<ul>
+<li>report (.Rmd -&gt; html)</li>
+<li>3-5 min presentation*</li>
+<li>general audience communication</li>
+</ul></li>
+</ul>
+<p>. . .</p>
+<p>Notes:</p>
+<div class="incremental">
+<ul class="incremental">
+<li>Groups will have the option to record their presentation or present in class during week 10 (EC; all group members must present)</li>
+<li>CS02 is also due week 9; these will be happening concurrently; that’s why you’re in the same group</li>
+</ul>
+</div>
+</section>
+<section id="topic-brainstorming" class="level2">
+<h2 class="anchored" data-anchor-id="topic-brainstorming">Topic Brainstorming</h2>
+<p>Let’s brainstorm some topics together…</p>
+</section>
+</section>
+<section id="cs02-predicting-air-pollution-data" class="level1" data-background-color="#92A86A">
+<h1 data-background-color="#92A86A">CS02: Predicting Air Pollution (Data)</h1>
+<section id="agenda" class="level2">
+<h2 class="anchored" data-anchor-id="agenda">Agenda</h2>
+<ul>
+<li>Background</li>
+<li>Question</li>
+<li>Data Intro</li>
+<li>Wrangle</li>
+</ul>
+</section>
+</section>
+<section id="background" class="level1" data-background-color="#92A86A">
+<h1 data-background-color="#92A86A">Background</h1>
+<section id="opencasestudies" class="level2">
+<h2 class="anchored" data-anchor-id="opencasestudies">OpenCaseStudies</h2>
+<p>Wright, Carrie and Meng, Qier and Jager, Leah and Taub, Margaret and Hicks, Stephanie. (2020). <a href="https://www.opencasestudies.org/ocs-bp-air-pollution/">https://github.com//opencasestudies/ocs-bp-air-pollution</a>. Predicting Annual Air Pollution (Version v1.0.0).</p>
+</section>
+<section id="air-pollutants" class="level2">
+<h2 class="anchored" data-anchor-id="air-pollutants">Air Pollutants</h2>
+<p>Some sources are natural while others are anthropogenic (human-derived):</p>
+<p align="center">
+</p><p><img src="images/09/emissions.jpg" width="600"></p>
+<p></p>
+<p><a href="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fwww.nps.gov%2Fsubjects%2Fair%2Fsources.htm&amp;psig=AOvVaw2v7AVxSF8ZSAPEhNudVtbN&amp;ust=1585770966217000&amp;source=images&amp;cd=vfe&amp;ved=0CAIQjRxqFwoTCPDN66q_xegCFQAAAAAdAAAAABAD" target="_blank">[source]</a></p>
+</section>
+<section id="major-types-of-air-pollutants" class="level2">
+<h2 class="anchored" data-anchor-id="major-types-of-air-pollutants">Major types of air pollutants</h2>
+<ol type="1">
+<li><strong>Gaseous</strong> - Carbon Monoxide (CO), Ozone (O<sub>3</sub>), Nitrogen Oxides(NO, NO<sub>2</sub>), Sulfur Dioxide (SO<sub>2</sub>)</li>
+<li><strong>Particulate</strong> - small liquids and solids suspended in the air (includes lead- can include certain types of dust)</li>
+<li><strong>Dust</strong> - small solids (larger than particulates) that can be suspended in the air for some time but eventually settle</li>
+<li><strong>Biological</strong> - pollen, bacteria, viruses, mold spores</li>
+</ol>
+<p>See <a href="http://www.redlogenv.com/worker-safety/part-1-dust-and-particulate-matter">here</a> for more detail on the types of pollutants in the air.</p>
+</section>
+<section id="particulate-pollution" class="level2">
+<h2 class="anchored" data-anchor-id="particulate-pollution">Particulate Pollution</h2>
+<p>Air pollution particulates are generally described by their <strong>size</strong>:</p>
+<ol type="1">
+<li><p><strong>Large Coarse</strong> Particulate Matter - has diameter of &gt;10 micrometers (10 µm)</p></li>
+<li><p><strong>Coarse</strong> Particulate Matter (called <strong>PM<sub>10-2.5</sub></strong>) - has diameter of between 2.5 µm and 10 µm</p></li>
+<li><p><strong>Fine</strong> Particulate Matter (called <strong>PM<sub>2.5</sub></strong>) - has diameter of &lt; 2.5 µm</p></li>
+</ol>
+<p><strong>PM<sub>10</sub></strong> includes any particulate matter &lt;10 µm (both coarse and fine particulate matter)</p>
+<p>. . .</p>
+<p>In relation to a piece of human hair:</p>
+<p><img src="images/09/pm2.5_scale_graphic-color_2.jpg" class="img-fluid"></p>
+<p><a href="https://www.epa.gov/pm-pollution/particulate-matter-pm-basics" target="_blank">[source]</a></p>
+</section>
+<section id="common-pollutants-and-their-size" class="level2">
+<h2 class="anchored" data-anchor-id="common-pollutants-and-their-size">Common Pollutants and their size</h2>
+<p align="center">
+</p><p><img src="images/09/particulate-size-chart.png" width="800"></p>
+<p></p>
+<p><a href="https://en.wikipedia.org/wiki/Particulates" target="_blank">[source]</a></p>
+</section>
+<section id="penetration-into-the-human-body" class="level2">
+<h2 class="anchored" data-anchor-id="penetration-into-the-human-body">Penetration into the human body</h2>
+<p><img src="images/09/sizes.jpg" class="img-fluid"></p>
+<p><a href="https://www.frontiersin.org/articles/10.3389/fpubh.2020.00014/full" target="_blank">[source]</a></p>
+</section>
+<section id="negative-health-impacts" class="level2">
+<h2 class="anchored" data-anchor-id="negative-health-impacts">Negative Health Impacts</h2>
+<p>Exposure to air pollution is:</p>
+<ul>
+<li>associated with higher rates of <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5783186/" target="_blank">mortality</a> in older adults</li>
+<li>known to be a risk factor for many diseases and conditions including (but not limited to):</li>
+</ul>
+<div class="incremental">
+<ol class="incremental" type="1">
+<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/29243937" target="_blank">Asthma</a> - fine particle exposure (<strong>PM<sub>2.5</sub></strong>) was found to be associated with higher rates of asthma in children</li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/31419765" target="_blank">Inflammation in type 1 diabetes</a> - fine particle exposure (<strong>PM<sub>2.5</sub></strong>) from traffic-related air pollution was associated with increased measures of inflammatory markers in youths with Type 1 diabetes</li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/31408135" target="_blank">Lung function and emphysema</a> - higher concentrations of ozone (O<sub>3</sub>), nitrogen oxides (NO<sub>x</sub>), black carbon, and fine particle exposure <strong>PM<sub>2.5</sub></strong> , at study baseline were significantly associated with greater increases in percent emphysema per 10 years</li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/31386643" target="_blank">Low birthweight</a> - fine particle exposure(<strong>PM<sub>2.5</sub></strong>) was associated with lower birth weight in full-term live births</li>
+<li><a href="https://www.tandfonline.com/doi/full/10.1080/08958370701665434" target="_blank">Viral Infection</a> - higher rates of infection and increased severity of infection are associated with higher exposures to pollution levels including fine particle exposure (<strong>PM<sub>2.5</sub></strong>)</li>
+</ol>
+</div>
+<p>See this <a href="https://www.frontiersin.org/articles/10.3389/fpubh.2020.00014/full" target="_blank">review article</a> for more information about sources of air pollution and the influence of air pollution on health.</p>
+</section>
+<section id="sparse-monitoring-ph-issue" class="level2">
+<h2 class="anchored" data-anchor-id="sparse-monitoring-ph-issue">Sparse monitoring PH issue</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>Historically, epidemiological studies would assess the influence of air pollution on health outcomes by relying on a number of monitors located around the country.</li>
+<li>However, these monitors are relatively sparse in certain regions of the country and are not necessarily located near pollution sources.</li>
+<li>dramatic differences in pollution rates can be seen even within the same city. (In fact, the term micro-environments describes environments within cities or counties which may vary greatly from one block to another.)</li>
+</ul>
+</div>
+<p>. . .</p>
+<p align="center">
+</p><p><img src="images/09/map_of_monitors.jpg" width="800"></p>
+<p></p>
+<p><a href="https://ehjournal.biomedcentral.com/articles/10.1186/1476-069X-13-63" target="_blank">[source]</a></p>
+<p>. . .</p>
+<p>Lack of granularity in air pollution monitoring has hindered our ability to discern the full impact of air pollution on health and to identify at-risk locations.</p>
+</section>
+<section id="machine-learning-offers-a-solution" class="level2">
+<h2 class="anchored" data-anchor-id="machine-learning-offers-a-solution">Machine Learning offers a solution</h2>
+<p>An <a href="https://ehjournal.biomedcentral.com/articles/10.1186/1476-069X-13-63" target="_blank">article</a> published in the <em>Environmental Health</em> journal dealt with this issue by using data, including population density and road density, among other features, to model or predict air pollution levels at a more localized scale using machine learning (ML) methods.</p>
+<p align="center">
+</p><p><img src="images/09/thepaper.png" width="800"></p>
+<p></p>
+<p><a href="https://ehjournal.biomedcentral.com/articles/10.1186/1476-069X-13-63" target="_blank">[source]</a></p>
+<p>. . .</p>
+<p>The authors of this article state that:</p>
+<blockquote class="blockquote">
+<p>“Exposure to atmospheric particulate matter (PM) remains an important public health concern, although it remains difficult to quantify accurately across large geographic areas with sufficiently high spatial resolution. Recent epidemiologic analyses have demonstrated the importance of spatially- and temporally-resolved exposure estimates, which show larger PM-mediated health effects as compared to nearest monitor or county-specific ambient concentrations.”</p>
+</blockquote>
+<p>. . .</p>
+<p>The article above demonstrates that machine learning methods can be used to predict air pollution levels when traditional monitoring systems are not available in a particular area or when there is not enough spatial granularity with current monitoring systems.</p>
+<p>. . .</p>
+<p>So…we’re going to do the same</p>
+</section>
+</section>
+<section id="question" class="level1" data-background-color="#92A86A">
+<h1 data-background-color="#92A86A">Question</h1>
+<blockquote class="blockquote">
+<p>With what accuracy can we predict US annual average air pollution concentrations?</p>
+</blockquote>
+<p>This will specifically be at the granularity of zip code regional levels using predictors such as data about population density, urbanization, road density, as well as, satellite pollution data and chemical modeling data.</p>
+</section>
+<section id="data" class="level1" data-background-color="#92A86A">
+<h1 data-background-color="#92A86A">Data</h1>
+<section id="the-state-of-global-air" class="level2">
+<h2 class="anchored" data-anchor-id="the-state-of-global-air">The State of Global Air</h2>
+<p>The <a href="https://www.stateofglobalair.org/" target="_blank">State of Global Air</a> is a report released every year to communicate the impact of air pollution on public health.</p>
+<p>. . .</p>
+<p>The <a href="https://www.stateofglobalair.org/sites/default/files/soga_2019_report.pdf" target="_blank">State of Global Air 2019 report</a> (which uses data from 2017) stated that:</p>
+<blockquote class="blockquote">
+<p>Air pollution is the <strong>fifth</strong> leading risk factor for mortality worldwide. It is responsible for more deaths than many better-known risk factors such as malnutrition, alcohol use, and physical inactivity. Each year, <strong>more</strong> people die from air pollution–related disease than from road <strong>traffic injuries</strong> or <strong>malaria</strong>.</p>
+</blockquote>
+<p align="center">
+</p><p><img src="https://www.healtheffects.org/sites/default/files/SoGA-Figures-01.jpg" width="800"></p>
+<p></p>
+<p><a href="https://www.stateofglobalair.org/sites/default/files/soga_2019_report.pdf" target="_blank">[source]</a></p>
+<p>. . .</p>
+<blockquote class="blockquote">
+<p>In 2017, air pollution is estimated to have contributed to close to 5 million deaths globally — nearly <strong>1 in every 10 deaths</strong>.</p>
+</blockquote>
+<p><img src="images/09/2017deaths.png" class="img-fluid"></p>
+<p><a href="https://www.stateofglobalair.org/sites/default/files/soga_2019_fact_sheet.pdf" target="_blank">[source]</a></p>
+<p>. . .</p>
+<p>The <a href="https://www.stateofglobalair.org/sites/default/files/soga-2018-report.pdf" target="_blank">State of Global Air 2018 report</a> (using data from 2016) separated different types of air pollution &amp; found that <strong>particulate pollution was particularly associated with mortality</strong>.</p>
+<p><img src="images/09/2017mortality.png" class="img-fluid"></p>
+<p><a href="https://www.stateofglobalair.org/sites/default/files/soga-2018-report.pdf" target="_blank">[source]</a></p>
+<p>. . .</p>
+<p>The 2019 report shows that the highest levels of fine particulate pollution occur in Africa and Asia and that:</p>
+<blockquote class="blockquote">
+<p>More than <strong>90%</strong> of people worldwide live in areas <strong>exceeding</strong> the World Health Organization (WHO) <strong>Guideline</strong> for healthy air. More than half live in areas that do not even meet WHO’s least-stringent air quality target.</p>
+</blockquote>
+<p><img src="images/09/PMworld.png" class="img-fluid"></p>
+<p><a href="https://www.stateofglobalair.org/sites/default/files/soga_2019_fact_sheet.pdf" target="_blank">[source]</a></p>
+</section>
+<section id="overall-improvement" class="level2">
+<h2 class="anchored" data-anchor-id="overall-improvement">Overall Improvement</h2>
+<p>Looking at the US specifically, air pollution levels are generally improving, with declining national air pollutant concentration averages as shown from the 2019 <a href="https://gispub.epa.gov/air/trendsreport/2019/#home" target="_blank"><em>Our Nation’s Air</em></a> report from the US Environmental Protection Agency (EPA):</p>
+<p align="center">
+</p><p><img src="images/09/US.png" width="800"></p>
+<p></p>
+<p><a href="https://gispub.epa.gov/air/trendsreport/2019/documentation/AirTrends_Flyer.pdf" target="_blank">[source]</a></p>
+</section>
+<section id="an-issue-nonetheless" class="level2">
+<h2 class="anchored" data-anchor-id="an-issue-nonetheless">An Issue Nonetheless</h2>
+<ul>
+<li>air pollution <strong>continues to contribute to health risk for Americans</strong>, in particular in <strong>regions with higher than national average rates</strong> of pollution that, at times, exceed the WHO’s recommended level.</li>
+<li>important to obtain high spatial granularity in estimates of air pollution in order to identify locations where populations are experiencing harmful levels of exposure.</li>
+</ul>
+<p>. . .</p>
+<p>You can see that current air quality conditions at this <a href="https://aqicn.org/city/usa/" target="_blank">website</a>, and you will notice variation across different cities.</p>
+<p>. . .</p>
+<ul>
+<li>reports particulate values using what is called the <a href="https://www.airnow.gov/index.cfm?action=aqibasics.aqi" target="_blank">Air Quality Index</a> (AQI).</li>
+<li>This <a href="https://airnow.gov/index.cfm?action=airnow.calculator" target="_blank">calculator</a> indicates that 138 AQI is equivalent to 50.5 ug/m<sup>3</sup> and is considered unhealthy for sensitive individuals.</li>
+<li>Thus, some areas exceed the WHO annual exposure guideline (10 ug/m<sup>3</sup>), and this may adversely affect the health of people living in these locations.</li>
+</ul>
+</section>
+<section id="adverse-health-effects" class="level2">
+<h2 class="anchored" data-anchor-id="adverse-health-effects">Adverse health effects</h2>
+<ul>
+<li>Adverse health effects have been associated with populations experiencing higher pollution exposure despite the levels being below suggested guidelines.</li>
+<li>it appears that the composition of the particulate matter and the influence of other demographic factors may make specific populations more at risk for adverse health effects due to air pollution. (For example, see this <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1702747" target="_blank">article</a> for more details.)</li>
+</ul>
+</section>
+<section id="monitor-data" class="level2">
+<h2 class="anchored" data-anchor-id="monitor-data">Monitor Data</h2>
+<div class="incremental">
+<ul class="incremental">
+<li>Monitor data in this case study come from a system of monitors in which roughly 90% are located within cities.</li>
+<li>There is an <strong>equity issue</strong> in terms of capturing the air pollution levels of more rural areas.</li>
+<li>To get a better sense of the pollution exposures for the individuals living in these areas, methods like machine learning can be useful to estimate air pollution levels in <strong>areas with little to no monitoring</strong>.</li>
+<li>Specifically, these methods can be used to estimate air pollution in these low monitoring areas so that we can make a map like this where we have annual estimates for all of the contiguous US:</li>
+</ul>
+</div>
+<p>. . .</p>
+<p align="center">
+</p><p><img src="https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/SAWOEGBXMVGQ7AS5PZ6UUOX6FY.png" width="800"></p>
+<p></p>
+<p><a href="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fwww.washingtonpost.com%2Fbusiness%2F2019%2F10%2F23%2Fair-pollution-is-getting-worse-data-show-more-people-are-dying%2F&amp;psig=AOvVaw3v-ZDTBPnLP2MYtKf3Undj&amp;ust=1585784479068000&amp;source=images&amp;cd=vfe&amp;ved=0CAIQjRxqFwoTCPCyn9fxxegCFQAAAAAdAAAAABAd" target="_blank">[source]</a></p>
+<p>This is what we aim to achieve in this case study.</p>
+</section>
+<section id="limitations" class="level2">
+<h2 class="anchored" data-anchor-id="limitations">Limitations</h2>
+<div class="incremental">
+<ol class="incremental" type="1">
+<li>The data do not include information about the composition of particulate matter. Different types of particulates may be more benign or deleterious for health outcomes.</li>
+<li>Outdoor pollution levels are not necessarily an indication of individual exposures. People spend differing amounts of time indoors and outdoors and are exposed to different pollution levels indoors. Researchers are now developing personal monitoring systems to track air pollution levels on the personal level.</li>
+<li>Our analysis will use annual mean estimates of pollution levels, but these can vary greatly by season, day and even hour. There are data sources that have finer levels of temporal data; however, we are interested in long term exposures, as these appear to be the most influential for health outcomes.</li>
+<li>These data are US-focused.</li>
+</ol>
+</div>
+</section>
+<section id="supervised-ml" class="level2">
+<h2 class="anchored" data-anchor-id="supervised-ml">Supervised ML</h2>
+<p>Here, we’ll need:</p>
+<ol type="1">
+<li>A <strong>continuous</strong> outcome variable that we want to predict</li>
+<li>A set of feature(s) (or predictor variables) that we use to predict the outcome variable</li>
+</ol>
+<p>. . .</p>
+<p>To build (or train) our model, we use both the outcome and features.</p>
+<p>. . .</p>
+<p>The goal is to identify informative features that can explain a large amount of variation in our outcome variable.</p>
+<p>. . .</p>
+<p>Using this model, we can then predict the outcome from new observations with the same features where have not observed the outcome.</p>
+<p>(More details <a href="https://towardsdatascience.com/supervised-vs-unsupervised-learning-14f68e32ea8d" target="_blank">here</a>)</p>
+</section>
+<section id="outcome" class="level2">
+<h2 class="anchored" data-anchor-id="outcome">Outcome</h2>
+<p>The monitor data that we will be using comes from <a href="https://publiclab.org/wiki/filter-pm" target="_blank"><strong>gravimetric monitors</strong></a> (see picture below) operated by the US <a href="https://www.epa.gov/" target="_blank">Environmental Protection Agency (EPA)</a>.</p>
+<p><img src="images/09/monitor.png" class="img-fluid"></p>
+<p>[image courtesy of <a href="https://www.jhsph.edu/faculty/directory/profile/2928/kirsten-koehler">Kirsten Koehler</a>]</p>
+<p>. . .</p>
+<p>These monitors use a filtration system to specifically capture fine particulate matter.</p>
+<p><img src="images/09/filter.png" class="img-fluid"></p>
+<p><a href="https://publiclab.org/wiki/filter-pm" target="_blank">[source]</a></p>
+<p>. . .</p>
+<p>The weight of this particulate matter is manually measured daily or weekly.</p>
+<p>For the EPA standard operating procedure for PM gravimetric analysis in 2008, we refer the reader to <a href="https://www3.epa.gov/ttnamti1/files/ambient/pm25/spec/RTIGravMassSOPFINAL.pdf" target="_blank">here</a>.</p>
+<p>. . .</p>
+<p>In our data set, the <code>value</code> column indicates the PM<sub>2.5</sub> monitor average for 2008 in mass of fine particles/volume of air for 876 gravimetric monitors.</p>
+<p>. . .</p>
+<p>The units are micrograms of fine particulate matter (PM) that is less than 2.5 micrometers in diameter per cubic meter of air - mass concentration (ug/m<sup>3</sup>).</p>
+<p>. . .</p>
+<p>Recall the WHO exposure guideline is &lt; 10 ug/m<sup>3</sup> on average annually for PM<sub>2.5</sub>.</p>
+</section>
+<section id="data-import" class="level2">
+<h2 class="anchored" data-anchor-id="data-import">Data Import</h2>
+<p>All of our data was previously collected by a <a href="http://www.biostat.jhsph.edu/~rpeng/">researcher</a> at the <a href="https://www.jhsph.edu/">Johns Hopkins School of Public Health</a> who studies air pollution and climate change. (Roger now works at UT Austin)</p>
+<p>. . .</p>
+<p>We have one CSV file that contains both our single <strong>outcome variable</strong> and all of our <strong>features</strong> (or predictor variables). You can download this file using the <code>OCSdata</code> package:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("OCSdata")</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>OCSdata<span class="sc">::</span><span class="fu">raw_data</span>(<span class="st">"ocs-bp-air-pollution"</span>, <span class="at">outpath =</span> <span class="fu">getwd</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>. . .</p>
+<p><code>here::here()</code> helps manage file paths; will always locate files relative to your project root</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("here")</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>pm <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"OCS_data"</span>, <span class="st">"data"</span>,<span class="st">"raw"</span>, <span class="st">"pm25_data.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="pm-2.5-data" class="level2">
+<h2 class="anchored" data-anchor-id="pm-2.5-data">PM 2.5 Data</h2>
+<ul>
+<li>876 monitors</li>
+<li>40 columns
+<ul>
+<li><code>value</code> | outcome variable</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>pm <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">glimpse</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 876
+Columns: 50
+$ id                          &lt;dbl&gt; 1003.001, 1027.000, 1033.100, 1049.100, 10…
+$ value                       &lt;dbl&gt; 9.597647, 10.800000, 11.212174, 11.659091,…
+$ fips                        &lt;dbl&gt; 1003, 1027, 1033, 1049, 1055, 1069, 1073, …
+$ lat                         &lt;dbl&gt; 30.49800, 33.28126, 34.75878, 34.28763, 33…
+$ lon                         &lt;dbl&gt; -87.88141, -85.80218, -87.65056, -85.96830…
+$ state                       &lt;chr&gt; "Alabama", "Alabama", "Alabama", "Alabama"…
+$ county                      &lt;chr&gt; "Baldwin", "Clay", "Colbert", "DeKalb", "E…
+$ city                        &lt;chr&gt; "Fairhope", "Ashland", "Muscle Shoals", "C…
+$ CMAQ                        &lt;dbl&gt; 8.098836, 9.766208, 9.402679, 8.534772, 9.…
+$ zcta                        &lt;dbl&gt; 36532, 36251, 35660, 35962, 35901, 36303, …
+$ zcta_area                   &lt;dbl&gt; 190980522, 374132430, 16716984, 203836235,…
+$ zcta_pop                    &lt;dbl&gt; 27829, 5103, 9042, 8300, 20045, 30217, 901…
+$ imp_a500                    &lt;dbl&gt; 0.01730104, 1.96972318, 19.17301038, 5.782…
+$ imp_a1000                   &lt;dbl&gt; 1.4096021, 0.8531574, 11.1448962, 3.867647…
+$ imp_a5000                   &lt;dbl&gt; 3.3360118, 0.9851479, 15.1786154, 1.231141…
+$ imp_a10000                  &lt;dbl&gt; 1.9879187, 0.5208189, 9.7253870, 1.0316469…
+$ imp_a15000                  &lt;dbl&gt; 1.4386207, 0.3359198, 5.2472094, 0.9730444…
+$ county_area                 &lt;dbl&gt; 4117521611, 1564252280, 1534877333, 201266…
+$ county_pop                  &lt;dbl&gt; 182265, 13932, 54428, 71109, 104430, 10154…
+$ log_dist_to_prisec          &lt;dbl&gt; 4.648181, 7.219907, 5.760131, 3.721489, 5.…
+$ log_pri_length_5000         &lt;dbl&gt; 8.517193, 8.517193, 8.517193, 8.517193, 9.…
+$ log_pri_length_10000        &lt;dbl&gt; 9.210340, 9.210340, 9.274303, 10.409411, 1…
+$ log_pri_length_15000        &lt;dbl&gt; 9.630228, 9.615805, 9.658899, 11.173626, 1…
+$ log_pri_length_25000        &lt;dbl&gt; 11.32735, 10.12663, 10.15769, 11.90959, 12…
+$ log_prisec_length_500       &lt;dbl&gt; 7.295356, 6.214608, 8.611945, 7.310155, 8.…
+$ log_prisec_length_1000      &lt;dbl&gt; 8.195119, 7.600902, 9.735569, 8.585843, 9.…
+$ log_prisec_length_5000      &lt;dbl&gt; 10.815042, 10.170878, 11.770407, 10.214200…
+$ log_prisec_length_10000     &lt;dbl&gt; 11.88680, 11.40554, 12.84066, 11.50894, 12…
+$ log_prisec_length_15000     &lt;dbl&gt; 12.205723, 12.042963, 13.282656, 12.353663…
+$ log_prisec_length_25000     &lt;dbl&gt; 13.41395, 12.79980, 13.79973, 13.55979, 13…
+$ log_nei_2008_pm25_sum_10000 &lt;dbl&gt; 0.318035438, 3.218632928, 6.573127301, 0.0…
+$ log_nei_2008_pm25_sum_15000 &lt;dbl&gt; 1.967358961, 3.218632928, 6.581917457, 3.2…
+$ log_nei_2008_pm25_sum_25000 &lt;dbl&gt; 5.067308, 3.218633, 6.875900, 4.887665, 4.…
+$ log_nei_2008_pm10_sum_10000 &lt;dbl&gt; 1.35588511, 3.31111648, 6.69187313, 0.0000…
+$ log_nei_2008_pm10_sum_15000 &lt;dbl&gt; 2.26783411, 3.31111648, 6.70127741, 3.3500…
+$ log_nei_2008_pm10_sum_25000 &lt;dbl&gt; 5.628728, 3.311116, 7.148858, 5.171920, 4.…
+$ popdens_county              &lt;dbl&gt; 44.265706, 8.906492, 35.460814, 35.330814,…
+$ popdens_zcta                &lt;dbl&gt; 145.716431, 13.639555, 540.887040, 40.7189…
+$ nohs                        &lt;dbl&gt; 3.3, 11.6, 7.3, 14.3, 4.3, 5.8, 7.1, 2.7, …
+$ somehs                      &lt;dbl&gt; 4.9, 19.1, 15.8, 16.7, 13.3, 11.6, 17.1, 6…
+$ hs                          &lt;dbl&gt; 25.1, 33.9, 30.6, 35.0, 27.8, 29.8, 37.2, …
+$ somecollege                 &lt;dbl&gt; 19.7, 18.8, 20.9, 14.9, 29.2, 21.4, 23.5, …
+$ associate                   &lt;dbl&gt; 8.2, 8.0, 7.6, 5.5, 10.1, 7.9, 7.3, 8.0, 4…
+$ bachelor                    &lt;dbl&gt; 25.3, 5.5, 12.7, 7.9, 10.0, 13.7, 5.9, 17.…
+$ grad                        &lt;dbl&gt; 13.5, 3.1, 5.1, 5.8, 5.4, 9.8, 2.0, 8.7, 2…
+$ pov                         &lt;dbl&gt; 6.1, 19.5, 19.0, 13.8, 8.8, 15.6, 25.5, 7.…
+$ hs_orless                   &lt;dbl&gt; 33.3, 64.6, 53.7, 66.0, 45.4, 47.2, 61.4, …
+$ urc2013                     &lt;dbl&gt; 4, 6, 4, 6, 4, 4, 1, 1, 1, 1, 1, 1, 1, 2, …
+$ urc2006                     &lt;dbl&gt; 5, 6, 4, 5, 4, 4, 1, 1, 1, 1, 1, 1, 1, 2, …
+$ aod                         &lt;dbl&gt; 37.36364, 34.81818, 36.00000, 33.08333, 43…</code></pre>
+</div>
+</div>
+<p>. . .</p>
+<p>There are 48 features with values for each of the 876 monitors (observations).</p>
+<p>The data comes from the US <a href="https://www.epa.gov/" target="_blank">Environmental Protection Agency (EPA)</a>, the <a href="https://www.nasa.gov/" target="_blank">National Aeronautics and Space Administration (NASA)</a>, the US <a href="https://www.census.gov/about/what/census-at-a-glance.html" target="_blank">Census</a>, and the <a href="https://www.cdc.gov/nchs/about/index.htm" target="_blank">National Center for Health Statistics (NCHS)</a>.</p>
+</section>
+<section id="features" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="features">Features</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>id</strong></td>
+<td>Monitor number <br> – the county number is indicated before the decimal <br> – the monitor number is indicated after the decimal <br> <strong>Example</strong>: 1073.0023 is Jefferson county (1073) and .0023 one of 8 monitors</td>
+</tr>
+<tr class="even">
+<td><strong>fips</strong></td>
+<td>Federal information processing standard number for the county where the monitor is located <br> – 5 digit id code for counties (zero is often the first value and sometimes is not shown) <br> – the first 2 numbers indicate the state <br> – the last three numbers indicate the county <br> <strong>Example</strong>: Alabama’s state code is 01 because it is first alphabetically <br> (note: Alaska and Hawaii are not included because they are not part of the contiguous US)</td>
+</tr>
+<tr class="odd">
+<td><strong>Lat</strong></td>
+<td>Latitude of the monitor in degrees</td>
+</tr>
+<tr class="even">
+<td><strong>Lon</strong></td>
+<td>Longitude of the monitor in degrees</td>
+</tr>
+<tr class="odd">
+<td><strong>state</strong></td>
+<td>State where the monitor is located</td>
+</tr>
+<tr class="even">
+<td><strong>county</strong></td>
+<td>County where the monitor is located</td>
+</tr>
+<tr class="odd">
+<td><strong>city</strong></td>
+<td>City where the monitor is located</td>
+</tr>
+<tr class="even">
+<td><strong>CMAQ</strong></td>
+<td>Estimated values of air pollution from a computational model called <a href="https://www.epa.gov/cmaq" target="_blank"><strong>Community Multiscale Air Quality (CMAQ)</strong></a> <br> – A monitoring system that simulates the physics of the atmosphere using chemistry and weather data to predict the air pollution <br> – <strong><em>Does not use any of the PM<sub>2.5</sub> gravimetric monitoring data.</em></strong> (There is a version that does use the gravimetric monitoring data, but not this one!) <br> – Data from the EPA</td>
+</tr>
+<tr class="odd">
+<td><strong>zcta</strong></td>
+<td><a href="https://en.wikipedia.org/wiki/ZIP_Code_Tabulation_Area" target="_blank">Zip Code Tabulation Area</a> where the monitor is located <br> – Postal Zip codes are converted into “generalized areal representations” that are non-overlapping <br> – Data from the 2010 Census</td>
+</tr>
+<tr class="even">
+<td><strong>zcta_area</strong></td>
+<td>Land area of the zip code area in meters squared <br> – Data from the 2010 Census</td>
+</tr>
+<tr class="odd">
+<td><strong>zcta_pop</strong></td>
+<td>Population in the zip code area <br> – Data from the 2010 Census</td>
+</tr>
+<tr class="even">
+<td><strong>imp_a500</strong></td>
+<td>Impervious surface measure <br> – Within a circle with a radius of 500 meters around the monitor <br> – Impervious surface are roads, concrete, parking lots, buildings <br> – This is a measure of development</td>
+</tr>
+<tr class="odd">
+<td><strong>imp_a1000</strong></td>
+<td>Impervious surface measure <br> – Within a circle with a radius of 1000 meters around the monitor</td>
+</tr>
+<tr class="even">
+<td><strong>imp_a5000</strong></td>
+<td>Impervious surface measure <br> – Within a circle with a radius of 5000 meters around the monitor</td>
+</tr>
+<tr class="odd">
+<td><strong>imp_a10000</strong></td>
+<td>Impervious surface measure <br> – Within a circle with a radius of 10000 meters around the monitor</td>
+</tr>
+<tr class="even">
+<td><strong>imp_a15000</strong></td>
+<td>Impervious surface measure <br> – Within a circle with a radius of 15000 meters around the monitor</td>
+</tr>
+<tr class="odd">
+<td><strong>county_area</strong></td>
+<td>Land area of the county of the monitor in meters squared</td>
+</tr>
+<tr class="even">
+<td><strong>county_pop</strong></td>
+<td>Population of the county of the monitor</td>
+</tr>
+<tr class="odd">
+<td><strong>Log_dist_to_prisec</strong></td>
+<td>Log (Natural log) distance to a primary or secondary road from the monitor <br> – Highway or major road</td>
+</tr>
+<tr class="even">
+<td><strong>log_pri_length_5000</strong></td>
+<td>Count of primary road length in meters in a circle with a radius of 5000 meters around the monitor (Natural log) <br> – Highways only</td>
+</tr>
+<tr class="odd">
+<td><strong>log_pri_length_10000</strong></td>
+<td>Count of primary road length in meters in a circle with a radius of 10000 meters around the monitor (Natural log) <br> – Highways only</td>
+</tr>
+<tr class="even">
+<td><strong>log_pri_length_15000</strong></td>
+<td>Count of primary road length in meters in a circle with a radius of 15000 meters around the monitor (Natural log) <br> – Highways only</td>
+</tr>
+<tr class="odd">
+<td><strong>log_pri_length_25000</strong></td>
+<td>Count of primary road length in meters in a circle with a radius of 25000 meters around the monitor (Natural log) <br> – Highways only</td>
+</tr>
+<tr class="even">
+<td><strong>log_prisec_length_500</strong></td>
+<td>Count of primary and secondary road length in meters in a circle with a radius of 500 meters around the monitor (Natural log) <br> – Highway and secondary roads</td>
+</tr>
+<tr class="odd">
+<td><strong>log_prisec_length_1000</strong></td>
+<td>Count of primary and secondary road length in meters in a circle with a radius of 1000 meters around the monitor (Natural log) <br> – Highway and secondary roads</td>
+</tr>
+<tr class="even">
+<td><strong>log_prisec_length_5000</strong></td>
+<td>Count of primary and secondary road length in meters in a circle with a radius of 5000 meters around the monitor (Natural log) <br> – Highway and secondary roads</td>
+</tr>
+<tr class="odd">
+<td><strong>log_prisec_length_10000</strong></td>
+<td>Count of primary and secondary road length in meters in a circle with a radius of 10000 meters around the monitor (Natural log) <br> – Highway and secondary roads</td>
+</tr>
+<tr class="even">
+<td><strong>log_prisec_length_15000</strong></td>
+<td>Count of primary and secondary road length in meters in a circle with a radius of 15000 meters around the monitor (Natural log) <br> – Highway and secondary roads</td>
+</tr>
+<tr class="odd">
+<td><strong>log_prisec_length_25000</strong></td>
+<td>Count of primary and secondary road length in meters in a circle with a radius of 25000 meters around the monitor (Natural log) <br> – Highway and secondary roads</td>
+</tr>
+<tr class="even">
+<td><strong>log_nei_2008_pm25_sum_10000</strong></td>
+<td>Tons of emissions from major sources data base (annual data) sum of all sources within a circle with a radius of 10000 meters of distance around the monitor (Natural log)</td>
+</tr>
+<tr class="odd">
+<td><strong>log_nei_2008_pm25_sum_15000</strong></td>
+<td>Tons of emissions from major sources data base (annual data) sum of all sources within a circle with a radius of 15000 meters of distance around the monitor (Natural log)</td>
+</tr>
+<tr class="even">
+<td><strong>log_nei_2008_pm25_sum_25000</strong></td>
+<td>Tons of emissions from major sources data base (annual data) sum of all sources within a circle with a radius of 25000 meters of distance around the monitor (Natural log)</td>
+</tr>
+<tr class="odd">
+<td><strong>log_nei_2008_pm10_sum_10000</strong></td>
+<td>Tons of emissions from major sources data base (annual data) sum of all sources within a circle with a radius of 10000 meters of distance around the monitor (Natural log)</td>
+</tr>
+<tr class="even">
+<td><strong>log_nei_2008_pm10_sum_15000</strong></td>
+<td>Tons of emissions from major sources data base (annual data) sum of all sources within a circle with a radius of 15000 meters of distance around the monitor (Natural log)</td>
+</tr>
+<tr class="odd">
+<td><strong>log_nei_2008_pm10_sum_25000</strong></td>
+<td>Tons of emissions from major sources data base (annual data) sum of all sources within a circle with a radius of 25000 meters of distance around the monitor (Natural log)</td>
+</tr>
+<tr class="even">
+<td><strong>popdens_county</strong></td>
+<td>Population density (number of people per kilometer squared area of the county)</td>
+</tr>
+<tr class="odd">
+<td><strong>popdens_zcta</strong></td>
+<td>Population density (number of people per kilometer squared area of zcta)</td>
+</tr>
+<tr class="even">
+<td><strong>nohs</strong></td>
+<td>Percentage of people in zcta area where the monitor is that <strong>do not have a high school degree</strong> <br> – Data from the Census</td>
+</tr>
+<tr class="odd">
+<td><strong>somehs</strong></td>
+<td>Percentage of people in zcta area where the monitor whose highest formal educational attainment was <strong>some high school education</strong> <br> – Data from the Census</td>
+</tr>
+<tr class="even">
+<td><strong>hs</strong></td>
+<td>Percentage of people in zcta area where the monitor whose highest formal educational attainment was completing a <strong>high school degree</strong> <br> – Data from the Census</td>
+</tr>
+<tr class="odd">
+<td><strong>somecollege</strong></td>
+<td>Percentage of people in zcta area where the monitor whose highest formal educational attainment was completing <strong>some college education</strong> <br> – Data from the Census</td>
+</tr>
+<tr class="even">
+<td><strong>associate</strong></td>
+<td>Percentage of people in zcta area where the monitor whose highest formal educational attainment was completing an <strong>associate degree</strong> <br> – Data from the Census</td>
+</tr>
+<tr class="odd">
+<td><strong>bachelor</strong></td>
+<td>Percentage of people in zcta area where the monitor whose highest formal educational attainment was a <strong>bachelor’s degree</strong> <br> – Data from the Census</td>
+</tr>
+<tr class="even">
+<td><strong>grad</strong></td>
+<td>Percentage of people in zcta area where the monitor whose highest formal educational attainment was a <strong>graduate degree</strong> <br> – Data from the Census</td>
+</tr>
+<tr class="odd">
+<td><strong>pov</strong></td>
+<td>Percentage of people in zcta area where the monitor is that lived in <a href="https://aspe.hhs.gov/2008-hhs-poverty-guidelines"><strong>poverty</strong></a> in 2008 - or would it have been 2007 guidelines??https://aspe.hhs.gov/2007-hhs-poverty-guidelines <br> – Data from the Census</td>
+</tr>
+<tr class="even">
+<td><strong>hs_orless</strong></td>
+<td>Percentage of people in zcta area where the monitor whose highest formal educational attainment was a <strong>high school degree or less</strong> (sum of nohs, somehs, and hs)</td>
+</tr>
+<tr class="odd">
+<td><strong>urc2013</strong></td>
+<td><a href="https://www.cdc.gov/nchs/data/series/sr_02/sr02_166.pdf" target="_blank">2013 Urban-rural classification</a> of the county where the monitor is located <br> – 6 category variable - 1 is totally urban 6 is completely rural <br> – Data from the <a href="https://www.cdc.gov/nchs/index.htm" target="_blank">National Center for Health Statistics</a></td>
+</tr>
+<tr class="even">
+<td><strong>urc2006</strong></td>
+<td><a href="https://www.cdc.gov/nchs/data/series/sr_02/sr02_154.pdf" target="_blank">2006 Urban-rural classification</a> of the county where the monitor is located <br> – 6 category variable - 1 is totally urban 6 is completely rural <br> – Data from the <a href="https://www.cdc.gov/nchs/index.htm" target="_blank">National Center for Health Statistics</a></td>
+</tr>
+<tr class="odd">
+<td><strong>aod</strong></td>
+<td>Aerosol Optical Depth measurement from a NASA satellite <br> – based on the diffraction of a laser <br> – used as a proxy of particulate pollution <br> – unit-less - higher value indicates more pollution <br> – Data from NASA</td>
+</tr>
+</tbody>
+</table>
+<p>. . .</p>
+<p>Many of these features have to do with the circular area around the monitor called the “buffer”. These are illustrated in the following figure:</p>
+<p><img src="images/09/regression.png" class="img-fluid"></p>
+<p><a href="https://www.ncbi.nlm.nih.gov/pubmed/15292906" target="_blank">[source]</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/cogs137-fa24\.github\.io\/cogs137-fa24\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../content/lectures/08-cs01-inclass.html" class="pagination-link" aria-label="08-cs01-inclass">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">08-cs01-inclass</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../content/labs/01-lab-intro-r.html" class="pagination-link" aria-label="Lab01: Tooling and R">
+        <span class="nav-page-text">Lab01: Tooling and R</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../LICENSE.html">
+<p>License</p>
+</a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This page is built with 🤍, inspiration from Mine Çetinkaya-Rundel, and <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -444,11 +444,8 @@ OCSdata::raw_data("ocs-bp-air-pollution", outpath = getwd())
 
 . . .
 
-`here::here()` helps manage file paths; will always locate files relative to your project root
-
 ```{r}
-# install.packages("here")
-pm <- readr::read_csv(here::here("OCS_data", "data","raw", "pm25_data.csv"))
+pm <- read_csv("OCS_data/data/raw/pm25_data.csv")
 ```
 
 . . . 
@@ -542,7 +539,7 @@ Many of these features have to do with the circular area around the monitor call
 
 ## Your Turn
 
-Scroll through the data, considering which variables you think may be most helpful in building a model to predict annual air pollution. 
+Scroll through the data, consider 1) if these data are in tidy format and 2) which variables you think may be most helpful in building a model to predict annual air pollution. 
 
 ::: aside
 Put a <font color="#32cb31">green</font> sticky on the front of your computer when you're done. Put a <font color="#ff65a3">pink</font> if you want help/have a question.

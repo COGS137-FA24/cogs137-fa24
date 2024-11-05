@@ -32,7 +32,7 @@ The only package required for completion of this lab is `tidyverse`, as `ggplot2
 
 In this lab, you'll start from the cleaned version of the three data files you would have had after the completion of lab02. This file can be read in as follows:
 
-```r
+``` r
 cs_data <- read_csv("data/cs01_combined.csv")
 ```
 
@@ -40,16 +40,15 @@ cs_data <- read_csv("data/cs01_combined.csv")
 
 ## Part 1: Data Visualization
 
-Create at least three (3) visualizations using at least two (2) different `geom`s that help you learn more about these data beyond the code presented in class so far. (This is intentionally vague. We want you to look at the data and figure out what might be most helpful to visualize from the provided data. These could be different variables than what we looked at in class. Data could be faceted. Something totally different!) 
+Create at least three (3) visualizations using at least two (2) different `geom`s that help you learn more about these data beyond the code presented in class so far. (This is intentionally vague. We want you to look at the data and figure out what might be most helpful to visualize from the provided data. These could be different variables than what we looked at in class. Data could be faceted. Something totally different!)
 
-Beneath each plot, include a brief statement about why you chose to make the plot you generated and/or what you've learned from the visualization. 
+Beneath each plot, include a brief statement about why you chose to make the plot you generated and/or what you've learned from the visualization.
 
 These do *not* have to be fully polished visualizations, but it should be clear from the visualization and accompanying text what's to be learned from the visualization (or at least what you attempted to learn).
 
 ## Part 2: Possible extensions?
 
 Think about the data you have access to, the background discussed in class, and the question each group is going to address. What *possible* extensions to this analysis would you be interested in carrying out? This is a space for brainstorming. Include any possible thoughts you have here, even if they aren't "good" or you aren't sure if they are "possible." This can be used as a jumping off point for when you start discussing analysis extensions with your group.
-
 
 # Submit
 

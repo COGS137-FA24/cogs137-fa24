@@ -853,10 +853,8 @@ A: The most critical information while ALSO discussing the <em>necessary</em> nu
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>OCSdata<span class="sc">::</span><span class="fu">raw_data</span>(<span class="st">"ocs-bp-air-pollution"</span>, <span class="at">outpath =</span> <span class="fu">getwd</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>. . .</p>
-<p><code>here::here()</code> helps manage file paths; will always locate files relative to your project root</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("here")</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>pm <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"OCS_data"</span>, <span class="st">"data"</span>,<span class="st">"raw"</span>, <span class="st">"pm25_data.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pm <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"OCS_data/data/raw/pm25_data.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>. . .</p>
 </section>
@@ -1153,7 +1151,7 @@ $ aod                         &lt;dbl&gt; 37.36364, 34.81818, 36.00000, 33.08333
 </section>
 <section id="your-turn" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="your-turn">Your Turn</h2>
-<p>Scroll through the data, considering which variables you think may be most helpful in building a model to predict annual air pollution.</p>
+<p>Scroll through the data, consider 1) if these data are in tidy format and 2) which variables you think may be most helpful in building a model to predict annual air pollution.</p>
 
 
 

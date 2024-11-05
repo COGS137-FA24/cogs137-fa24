@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-10-31">
+<meta name="dcterms.date" content="2024-11-14">
 
-<title>COGS 137 - Lab 04 - CS01 EDA</title>
+<title>COGS 137 - Lab 06 - CS02 EDA</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../content/labs/05-lab-cs01-communication.html" rel="next">
-<link href="../../content/labs/03-lab-cs01-viz.html" rel="prev">
 <link href="../../images/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -107,7 +105,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<meta property="og:title" content="COGS 137 - Lab 04 - CS01 EDA">
+<meta property="og:title" content="COGS 137 - Lab 06 - CS02 EDA">
 <meta property="og:description" content="Homepage for COGS 137 - Practical Data Science in R, Fall 2024.">
 <meta property="og:image" content="https://cogs137-fa24.github.io/cogs137-fa24/content/labs/images/background.png">
 <meta property="og:site_name" content="COGS 137">
@@ -122,7 +120,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/labs/01-lab-intro-r.html">Labs</a></li><li class="breadcrumb-item"><a href="../../content/labs/04-lab-cs01-eda.html">Lab04: CS01 EDA</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab 06 - CS02 EDA</li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -265,13 +263,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
  <span class="menu-text">Labs</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../content/labs/01-lab-intro-r.html" class="sidebar-item-text sidebar-link">
@@ -292,7 +290,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../content/labs/04-lab-cs01-eda.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../content/labs/04-lab-cs01-eda.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab04: CS01 EDA</span></a>
   </div>
 </li>
@@ -407,15 +405,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
   <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a>
   <ul class="collapse">
-  <li><a href="#part-1-building-beyond-class" id="toc-part-1-building-beyond-class" class="nav-link" data-scroll-target="#part-1-building-beyond-class">Part 1: Building beyond class</a>
+  <li><a href="#part-1-deeper-knowledge-through-eda" id="toc-part-1-deeper-knowledge-through-eda" class="nav-link" data-scroll-target="#part-1-deeper-knowledge-through-eda">Part 1: Deeper knowledge through EDA</a>
   <ul class="collapse">
   <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1">Exercise 1</a></li>
   <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise 2</a></li>
   </ul></li>
-  <li><a href="#part-2-learning-something-new" id="toc-part-2-learning-something-new" class="nav-link" data-scroll-target="#part-2-learning-something-new">Part 2: Learning something new</a>
+  <li><a href="#part-2-possible-extensions" id="toc-part-2-possible-extensions" class="nav-link" data-scroll-target="#part-2-possible-extensions">Part 2: Possible extensions?</a>
   <ul class="collapse">
   <li><a href="#exercise-3" id="toc-exercise-3" class="nav-link" data-scroll-target="#exercise-3">Exercise 3</a></li>
-  <li><a href="#exercise-4" id="toc-exercise-4" class="nav-link" data-scroll-target="#exercise-4">Exercise 4</a></li>
   </ul></li>
   </ul></li>
   <li><a href="#submit" id="toc-submit" class="nav-link" data-scroll-target="#submit">Submit</a></li>
@@ -425,9 +422,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/labs/01-lab-intro-r.html">Labs</a></li><li class="breadcrumb-item"><a href="../../content/labs/04-lab-cs01-eda.html">Lab04: CS01 EDA</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab 04 - CS01 EDA</h1>
+<h1 class="title">Lab 06 - CS02 EDA</h1>
 </div>
 
 
@@ -438,7 +435,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 31, 2024</p>
+      <p class="date">November 14, 2024</p>
     </div>
   </div>
   
@@ -452,43 +449,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>The main goals of this lab are for you to really deepen your knowledge surrounding the CS01 data by continuing EDA beyond what was presented and discussed in class.</p>
+<p>The main goals of this lab are for you to really deepen your knowledge surrounding the CS02 data by continuing EDA beyond what was presented and discussed in class.</p>
 </section>
 <section id="getting-started" class="level1">
 <h1>Getting started</h1>
-<p>To get started, accept the lab04 assignment (link on Canvas/course website), clone the repo (using SSH) into RStudio on datahub. And, then you’re ready to go!</p>
+<p>To get started, accept the lab06 assignment (link on Canvas/course website), clone the repo (using SSH) into RStudio on datahub. And, then you’re ready to go!</p>
 </section>
 <section id="packages" class="level1">
 <h1>Packages</h1>
-<p>The only package required for completion of this lab is <code>tidyverse</code>, as <code>ggplot2</code> (which you’ll be using a lot in this lab) is one of the packages in the <code>tidyverse</code>. Be sure to import the <code>tidyverse</code> prior to completing the lab. Additional packages are allowed, but not expected nor required.</p>
+<p>Be sure to import the <code>tidyverse</code> prior to completing the lab. Additional packages are allowed, but not expected nor required.</p>
 </section>
 <section id="data" class="level1">
 <h1>Data</h1>
-<p>In this lab, you’ll start from the cleaned version of the three data files you would have had after the completion of lab02. This file is the same file you were provided in lab03, and can be read in as follows:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>cs_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/cs01_combined.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In this lab, you’ll start from the data provided with your lab:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pm_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/pm25_data.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="exercises" class="level1">
 <h1>Exercises</h1>
-<section id="part-1-building-beyond-class" class="level2">
-<h2 class="anchored" data-anchor-id="part-1-building-beyond-class">Part 1: Building beyond class</h2>
+<section id="part-1-deeper-knowledge-through-eda" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-deeper-knowledge-through-eda">Part 1: Deeper knowledge through EDA</h2>
 <section id="exercise-1" class="level3">
 <h3 class="anchored" data-anchor-id="exercise-1">Exercise 1</h3>
-<p>Take one of the more involved visualizations generated in class during CS01 EDA lectures (anything in the notes from “Compounds across time” (<a href="https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/06-cs01-eda.html#compounds-across-time">this part</a>) or later) and improve upon the visualization to either 1) improve the clarity of the visualization and/or tell the story being communicated more clearly. Your code will likely look very similar to what was presented in class (and that’s OK), but should not be the exact same. And, note that you may need to do include some of the data wrangling from that set of notes to get the dataset into the necessary format for visualization (i.e.&nbsp;wide -&gt; long).</p>
+<p>Consider all we have discussed and learned through the EDA presented in class. Now, carry out additional EDA to learn something beyond what was previously displayed/discussed in class. This may be a single plot. It may be more than one plot. It could be a table….or multiple tables. But, work to fully understand the data to the best of your abilities.</p>
 </section>
 <section id="exercise-2" class="level3">
 <h3 class="anchored" data-anchor-id="exercise-2">Exercise 2</h3>
-<p>Describe what changes you made above and why you chose to make those changes.</p>
+<p>Describe what new information you learned from what you generated above.</p>
 </section>
 </section>
-<section id="part-2-learning-something-new" class="level2">
-<h2 class="anchored" data-anchor-id="part-2-learning-something-new">Part 2: Learning something new</h2>
+<section id="part-2-possible-extensions" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-possible-extensions">Part 2: Possible extensions?</h2>
 <section id="exercise-3" class="level3">
 <h3 class="anchored" data-anchor-id="exercise-3">Exercise 3</h3>
-<p>Consider all we have discussed and plotted through the EDA presented in class and what you did in lab03. Now that you have a better understanding of the data and experiment, carry out some EDA to learn something beyond what was previously displayed/discussed in class and beyond what you did in lab03.</p>
-</section>
-<section id="exercise-4" class="level3">
-<h3 class="anchored" data-anchor-id="exercise-4">Exercise 4</h3>
-<p>Describe what new information you learned from what you generated above.</p>
+<p>Think about the data you have access to, the background discussed in class, and the question each group has been asked to address. What <em>possible</em> extensions to this analysis would you be interested in carrying out? This is a space for brainstorming. Include any possible thoughts you have here, even if they aren’t “good” or you aren’t sure if they are “possible.” This can be used as a jumping off point for when you start discussing analysis extensions with your group.</p>
 </section>
 </section>
 </section>
@@ -507,7 +500,7 @@ Important
 <p>You’ll always want to knit your RMarkdown document to HTML and review that HTML document to ensure it includes all the information you want and looks as you intended, as we grade from the knit HTML.</p>
 </div>
 </div>
-<p><em>Yay, you’re done! To finish up and submit, <strong>first knit your file to HTML</strong>. Be sure to select both your .Rmd and .html documents when choosing what to commit! Then, commit all remaining changes, use the commit message “Done with Lab 4! 💪”, and push. Before you wrap up the assignment, make sure all documents are updated on your GitHub repo.</em></p>
+<p><em>Yay, you’re done! To finish up and submit, <strong>first knit your file to HTML</strong>. Be sure to select both your .Rmd and .html documents when choosing what to commit! Then, commit all remaining changes, use the commit message “Done with Lab 6! 💪”, and push. Before you wrap up the assignment, make sure all documents are updated on your GitHub repo.</em></p>
 
 
 </section>
@@ -1066,18 +1059,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../content/labs/03-lab-cs01-viz.html" class="pagination-link" aria-label="Lab03: CS01 Data Visualization">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab03: CS01 Data Visualization</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../content/labs/05-lab-cs01-communication.html" class="pagination-link" aria-label="Lab05: CS01 Communication">
-        <span class="nav-page-text">Lab05: CS01 Communication</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

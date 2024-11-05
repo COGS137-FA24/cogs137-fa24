@@ -46,6 +46,7 @@ knitr::opts_chunk$set(dpi = 300, echo=TRUE, warning=FALSE, message=FALSE)
 Notes:
 
 - hw02 and lab04 feedback and scores posted
+- mid-course survey open until tonight
 
 ## Mid-course survey (N=55; 57%)
 
@@ -115,12 +116,15 @@ Let's brainstorm some topics together...
 
 ## Agenda
 
--   Background
+-   Background (pollutants, health impacts)
 -   Question
 -   Data Intro
--   Wrangle
 
 # Background {background-color="#92A86A"}
+
+## Why?
+
+[<i class="fa fa-user" aria-hidden="true"></i>   Why do we discuss background on case studies?]{style="background-color: #ADD8E6"}
 
 ## OpenCaseStudies
 
@@ -169,6 +173,11 @@ In relation to a piece of human hair:
 
 [\[source\]](https://www.epa.gov/pm-pollution/particulate-matter-pm-basics){target="_blank"}
 
+. . . 
+
+[<i class="fa fa-brain" aria-hidden="true"></i>   Which do you think is most detrimental to our health? (and why?)]{style="background-color: #ADD8E6"}
+
+
 ## Common Pollutants and their size
 
 <p align="center">
@@ -201,6 +210,82 @@ Exposure to air pollution is:
 :::
 
 See this [review article](https://www.frontiersin.org/articles/10.3389/fpubh.2020.00014/full){target="_blank"} for more information about sources of air pollution and the influence of air pollution on health.
+
+## Why to Care: The State of Global Air
+
+The [State of Global Air](https://www.stateofglobalair.org/){target="_blank"} is a report released every year to communicate the impact of air pollution on public health.
+
+. . .
+
+The [State of Global Air 2019 report](https://www.stateofglobalair.org/sites/default/files/soga_2019_report.pdf){target="_blank"} (which uses data from 2017) stated that:
+
+> Air pollution is the **fifth** leading risk factor for mortality worldwide. It is responsible for more deaths than many better-known risk factors such as malnutrition, alcohol use, and physical inactivity. Each year, **more** people die from air pollution–related disease than from road **traffic injuries** or **malaria**.
+
+<p align="center">
+
+<img src="https://www.healtheffects.org/sites/default/files/SoGA-Figures-01.jpg" width="800"/>
+
+</p>
+
+[\[source\]](https://www.stateofglobalair.org/sites/default/files/soga_2019_report.pdf){target="_blank"}
+
+. . .
+
+> In 2017, air pollution is estimated to have contributed to close to 5 million deaths globally — nearly **1 in every 10 deaths**.
+
+![](images/09/2017deaths.png)
+
+[\[source\]](https://www.stateofglobalair.org/sites/default/files/soga_2019_fact_sheet.pdf){target="_blank"}
+
+. . .
+
+The [State of Global Air 2018 report](https://www.stateofglobalair.org/sites/default/files/soga-2018-report.pdf){target="_blank"} (using data from 2016) separated different types of air pollution & found that **particulate pollution was particularly associated with mortality**.
+
+![](images/09/2017mortality.png)
+
+[\[source\]](https://www.stateofglobalair.org/sites/default/files/soga-2018-report.pdf){target="_blank"}
+
+. . .
+
+The 2019 report shows that the highest levels of fine particulate pollution occur in Africa and Asia and that:
+
+> More than **90%** of people worldwide live in areas **exceeding** the World Health Organization (WHO) **Guideline** for healthy air. More than half live in areas that do not even meet WHO's least-stringent air quality target.
+
+![](images/09/PMworld.png)
+
+[\[source\]](https://www.stateofglobalair.org/sites/default/files/soga_2019_fact_sheet.pdf){target="_blank"}
+
+## Overall Improvement
+
+Looking at the US specifically, air pollution levels are generally improving, with declining national air pollutant concentration averages as shown from the 2019 [*Our Nation's Air*](https://gispub.epa.gov/air/trendsreport/2019/#home){target="_blank"} report from the US Environmental Protection Agency (EPA):
+
+<p align="center">
+
+<img src="images/09/US.png" width="800"/>
+
+</p>
+
+[\[source\]](https://gispub.epa.gov/air/trendsreport/2019/documentation/AirTrends_Flyer.pdf){target="_blank"}
+
+## Still An Issue 
+
+-   air pollution **continues to contribute to health risk for Americans**, in particular in **regions with higher than national average rates** of pollution that, at times, exceed the WHO's recommended level.
+-   important to obtain high spatial granularity in estimates of air pollution in order to identify locations where populations are experiencing harmful levels of exposure.
+
+. . .
+
+You can see that current air quality conditions at this [website](https://aqicn.org/city/usa/){target="_blank"}, and you will notice variation across different cities.
+
+. . .
+
+-   reports particulate values using what is called the [Air Quality Index](https://www.airnow.gov/index.cfm?action=aqibasics.aqi){target="_blank"} (AQI).
+-   This [calculator](https://airnow.gov/index.cfm?action=airnow.calculator){target="_blank"} indicates that 138 AQI is equivalent to 50.5 ug/m^3^ and is considered unhealthy for sensitive individuals.
+-   Thus, some areas exceed the WHO annual exposure guideline (10 ug/m^3^), and this may adversely affect the health of people living in these locations.
+
+## Adverse health effects
+
+-   Adverse health effects have been associated with populations experiencing higher pollution exposure despite the levels being below suggested guidelines.
+-   it appears that the composition of the particulate matter and the influence of other demographic factors may make specific populations more at risk for adverse health effects due to air pollution. (For example, see this [article](https://www.nejm.org/doi/full/10.1056/NEJMoa1702747){target="_blank"} for more details.)
 
 ## Sparse monitoring PH issue
 
@@ -258,81 +343,6 @@ This will specifically be at the granularity of zip code regional levels using p
 
 # Data {background-color="#92A86A"}
 
-## The State of Global Air
-
-The [State of Global Air](https://www.stateofglobalair.org/){target="_blank"} is a report released every year to communicate the impact of air pollution on public health.
-
-. . .
-
-The [State of Global Air 2019 report](https://www.stateofglobalair.org/sites/default/files/soga_2019_report.pdf){target="_blank"} (which uses data from 2017) stated that:
-
-> Air pollution is the **fifth** leading risk factor for mortality worldwide. It is responsible for more deaths than many better-known risk factors such as malnutrition, alcohol use, and physical inactivity. Each year, **more** people die from air pollution–related disease than from road **traffic injuries** or **malaria**.
-
-<p align="center">
-
-<img src="https://www.healtheffects.org/sites/default/files/SoGA-Figures-01.jpg" width="800"/>
-
-</p>
-
-[\[source\]](https://www.stateofglobalair.org/sites/default/files/soga_2019_report.pdf){target="_blank"}
-
-. . .
-
-> In 2017, air pollution is estimated to have contributed to close to 5 million deaths globally — nearly **1 in every 10 deaths**.
-
-![](images/09/2017deaths.png)
-
-[\[source\]](https://www.stateofglobalair.org/sites/default/files/soga_2019_fact_sheet.pdf){target="_blank"}
-
-. . .
-
-The [State of Global Air 2018 report](https://www.stateofglobalair.org/sites/default/files/soga-2018-report.pdf){target="_blank"} (using data from 2016) separated different types of air pollution & found that **particulate pollution was particularly associated with mortality**.
-
-![](images/09/2017mortality.png)
-
-[\[source\]](https://www.stateofglobalair.org/sites/default/files/soga-2018-report.pdf){target="_blank"}
-
-. . .
-
-The 2019 report shows that the highest levels of fine particulate pollution occur in Africa and Asia and that:
-
-> More than **90%** of people worldwide live in areas **exceeding** the World Health Organization (WHO) **Guideline** for healthy air. More than half live in areas that do not even meet WHO's least-stringent air quality target.
-
-![](images/09/PMworld.png)
-
-[\[source\]](https://www.stateofglobalair.org/sites/default/files/soga_2019_fact_sheet.pdf){target="_blank"}
-
-## Overall Improvement
-
-Looking at the US specifically, air pollution levels are generally improving, with declining national air pollutant concentration averages as shown from the 2019 [*Our Nation's Air*](https://gispub.epa.gov/air/trendsreport/2019/#home){target="_blank"} report from the US Environmental Protection Agency (EPA):
-
-<p align="center">
-
-<img src="images/09/US.png" width="800"/>
-
-</p>
-
-[\[source\]](https://gispub.epa.gov/air/trendsreport/2019/documentation/AirTrends_Flyer.pdf){target="_blank"}
-
-## An Issue Nonetheless
-
--   air pollution **continues to contribute to health risk for Americans**, in particular in **regions with higher than national average rates** of pollution that, at times, exceed the WHO's recommended level.
--   important to obtain high spatial granularity in estimates of air pollution in order to identify locations where populations are experiencing harmful levels of exposure.
-
-. . .
-
-You can see that current air quality conditions at this [website](https://aqicn.org/city/usa/){target="_blank"}, and you will notice variation across different cities.
-
-. . .
-
--   reports particulate values using what is called the [Air Quality Index](https://www.airnow.gov/index.cfm?action=aqibasics.aqi){target="_blank"} (AQI).
--   This [calculator](https://airnow.gov/index.cfm?action=airnow.calculator){target="_blank"} indicates that 138 AQI is equivalent to 50.5 ug/m^3^ and is considered unhealthy for sensitive individuals.
--   Thus, some areas exceed the WHO annual exposure guideline (10 ug/m^3^), and this may adversely affect the health of people living in these locations.
-
-## Adverse health effects
-
--   Adverse health effects have been associated with populations experiencing higher pollution exposure despite the levels being below suggested guidelines.
--   it appears that the composition of the particulate matter and the influence of other demographic factors may make specific populations more at risk for adverse health effects due to air pollution. (For example, see this [article](https://www.nejm.org/doi/full/10.1056/NEJMoa1702747){target="_blank"} for more details.)
 
 ## Monitor Data
 
@@ -441,6 +451,16 @@ OCSdata::raw_data("ocs-bp-air-pollution", outpath = getwd())
 pm <- readr::read_csv(here::here("OCS_data", "data","raw", "pm25_data.csv"))
 ```
 
+. . . 
+
+## Get The Data
+
+Read the data in so you can follow along now!
+
+::: aside
+Put a <font color="#32cb31">green</font> sticky on the front of your computer when you've got the code running. Put a <font color="#ff65a3">pink</font> if you want help/have a question.
+:::
+
 ## PM 2.5 Data
 
 -   876 monitors
@@ -519,3 +539,11 @@ Many of these features have to do with the circular area around the monitor call
 ![](images/09/regression.png)
 
 [\[source\]](https://www.ncbi.nlm.nih.gov/pubmed/15292906){target="_blank"}
+
+## Your Turn
+
+Scroll through the data, considering which variables you think may be most helpful in building a model to predict annual air pollution. 
+
+::: aside
+Put a <font color="#32cb31">green</font> sticky on the front of your computer when you're done. Put a <font color="#ff65a3">pink</font> if you want help/have a question.
+:::

@@ -22,7 +22,7 @@ knitr::opts_chunk$set(fig.height = 2.65, dpi = 300, echo=TRUE)
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
 
-## [ad] EDGE
+## \[ad\] EDGE
 
 Mentorship opportunity for women-identifying students:
 
@@ -62,12 +62,12 @@ Mentorship opportunity for women-identifying students:
 -   **HW01** now available; due Monday (10/14; 11:59 PM)
 -   Lecture Participation survey "due" after class
 
-. . . 
+. . .
 
 Notes:
 
 -   No Lecture on Thursday this week
--   Discuss: GH<->RStudio issue (`OpenSSL version mismatch. Built against 30000020, you have 30300020`)
+-   Discuss: GH\<-\>RStudio issue (`OpenSSL version mismatch. Built against 30000020, you have 30300020`)
 -   Regular labs resume this week
 -   Mention: waitlist & dropping
 
@@ -105,7 +105,7 @@ Source: [dplyr.tidyverse.org](https://dplyr.tidyverse.org/)
 </p>
 
 -   `|>` should be read as "and then"
--   for example "Wake up |> brush teeth" would be read as "wake up *and then* brush teeth"
+-   for example "Wake up \|\> brush teeth" would be read as "wake up *and then* brush teeth"
 
 ## Where does the name come from?
 
@@ -164,14 +164,13 @@ WB <- read_csv("https://github.com/ShanEllis/datasets/raw/refs/heads/master/Bloo
 We're using these data to demonstrate the basic principles of `dplyr` and `tidyr` *before* we get to how to specifically clean our CS01 data.
 :::
 
-. . . 
+. . .
 
 Read the data in so you can follow along now!
 
 ::: aside
 Put a <font color="#32cb31">green</font> sticky on the front of your computer when you're done. Put a <font color="#ff65a3">pink</font> if you want help/have a question.
 :::
-
 
 ## Variables
 
@@ -250,7 +249,7 @@ WB |>
   filter(Group == "Occasional user", THC > 100)
 ```
 
-## select` a range of variables
+## select\` a range of variables
 
 ```{r}
 #| code-line-numbers: "2"

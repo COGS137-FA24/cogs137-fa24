@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta property="og:site_name" content="COGS 137">
 </head>
 
-<body class="nav-sidebar docked">
+<body class="nav-sidebar docked slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -417,6 +417,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a>
   <ul class="collapse">
+  <li><a href="#why" id="toc-why" class="nav-link" data-scroll-target="#why">Why?</a></li>
   <li><a href="#opencasestudies" id="toc-opencasestudies" class="nav-link" data-scroll-target="#opencasestudies">OpenCaseStudies</a></li>
   <li><a href="#air-pollutants" id="toc-air-pollutants" class="nav-link" data-scroll-target="#air-pollutants">Air Pollutants</a></li>
   <li><a href="#major-types-of-air-pollutants" id="toc-major-types-of-air-pollutants" class="nav-link" data-scroll-target="#major-types-of-air-pollutants">Major types of air pollutants</a></li>
@@ -424,29 +425,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#common-pollutants-and-their-size" id="toc-common-pollutants-and-their-size" class="nav-link" data-scroll-target="#common-pollutants-and-their-size">Common Pollutants and their size</a></li>
   <li><a href="#penetration-into-the-human-body" id="toc-penetration-into-the-human-body" class="nav-link" data-scroll-target="#penetration-into-the-human-body">Penetration into the human body</a></li>
   <li><a href="#negative-health-impacts" id="toc-negative-health-impacts" class="nav-link" data-scroll-target="#negative-health-impacts">Negative Health Impacts</a></li>
+  <li><a href="#why-to-care-the-state-of-global-air" id="toc-why-to-care-the-state-of-global-air" class="nav-link" data-scroll-target="#why-to-care-the-state-of-global-air">Why to Care: The State of Global Air</a></li>
+  <li><a href="#overall-improvement" id="toc-overall-improvement" class="nav-link" data-scroll-target="#overall-improvement">Overall Improvement</a></li>
+  <li><a href="#still-an-issue" id="toc-still-an-issue" class="nav-link" data-scroll-target="#still-an-issue">Still An Issue</a></li>
+  <li><a href="#adverse-health-effects" id="toc-adverse-health-effects" class="nav-link" data-scroll-target="#adverse-health-effects">Adverse health effects</a></li>
   <li><a href="#sparse-monitoring-ph-issue" id="toc-sparse-monitoring-ph-issue" class="nav-link" data-scroll-target="#sparse-monitoring-ph-issue">Sparse monitoring PH issue</a></li>
   <li><a href="#machine-learning-offers-a-solution" id="toc-machine-learning-offers-a-solution" class="nav-link" data-scroll-target="#machine-learning-offers-a-solution">Machine Learning offers a solution</a></li>
   </ul></li>
   <li><a href="#question" id="toc-question" class="nav-link" data-scroll-target="#question">Question</a></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a>
   <ul class="collapse">
-  <li><a href="#the-state-of-global-air" id="toc-the-state-of-global-air" class="nav-link" data-scroll-target="#the-state-of-global-air">The State of Global Air</a></li>
-  <li><a href="#overall-improvement" id="toc-overall-improvement" class="nav-link" data-scroll-target="#overall-improvement">Overall Improvement</a></li>
-  <li><a href="#an-issue-nonetheless" id="toc-an-issue-nonetheless" class="nav-link" data-scroll-target="#an-issue-nonetheless">An Issue Nonetheless</a></li>
-  <li><a href="#adverse-health-effects" id="toc-adverse-health-effects" class="nav-link" data-scroll-target="#adverse-health-effects">Adverse health effects</a></li>
   <li><a href="#monitor-data" id="toc-monitor-data" class="nav-link" data-scroll-target="#monitor-data">Monitor Data</a></li>
   <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
   <li><a href="#supervised-ml" id="toc-supervised-ml" class="nav-link" data-scroll-target="#supervised-ml">Supervised ML</a></li>
   <li><a href="#outcome" id="toc-outcome" class="nav-link" data-scroll-target="#outcome">Outcome</a></li>
   <li><a href="#data-import" id="toc-data-import" class="nav-link" data-scroll-target="#data-import">Data Import</a></li>
+  <li><a href="#get-the-data" id="toc-get-the-data" class="nav-link" data-scroll-target="#get-the-data">Get The Data</a></li>
   <li><a href="#pm-2.5-data" id="toc-pm-2.5-data" class="nav-link" data-scroll-target="#pm-2.5-data">PM 2.5 Data</a></li>
   <li><a href="#features" id="toc-features" class="nav-link" data-scroll-target="#features">Features</a></li>
+  <li><a href="#your-turn" id="toc-your-turn" class="nav-link" data-scroll-target="#your-turn">Your Turn</a></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="09-cs02-intro-slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/lectures/00-welcome.html">Notes</a></li><li class="breadcrumb-item"><a href="../../content/lectures/09-cs02-intro.html">09-cs02-intro</a></li></ol></nav>
 <div class="quarto-title">
@@ -518,6 +521,7 @@ A: The most critical information while ALSO discussing the <em>necessary</em> nu
 <p>Notes:</p>
 <ul>
 <li>hw02 and lab04 feedback and scores posted</li>
+<li>mid-course survey open until tonight</li>
 </ul>
 </section>
 <section id="mid-course-survey-n55-57" class="level2">
@@ -593,15 +597,18 @@ A: The most critical information while ALSO discussing the <em>necessary</em> nu
 <section id="agenda" class="level2">
 <h2 class="anchored" data-anchor-id="agenda">Agenda</h2>
 <ul>
-<li>Background</li>
+<li>Background (pollutants, health impacts)</li>
 <li>Question</li>
 <li>Data Intro</li>
-<li>Wrangle</li>
 </ul>
 </section>
 </section>
 <section id="background" class="level1" data-background-color="#92A86A">
 <h1 data-background-color="#92A86A">Background</h1>
+<section id="why" class="level2">
+<h2 class="anchored" data-anchor-id="why">Why?</h2>
+<p><span style="background-color: #ADD8E6"><i class="fa fa-user" aria-hidden="true"></i> &nbsp; Why do we discuss background on case studies?</span></p>
+</section>
 <section id="opencasestudies" class="level2">
 <h2 class="anchored" data-anchor-id="opencasestudies">OpenCaseStudies</h2>
 <p>Wright, Carrie and Meng, Qier and Jager, Leah and Taub, Margaret and Hicks, Stephanie. (2020). <a href="https://www.opencasestudies.org/ocs-bp-air-pollution/">https://github.com//opencasestudies/ocs-bp-air-pollution</a>. Predicting Annual Air Pollution (Version v1.0.0).</p>
@@ -637,6 +644,8 @@ A: The most critical information while ALSO discussing the <em>necessary</em> nu
 <p>In relation to a piece of human hair:</p>
 <p><img src="images/09/pm2.5_scale_graphic-color_2.jpg" class="img-fluid"></p>
 <p><a href="https://www.epa.gov/pm-pollution/particulate-matter-pm-basics" target="_blank">[source]</a></p>
+<p>. . .</p>
+<p><span style="background-color: #ADD8E6"><i class="fa fa-brain" aria-hidden="true"></i> &nbsp; Which do you think is most detrimental to our health? (and why?)</span></p>
 </section>
 <section id="common-pollutants-and-their-size" class="level2">
 <h2 class="anchored" data-anchor-id="common-pollutants-and-their-size">Common Pollutants and their size</h2>
@@ -667,6 +676,66 @@ A: The most critical information while ALSO discussing the <em>necessary</em> nu
 </ol>
 </div>
 <p>See this <a href="https://www.frontiersin.org/articles/10.3389/fpubh.2020.00014/full" target="_blank">review article</a> for more information about sources of air pollution and the influence of air pollution on health.</p>
+</section>
+<section id="why-to-care-the-state-of-global-air" class="level2">
+<h2 class="anchored" data-anchor-id="why-to-care-the-state-of-global-air">Why to Care: The State of Global Air</h2>
+<p>The <a href="https://www.stateofglobalair.org/" target="_blank">State of Global Air</a> is a report released every year to communicate the impact of air pollution on public health.</p>
+<p>. . .</p>
+<p>The <a href="https://www.stateofglobalair.org/sites/default/files/soga_2019_report.pdf" target="_blank">State of Global Air 2019 report</a> (which uses data from 2017) stated that:</p>
+<blockquote class="blockquote">
+<p>Air pollution is the <strong>fifth</strong> leading risk factor for mortality worldwide. It is responsible for more deaths than many better-known risk factors such as malnutrition, alcohol use, and physical inactivity. Each year, <strong>more</strong> people die from air pollution–related disease than from road <strong>traffic injuries</strong> or <strong>malaria</strong>.</p>
+</blockquote>
+<p align="center">
+</p><p><img src="https://www.healtheffects.org/sites/default/files/SoGA-Figures-01.jpg" width="800"></p>
+<p></p>
+<p><a href="https://www.stateofglobalair.org/sites/default/files/soga_2019_report.pdf" target="_blank">[source]</a></p>
+<p>. . .</p>
+<blockquote class="blockquote">
+<p>In 2017, air pollution is estimated to have contributed to close to 5 million deaths globally — nearly <strong>1 in every 10 deaths</strong>.</p>
+</blockquote>
+<p><img src="images/09/2017deaths.png" class="img-fluid"></p>
+<p><a href="https://www.stateofglobalair.org/sites/default/files/soga_2019_fact_sheet.pdf" target="_blank">[source]</a></p>
+<p>. . .</p>
+<p>The <a href="https://www.stateofglobalair.org/sites/default/files/soga-2018-report.pdf" target="_blank">State of Global Air 2018 report</a> (using data from 2016) separated different types of air pollution &amp; found that <strong>particulate pollution was particularly associated with mortality</strong>.</p>
+<p><img src="images/09/2017mortality.png" class="img-fluid"></p>
+<p><a href="https://www.stateofglobalair.org/sites/default/files/soga-2018-report.pdf" target="_blank">[source]</a></p>
+<p>. . .</p>
+<p>The 2019 report shows that the highest levels of fine particulate pollution occur in Africa and Asia and that:</p>
+<blockquote class="blockquote">
+<p>More than <strong>90%</strong> of people worldwide live in areas <strong>exceeding</strong> the World Health Organization (WHO) <strong>Guideline</strong> for healthy air. More than half live in areas that do not even meet WHO’s least-stringent air quality target.</p>
+</blockquote>
+<p><img src="images/09/PMworld.png" class="img-fluid"></p>
+<p><a href="https://www.stateofglobalair.org/sites/default/files/soga_2019_fact_sheet.pdf" target="_blank">[source]</a></p>
+</section>
+<section id="overall-improvement" class="level2">
+<h2 class="anchored" data-anchor-id="overall-improvement">Overall Improvement</h2>
+<p>Looking at the US specifically, air pollution levels are generally improving, with declining national air pollutant concentration averages as shown from the 2019 <a href="https://gispub.epa.gov/air/trendsreport/2019/#home" target="_blank"><em>Our Nation’s Air</em></a> report from the US Environmental Protection Agency (EPA):</p>
+<p align="center">
+</p><p><img src="images/09/US.png" width="800"></p>
+<p></p>
+<p><a href="https://gispub.epa.gov/air/trendsreport/2019/documentation/AirTrends_Flyer.pdf" target="_blank">[source]</a></p>
+</section>
+<section id="still-an-issue" class="level2">
+<h2 class="anchored" data-anchor-id="still-an-issue">Still An Issue</h2>
+<ul>
+<li>air pollution <strong>continues to contribute to health risk for Americans</strong>, in particular in <strong>regions with higher than national average rates</strong> of pollution that, at times, exceed the WHO’s recommended level.</li>
+<li>important to obtain high spatial granularity in estimates of air pollution in order to identify locations where populations are experiencing harmful levels of exposure.</li>
+</ul>
+<p>. . .</p>
+<p>You can see that current air quality conditions at this <a href="https://aqicn.org/city/usa/" target="_blank">website</a>, and you will notice variation across different cities.</p>
+<p>. . .</p>
+<ul>
+<li>reports particulate values using what is called the <a href="https://www.airnow.gov/index.cfm?action=aqibasics.aqi" target="_blank">Air Quality Index</a> (AQI).</li>
+<li>This <a href="https://airnow.gov/index.cfm?action=airnow.calculator" target="_blank">calculator</a> indicates that 138 AQI is equivalent to 50.5 ug/m<sup>3</sup> and is considered unhealthy for sensitive individuals.</li>
+<li>Thus, some areas exceed the WHO annual exposure guideline (10 ug/m<sup>3</sup>), and this may adversely affect the health of people living in these locations.</li>
+</ul>
+</section>
+<section id="adverse-health-effects" class="level2">
+<h2 class="anchored" data-anchor-id="adverse-health-effects">Adverse health effects</h2>
+<ul>
+<li>Adverse health effects have been associated with populations experiencing higher pollution exposure despite the levels being below suggested guidelines.</li>
+<li>it appears that the composition of the particulate matter and the influence of other demographic factors may make specific populations more at risk for adverse health effects due to air pollution. (For example, see this <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1702747" target="_blank">article</a> for more details.)</li>
+</ul>
 </section>
 <section id="sparse-monitoring-ph-issue" class="level2">
 <h2 class="anchored" data-anchor-id="sparse-monitoring-ph-issue">Sparse monitoring PH issue</h2>
@@ -710,68 +779,8 @@ A: The most critical information while ALSO discussing the <em>necessary</em> nu
 </blockquote>
 <p>This will specifically be at the granularity of zip code regional levels using predictors such as data about population density, urbanization, road density, as well as, satellite pollution data and chemical modeling data.</p>
 </section>
-<section id="data" class="level1" data-background-color="#92A86A">
+<section id="data" class="level1 page-columns page-full" data-background-color="#92A86A">
 <h1 data-background-color="#92A86A">Data</h1>
-<section id="the-state-of-global-air" class="level2">
-<h2 class="anchored" data-anchor-id="the-state-of-global-air">The State of Global Air</h2>
-<p>The <a href="https://www.stateofglobalair.org/" target="_blank">State of Global Air</a> is a report released every year to communicate the impact of air pollution on public health.</p>
-<p>. . .</p>
-<p>The <a href="https://www.stateofglobalair.org/sites/default/files/soga_2019_report.pdf" target="_blank">State of Global Air 2019 report</a> (which uses data from 2017) stated that:</p>
-<blockquote class="blockquote">
-<p>Air pollution is the <strong>fifth</strong> leading risk factor for mortality worldwide. It is responsible for more deaths than many better-known risk factors such as malnutrition, alcohol use, and physical inactivity. Each year, <strong>more</strong> people die from air pollution–related disease than from road <strong>traffic injuries</strong> or <strong>malaria</strong>.</p>
-</blockquote>
-<p align="center">
-</p><p><img src="https://www.healtheffects.org/sites/default/files/SoGA-Figures-01.jpg" width="800"></p>
-<p></p>
-<p><a href="https://www.stateofglobalair.org/sites/default/files/soga_2019_report.pdf" target="_blank">[source]</a></p>
-<p>. . .</p>
-<blockquote class="blockquote">
-<p>In 2017, air pollution is estimated to have contributed to close to 5 million deaths globally — nearly <strong>1 in every 10 deaths</strong>.</p>
-</blockquote>
-<p><img src="images/09/2017deaths.png" class="img-fluid"></p>
-<p><a href="https://www.stateofglobalair.org/sites/default/files/soga_2019_fact_sheet.pdf" target="_blank">[source]</a></p>
-<p>. . .</p>
-<p>The <a href="https://www.stateofglobalair.org/sites/default/files/soga-2018-report.pdf" target="_blank">State of Global Air 2018 report</a> (using data from 2016) separated different types of air pollution &amp; found that <strong>particulate pollution was particularly associated with mortality</strong>.</p>
-<p><img src="images/09/2017mortality.png" class="img-fluid"></p>
-<p><a href="https://www.stateofglobalair.org/sites/default/files/soga-2018-report.pdf" target="_blank">[source]</a></p>
-<p>. . .</p>
-<p>The 2019 report shows that the highest levels of fine particulate pollution occur in Africa and Asia and that:</p>
-<blockquote class="blockquote">
-<p>More than <strong>90%</strong> of people worldwide live in areas <strong>exceeding</strong> the World Health Organization (WHO) <strong>Guideline</strong> for healthy air. More than half live in areas that do not even meet WHO’s least-stringent air quality target.</p>
-</blockquote>
-<p><img src="images/09/PMworld.png" class="img-fluid"></p>
-<p><a href="https://www.stateofglobalair.org/sites/default/files/soga_2019_fact_sheet.pdf" target="_blank">[source]</a></p>
-</section>
-<section id="overall-improvement" class="level2">
-<h2 class="anchored" data-anchor-id="overall-improvement">Overall Improvement</h2>
-<p>Looking at the US specifically, air pollution levels are generally improving, with declining national air pollutant concentration averages as shown from the 2019 <a href="https://gispub.epa.gov/air/trendsreport/2019/#home" target="_blank"><em>Our Nation’s Air</em></a> report from the US Environmental Protection Agency (EPA):</p>
-<p align="center">
-</p><p><img src="images/09/US.png" width="800"></p>
-<p></p>
-<p><a href="https://gispub.epa.gov/air/trendsreport/2019/documentation/AirTrends_Flyer.pdf" target="_blank">[source]</a></p>
-</section>
-<section id="an-issue-nonetheless" class="level2">
-<h2 class="anchored" data-anchor-id="an-issue-nonetheless">An Issue Nonetheless</h2>
-<ul>
-<li>air pollution <strong>continues to contribute to health risk for Americans</strong>, in particular in <strong>regions with higher than national average rates</strong> of pollution that, at times, exceed the WHO’s recommended level.</li>
-<li>important to obtain high spatial granularity in estimates of air pollution in order to identify locations where populations are experiencing harmful levels of exposure.</li>
-</ul>
-<p>. . .</p>
-<p>You can see that current air quality conditions at this <a href="https://aqicn.org/city/usa/" target="_blank">website</a>, and you will notice variation across different cities.</p>
-<p>. . .</p>
-<ul>
-<li>reports particulate values using what is called the <a href="https://www.airnow.gov/index.cfm?action=aqibasics.aqi" target="_blank">Air Quality Index</a> (AQI).</li>
-<li>This <a href="https://airnow.gov/index.cfm?action=airnow.calculator" target="_blank">calculator</a> indicates that 138 AQI is equivalent to 50.5 ug/m<sup>3</sup> and is considered unhealthy for sensitive individuals.</li>
-<li>Thus, some areas exceed the WHO annual exposure guideline (10 ug/m<sup>3</sup>), and this may adversely affect the health of people living in these locations.</li>
-</ul>
-</section>
-<section id="adverse-health-effects" class="level2">
-<h2 class="anchored" data-anchor-id="adverse-health-effects">Adverse health effects</h2>
-<ul>
-<li>Adverse health effects have been associated with populations experiencing higher pollution exposure despite the levels being below suggested guidelines.</li>
-<li>it appears that the composition of the particulate matter and the influence of other demographic factors may make specific populations more at risk for adverse health effects due to air pollution. (For example, see this <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1702747" target="_blank">article</a> for more details.)</li>
-</ul>
-</section>
 <section id="monitor-data" class="level2">
 <h2 class="anchored" data-anchor-id="monitor-data">Monitor Data</h2>
 <div class="incremental">
@@ -849,7 +858,15 @@ A: The most critical information while ALSO discussing the <em>necessary</em> nu
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("here")</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>pm <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"OCS_data"</span>, <span class="st">"data"</span>,<span class="st">"raw"</span>, <span class="st">"pm25_data.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<p>. . .</p>
 </section>
+<section id="get-the-data" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="get-the-data">Get The Data</h2>
+<p>Read the data in so you can follow along now!</p>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p>Put a <font color="#32cb31">green</font> sticky on the front of your computer when you’ve got the code running. Put a <font color="#ff65a3">pink</font> if you want help/have a question.</p>
+</div></div></section>
 <section id="pm-2.5-data" class="level2">
 <h2 class="anchored" data-anchor-id="pm-2.5-data">PM 2.5 Data</h2>
 <ul>
@@ -1133,9 +1150,16 @@ $ aod                         &lt;dbl&gt; 37.36364, 34.81818, 36.00000, 33.08333
 <p>Many of these features have to do with the circular area around the monitor called the “buffer”. These are illustrated in the following figure:</p>
 <p><img src="images/09/regression.png" class="img-fluid"></p>
 <p><a href="https://www.ncbi.nlm.nih.gov/pubmed/15292906" target="_blank">[source]</a></p>
-
-
 </section>
+<section id="your-turn" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="your-turn">Your Turn</h2>
+<p>Scroll through the data, considering which variables you think may be most helpful in building a model to predict annual air pollution.</p>
+
+
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p>Put a <font color="#32cb31">green</font> sticky on the front of your computer when you’re done. Put a <font color="#ff65a3">pink</font> if you want help/have a question.</p>
+</div></div></section>
 </section>
 
 </main> <!-- /main -->

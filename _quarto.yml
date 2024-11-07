@@ -78,6 +78,8 @@ website:
             href: content/lectures/08-cs01-inclass.qmd
           - text: "09-cs02-intro"
             href: content/lectures/09-cs02-intro.qmd
+          - text: "10-cs02-eda"
+            href: content/lectures/10-cs02-eda.qmd
       - section: "Labs"
         contents:
           - text: "Lab01: Tooling and R"
@@ -90,6 +92,8 @@ website:
             href: content/labs/04-lab-cs01-eda.qmd
           - text: "Lab05: CS01 Communication"
             href: content/labs/05-lab-cs01-communication.qmd
+          - text: "Lab06: CS02 EDA"
+            href: content/labs/06-lab-cs02-eda.qmd
       - section: "Case Studies"
         contents:
           - text: "CS: Example"

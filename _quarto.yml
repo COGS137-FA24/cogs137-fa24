@@ -79,7 +79,9 @@ website:
           - text: "09-cs02-intro"
             href: content/lectures/09-cs02-intro.qmd
           - text: "10-cs02-eda"
-            href: content/lectures/10-cs02-eda.qmd
+            href: content/lectures/11-tidymodels.qmd
+          - text: "11-tidymodels"
+            href: content/lectures/11-tidymodels.qmd
       - section: "Labs"
         contents:
           - text: "Lab01: Tooling and R"
@@ -110,6 +112,8 @@ website:
             href: content/hw/hw-01.qmd
           - text: "HW02"
             href: content/hw/hw-02.qmd
+          - text: "HW03"
+            href: content/hw/hw-03.qmd
       - section: "Computing"
         contents:
           - href: computing/computing-access.qmd

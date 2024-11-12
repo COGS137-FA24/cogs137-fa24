@@ -38,11 +38,11 @@
   </url>
   <url>
     <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/03-dplyr.html</loc>
-    <lastmod>2024-11-05T17:57:25.164Z</lastmod>
+    <lastmod>2024-11-11T18:33:55.712Z</lastmod>
   </url>
   <url>
     <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/03-dplyr-slides.html</loc>
-    <lastmod>2024-11-05T17:57:25.164Z</lastmod>
+    <lastmod>2024-11-11T18:33:55.712Z</lastmod>
   </url>
   <url>
     <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/10-cs02-eda.html</loc>
@@ -61,12 +61,16 @@
     <lastmod>2024-10-07T17:11:00.669Z</lastmod>
   </url>
   <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/cs/cs01.html</loc>
-    <lastmod>2024-10-22T18:07:32.691Z</lastmod>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/cs/cs02.html</loc>
+    <lastmod>2024-11-04T23:24:57.261Z</lastmod>
   </url>
   <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/cs/final.html</loc>
-    <lastmod>2024-11-04T22:45:41.186Z</lastmod>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/cs/cs-example.html</loc>
+    <lastmod>2024-10-18T21:15:34.156Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/hw/hw-02.html</loc>
+    <lastmod>2024-10-14T20:53:56.387Z</lastmod>
   </url>
   <url>
     <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/hw/hw-01.html</loc>
@@ -101,16 +105,24 @@
     <lastmod>2024-10-08T23:56:30.786Z</lastmod>
   </url>
   <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/hw/hw-02.html</loc>
-    <lastmod>2024-10-14T20:53:56.387Z</lastmod>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/hw/hw-03.html</loc>
+    <lastmod>2024-11-11T20:42:29.509Z</lastmod>
   </url>
   <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/cs/cs-example.html</loc>
-    <lastmod>2024-10-18T21:15:34.156Z</lastmod>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/cs/final.html</loc>
+    <lastmod>2024-11-04T22:45:41.186Z</lastmod>
   </url>
   <url>
-    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/cs/cs02.html</loc>
-    <lastmod>2024-11-04T23:24:57.261Z</lastmod>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/cs/cs01.html</loc>
+    <lastmod>2024-10-22T18:07:32.691Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/11-tidymodels-slides.html</loc>
+    <lastmod>2024-11-12T17:08:46.658Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/11-tidymodels.html</loc>
+    <lastmod>2024-11-12T17:08:46.658Z</lastmod>
   </url>
   <url>
     <loc>https://cogs137-fa24.github.io/cogs137-fa24/content/lectures/07-written-communication-slides.html</loc>

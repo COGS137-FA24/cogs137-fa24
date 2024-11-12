@@ -2194,98 +2194,154 @@
     "href": "content/lectures/10-cs02-eda.html",
     "title": "10-cs02-eda",
     "section": "",
-    "text": "Q: Is there a way to find group members online?\nA: Yes! On Piazza here\n\n\nQ: I am curious about within our CS02 project, are we focusing on PM2.5, I know that there are finer PM that is not frequently tracked, could we focus on one of those for our project and point to the essential data gaps (i.e. there are lots of data on PM 2.5 out there but not enough on other sizes of PM)?\nA: This is definitely a possible extension on the case study - certainly beyond expectations (as you would need additional data) but would be very cool.\n\n\nQ: There wasn’t a specific part of the lecture that I found very confusing. I am a little worried about the code needed to generate the statistics for the second case study, but think that I just need a bit more practice with that (which I am certain we will be getting prior to the due date).\nA: We are going to focus on this in class too!\n\n\n\n\n\n🔬 Lab 05 due tonight\n🔘 CS01 Team Eval survey due tonight\n📄 Final Project Proposal due Tuesday\n📋 Lecture Participation survey “due” after class\n\nNote: Get the data data in RStudio for today if you haven’t already (and install.packages \"OCSdata\", \"skimr\", and \"GGally\".\n\n# install.packages(\"OCSdata\")\n# OCSdata::raw_data(\"ocs-bp-air-pollution\", outpath = getwd())\npm &lt;- read_csv(\"OCS_data/data/raw/pm25_data.csv\")"
+    "text": "Q: Is there a way to find group members online?\nA: Yes! On Piazza here\n\n\nQ: I am curious about within our CS02 project, are we focusing on PM2.5, I know that there are finer PM that is not frequently tracked, could we focus on one of those for our project and point to the essential data gaps (i.e. there are lots of data on PM 2.5 out there but not enough on other sizes of PM)?\nA: This is definitely a possible extension on the case study - certainly beyond expectations (as you would need additional data) but would be very cool.\n\n\nQ: There wasn’t a specific part of the lecture that I found very confusing. I am a little worried about the code needed to generate the statistics for the second case study, but think that I just need a bit more practice with that (which I am certain we will be getting prior to the due date).\nA: We are going to focus on this in class too!\n\n\n\n\n\n🔬 Lab 05 due tonight\n🔘 CS01 Team Eval survey due tonight\n📄 Final Project Proposal due Tuesday\n📋 Lecture Participation survey “due” after class\n\nNote: Get the data data in RStudio for today if you haven’t already (and install.packages \"OCSdata\", \"skimr\", and \"GGally\".\n\n# install.packages(\"OCSdata\")\n# OCSdata::raw_data(\"ocs-bp-air-pollution\", outpath = getwd())\npm &lt;- read_csv(\"OCS_data/data/raw/pm25_data.csv\")",
+    "crumbs": [
+      "Notes",
+      "10-cs02-eda"
+    ]
   },
   {
     "objectID": "content/lectures/10-cs02-eda.html#qa",
     "href": "content/lectures/10-cs02-eda.html#qa",
     "title": "10-cs02-eda",
     "section": "",
-    "text": "Q: Is there a way to find group members online?\nA: Yes! On Piazza here\n\n\nQ: I am curious about within our CS02 project, are we focusing on PM2.5, I know that there are finer PM that is not frequently tracked, could we focus on one of those for our project and point to the essential data gaps (i.e. there are lots of data on PM 2.5 out there but not enough on other sizes of PM)?\nA: This is definitely a possible extension on the case study - certainly beyond expectations (as you would need additional data) but would be very cool.\n\n\nQ: There wasn’t a specific part of the lecture that I found very confusing. I am a little worried about the code needed to generate the statistics for the second case study, but think that I just need a bit more practice with that (which I am certain we will be getting prior to the due date).\nA: We are going to focus on this in class too!"
+    "text": "Q: Is there a way to find group members online?\nA: Yes! On Piazza here\n\n\nQ: I am curious about within our CS02 project, are we focusing on PM2.5, I know that there are finer PM that is not frequently tracked, could we focus on one of those for our project and point to the essential data gaps (i.e. there are lots of data on PM 2.5 out there but not enough on other sizes of PM)?\nA: This is definitely a possible extension on the case study - certainly beyond expectations (as you would need additional data) but would be very cool.\n\n\nQ: There wasn’t a specific part of the lecture that I found very confusing. I am a little worried about the code needed to generate the statistics for the second case study, but think that I just need a bit more practice with that (which I am certain we will be getting prior to the due date).\nA: We are going to focus on this in class too!",
+    "crumbs": [
+      "Notes",
+      "10-cs02-eda"
+    ]
   },
   {
     "objectID": "content/lectures/10-cs02-eda.html#course-announcements",
     "href": "content/lectures/10-cs02-eda.html#course-announcements",
     "title": "10-cs02-eda",
     "section": "",
-    "text": "🔬 Lab 05 due tonight\n🔘 CS01 Team Eval survey due tonight\n📄 Final Project Proposal due Tuesday\n📋 Lecture Participation survey “due” after class\n\nNote: Get the data data in RStudio for today if you haven’t already (and install.packages \"OCSdata\", \"skimr\", and \"GGally\".\n\n# install.packages(\"OCSdata\")\n# OCSdata::raw_data(\"ocs-bp-air-pollution\", outpath = getwd())\npm &lt;- read_csv(\"OCS_data/data/raw/pm25_data.csv\")"
+    "text": "🔬 Lab 05 due tonight\n🔘 CS01 Team Eval survey due tonight\n📄 Final Project Proposal due Tuesday\n📋 Lecture Participation survey “due” after class\n\nNote: Get the data data in RStudio for today if you haven’t already (and install.packages \"OCSdata\", \"skimr\", and \"GGally\".\n\n# install.packages(\"OCSdata\")\n# OCSdata::raw_data(\"ocs-bp-air-pollution\", outpath = getwd())\npm &lt;- read_csv(\"OCS_data/data/raw/pm25_data.csv\")",
+    "crumbs": [
+      "Notes",
+      "10-cs02-eda"
+    ]
   },
   {
     "objectID": "content/lectures/10-cs02-eda.html#viewing-the-data",
     "href": "content/lectures/10-cs02-eda.html#viewing-the-data",
     "title": "10-cs02-eda",
     "section": "Viewing the data",
-    "text": "Viewing the data\nTake a look…\n. . .\n❓ Given the dataset we’re working with, what wrangling should we consider doing here?”"
+    "text": "Viewing the data\nTake a look…\n. . .\n❓ Given the dataset we’re working with, what wrangling should we consider doing here?”",
+    "crumbs": [
+      "Notes",
+      "10-cs02-eda"
+    ]
   },
   {
     "objectID": "content/lectures/10-cs02-eda.html#skimr",
     "href": "content/lectures/10-cs02-eda.html#skimr",
     "title": "10-cs02-eda",
     "section": "skimr",
-    "text": "skimr\nskimr | A helpful way to get an overall sense of a dataset\n\n# install.packages(\"skimr\")\nskimr::skim(pm)\n\n\nData summary\n\n\nName\npm\n\n\nNumber of rows\n876\n\n\nNumber of columns\n50\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n3\n\n\nnumeric\n47\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nstate\n0\n1\n4\n20\n0\n49\n0\n\n\ncounty\n0\n1\n3\n20\n0\n471\n0\n\n\ncity\n0\n1\n4\n48\n0\n607\n0\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\nid\n0\n1\n26987.96\n1.578761e+04\n1003.00\n13089.15\n26132.00\n39118.00\n5.603910e+04\n▇▇▆▇▆\n\n\nvalue\n0\n1\n10.81\n2.580000e+00\n3.02\n9.27\n11.15\n12.37\n2.316000e+01\n▂▆▇▁▁\n\n\nfips\n0\n1\n26987.89\n1.578763e+04\n1003.00\n13089.00\n26132.00\n39118.00\n5.603900e+04\n▇▇▆▇▆\n\n\nlat\n0\n1\n38.48\n4.620000e+00\n25.47\n35.03\n39.30\n41.66\n4.840000e+01\n▁▃▅▇▂\n\n\nlon\n0\n1\n-91.74\n1.496000e+01\n-124.18\n-99.16\n-87.47\n-80.69\n-6.804000e+01\n▃▂▃▇▃\n\n\nCMAQ\n0\n1\n8.41\n2.970000e+00\n1.63\n6.53\n8.62\n10.24\n2.313000e+01\n▃▇▃▁▁\n\n\nzcta\n0\n1\n50890.29\n2.778447e+04\n1022.00\n28788.25\n48172.00\n74371.00\n9.920200e+04\n▅▇▇▅▇\n\n\nzcta_area\n0\n1\n183173481.91\n5.425989e+08\n15459.00\n14204601.75\n37653560.50\n160041508.25\n8.164821e+09\n▇▁▁▁▁\n\n\nzcta_pop\n0\n1\n24227.58\n1.777216e+04\n0.00\n9797.00\n22014.00\n35004.75\n9.539700e+04\n▇▇▃▁▁\n\n\nimp_a500\n0\n1\n24.72\n1.934000e+01\n0.00\n3.70\n25.12\n40.22\n6.961000e+01\n▇▅▆▃▂\n\n\nimp_a1000\n0\n1\n24.26\n1.802000e+01\n0.00\n5.32\n24.53\n38.59\n6.750000e+01\n▇▅▆▃▁\n\n\nimp_a5000\n0\n1\n19.93\n1.472000e+01\n0.05\n6.79\n19.07\n30.11\n7.460000e+01\n▇▆▃▁▁\n\n\nimp_a10000\n0\n1\n15.82\n1.381000e+01\n0.09\n4.54\n12.36\n24.17\n7.209000e+01\n▇▃▂▁▁\n\n\nimp_a15000\n0\n1\n13.43\n1.312000e+01\n0.11\n3.24\n9.67\n20.55\n7.110000e+01\n▇▃▁▁▁\n\n\ncounty_area\n0\n1\n3768701992.12\n6.212830e+09\n33703512.00\n1116536297.50\n1690826566.50\n2878192209.00\n5.194723e+10\n▇▁▁▁▁\n\n\ncounty_pop\n0\n1\n687298.44\n1.293489e+06\n783.00\n100948.00\n280730.50\n743159.00\n9.818605e+06\n▇▁▁▁▁\n\n\nlog_dist_to_prisec\n0\n1\n6.19\n1.410000e+00\n-1.46\n5.43\n6.36\n7.15\n1.045000e+01\n▁▁▃▇▁\n\n\nlog_pri_length_5000\n0\n1\n9.82\n1.080000e+00\n8.52\n8.52\n10.05\n10.73\n1.205000e+01\n▇▂▆▅▂\n\n\nlog_pri_length_10000\n0\n1\n10.92\n1.130000e+00\n9.21\n9.80\n11.17\n11.83\n1.302000e+01\n▇▂▇▇▃\n\n\nlog_pri_length_15000\n0\n1\n11.50\n1.150000e+00\n9.62\n10.87\n11.72\n12.40\n1.359000e+01\n▆▂▇▇▃\n\n\nlog_pri_length_25000\n0\n1\n12.24\n1.100000e+00\n10.13\n11.69\n12.46\n13.05\n1.436000e+01\n▅▃▇▇▃\n\n\nlog_prisec_length_500\n0\n1\n6.99\n9.500000e-01\n6.21\n6.21\n6.21\n7.82\n9.400000e+00\n▇▁▂▂▁\n\n\nlog_prisec_length_1000\n0\n1\n8.56\n7.900000e-01\n7.60\n7.60\n8.66\n9.20\n1.047000e+01\n▇▅▆▃▁\n\n\nlog_prisec_length_5000\n0\n1\n11.28\n7.800000e-01\n8.52\n10.91\n11.42\n11.83\n1.278000e+01\n▁▁▃▇▃\n\n\nlog_prisec_length_10000\n0\n1\n12.41\n7.300000e-01\n9.21\n11.99\n12.53\n12.94\n1.385000e+01\n▁▁▃▇▅\n\n\nlog_prisec_length_15000\n0\n1\n13.03\n7.200000e-01\n9.62\n12.59\n13.13\n13.57\n1.441000e+01\n▁▁▃▇▅\n\n\nlog_prisec_length_25000\n0\n1\n13.82\n7.000000e-01\n10.13\n13.38\n13.92\n14.35\n1.523000e+01\n▁▁▃▇▆\n\n\nlog_nei_2008_pm25_sum_10000\n0\n1\n3.97\n2.350000e+00\n0.00\n2.15\n4.29\n5.69\n9.120000e+00\n▆▅▇▆▂\n\n\nlog_nei_2008_pm25_sum_15000\n0\n1\n4.72\n2.250000e+00\n0.00\n3.47\n5.00\n6.35\n9.420000e+00\n▃▃▇▇▂\n\n\nlog_nei_2008_pm25_sum_25000\n0\n1\n5.67\n2.110000e+00\n0.00\n4.66\n5.91\n7.28\n9.650000e+00\n▂▂▇▇▃\n\n\nlog_nei_2008_pm10_sum_10000\n0\n1\n4.35\n2.320000e+00\n0.00\n2.69\n4.62\n6.07\n9.340000e+00\n▅▅▇▇▂\n\n\nlog_nei_2008_pm10_sum_15000\n0\n1\n5.10\n2.180000e+00\n0.00\n3.87\n5.39\n6.72\n9.710000e+00\n▂▃▇▇▂\n\n\nlog_nei_2008_pm10_sum_25000\n0\n1\n6.07\n2.010000e+00\n0.00\n5.10\n6.37\n7.52\n9.880000e+00\n▁▂▆▇▃\n\n\npopdens_county\n0\n1\n551.76\n1.711510e+03\n0.26\n40.77\n156.67\n510.81\n2.682191e+04\n▇▁▁▁▁\n\n\npopdens_zcta\n0\n1\n1279.66\n2.757490e+03\n0.00\n101.15\n610.35\n1382.52\n3.041884e+04\n▇▁▁▁▁\n\n\nnohs\n0\n1\n6.99\n7.210000e+00\n0.00\n2.70\n5.10\n8.80\n1.000000e+02\n▇▁▁▁▁\n\n\nsomehs\n0\n1\n10.17\n6.200000e+00\n0.00\n5.90\n9.40\n13.90\n7.220000e+01\n▇▂▁▁▁\n\n\nhs\n0\n1\n30.32\n1.140000e+01\n0.00\n23.80\n30.75\n36.10\n1.000000e+02\n▂▇▂▁▁\n\n\nsomecollege\n0\n1\n21.58\n8.600000e+00\n0.00\n17.50\n21.30\n24.70\n1.000000e+02\n▆▇▁▁▁\n\n\nassociate\n0\n1\n7.13\n4.010000e+00\n0.00\n4.90\n7.10\n8.80\n7.140000e+01\n▇▁▁▁▁\n\n\nbachelor\n0\n1\n14.90\n9.710000e+00\n0.00\n8.80\n12.95\n19.22\n1.000000e+02\n▇▂▁▁▁\n\n\ngrad\n0\n1\n8.91\n8.650000e+00\n0.00\n3.90\n6.70\n11.00\n1.000000e+02\n▇▁▁▁▁\n\n\npov\n0\n1\n14.95\n1.133000e+01\n0.00\n6.50\n12.10\n21.22\n6.590000e+01\n▇▅▂▁▁\n\n\nhs_orless\n0\n1\n47.48\n1.675000e+01\n0.00\n37.92\n48.65\n59.10\n1.000000e+02\n▁▃▇▃▁\n\n\nurc2013\n0\n1\n2.92\n1.520000e+00\n1.00\n2.00\n3.00\n4.00\n6.000000e+00\n▇▅▃▂▁\n\n\nurc2006\n0\n1\n2.97\n1.520000e+00\n1.00\n2.00\n3.00\n4.00\n6.000000e+00\n▇▅▃▂▁\n\n\naod\n0\n1\n43.70\n1.956000e+01\n5.00\n31.66\n40.17\n49.67\n1.430000e+02\n▃▇▁▁▁\n\n\n\n\n\n. . .\n❓ What’s something you’ve learned about the data from the skimr output?\n. . .\nThings to note:\n\n\ndata are summarized by variable type\nempty/n_missing gives you a sense of how much data are missing for each variable\nn_unique for state indicates that we have data for 49 states\nmany different distributions for continuous data, but many show bimodal distribution\nlarge range of possible values for many variables (i.e. population)\n\n\n. . .\n\nConsider variable type - need more factors?\nUnderstand why ID is not uniformally distributed; figure out which are overrepresented; decide what to do\nlog or other transformations necessary? decide during EDA"
+    "text": "skimr\nskimr | A helpful way to get an overall sense of a dataset\n\n# install.packages(\"skimr\")\nskimr::skim(pm)\n\n\nData summary\n\n\nName\npm\n\n\nNumber of rows\n876\n\n\nNumber of columns\n50\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n3\n\n\nnumeric\n47\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nstate\n0\n1\n4\n20\n0\n49\n0\n\n\ncounty\n0\n1\n3\n20\n0\n471\n0\n\n\ncity\n0\n1\n4\n48\n0\n607\n0\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\nid\n0\n1\n26987.96\n1.578761e+04\n1003.00\n13089.15\n26132.00\n39118.00\n5.603910e+04\n▇▇▆▇▆\n\n\nvalue\n0\n1\n10.81\n2.580000e+00\n3.02\n9.27\n11.15\n12.37\n2.316000e+01\n▂▆▇▁▁\n\n\nfips\n0\n1\n26987.89\n1.578763e+04\n1003.00\n13089.00\n26132.00\n39118.00\n5.603900e+04\n▇▇▆▇▆\n\n\nlat\n0\n1\n38.48\n4.620000e+00\n25.47\n35.03\n39.30\n41.66\n4.840000e+01\n▁▃▅▇▂\n\n\nlon\n0\n1\n-91.74\n1.496000e+01\n-124.18\n-99.16\n-87.47\n-80.69\n-6.804000e+01\n▃▂▃▇▃\n\n\nCMAQ\n0\n1\n8.41\n2.970000e+00\n1.63\n6.53\n8.62\n10.24\n2.313000e+01\n▃▇▃▁▁\n\n\nzcta\n0\n1\n50890.29\n2.778447e+04\n1022.00\n28788.25\n48172.00\n74371.00\n9.920200e+04\n▅▇▇▅▇\n\n\nzcta_area\n0\n1\n183173481.91\n5.425989e+08\n15459.00\n14204601.75\n37653560.50\n160041508.25\n8.164821e+09\n▇▁▁▁▁\n\n\nzcta_pop\n0\n1\n24227.58\n1.777216e+04\n0.00\n9797.00\n22014.00\n35004.75\n9.539700e+04\n▇▇▃▁▁\n\n\nimp_a500\n0\n1\n24.72\n1.934000e+01\n0.00\n3.70\n25.12\n40.22\n6.961000e+01\n▇▅▆▃▂\n\n\nimp_a1000\n0\n1\n24.26\n1.802000e+01\n0.00\n5.32\n24.53\n38.59\n6.750000e+01\n▇▅▆▃▁\n\n\nimp_a5000\n0\n1\n19.93\n1.472000e+01\n0.05\n6.79\n19.07\n30.11\n7.460000e+01\n▇▆▃▁▁\n\n\nimp_a10000\n0\n1\n15.82\n1.381000e+01\n0.09\n4.54\n12.36\n24.17\n7.209000e+01\n▇▃▂▁▁\n\n\nimp_a15000\n0\n1\n13.43\n1.312000e+01\n0.11\n3.24\n9.67\n20.55\n7.110000e+01\n▇▃▁▁▁\n\n\ncounty_area\n0\n1\n3768701992.12\n6.212830e+09\n33703512.00\n1116536297.50\n1690826566.50\n2878192209.00\n5.194723e+10\n▇▁▁▁▁\n\n\ncounty_pop\n0\n1\n687298.44\n1.293489e+06\n783.00\n100948.00\n280730.50\n743159.00\n9.818605e+06\n▇▁▁▁▁\n\n\nlog_dist_to_prisec\n0\n1\n6.19\n1.410000e+00\n-1.46\n5.43\n6.36\n7.15\n1.045000e+01\n▁▁▃▇▁\n\n\nlog_pri_length_5000\n0\n1\n9.82\n1.080000e+00\n8.52\n8.52\n10.05\n10.73\n1.205000e+01\n▇▂▆▅▂\n\n\nlog_pri_length_10000\n0\n1\n10.92\n1.130000e+00\n9.21\n9.80\n11.17\n11.83\n1.302000e+01\n▇▂▇▇▃\n\n\nlog_pri_length_15000\n0\n1\n11.50\n1.150000e+00\n9.62\n10.87\n11.72\n12.40\n1.359000e+01\n▆▂▇▇▃\n\n\nlog_pri_length_25000\n0\n1\n12.24\n1.100000e+00\n10.13\n11.69\n12.46\n13.05\n1.436000e+01\n▅▃▇▇▃\n\n\nlog_prisec_length_500\n0\n1\n6.99\n9.500000e-01\n6.21\n6.21\n6.21\n7.82\n9.400000e+00\n▇▁▂▂▁\n\n\nlog_prisec_length_1000\n0\n1\n8.56\n7.900000e-01\n7.60\n7.60\n8.66\n9.20\n1.047000e+01\n▇▅▆▃▁\n\n\nlog_prisec_length_5000\n0\n1\n11.28\n7.800000e-01\n8.52\n10.91\n11.42\n11.83\n1.278000e+01\n▁▁▃▇▃\n\n\nlog_prisec_length_10000\n0\n1\n12.41\n7.300000e-01\n9.21\n11.99\n12.53\n12.94\n1.385000e+01\n▁▁▃▇▅\n\n\nlog_prisec_length_15000\n0\n1\n13.03\n7.200000e-01\n9.62\n12.59\n13.13\n13.57\n1.441000e+01\n▁▁▃▇▅\n\n\nlog_prisec_length_25000\n0\n1\n13.82\n7.000000e-01\n10.13\n13.38\n13.92\n14.35\n1.523000e+01\n▁▁▃▇▆\n\n\nlog_nei_2008_pm25_sum_10000\n0\n1\n3.97\n2.350000e+00\n0.00\n2.15\n4.29\n5.69\n9.120000e+00\n▆▅▇▆▂\n\n\nlog_nei_2008_pm25_sum_15000\n0\n1\n4.72\n2.250000e+00\n0.00\n3.47\n5.00\n6.35\n9.420000e+00\n▃▃▇▇▂\n\n\nlog_nei_2008_pm25_sum_25000\n0\n1\n5.67\n2.110000e+00\n0.00\n4.66\n5.91\n7.28\n9.650000e+00\n▂▂▇▇▃\n\n\nlog_nei_2008_pm10_sum_10000\n0\n1\n4.35\n2.320000e+00\n0.00\n2.69\n4.62\n6.07\n9.340000e+00\n▅▅▇▇▂\n\n\nlog_nei_2008_pm10_sum_15000\n0\n1\n5.10\n2.180000e+00\n0.00\n3.87\n5.39\n6.72\n9.710000e+00\n▂▃▇▇▂\n\n\nlog_nei_2008_pm10_sum_25000\n0\n1\n6.07\n2.010000e+00\n0.00\n5.10\n6.37\n7.52\n9.880000e+00\n▁▂▆▇▃\n\n\npopdens_county\n0\n1\n551.76\n1.711510e+03\n0.26\n40.77\n156.67\n510.81\n2.682191e+04\n▇▁▁▁▁\n\n\npopdens_zcta\n0\n1\n1279.66\n2.757490e+03\n0.00\n101.15\n610.35\n1382.52\n3.041884e+04\n▇▁▁▁▁\n\n\nnohs\n0\n1\n6.99\n7.210000e+00\n0.00\n2.70\n5.10\n8.80\n1.000000e+02\n▇▁▁▁▁\n\n\nsomehs\n0\n1\n10.17\n6.200000e+00\n0.00\n5.90\n9.40\n13.90\n7.220000e+01\n▇▂▁▁▁\n\n\nhs\n0\n1\n30.32\n1.140000e+01\n0.00\n23.80\n30.75\n36.10\n1.000000e+02\n▂▇▂▁▁\n\n\nsomecollege\n0\n1\n21.58\n8.600000e+00\n0.00\n17.50\n21.30\n24.70\n1.000000e+02\n▆▇▁▁▁\n\n\nassociate\n0\n1\n7.13\n4.010000e+00\n0.00\n4.90\n7.10\n8.80\n7.140000e+01\n▇▁▁▁▁\n\n\nbachelor\n0\n1\n14.90\n9.710000e+00\n0.00\n8.80\n12.95\n19.22\n1.000000e+02\n▇▂▁▁▁\n\n\ngrad\n0\n1\n8.91\n8.650000e+00\n0.00\n3.90\n6.70\n11.00\n1.000000e+02\n▇▁▁▁▁\n\n\npov\n0\n1\n14.95\n1.133000e+01\n0.00\n6.50\n12.10\n21.22\n6.590000e+01\n▇▅▂▁▁\n\n\nhs_orless\n0\n1\n47.48\n1.675000e+01\n0.00\n37.92\n48.65\n59.10\n1.000000e+02\n▁▃▇▃▁\n\n\nurc2013\n0\n1\n2.92\n1.520000e+00\n1.00\n2.00\n3.00\n4.00\n6.000000e+00\n▇▅▃▂▁\n\n\nurc2006\n0\n1\n2.97\n1.520000e+00\n1.00\n2.00\n3.00\n4.00\n6.000000e+00\n▇▅▃▂▁\n\n\naod\n0\n1\n43.70\n1.956000e+01\n5.00\n31.66\n40.17\n49.67\n1.430000e+02\n▃▇▁▁▁\n\n\n\n\n\n. . .\n❓ What’s something you’ve learned about the data from the skimr output?\n. . .\nThings to note:\n\n\ndata are summarized by variable type\nempty/n_missing gives you a sense of how much data are missing for each variable\nn_unique for state indicates that we have data for 49 states\nmany different distributions for continuous data, but many show bimodal distribution\nlarge range of possible values for many variables (i.e. population)\n\n\n. . .\n\nConsider variable type - need more factors?\nUnderstand why ID is not uniformally distributed; figure out which are overrepresented; decide what to do\nlog or other transformations necessary? decide during EDA",
+    "crumbs": [
+      "Notes",
+      "10-cs02-eda"
+    ]
   },
   {
     "objectID": "content/lectures/10-cs02-eda.html#why-49-states",
     "href": "content/lectures/10-cs02-eda.html#why-49-states",
     "title": "10-cs02-eda",
     "section": "Why 49 “states”?",
-    "text": "Why 49 “states”?\n\npm |&gt; \n  distinct(state) \n\n# A tibble: 49 × 1\n   state               \n   &lt;chr&gt;               \n 1 Alabama             \n 2 Arizona             \n 3 Arkansas            \n 4 California          \n 5 Colorado            \n 6 Connecticut         \n 7 Delaware            \n 8 District Of Columbia\n 9 Florida             \n10 Georgia             \n# ℹ 39 more rows\n\n\n\nDC is included\nAlaska and Hawaii are not"
+    "text": "Why 49 “states”?\n\npm |&gt; \n  distinct(state) \n\n# A tibble: 49 × 1\n   state               \n   &lt;chr&gt;               \n 1 Alabama             \n 2 Arizona             \n 3 Arkansas            \n 4 California          \n 5 Colorado            \n 6 Connecticut         \n 7 Delaware            \n 8 District Of Columbia\n 9 Florida             \n10 Georgia             \n# ℹ 39 more rows\n\n\n\nDC is included\nAlaska and Hawaii are not",
+    "crumbs": [
+      "Notes",
+      "10-cs02-eda"
+    ]
   },
   {
     "objectID": "content/lectures/10-cs02-eda.html#number-of-monitors-per-city",
     "href": "content/lectures/10-cs02-eda.html#number-of-monitors-per-city",
     "title": "10-cs02-eda",
     "section": "Number of monitors per city?",
-    "text": "Number of monitors per city?\n\npm |&gt; filter(city == \"San Diego\")\n\n# A tibble: 2 × 50\n     id value  fips   lat   lon state      county    city   CMAQ  zcta zcta_area\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;\n1 6073.  11.3  6073  32.8 -117. California San Diego San …  9.68 92123  21148247\n2 6073.  13.7  6073  32.7 -117. California San Diego San …  9.68 92113  13647793\n# ℹ 39 more variables: zcta_pop &lt;dbl&gt;, imp_a500 &lt;dbl&gt;, imp_a1000 &lt;dbl&gt;,\n#   imp_a5000 &lt;dbl&gt;, imp_a10000 &lt;dbl&gt;, imp_a15000 &lt;dbl&gt;, county_area &lt;dbl&gt;,\n#   county_pop &lt;dbl&gt;, log_dist_to_prisec &lt;dbl&gt;, log_pri_length_5000 &lt;dbl&gt;,\n#   log_pri_length_10000 &lt;dbl&gt;, log_pri_length_15000 &lt;dbl&gt;,\n#   log_pri_length_25000 &lt;dbl&gt;, log_prisec_length_500 &lt;dbl&gt;,\n#   log_prisec_length_1000 &lt;dbl&gt;, log_prisec_length_5000 &lt;dbl&gt;,\n#   log_prisec_length_10000 &lt;dbl&gt;, log_prisec_length_15000 &lt;dbl&gt;, …\n\n\n. . .\n\npm |&gt; filter(city == \"Baltimore\")\n\n# A tibble: 5 × 50\n      id value  fips   lat   lon state    county     city   CMAQ  zcta zcta_area\n   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;\n1 24510.  12.2 24510  39.3 -76.6 Maryland Baltimore… Balt…  10.9 21251    461424\n2 24510.  12.5 24510  39.3 -76.7 Maryland Baltimore… Balt…  10.9 21215  17645223\n3 24510.  12.8 24510  39.3 -76.5 Maryland Baltimore… Balt…  10.9 21224  24539976\n4 24510.  14.3 24510  39.2 -76.6 Maryland Baltimore… Balt…  10.9 21226  25718732\n5 24510.  13.3 24510  39.3 -76.6 Maryland Baltimore… Balt…  10.9 21202   4111039\n# ℹ 39 more variables: zcta_pop &lt;dbl&gt;, imp_a500 &lt;dbl&gt;, imp_a1000 &lt;dbl&gt;,\n#   imp_a5000 &lt;dbl&gt;, imp_a10000 &lt;dbl&gt;, imp_a15000 &lt;dbl&gt;, county_area &lt;dbl&gt;,\n#   county_pop &lt;dbl&gt;, log_dist_to_prisec &lt;dbl&gt;, log_pri_length_5000 &lt;dbl&gt;,\n#   log_pri_length_10000 &lt;dbl&gt;, log_pri_length_15000 &lt;dbl&gt;,\n#   log_pri_length_25000 &lt;dbl&gt;, log_prisec_length_500 &lt;dbl&gt;,\n#   log_prisec_length_1000 &lt;dbl&gt;, log_prisec_length_5000 &lt;dbl&gt;,\n#   log_prisec_length_10000 &lt;dbl&gt;, log_prisec_length_15000 &lt;dbl&gt;, …\n\n\n. . .\nSan Diego has 2, while Baltimore has 5, despite having very similar population densities (popdens_county)…and San Diego having a much larger population (county_pop) and land area (county_area)."
+    "text": "Number of monitors per city?\n\npm |&gt; filter(city == \"San Diego\")\n\n# A tibble: 2 × 50\n     id value  fips   lat   lon state      county    city   CMAQ  zcta zcta_area\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;     &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;\n1 6073.  11.3  6073  32.8 -117. California San Diego San …  9.68 92123  21148247\n2 6073.  13.7  6073  32.7 -117. California San Diego San …  9.68 92113  13647793\n# ℹ 39 more variables: zcta_pop &lt;dbl&gt;, imp_a500 &lt;dbl&gt;, imp_a1000 &lt;dbl&gt;,\n#   imp_a5000 &lt;dbl&gt;, imp_a10000 &lt;dbl&gt;, imp_a15000 &lt;dbl&gt;, county_area &lt;dbl&gt;,\n#   county_pop &lt;dbl&gt;, log_dist_to_prisec &lt;dbl&gt;, log_pri_length_5000 &lt;dbl&gt;,\n#   log_pri_length_10000 &lt;dbl&gt;, log_pri_length_15000 &lt;dbl&gt;,\n#   log_pri_length_25000 &lt;dbl&gt;, log_prisec_length_500 &lt;dbl&gt;,\n#   log_prisec_length_1000 &lt;dbl&gt;, log_prisec_length_5000 &lt;dbl&gt;,\n#   log_prisec_length_10000 &lt;dbl&gt;, log_prisec_length_15000 &lt;dbl&gt;, …\n\n\n. . .\n\npm |&gt; filter(city == \"Baltimore\")\n\n# A tibble: 5 × 50\n      id value  fips   lat   lon state    county     city   CMAQ  zcta zcta_area\n   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;      &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt;\n1 24510.  12.2 24510  39.3 -76.6 Maryland Baltimore… Balt…  10.9 21251    461424\n2 24510.  12.5 24510  39.3 -76.7 Maryland Baltimore… Balt…  10.9 21215  17645223\n3 24510.  12.8 24510  39.3 -76.5 Maryland Baltimore… Balt…  10.9 21224  24539976\n4 24510.  14.3 24510  39.2 -76.6 Maryland Baltimore… Balt…  10.9 21226  25718732\n5 24510.  13.3 24510  39.3 -76.6 Maryland Baltimore… Balt…  10.9 21202   4111039\n# ℹ 39 more variables: zcta_pop &lt;dbl&gt;, imp_a500 &lt;dbl&gt;, imp_a1000 &lt;dbl&gt;,\n#   imp_a5000 &lt;dbl&gt;, imp_a10000 &lt;dbl&gt;, imp_a15000 &lt;dbl&gt;, county_area &lt;dbl&gt;,\n#   county_pop &lt;dbl&gt;, log_dist_to_prisec &lt;dbl&gt;, log_pri_length_5000 &lt;dbl&gt;,\n#   log_pri_length_10000 &lt;dbl&gt;, log_pri_length_15000 &lt;dbl&gt;,\n#   log_pri_length_25000 &lt;dbl&gt;, log_prisec_length_500 &lt;dbl&gt;,\n#   log_prisec_length_1000 &lt;dbl&gt;, log_prisec_length_5000 &lt;dbl&gt;,\n#   log_prisec_length_10000 &lt;dbl&gt;, log_prisec_length_15000 &lt;dbl&gt;, …\n\n\n. . .\nSan Diego has 2, while Baltimore has 5, despite having very similar population densities (popdens_county)…and San Diego having a much larger population (county_pop) and land area (county_area).",
+    "crumbs": [
+      "Notes",
+      "10-cs02-eda"
+    ]
   },
   {
     "objectID": "content/lectures/10-cs02-eda.html#feature-correlation",
     "href": "content/lectures/10-cs02-eda.html#feature-correlation",
     "title": "10-cs02-eda",
     "section": "Feature Correlation",
-    "text": "Feature Correlation\nWhy do we care if variables in our dataset are correlated?\n\nwe don’t want to include redundant variables\ncan add unnecessary noise to our algorithm causing a reduction in prediction accuracy\ncan cause our algorithm to be slower\ncan also make it difficult to interpret what variables are actually predictive\n\n. . .\nTaking a look at our numeric variables…\n\nPM_cor &lt;- cor(pm |&gt; dplyr::select_if(is.numeric))\ncorrplot::corrplot(PM_cor, tl.cex = 0.5)\n\n\n\n\n\n\n\n\n\ndeep blue | strongly, positively correlated\ndeep red | strongly, negatively correlated\n\n. . .\nIf we don’t care about direction, but only strength…and using hierarchical clustering:\n\ncorrplot::corrplot(abs(PM_cor), order = \"hclust\", tl.cex = 0.5, cl.lim = c(0, 1))\n\n\n\n\n\n\n\n\n. . .\nObservations:\n\ndevelopment variables (imp), road density (pri), and the emission (nei) variables all seem to be correlated with their group\nnone of the predictors are correlated with value (our outcome)"
+    "text": "Feature Correlation\nWhy do we care if variables in our dataset are correlated?\n\nwe don’t want to include redundant variables\ncan add unnecessary noise to our algorithm causing a reduction in prediction accuracy\ncan cause our algorithm to be slower\ncan also make it difficult to interpret what variables are actually predictive\n\n. . .\nTaking a look at our numeric variables…\n\nPM_cor &lt;- cor(pm |&gt; dplyr::select_if(is.numeric))\ncorrplot::corrplot(PM_cor, tl.cex = 0.5)\n\n\n\n\n\n\n\n\n\ndeep blue | strongly, positively correlated\ndeep red | strongly, negatively correlated\n\n. . .\nIf we don’t care about direction, but only strength…and using hierarchical clustering:\n\ncorrplot::corrplot(abs(PM_cor), order = \"hclust\", tl.cex = 0.5, cl.lim = c(0, 1))\n\n\n\n\n\n\n\n\n. . .\nObservations:\n\ndevelopment variables (imp), road density (pri), and the emission (nei) variables all seem to be correlated with their group\nnone of the predictors are correlated with value (our outcome)",
+    "crumbs": [
+      "Notes",
+      "10-cs02-eda"
+    ]
   },
   {
     "objectID": "content/lectures/10-cs02-eda.html#development-imp",
     "href": "content/lectures/10-cs02-eda.html#development-imp",
     "title": "10-cs02-eda",
     "section": "Development (imp)",
-    "text": "Development (imp)\n\nselect(pm, contains(\"imp\")) |&gt;\n  GGally::ggpairs()"
+    "text": "Development (imp)\n\nselect(pm, contains(\"imp\")) |&gt;\n  GGally::ggpairs()",
+    "crumbs": [
+      "Notes",
+      "10-cs02-eda"
+    ]
   },
   {
     "objectID": "content/lectures/10-cs02-eda.html#emmissoins-nei",
     "href": "content/lectures/10-cs02-eda.html#emmissoins-nei",
     "title": "10-cs02-eda",
     "section": "Emmissoins (nei)",
-    "text": "Emmissoins (nei)\n\nselect(pm, contains(\"nei\")) |&gt;\n  GGally::ggpairs()\n\n\n\n\n\n\n\n\n. . ."
+    "text": "Emmissoins (nei)\n\nselect(pm, contains(\"nei\")) |&gt;\n  GGally::ggpairs()\n\n\n\n\n\n\n\n\n. . .",
+    "crumbs": [
+      "Notes",
+      "10-cs02-eda"
+    ]
   },
   {
     "objectID": "content/lectures/10-cs02-eda.html#road-density-pri",
     "href": "content/lectures/10-cs02-eda.html#road-density-pri",
     "title": "10-cs02-eda",
     "section": "Road Density (pri)",
-    "text": "Road Density (pri)\n\nselect(pm, contains(\"pri\")) |&gt;\n  GGally::ggcorr(hjust = .85, size = 3,\n       layout.exp=2, label = TRUE)\n\n\n\n\n\n\n\n\nWarning: colors are reversed from above. If included in final report, you’d want consistency."
+    "text": "Road Density (pri)\n\nselect(pm, contains(\"pri\")) |&gt;\n  GGally::ggcorr(hjust = .85, size = 3,\n       layout.exp=2, label = TRUE)\n\n\n\n\n\n\n\n\nWarning: colors are reversed from above. If included in final report, you’d want consistency.",
+    "crumbs": [
+      "Notes",
+      "10-cs02-eda"
+    ]
   },
   {
     "objectID": "content/lectures/10-cs02-eda.html#are-the-categories-correlated-with-one-another",
     "href": "content/lectures/10-cs02-eda.html#are-the-categories-correlated-with-one-another",
     "title": "10-cs02-eda",
     "section": "Are the categories correlated with one another?",
-    "text": "Are the categories correlated with one another?\n\npm |&gt;\nselect(log_nei_2008_pm25_sum_10000, popdens_county, \n       log_pri_length_10000, imp_a10000, county_pop) |&gt;\n  GGally::ggpairs()\n\n\n\n\n\n\n\n\n. . .\nReminder:\n\nlog_nei_2008_pm25_sum_10000 | Tons of emissions from major sources data base (annual data) sum of all sources within a circle with a radius of 10000 meters of distance around the monitor (Natural log)\n\npopdens_county | Population density (number of people per kilometer squared area of the county)\nlog_pri_length_10000 | Count of primary road length in meters in a circle with a radius of 10000 meters around the monitor (Natural log)  – Highways only\n\nimp_a10000 | Impervious surface measure  – Within a circle with a radius of 10000 meters around the monitor\n\ncounty_pop | Population of the county of the monitor"
+    "text": "Are the categories correlated with one another?\n\npm |&gt;\nselect(log_nei_2008_pm25_sum_10000, popdens_county, \n       log_pri_length_10000, imp_a10000, county_pop) |&gt;\n  GGally::ggpairs()\n\n\n\n\n\n\n\n\n. . .\nReminder:\n\nlog_nei_2008_pm25_sum_10000 | Tons of emissions from major sources data base (annual data) sum of all sources within a circle with a radius of 10000 meters of distance around the monitor (Natural log)\n\npopdens_county | Population density (number of people per kilometer squared area of the county)\nlog_pri_length_10000 | Count of primary road length in meters in a circle with a radius of 10000 meters around the monitor (Natural log)  – Highways only\n\nimp_a10000 | Impervious surface measure  – Within a circle with a radius of 10000 meters around the monitor\n\ncounty_pop | Population of the county of the monitor",
+    "crumbs": [
+      "Notes",
+      "10-cs02-eda"
+    ]
   },
   {
     "objectID": "content/lectures/10-cs02-eda.html#log-transforming-right-skewed-data",
     "href": "content/lectures/10-cs02-eda.html#log-transforming-right-skewed-data",
     "title": "10-cs02-eda",
     "section": "Log-transforming right-skewed data",
-    "text": "Log-transforming right-skewed data\n\npm |&gt;\n  mutate(log_popdens_county=log(popdens_county),\n         log_pop_county = log(county_pop)) |&gt;\n  select(log_nei_2008_pm25_sum_10000, log_popdens_county, \n       log_pri_length_10000, imp_a10000, log_pop_county) |&gt;\n  GGally::ggpairs()"
+    "text": "Log-transforming right-skewed data\n\npm |&gt;\n  mutate(log_popdens_county=log(popdens_county),\n         log_pop_county = log(county_pop)) |&gt;\n  select(log_nei_2008_pm25_sum_10000, log_popdens_county, \n       log_pri_length_10000, imp_a10000, log_pop_county) |&gt;\n  GGally::ggpairs()",
+    "crumbs": [
+      "Notes",
+      "10-cs02-eda"
+    ]
   },
   {
     "objectID": "content/lectures/10-cs02-eda.html#your-turn",
     "href": "content/lectures/10-cs02-eda.html#your-turn",
     "title": "10-cs02-eda",
     "section": "Your Turn",
-    "text": "Your Turn\n💪 Try to learn at least three things about the data that we haven’t yet discussed now on your own.\nAdd your EDA to a Padlet https://padlet.com/shannon0ellis/cs02_eda\n\n\n\n\nPut a green sticky on the front of your computer when you’re done. Put a pink if you want help/have a question."
+    "text": "Your Turn\n💪 Try to learn at least three things about the data that we haven’t yet discussed now on your own.\nAdd your EDA to a Padlet https://padlet.com/shannon0ellis/cs02_eda\n\n\n\n\nPut a green sticky on the front of your computer when you’re done. Put a pink if you want help/have a question.",
+    "crumbs": [
+      "Notes",
+      "10-cs02-eda"
+    ]
   },
   {
     "objectID": "content/lectures/10-cs02-eda-slides.html#qa",
@@ -3894,7 +3950,7 @@
     "text": "Tidy Modeling with R Chapter 7: A Model Workflow\nThe package itself has some worked examples: https://www.tidymodels.org/start/models/\n\n\n\n\n\n📄 Final Project Proposal due tonight\n🧪 Lab 06 due Thursday\n📋 Lecture Participation survey “due” after class\n\nNote: hw03 now available; due date pushed back to Friday 11/22\n\n\n\n\nmodelling (conceptually)\ntidymodels\n\ninference\nmachine learning\n\nHW02 (revisited)",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -3905,7 +3961,7 @@
     "text": "Tidy Modeling with R Chapter 7: A Model Workflow\nThe package itself has some worked examples: https://www.tidymodels.org/start/models/",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -3916,7 +3972,7 @@
     "text": "📄 Final Project Proposal due tonight\n🧪 Lab 06 due Thursday\n📋 Lecture Participation survey “due” after class\n\nNote: hw03 now available; due date pushed back to Friday 11/22",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -3927,7 +3983,7 @@
     "text": "modelling (conceptually)\ntidymodels\n\ninference\nmachine learning\n\nHW02 (revisited)",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -3938,7 +3994,7 @@
     "text": "🧠 Discussion\n\nWhat is a model?\nHow are models used in inference? In machine learning?",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -3949,7 +4005,7 @@
     "text": "tidymodels: philosophy\n\n“Other packages, such as caret and mlr, help to solve the R model API issue. These packages do a lot of other things too: pre-processing, model tuning, resampling, feature selection, ensembling, and so on. In the tidyverse, we strive to make our packages modular and parsnip is designed only to solve the interface issue. It is not designed to be a drop-in replacement for caret. The tidymodels package collection, which includes parsnip, has other packages for many of these tasks, and they are designed to work together. We are working towards higher-level APIs that can replicate and extend what the current model packages can do.” - Max Kuhn (tidymodels developer)\n\n. . .\nBenefits:\n\nStandardized workflow/format/notation across different types of machine learning algorithms\nCan easily modify pre-processing, algorithm choice, and hyper-parameter tuning making optimization easy",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -3960,7 +4016,7 @@
     "text": "tidymodels: ecosystem\nThe main packages (and their roles):",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -3971,7 +4027,7 @@
     "text": "Inference: intro\nIn intro stats, you should have learned the central dogma of statistics: we sample from a population\n\n. . .\nThe data from the sample are used to make an inference about the population:",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -3982,7 +4038,7 @@
     "text": "Inference: packages",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -3993,7 +4049,7 @@
     "text": "tidymodels\nNot part of tidyverse; load separately\n\n# should already be installed for you on datahub\nlibrary(tidymodels)",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4004,7 +4060,7 @@
     "text": "Step 1: Specify model\n\nlinear_reg()",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4015,7 +4071,7 @@
     "text": "Step 2: Set model fitting engine\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") # lm: linear model",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4026,7 +4082,7 @@
     "text": "Step 3: Fit model & estimate parameters\n… using formula syntax\n\nlinear_reg() |&gt;\n  set_engine(\"lm\") |&gt;\n  fit(outcome ~ predictor, data = df)",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4037,7 +4093,7 @@
     "text": "A closer look at model output\n\\[\\widehat{outcome}_{i} = \\beta_0 + \\beta_1 \\times predictor_{i}\\] . . .\n🧠   How do we read/interpret this model?",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4048,7 +4104,7 @@
     "text": "Slope and intercept\n\\[\\widehat{outcome}_{i} = \\beta_0 + \\beta_1 \\times predictor_{i}\\]\n. . .\n\nSlope: For each additional unit increase in the predictor, we could expect the outcome, on average, to be higher, by \\(\\beta_1\\).\n\n. . .\n\nIntercept: When the predictor is zero, we would expect the outcome to be \\(\\beta_0\\) on average.",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4059,7 +4115,7 @@
     "text": "ML: intro\nFor prediction, we have a similar sampling problem:\n\n. . .\nBut now we are trying to build a rule that can be used to predict a single observation’s value of some characteristic using characteristics of the other observations.",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4070,7 +4126,7 @@
     "text": "ML: the goal\nThe goal is to:\nbuild a machine learning algorithm\n. . .\nthat uses features as input\n. . .\nand predicts an outcome variable\n. . .\nin the situation where we do not know the outcome variable.\n. . .\n🧠   Summarize/Evaluate: How is this similar/different from inference?",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4081,7 +4137,7 @@
     "text": "Classic ML\nTypically, you use data where you have both the input and output data to train a machine learning algorithm.\n. . .\nWhat you need:\n\n\nA data set to train from.\nAn algorithm or set of algorithms you can use to try values of \\(f\\).\nA distance metric \\(d\\) for measuring how close \\(Y\\) is to \\(\\hat{Y}\\).\nA definition of what a “good” distance is.",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4092,7 +4148,7 @@
     "text": "tidymodels for ML\nHow these packages fit together for carrying out machine learning:",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4103,7 +4159,7 @@
     "text": "tidymodels: steps",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4114,7 +4170,7 @@
     "text": "Part I: Imitation",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4125,7 +4181,7 @@
     "text": "Fight Songs\n\nOriginalPlot (Sailor)Code (Sailor)Plot (v2)Code (v2)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfight &lt;- read_csv('data/fight-songs.csv', show_col_types = FALSE)\n \n# Calculate avg_duration and avg_bpm across fight songs for classifying\navg_duration &lt;- mean(fight$sec_duration, na.rm = TRUE)\navg_bpm &lt;- mean(fight$bpm, na.rm = TRUE)\n\n# Begin ggplot\nggplot(fight, aes(x = sec_duration, y = bpm)) +\n  \n  # Making sure Notre Dame is colored and referenced differently \n  geom_point(aes(color = ifelse(school == \"Notre Dame\", \"Notre Dame\", factor(school))), size = 5, alpha = 0.5) +\n  scale_color_hue() +\n  geom_vline(xintercept = avg_duration, linetype = \"dotted\", color = \"black\", size = 0.7) +\n  geom_hline(yintercept = avg_bpm, linetype = \"dotted\", color = \"black\", size = 0.7) +\n   annotate(\"text\", x = avg_duration + 5, y = 100, label = \"AVERAGE\", angle = 90, vjust = -0.5, size = 3.5)  +\n  # Adding in my labels for quadrants + AVERAGE\n  annotate(\"text\", x = 0, y = avg_bpm + 5, label = \"AVERAGE\", hjust = -0.5, size = 3.5) +\n  annotate(\"text\", x = 30, y = 190, label = \"Fast and short\", size = 4) +\n  annotate(\"text\", x = 130, y = 190, label = \"Fast but long\", size = 4) +\n  annotate(\"text\", x = 30, y = 60, label = \"Slow but short\", size = 4) +\n  annotate(\"text\", x = 130, y = 60, label = \"Slow and long\", size = 4) +\n  geom_point(aes(x = 60, y = 150), color = \"black\", size = 5) +\n  annotate(\"text\", x = 60, y = 150, label = \"Notre Dame\", vjust = -1.5, fontface = \"bold\") +\n  labs(x = \"Duration\", y = \"Beats per minute\") +\n  \n  # Scale my axis to adjust to match original \n  \n  scale_x_continuous(breaks = seq(0, 180, by = 20)) +\n  scale_y_continuous(breaks = seq(40, 200, by = 20), limits = c(40, 200)) +\n  coord_fixed(ratio = 0.8) +  \n  theme_minimal() +\n  # Theme adjusting \n  \n  theme(\n    plot.margin = margin(t = 10, r = 10, b = 10, l = 20),\n    legend.position = \"none\",\n    panel.grid.minor = element_line(color = \"grey90\", linetype = \"solid\"),\n    panel.grid.major = element_line(color = \"grey80\", linetype = \"solid\"),\n    panel.border = element_rect(color = \"black\", fill = NA))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nfight_songs_data &lt;- fight\nmean_bpm &lt;- mean(fight_songs_data$bpm, na.rm = TRUE)\nmean_duration &lt;- mean(fight_songs_data$sec_duration, na.rm = TRUE)\n\nggplot(fight_songs_data, aes(x = sec_duration, y = bpm)) +\n    geom_point(aes(color = school), alpha = 0.2, size = 5) +\n    geom_vline(xintercept = mean_duration, linetype = \"dotted\", color = \"black\") +\n    geom_hline(yintercept = mean_bpm, linetype = \"dotted\", color = \"black\") +\n    geom_point(data = filter(fight_songs_data, school == \"Stanford\"), \n               aes(x = sec_duration, y = bpm), \n               color = \"red\", size = 5, shape = 21, fill = \"red\") +\n    geom_text(data = filter(fight_songs_data, school == \"Stanford\"), \n              aes(x = sec_duration, y = bpm, label = \"Stanford\", fontface = \"bold\", family = \"Arial\"), \n              vjust = -1, color = \"black\", size = 4) +\n    labs(\n        title = \"How Stanford's Fight Song stacks up\",\n        x = \"Duration\",\n        y = \"Beats per minute\"\n    ) +\n    scale_y_continuous(breaks = seq(60, 200, by = 20),\n                       labels = c(\"60\", \"80\", \"100\", \"120\", \"140\", \"160\", \"180\", \"200bpm\"),\n                       limits = c(60, 200)) +\n    scale_x_continuous(breaks = seq(0, 180, by = 20), \n                       labels = c(\"0 sec\", \"20\", \"40\", \"60\", \"80\", \"100\", \"120\", \"140\", \"160\", \"180\")) +\n    annotate(\"text\", x = 10, y = 190, label = \"Fast and short\", size = 4, hjust = 0, family = \"Courier\") +\n    annotate(\"text\", x = 10, y = 70, label = \"Slow but short\", size = 4, hjust = 0, family = \"Courier\") +\n    annotate(\"text\", x = 140, y = 190, label = \"Fast but long\", size = 4, hjust = 1, family = \"Courier\") +\n    annotate(\"text\", x = 140, y = 70, label = \"Slow and long\", size = 4, hjust = 1, family = \"Courier\") +\n    annotate(\"text\", x = max(fight_songs_data$sec_duration) - 20, y = mean_bpm, \n             label = \"AVERAGE\", vjust = 0.5, hjust = -0.1, color = \"black\", size = 3, family = \"Arial\") +\n    theme_minimal() +\n    theme(\n        legend.position = \"none\",\n        plot.title = element_text(hjust = 0.5, face = \"bold\", family = \"Arial\"),\n        panel.grid.major = element_line(size = 0.5),\n        panel.grid.minor = element_blank()\n    )",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4136,7 +4192,7 @@
     "text": "Hate Crimes (Adam)\n\nOriginalPlotCode\n\n\n\n\n\nalt text\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n# Load data\nurl &lt;- \"https://raw.githubusercontent.com/fivethirtyeight/data/master/hate-crimes/hate_crimes.csv\"\nhate_crimes &lt;- read_csv(url)\n\nstates_map &lt;- map_data(\"state\")\nhate_crimes &lt;- hate_crimes |&gt;\n  mutate(state = tolower(state)) \n\nmap_data &lt;- states_map |&gt;\n  left_join(hate_crimes, by = c(\"region\" = \"state\"))\n\n\n#Graph Numero Uno\n\nggplot(map_data, aes(x = long, y = lat, group = group, fill = avg_hatecrimes_per_100k_fbi)) +\n  geom_polygon(color = \"white\") +\n  scale_fill_gradient(low = \"#ffe4d0\", high = \"#ba3900\", na.value = \"gray\", name = \"Hate Crimes\\nper 100k\") +\n  labs(title = \"PRE-ELECTION HATE CRIME RATES POST-ELECTION\",\n       subtitle = \"Average annual hate crimes per 100,000 residents, 2010-15\") +\n  theme_minimal() +\n  theme(    axis.text.x = element_blank(),\n    plot.title = element_text(face = 'bold'),\n    axis.ticks.x = element_blank(),\n    axis.text.y = element_blank(),\n    axis.ticks.y = element_blank(),\n    axis.title.x = element_blank(),\n    axis.title.y = element_blank(),\n    panel.grid = element_blank(),\n    legend.position = \"top\", \n    legend.title = element_text(size=6),\n    \n  ) +\n  coord_fixed(1.3) #Unstretch\n#Second Graph\nggplot(map_data, aes(x = long, y = lat, group = group, fill = hate_crimes_per_100k_splc)) +\n  geom_polygon(color = \"white\") +\n  scale_fill_gradient(low = \"#b0e2c8\", high = \"#006646\", na.value = \"gray\", name = \"Hate Crimes\\nper 100k\") +\n  labs(title = \"POST-ELECTION HATE CRIME RATES POST-ELECTION\",\n       subtitle = \"Average annual hate crimes per 100,000 residents, 2010-15\") +\n  theme_minimal() +\n  theme(    axis.text.x = element_blank(),\n    plot.title = element_text(face = 'bold'),\n    axis.ticks.x = element_blank(),\n    axis.text.y = element_blank(),\n    axis.ticks.y = element_blank(),\n    axis.title.x = element_blank(),\n    axis.title.y = element_blank(),\n    panel.grid = element_blank(),\n    legend.position = \"top\", \n    legend.title = element_text(size=6),\n    \n  ) +\n  coord_fixed(1.3) #Unstretch",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4147,7 +4203,7 @@
     "text": "Congress Age\n\nOriginalPlotCode\n\n\n\n\n\nMedian Age of Congress\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncongress_data = read_csv(\"data/data_aging_congress.csv\")\n\ncongress_data &lt;- congress_data |&gt;\n  mutate(year = as.numeric(format(start_date, \"%Y\")))  #Extracted year from start_date\n\n#Grouping Congress by session to calculate median age\ncongress_median_age &lt;- congress_data |&gt;\n  group_by(congress, year, chamber) |&gt;\n  summarise(median_age = median(age_years, na.rm = TRUE)) |&gt;\n  ungroup()\n\nggplot(congress_median_age, aes(x = year, y = median_age, color = chamber)) +\n  geom_step(linewidth = 1) +  \n  #Senate\n  geom_text(data = congress_median_age |&gt; \n              filter(chamber == \"Senate\", year == 2023),  \n            aes(label = \"65.3\"), \n            hjust = -0.2, vjust = +0.3, size = 3, color = \"black\", show.legend = FALSE) + \n  #House\n  geom_text(data = congress_median_age |&gt; \n              filter(chamber == \"House\", year == 2023), \n            aes(label = \"57.8\"), \n            hjust = -0.2, vjust = -0.5, size = 3, color = \"black\", show.legend = FALSE) +\n  #Titles\n  labs(title = \"Median Age of the U.S. Senate and House by Congress, 1919 to 2023\",\n       subtitle = \"The House and Senate are older than ever before\",\n       x = \"Year\",\n       y = \"Median Age\",\n       color = \"Chamber\") +  \n    scale_color_manual(values = c(\"Senate\" = \"#5b41d1\", \"House\" = \"#55aa5c\"))+\n  #Scaling both axis\n  scale_x_continuous(limits = c(min(congress_median_age$year), max(congress_median_age$year)), breaks = seq(1920, 2020, by =  10)) +\n  scale_y_continuous(limits = c(45, NA)) +\n  theme_minimal() +  \n  theme(plot.title = element_text(face = \"bold\", size = 14),  \n        plot.subtitle = element_text(size = 10),\n        axis.title = element_text(size = 12),\n        legend.position = \"top\",\n        aspect.ratio = 1/4,\n        panel.grid.major.x = element_blank(),\n        panel.grid.minor.x = element_blank(),\n        panel.grid.minor.y = element_blank())",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4158,7 +4214,7 @@
     "text": "Part II: Sad Plot",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4169,7 +4225,7 @@
     "text": "Votes\n\nOriginalPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n# estimate data\nd &lt;- data.frame(\n  area = rep(c('Rural', 'Suburban', 'Urban'), each = 2),\n  voted = rep(c('Biden', 'Trump'), times = 3),\n  percentages = c(35, 65, 55, 45, 70, 30)\n)\n\n# plot\n\nggplot(d, aes(x = area, y = percentages, fill = voted)) +\n  geom_bar(stat = \"identity\", position = \"dodge\") +\n  labs(\n    title = \"Votes for Trump and Biden in 2020 Election Based on Location\",\n    x = \"Location\",\n    y = \"Percentage of Votes\",\n    fill = \"Candidate\"  # Legend title\n  ) +\n  scale_y_continuous(breaks = seq(0, 100, by = 10), limits = c(0, 80)) +\n  theme_minimal() +\n  scale_fill_manual(values = c(\"#0033A0\", \"#C8102E\"))  # Custom colors for groups",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {
@@ -4180,7 +4236,7 @@
     "text": "CS01 Data (Sandy)\n\nOriginalPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWB &lt;- read_csv(\"https://github.com/ShanEllis/datasets/raw/refs/heads/master/Blood.csv\")\n\nWB &lt;- WB |&gt; \n  mutate(Treatment = fct_recode(Treatment, \n                                \"5.9% THC (low dose)\" = \"5.90%\",\n                                \"13.4% THC (high dose)\" = \"13.40%\"),\n         Treatment = fct_relevel(Treatment, \"Placebo\", \"5.9% THC (low dose)\"),\n         Group = fct_recode(Group,\n                            \"Frequent User\" = \"Frequent user\",\n                            \"Occasional User\" = \"Occasional user\")) |&gt; \n  janitor::clean_names() |&gt;\n  rename(thcoh = x11_oh_thc,\n         thccooh = thc_cooh,\n         thccooh_gluc = thc_cooh_gluc,\n         thcv = thc_v) |&gt;\n  mutate(timepoint = case_when(time_from_start &lt; 0 ~ \"pre-smoking\",\n                               time_from_start &gt; 0 & time_from_start &lt;= 30 ~ \"0-30 min\",\n                               time_from_start &gt; 30 & time_from_start &lt;= 70 ~ \"31-70 min\",\n                               time_from_start &gt; 70 & time_from_start &lt;= 100 ~ \"71-100 min\",\n                               time_from_start &gt; 100 & time_from_start &lt;= 180 ~ \"101-180 min\",\n                               time_from_start &gt; 180 & time_from_start &lt;= 210 ~ \"181-210 min\",\n                               time_from_start &gt; 210 & time_from_start &lt;= 240 ~ \"211-240 min\",\n                               time_from_start &gt; 240 & time_from_start &lt;= 270 ~ \"241-270 min\",\n                               time_from_start &gt; 270 & time_from_start &lt;= 300 ~ \"271-300 min\",\n                               time_from_start &gt; 300 ~ \"301+ min\"))\n\nWB |&gt;\n  ggplot(mapping = aes(x = time_from_start,\n                       y = thccooh,\n                       color = group)) +\n  geom_point(size = 3) +\n  labs(x = \"Time After Smoking (Minutes)\", y = \"THCCOOH\", \n       title = \"Change in THCCOOH Levels After Smoking\",\n       subtitle = \"Levels measured over time for frequent and occasional users\",\n       color = \"Group\") +\n  theme(plot.title = element_text(size = 20, hjust = 0, vjust = 2),\n        plot.subtitle = element_text(size = 16, hjust = 0, vjust = 1)) +\n  scale_color_manual(values = c(\"Frequent User\" = \"#fc8d59\",\n                                \"Occasional User\" = \"#91bfdb\")) +\n  theme_minimal()",
     "crumbs": [
       "Notes",
-      "10-cs02-eda"
+      "11-tidymodels"
     ]
   },
   {

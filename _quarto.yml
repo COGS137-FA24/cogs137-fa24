@@ -79,7 +79,7 @@ website:
           - text: "09-cs02-intro"
             href: content/lectures/09-cs02-intro.qmd
           - text: "10-cs02-eda"
-            href: content/lectures/11-tidymodels.qmd
+            href: content/lectures/10-cs02-eda.qmd
           - text: "11-tidymodels"
             href: content/lectures/11-tidymodels.qmd
       - section: "Labs"

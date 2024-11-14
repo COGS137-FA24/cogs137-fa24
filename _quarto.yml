@@ -82,6 +82,8 @@ website:
             href: content/lectures/10-cs02-eda.qmd
           - text: "11-tidymodels"
             href: content/lectures/11-tidymodels.qmd
+          - text: "12-regression"
+            href: content/lectures/12-regression.qmd
       - section: "Labs"
         contents:
           - text: "Lab01: Tooling and R"
@@ -96,6 +98,8 @@ website:
             href: content/labs/05-lab-cs01-communication.qmd
           - text: "Lab06: CS02 EDA"
             href: content/labs/06-lab-cs02-eda.qmd
+          - text: "Lab07: MLR"
+            href: content/labs/07-lab-mlr.qmd
       - section: "Case Studies"
         contents:
           - text: "CS: Example"

@@ -84,6 +84,8 @@ website:
             href: content/lectures/11-tidymodels.qmd
           - text: "12-regression"
             href: content/lectures/12-regression.qmd
+          - text: "13-cs02-analysis"
+            href: content/lectures/13-cs02-analysis.qmd
       - section: "Labs"
         contents:
           - text: "Lab01: Tooling and R"

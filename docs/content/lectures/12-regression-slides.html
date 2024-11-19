@@ -430,7 +430,7 @@ A: We are ultimately trying to build a model to predict PM2.5 values…but we ha
 <h2>Course Announcements</h2>
 <p><strong>Due Dates</strong></p>
 <ul>
-<li>🔭 <strong>Lab 06</strong> due Thursday</li>
+<li>🧪 <strong>Lab 06</strong> due Thursday</li>
 <li>📋 Lecture Participation survey “due” after class</li>
 </ul>
 <p><strong>Notes</strong></p>
@@ -713,8 +713,8 @@ Computational engine: lm </code></pre>
 <div class="columns">
 <div class="column" style="width:30%;">
 <ul>
-<li><strong>Main effects:</strong> Assuming relationship between surface and logged price <strong>does not vary</strong> by whether or not the artist is living</li>
-<li><strong>Interaction effects:</strong> Assuming relationship between surface and logged price <strong>varies</strong> by whether or not the artist is living</li>
+<li><strong>Main effects:</strong> Assuming relationship between CMAQ and PM2.5 <strong>does not vary</strong> by whether it’s a low or high population density monitor.</li>
+<li><strong>Interaction effects:</strong> Assuming relationship between CMAQ and PM2. <strong>varies</strong> by whether or not it’s a low or high population density monitor.</li>
 </ul>
 </div><div class="column" style="width:70%;">
 <div class="cell">
@@ -759,13 +759,13 @@ Computational engine: lm </code></pre>
 <section id="solving-the-model" class="slide level2">
 <h2>Solving the model</h2>
 <ul>
-<li>Low-population density: Plug in 0 for <code>popdens</code></li>
+<li>High-population density: Plug in 0 for <code>popdens</code></li>
 </ul>
 <p><span class="math display">\[\widehat{PM2.5} = 7.70 + 0.389 \times CMAQ - 0.345 \times 0\]</span><br>
 <span class="math inline">\(= 7.70 + 0.389 \times CMAQ\)</span></p>
 <div class="fragment">
 <ul>
-<li>High-population density: Plug in 1 for <code>popdens</code></li>
+<li>Low-population density: Plug in 1 for <code>popdens</code></li>
 </ul>
 <p><span class="math display">\[\widehat{PM2.5} = 7.70 + 0.389 \times CMAQ - 0.345 \times 1\]</span><br>
 <span class="math inline">\(= 7.355 + 0.389 \times CMAQ\)</span></p>

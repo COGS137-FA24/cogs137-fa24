@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../content/labs/01-lab-intro-r.html" rel="next">
+<link href="../../content/lectures/13-cs02-analysis.html" rel="next">
 <link href="../../content/lectures/11-tidymodels.html" rel="prev">
 <link href="../../images/favicon.ico" rel="icon">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
@@ -307,6 +307,12 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../../content/lectures/12-regression.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">12-regression</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/lectures/13-cs02-analysis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">13-cs02-analysis</span></a>
   </div>
 </li>
       </ul>
@@ -581,7 +587,7 @@ A: We are ultimately trying to build a model to predict PM2.5 values…but we ha
 <h2 class="anchored" data-anchor-id="course-announcements">Course Announcements</h2>
 <p><strong>Due Dates</strong></p>
 <ul>
-<li>🔭 <strong>Lab 06</strong> due Thursday</li>
+<li>🧪 <strong>Lab 06</strong> due Thursday</li>
 <li>📋 Lecture Participation survey “due” after class</li>
 </ul>
 <p><strong>Notes</strong></p>
@@ -864,8 +870,8 @@ Computational engine: lm </code></pre>
 <div class="columns">
 <div class="column" style="width:30%;">
 <ul>
-<li><strong>Main effects:</strong> Assuming relationship between surface and logged price <strong>does not vary</strong> by whether or not the artist is living</li>
-<li><strong>Interaction effects:</strong> Assuming relationship between surface and logged price <strong>varies</strong> by whether or not the artist is living</li>
+<li><strong>Main effects:</strong> Assuming relationship between CMAQ and PM2.5 <strong>does not vary</strong> by whether it’s a low or high population density monitor.</li>
+<li><strong>Interaction effects:</strong> Assuming relationship between CMAQ and PM2. <strong>varies</strong> by whether or not it’s a low or high population density monitor.</li>
 </ul>
 </div><div class="column" style="width:70%;">
 <div class="cell">
@@ -907,13 +913,13 @@ Computational engine: lm </code></pre>
 <section id="solving-the-model" class="level2">
 <h2 class="anchored" data-anchor-id="solving-the-model">Solving the model</h2>
 <ul>
-<li>Low-population density: Plug in 0 for <code>popdens</code></li>
+<li>High-population density: Plug in 0 for <code>popdens</code></li>
 </ul>
 <p><span class="math display">\[\widehat{PM2.5} = 7.70 + 0.389 \times CMAQ - 0.345 \times 0\]</span><br>
 <span class="math inline">\(= 7.70 + 0.389 \times CMAQ\)</span></p>
 <p>. . .</p>
 <ul>
-<li>High-population density: Plug in 1 for <code>popdens</code></li>
+<li>Low-population density: Plug in 1 for <code>popdens</code></li>
 </ul>
 <p><span class="math display">\[\widehat{PM2.5} = 7.70 + 0.389 \times CMAQ - 0.345 \times 1\]</span><br>
 <span class="math inline">\(= 7.355 + 0.389 \times CMAQ\)</span></p>
@@ -1791,8 +1797,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../content/labs/01-lab-intro-r.html" class="pagination-link" aria-label="Lab01: Tooling and R">
-        <span class="nav-page-text">Lab01: Tooling and R</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../content/lectures/13-cs02-analysis.html" class="pagination-link" aria-label="13-cs02-analysis">
+        <span class="nav-page-text">13-cs02-analysis</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

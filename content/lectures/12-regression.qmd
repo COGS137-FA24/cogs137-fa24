@@ -264,8 +264,8 @@ ggplot(data = pm, aes(x = value, fill = popdens)) +
 
 ::: columns
 ::: {.column width="30%"}
--   **Main effects:** Assuming relationship between surface and logged price **does not vary** by whether or not the artist is living
--   **Interaction effects:** Assuming relationship between surface and logged price **varies** by whether or not the artist is living
+-   **Main effects:** Assuming relationship between CMAQ and PM2.5 **does not vary** by whether it's a low or high population density monitor.
+-   **Interaction effects:** Assuming relationship between CMAQ and PM2. **varies** by whether or not it's a low or high population density monitor.
 :::
 
 ::: {.column width="70%"}
@@ -328,14 +328,14 @@ $$\widehat{PM2.5} = 7.70 + 0.389 \times CMAQ - 0.345 \times popdens$$
 
 ## Solving the model
 
--   Low-population density: Plug in 0 for `popdens`
+-   High-population density: Plug in 0 for `popdens`
 
 $$\widehat{PM2.5} = 7.70 + 0.389 \times CMAQ - 0.345 \times 0$$\
 $= 7.70 + 0.389 \times CMAQ$
 
 . . . 
 
--   High-population density: Plug in 1 for `popdens`
+-   Low-population density: Plug in 1 for `popdens`
 
 $$\widehat{PM2.5} = 7.70 + 0.389 \times CMAQ - 0.345 \times 1$$\
 $= 7.355 + 0.389 \times CMAQ$

@@ -480,7 +480,7 @@ d <- data.frame(
 ggplot(d, aes(x = area, y = percentages, fill = voted)) +
   geom_bar(stat = "identity", position = "dodge") +
   labs(
-    title = "Votes for Trump and Biden in 2020 Election Based on Location",
+    title = "Votes for Trump and Biden in 2020 Elecxtion Based on Location",
     x = "Location",
     y = "Percentage of Votes",
     fill = "Candidate"  # Legend title

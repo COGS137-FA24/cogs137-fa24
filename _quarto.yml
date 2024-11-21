@@ -86,6 +86,8 @@ website:
             href: content/lectures/12-regression.qmd
           - text: "13-cs02-analysis"
             href: content/lectures/13-cs02-analysis.qmd
+          - text: "14-cs02-inclass"
+            href: content/lectures/14-cs02-inclass.qmd
       - section: "Labs"
         contents:
           - text: "Lab01: Tooling and R"

@@ -786,7 +786,7 @@ show_best(tune_RF_results, metric = "rmse", n = 1)
 ## Final Model Evaluation
 
 ```{r}
-tuned_RF_values<- select_best(tune_RF_results, "rmse")
+tuned_RF_values <- select_best(tune_RF_results, "rmse")
 tuned_RF_values
 ```
 
@@ -796,7 +796,7 @@ The testing data!
 
 ```{r}
 # specify best combination from tune in workflow
-RF_tuned_wflow <-RF_tune_wflow |>
+RF_tuned_wflow <- RF_tune_wflow |>
   tune::finalize_workflow(tuned_RF_values)
 
 # fit model with those parameters on train AND test

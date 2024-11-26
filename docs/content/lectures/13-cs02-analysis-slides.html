@@ -1864,7 +1864,7 @@ Run `show_notes(.Last.tune.result)` for more information.</code></pre>
 <section id="final-model-evaluation" class="slide level2">
 <h2>Final Model Evaluation</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb147"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb147-1"><a></a>tuned_RF_values<span class="ot">&lt;-</span> <span class="fu">select_best</span>(tune_RF_results, <span class="st">"rmse"</span>)</span>
+<div class="sourceCode cell-code" id="cb147"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb147-1"><a></a>tuned_RF_values <span class="ot">&lt;-</span> <span class="fu">select_best</span>(tune_RF_results, <span class="st">"rmse"</span>)</span>
 <span id="cb147-2"><a></a>tuned_RF_values</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 3
@@ -1877,7 +1877,7 @@ Run `show_notes(.Last.tune.result)` for more information.</code></pre>
 <p>The testing data!</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb149"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb149-1"><a></a><span class="co"># specify best combination from tune in workflow</span></span>
-<span id="cb149-2"><a></a>RF_tuned_wflow <span class="ot">&lt;-</span>RF_tune_wflow <span class="sc">|&gt;</span></span>
+<span id="cb149-2"><a></a>RF_tuned_wflow <span class="ot">&lt;-</span> RF_tune_wflow <span class="sc">|&gt;</span></span>
 <span id="cb149-3"><a></a>  tune<span class="sc">::</span><span class="fu">finalize_workflow</span>(tuned_RF_values)</span>
 <span id="cb149-4"><a></a></span>
 <span id="cb149-5"><a></a><span class="co"># fit model with those parameters on train AND test</span></span>

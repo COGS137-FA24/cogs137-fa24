@@ -88,6 +88,8 @@ website:
             href: content/lectures/13-cs02-analysis.qmd
           - text: "14-cs02-inclass"
             href: content/lectures/14-cs02-inclass.qmd
+          - text: "15-oral-communication"
+            href: content/lectures/15-oral-communication.qmd
       - section: "Labs"
         contents:
           - text: "Lab01: Tooling and R"

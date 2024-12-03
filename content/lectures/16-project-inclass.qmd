@@ -11,7 +11,7 @@ format:
     css: slides.css
 ---
 
-# CS01: In class {background-color="#92A86A"}
+# Final Project: In class {background-color="#92A86A"}
 
 ## Q&A {.smaller}
 
@@ -35,6 +35,7 @@ format:
 Notes:
 
 -   Final Project - peer review was sent to each group in original email assigning peer review
+- Grades posted: CS02 Team evaluation, peer evaluation, lab07
 
 ## Plan for Thursday
 

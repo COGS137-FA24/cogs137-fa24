@@ -24,6 +24,10 @@ Written, visual, and presented content will be graded on their technical merits 
 
 Each group will carry out a full data science project. This will include question formation, finding the data, doing background research, wrangling the data, doing EDA, analyzing the data, and answering your question of interest.
 
+::: callout-note
+Unlike the case studies, you do NOT need an extension for the final project. Since the ideas/work are all your own, your question and analysis are enough!
+:::
+
 You can think of this as a mini case report in the fact that the process is the same, but we would not expect the work completed to be as extensive as what you did in a case study. That said, we want to see demonstration of the skills you've learned in the class, so **we will be looking for some data wrangling in your case study**. If you have a single dataset that requires no wrangling, consider if additional datasets could be incorporated to answer your question(s) of interest more deeply.
 
 You are strongly encouraged to think of your topic/question before looking for datasets. More interesting case studies start with the topic/question. Boring case studies look for the dataset first.

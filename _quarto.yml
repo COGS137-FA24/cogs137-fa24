@@ -92,6 +92,8 @@ website:
             href: content/lectures/15-oral-communication.qmd
           - text: "16-project-inclass"
             href: content/lectures/16-project-inclass.qmd
+          - text: "17-presentations"
+            href: content/lectures/17-presentations.qmd
       - section: "Labs"
         contents:
           - text: "Lab01: Tooling and R"

@@ -254,6 +254,7 @@ website:
 
 format:
   html:
+    include-in-header: _includes/archive-banner.html
     theme:
       light: [cosmo, styles/cogs137.scss]
       dark: [cosmo, styles/cogs137.scss, styles/dark.scss]
